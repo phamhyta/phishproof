@@ -1,0 +1,75 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+A phishing verdict is acted on, contested, and audited, yet the accuracy that has
+become the field's headline measure speaks to none of those moments. This paper
+takes one route toward narrowing that gap: read a detector's reliability from the
+\emph{evidence} a verdict rests on rather than from the label it emits. We
+instantiate the idea as \toolname{}, which trusts a verdict in proportion to how
+much a panel of independent agents agree on cues the page itself confirms, returns
+those cues as the explanation, and abstains otherwise. Three findings carry the
+contribution beyond the headline: (i) moving the unit of agreement from labels to
+grounded evidence is what earns the improvement -- it gives competitive area under the
+risk--coverage curve and, by a clear and statistically significant margin, the
+best-calibrated trust score and the highest selective accuracy, where
+using several models alone does not; (ii) cross-family \emph{diversity}, not the agent
+count, is the dominant design variable -- collapsing the panel to a same-family one
+degrades both the ranking and full-coverage accuracy sharply; and (iii) calibrating the
+grounded score against real labels makes its reported trust directly actionable, the
+clearest separation from every baseline. Trust and explanation, in short, can be earned
+per verdict and decoupled from the raw accuracy the detector is otherwise held to.
+
+\sstitle{Limitations}
+\label{sec:limitations}
+The evaluation is scoped and several results are weaker than a clean design would hope.
+\emph{(a) Benchmark.} The results rest on a single corpus of feed-sourced phishing pages
+versus legitimate login pages ($998$ test) under a fixed three-model panel, so the
+headline numbers depend on corpus composition and the specific agents. Two checks bound this
+dependence: a leave-brands-out test (\autoref{sec:exp_brands}) shows the calibrated trust
+transfers to entirely unseen brands with no loss, and swapping the $3$B text agents for $7$B/$8$B
+siblings does \emph{not} improve detection (\autoref{sec:exp_negatives}) -- the bottleneck is
+cue elicitation, not model scale -- so the small-model panel is not the limiting factor.
+Live cross-feed validation on freshly collected pages nonetheless remains future work. \emph{(b)
+The right-label-wrong-reason effect is modest here.} Because this corpus's phishing pages
+carry an unambiguous off-brand host and few \emph{shared hallucinations}, the perturbation
+fragility that GEA is designed to flag appears only on the harder lookalike subset and
+only weakly ($1.2\times$ low-vs-high-GEA); the mechanism is sound but its payoff is
+benchmark-dependent. \emph{(c) Grounding adds little to the ranking on \emph{clean} data} for the
+same reason -- the agreed cues almost always survive their tool check, and on this corpus
+agreement and groundedness are strongly correlated (\autoref{sec:form-gea}), so
+$\agr{\cdot}\grd$ ranks much like $\agr$ alone. Groundedness earns its place in the regime the corpus does
+not contain: when we synthesize evidence corruption (\autoref{sec:exp_adv}, RQ7) by
+cloaking the form action or removing the brand logo, $\grd$ falls and the detector
+abstains rather than acts on the corrupted cue, while label-confidence baselines stay
+overconfident -- the fail-safe role the clean-corpus AURC cannot reveal. A naturally
+occurring benchmark richer in shared hallucinations would exercise it without synthetic
+perturbation. We traced this to the benchmark's
+\emph{evidence} composition rather than to a design fault, ruling out two cheaper
+explanations. Weakening the panel does not help: a deliberately weaker all-local-3B
+panel (including a 3B vision model) surfaces no confident-but-ungrounded consensus -- it
+merely \emph{lowers} agreement (accuracy near chance), so there is nothing for grounding to
+catch. Sharpening the domain signal does not help either: restricting to the
+lookalike/typosquat subset (brand token embedded in the host) leaves grounding neutral
+(A-only AURC $1.93$ vs.\ $2.05$ for $A{\cdot}G$), because those pages still carry a genuine
+brand logo and are detected on that visual evidence ($86\%$ caught) -- the verdict is robust,
+not fragile. The limitation is therefore intrinsic to a corpus whose phishing pages always
+present a reliable visual brand cue; exercising grounding and the fragility gradient would
+require evasive, minimal-cue phishing (cloaked or logo-free pages resting on a single brittle
+signal), which this corpus does not contain at any domain composition. \emph{(d) Tooling.} We re-run D1
+(Phishpedia) in a containerized \texttt{detectron2} on the full $998$-page test split, and the
+heavier D2 (PhishIntention) is cited rather than re-run.
+Our main runs ground the brand cue by a page-content check; we do show that D1 can be
+substituted as that tool with no loss of ranking (AURC $2.33$ vs.\ $2.29$), so the
+``subsumes the detector'' property is measured for D1, but not yet for D2 or the LLM checker. A verification tool is
+also sound only for what it checks, so groundedness bounds rather than eliminates gauge
+error, and a fully cloaked page carrying no verifiable cue can only be abstained on, not
+resolved.
+
+Each bound is also an opening. Strengthening the verifiers toward semantic
+plausibility -- not just structural soundness -- would tighten the grounding guarantee
+against true-yet-misleading evidence; learning the evidence schema and inferring panel
+diversity from opaque third-party models would let the method track new impersonation
+tactics without re-engineering the panel; and faster page-internal grounding would
+shrink the cloaked-page blind spot rather than route around it. Each direction extends
+the evidence-agreement framework without redesigning it, sharpening when a verdict can
+be trusted rather than how often it is right.

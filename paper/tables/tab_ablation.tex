@@ -1,0 +1,28 @@
+\begin{table}[!h]
+\caption{RQ3. Component ablation. AURC/FPR$_{80}$ ($\times100$) and ECE; lower is
+better. The first four rows are on the full 998-page test split; the calibrated ECE
+of each row is reported (the $-$calibration row uses the raw, un-calibrated score).
+The $-$diversity row is on a 100-page subset on which the full diverse panel scores
+AURC $1.3$, so swapping the cross-family text agents for two same-family ones raises
+AURC to $27.5$ and full-coverage accuracy falls $0.90\!\to\!0.68$ -- by far the
+largest effect, which is why \emph{diversity}, not panel size, is the design variable.
+The GPT-4o vision agent is held fixed in both arms, so the row isolates the effect of
+cross-family \emph{text} diversity rather than confounding it with a change of vision model.}
+\label{tab:ablation}
+\footnotesize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccc@{}}
+\toprule
+Variant & AURC$\downarrow$ & FPR$_{80}\downarrow$ & ECE$\downarrow$ \\
+\midrule
+\textbf{\toolname{} (full)}                       & \textbf{2.3} & \textbf{1.3} & \textbf{0.015} \\
+\;$-$ calibration                                  & 2.3 & 1.3 & \underline{0.331} \\
+\;$-$ groundedness $\grd$ (\req{3})                & 2.1 & 1.2 & 0.014 \\
+\;$-$ evidence-level $\agr$ (\req{2})              & \underline{3.5} & 1.3 & 0.015 \\
+\;$-$ diversity (same-family)\textsuperscript{$\dagger$} & \underline{27.5} & \underline{48.6} & --- \\
+\bottomrule
+\end{tabular*}
+
+\footnotesize{\textsuperscript{$\dagger$}100-page subset; the diverse panel scores
+AURC $1.3$ on the same pages.}
+\end{table}

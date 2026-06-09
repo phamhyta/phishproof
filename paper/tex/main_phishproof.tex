@@ -1,0 +1,181 @@
+\documentclass[final,5p,times,twocolumn]{elsarticle}
+% \documentclass[review,5p,times,twocolumn]{elsarticle}  % review: 1.5-spaced + line numbers
+
+\let\today\relax
+\journal{Computers and Electrical Engineering}
+
+% Line numbers (review aid; comment \linenumbers below for camera-ready)
+\usepackage{lineno}
+\modulolinenumbers[5]
+
+\usepackage{hyperref}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+\renewcommand{\UrlFont}{\ttfamily\scriptsize}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
+\graphicspath{{./}{../figures/}{figures/}{../tables/}{tables/}}
+
+\usepackage{multirow}
+\usepackage{paralist}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xspace}
+\usepackage{pifont}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}   % body uses \State/\Comment (algorithmicx), not the old algorithmic
+\usepackage{xcolor}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,shadows,backgrounds,shapes.geometric,shapes.symbols,shapes.misc,decorations.pathreplacing,decorations.pathmorphing,patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{fillbetween}
+
+% acmart accessibility macro used inside the figure files -- no-op under elsarticle
+\providecommand{\Description}[1]{}
+
+% ──────────────────────────────────────────────────────────────────
+%  Macros
+% ──────────────────────────────────────────────────────────────────
+\newcommand{\todo}[1]{\textcolor{red}{\bf #1}}
+\newcommand{\edit}[1]{\textcolor{blue}{#1}}
+\newcommand{\info}[1]{\textcolor{gray}{#1}}
+\newcommand{\sstitle}[1]{\smallskip\noindent\textbf{#1.\/}}
+\newcommand{\smtitle}[1]{\medskip\noindent\textbf{#1.\/}}
+\newcommand{\sititle}[1]{{\it #1:\/}}
+
+\newcommand{\toolname}{\texttt{PhishProof}\xspace}
+\newcommand{\limit}[1]{\textbf{L#1}}
+\newcommand{\req}[1]{\textbf{R#1}}
+
+% math
+\newcommand{\bO}{\mathcal{O}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Indic}{\mathbf{1}}
+\newcommand{\page}{\ensuremath{x}}              % a page under test
+\newcommand{\panel}{\ensuremath{\mathcal{M}}}   % the model panel
+\newcommand{\Uschema}{\ensuremath{\mathcal{U}}} % evidence-unit schema
+\newcommand{\evset}{\ensuremath{E}}             % cited evidence set
+\newcommand{\agr}{\ensuremath{A}}               % evidence-level agreement
+\newcommand{\grd}{\ensuremath{G}}               % groundedness
+\newcommand{\geascore}{\ensuremath{\mathrm{GEA}}} % the score
+\newcommand{\gver}{\ensuremath{g}}              % per-unit grounding verifier
+\newcommand{\cons}{\ensuremath{C}}              % consensus set
+\newcommand{\thr}{\ensuremath{\tau}}            % abstention threshold
+
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+% Harvey balls for the capability table. A raw \tikz is NOT robust inside a
+% \caption{} -- it makes ; : | active and breaks caption parsing (this caused the
+% \caption@ydblarg / Emergency-stop error). So we pre-render each ball into a box
+% once (filled just after \begin{document}) and place it with a robust \usebox,
+% which is safe in captions and table cells alike. Keeps amssymb (no wasysym clash).
+\newsavebox{\hbFull}
+\newsavebox{\hbHalf}
+\newsavebox{\hbOpen}
+\DeclareRobustCommand{\CIRC}{\usebox{\hbFull}}
+\DeclareRobustCommand{\HCIR}{\usebox{\hbHalf}}
+\DeclareRobustCommand{\OCIR}{\usebox{\hbOpen}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+
+\def\Snospace~{\S{}}
+\renewcommand*\sectionautorefname{\Snospace}
+\renewcommand*\subsectionautorefname{\Snospace}
+\renewcommand*\subsubsectionautorefname{\Snospace}
+\renewcommand*\figureautorefname{Fig.}
+\renewcommand*\equationautorefname{Eq.}
+\renewcommand*\tableautorefname{Tab.}
+\newcommand*\algorithmautorefname{Alg.}
+\renewcommand*\theoremautorefname{Thm.}
+\providecommand*\propositionautorefname{Prop.}
+\providecommand*\assumptionautorefname{Assumption}
+\providecommand*\definitionautorefname{Def.}
+\providecommand*\lemmaautorefname{Lemma}
+
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=10000
+
+\begin{document}
+
+% Pre-render the capability-table Harvey balls (see preamble note) so they can be
+% placed with \usebox inside \caption{} without activating ; : | .
+\sbox{\hbFull}{\tikz[baseline=-0.4ex]{\fill (0,0) circle (0.5ex);}}
+\sbox{\hbHalf}{\tikz[baseline=-0.4ex]{\draw[line width=0.5pt] (0,0) circle (0.5ex); \fill (0,0) -- (0,0.5ex) arc (90:-90:0.5ex) -- cycle;}}
+\sbox{\hbOpen}{\tikz[baseline=-0.4ex]{\draw[line width=0.5pt] (0,0) circle (0.5ex);}}
+
+\begin{frontmatter}
+
+\title{Trustworthy and Explainable Agents for Phishing Detection with
+Grounded Cross-Model Evidence Agreement}
+
+\author[hust]{Xuan Huong Tran}
+\ead{Huong.TX261096M@sis.hust.edu.vn}
+
+
+\author[griffith]{Trinh Pham}
+\ead{trinh.pham@griffithuni.edu.au}
+
+\author[griffith]{Thanh Tam Nguyen}
+\ead{t.nguyen19@griffith.edu.au}
+
+
+\affiliation[hust]{organization={Hanoi University of Science and Technology},
+            % city={}, postcode={}, state={},
+            country={Vietnam}}
+
+
+\affiliation[griffith]{organization={Griffith University},
+            % city={}, postcode={}, state={},
+            country={Australia}}
+
+
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\begin{keyword}
+Phishing detection \sep Cybersecurity \sep Large language models \sep Multi-agent systems
+\sep Explainable AI \sep Selective prediction \sep Grounded evidence agreement
+\sep Trustworthy AI
+\end{keyword}
+
+\end{frontmatter}
+
+% \linenumbers   % camera-ready: keep commented (review copy may uncomment)
+
+\input{intro}
+\input{related}
+\input{formulation}
+\input{method}
+\input{experiments}
+\input{conclusion}
+
+\section*{Declaration of generative AI use}
+\label{sec:disclosure}
+
+The author(s) used ChatGPT for English proofreading, reviewed all edits, and take full responsibility for the content.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{ref}
+
+\end{document}

@@ -1,0 +1,26 @@
+\begin{table}[!h]
+\caption{RQ5. Sensitivity to the two hyperparameters, by re-scoring the cached agent
+outputs on the $998$-page test split (AURC $\times100\,\downarrow$, SelAcc$_{80}\,\uparrow$).
+\emph{Top:} panel size $M$ ($M{<}3$ averaged over all single agents / pairs). \emph{Bottom:}
+the consensus threshold $k$ at $M{=}3$. The reported configuration ($M{=}3$, majority
+$k{=}2$) is the minimum at which grounded evidence agreement is well-defined and gives the
+lowest AURC.}
+\label{tab:sensitivity}
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Configuration & AURC$\downarrow$ & SelAcc$_{80}\uparrow$ \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Panel size $M$ (strict-majority consensus)}}\\
+\quad $M{=}1$ (single agent)        & 35.2 & 65.2 \\
+\quad $M{=}2$ (pair)                & 38.6 & 64.2 \\
+\quad \textbf{$M{=}3$ (full panel)} & \textbf{2.3} & \textbf{97.0} \\
+\addlinespace[2pt]
+\multicolumn{3}{@{}l}{\emph{Consensus threshold $k$ (at $M{=}3$)}}\\
+\quad $k{=}1$ (any agent)           & 10.4 & 91.4 \\
+\quad \textbf{$k{=}2$ (majority)}   & \textbf{2.3} & \textbf{97.0} \\
+\quad $k{=}3$ (unanimous)           & \phantom{0}6.0 & 93.2 \\
+\bottomrule
+\end{tabular*}
+\end{table}

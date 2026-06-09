@@ -1,0 +1,5 @@
+Combined benchmark (seed=21)
+pool : n=1330 {'phish': 665, 'benign': 665} | phish src {'phishpedia': 365, 'phishpedia-hard': 300}
+calib: n=332 {'benign': 166, 'phish': 166} | phish src {'phishpedia': 99, 'phishpedia-hard': 67}
+test : n=998 {'phish': 499, 'benign': 499} | phish src {'phishpedia': 266, 'phishpedia-hard': 233}
+RQ2 hard subset in test: 233

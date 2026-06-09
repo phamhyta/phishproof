@@ -1,0 +1,24 @@
+\begin{table}[!h]
+\caption{Capability comparison for per-verdict trust in multi-model phishing
+detection. \CIRC: yes; \HCIR: partial; \OCIR: no. Columns are defined in the body;
+full-coverage detection accuracy is reported separately in \autoref{tab:detect}.}
+\label{tab:related}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+ & Evid.- & Page- & Calib.- & Selective & Explan. \\
+Approach & level & grounded & trust & abstain & output \\
+\midrule
+Phishpedia~\cite{lin2021phishpedia}            & \OCIR & \HCIR & \OCIR & \OCIR & \HCIR \\
+PhishLLM~\cite{tan2024phishllm}                & \OCIR & \HCIR & \OCIR & \OCIR & \HCIR \\
+Single conf.~\cite{guo2017calibration}        & \OCIR & \OCIR & \HCIR & \CIRC & \OCIR \\
+Self-consist.~\cite{wang2023selfconsistency}   & \OCIR & \OCIR & \OCIR & \HCIR & \OCIR \\
+Majority vote~\cite{ensembleornot2024}         & \OCIR & \OCIR & \OCIR & \HCIR & \OCIR \\
+Label agree.~\cite{dawid1979maximum}           & \OCIR & \OCIR & \HCIR & \HCIR & \OCIR \\
+MultiPhishGuard~\cite{multiphishguard2025}     & \HCIR & \OCIR & \OCIR & \HCIR & \HCIR \\
+Faithfulness audit~\cite{ariadne2026}          & \HCIR & \OCIR & \OCIR & \OCIR & \HCIR \\
+\textbf{\toolname{}} (ours)                          & \CIRC & \CIRC & \CIRC & \CIRC & \CIRC \\
+\bottomrule
+\end{tabular*}
+\end{table}

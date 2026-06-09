@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+*.key
+
+# OS
+.DS_Store
+
+# Large / not shipped in this repo (see Zenodo)
+data/raw/
+data/benign_raw/
+data/cache/
+external/
+results/
+pp_input/
+pp_input_mini/
+
+# Dev mirror metadata (private monorepo only)
+public-release/
+
+# Materialize leaves a real `public` symlink target outside this repo — ignore if present
+public

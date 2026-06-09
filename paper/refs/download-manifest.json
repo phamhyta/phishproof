@@ -1,0 +1,306 @@
+{
+  "entries": [
+    {
+      "filename": "Phishpedia_A_Hybrid_Deep_Learning_Based_Approach_to_Visually_Identify_Phishing_Webpages_2021.pdf",
+      "identifier": "title:phishpedia-a-hybrid-deep-learning-based-approach-to-visually-identify-phishing-webpages",
+      "input": "lin2021phishpedia",
+      "key": "lin2021phishpedia",
+      "resolved_url": "https://www.usenix.org/system/files/sec21-lin.pdf",
+      "sha256": "24204b9df3ddabb458f0e040acbb308aa754d869f735b1d6ef3111f828e8c9b9",
+      "source": "openalex-landing",
+      "status": "downloaded",
+      "title": "Phishpedia: A Hybrid Deep Learning Based Approach to Visually Identify Phishing Webpages"
+    },
+    {
+      "doi": "",
+      "identifier": "title:inferring-phishing-intention-via-webpage-appearance-and-dynamics",
+      "input": "liu2022phishintention",
+      "key": "liu2022phishintention",
+      "status": "unresolved",
+      "title": "Inferring Phishing Intention via Webpage Appearance and Dynamics",
+      "url": ""
+    },
+    {
+      "filename": "VisualPhishNet_Zero-Day_Phishing_Website_Detection_by_Visual_Similarity_2020.pdf",
+      "identifier": "title:visualphishnet-zero-day-phishing-website-detection-by-visual-similarity",
+      "input": "abdelnabi2020visualphishnet",
+      "key": "abdelnabi2020visualphishnet",
+      "resolved_url": "https://arxiv.org/pdf/1909.00300",
+      "sha256": "7977ef2bc854a53afa18a8828f1237bee8655bd18c884248bc51a3b12fdd172a",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "VisualPhishNet: Zero-Day Phishing Website Detection by Visual Similarity"
+    },
+    {
+      "filename": "KnowPhish_Large_Language_Models_Meet_Multimodal_Knowledge_Graphs_for_Enhancing_Reference-Based_Phishing_Detection_2024.pdf",
+      "identifier": "title:knowphish-large-language-models-meet-multimodal-knowledge-graphs-for-enhancing-reference-based-phishing-detection",
+      "input": "li2024knowphish",
+      "key": "li2024knowphish",
+      "resolved_url": "https://arxiv.org/pdf/2403.02253",
+      "sha256": "04d779e244893a9c3e591021957253ce4729aad6ee283010787daf73b3513531",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detection"
+    },
+    {
+      "doi": "",
+      "identifier": "title:where-are-the-phishers-reference-list-free-phishing-detection-with-large-language-models",
+      "input": "tan2024phishllm",
+      "key": "tan2024phishllm",
+      "status": "unresolved",
+      "title": "Where Are the Phishers? Reference-List-Free Phishing Detection with Large Language Models",
+      "url": ""
+    },
+    {
+      "doi": "",
+      "identifier": "title:dynaphish-dynamic-reference-based-phishing-detection",
+      "input": "dynaphish2023",
+      "key": "dynaphish2023",
+      "status": "unresolved",
+      "title": "DynaPhish: Dynamic Reference-Based Phishing Detection",
+      "url": ""
+    },
+    {
+      "filename": "MemoPhishAgent_A_Memory-Augmented_Multimodal_LLM_Agent_for_Phishing_Detection_2026.pdf",
+      "identifier": "arxiv:2602.21394",
+      "input": "memophish2026",
+      "key": "memophish2026",
+      "resolved_url": "https://arxiv.org/pdf/2602.21394",
+      "sha256": "c14239ebadfca4f89b95d263ea5a4548530f3c2fae769ff64c709e7826626453",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "{MemoPhishAgent}: A Memory-Augmented Multimodal {LLM} Agent for Phishing Detection"
+    },
+    {
+      "filename": "PhishDebate_An_LLM-Based_Multi-Agent_Framework_for_Phishing_Detection_via_Debate_2025.pdf",
+      "identifier": "arxiv:2506.15656",
+      "input": "phishdebate2025",
+      "key": "phishdebate2025",
+      "resolved_url": "https://arxiv.org/pdf/2506.15656",
+      "sha256": "3cbc68b654902484851a4e4633c1f32ce1b8a74de2e6f06f9b0609804b2abfad",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "{PhishDebate}: An {LLM}-Based Multi-Agent Framework for Phishing Detection via Debate"
+    },
+    {
+      "filename": "MultiPhishGuard_An_LLM-Based_Multi-Agent_System_for_Phishing_Email_Detection_2025.pdf",
+      "identifier": "arxiv:2505.23803",
+      "input": "multiphishguard2025",
+      "key": "multiphishguard2025",
+      "resolved_url": "https://arxiv.org/pdf/2505.23803",
+      "sha256": "649bbb21d432e33923208bf85d3221d59778b2455d4c86dd6096331d33f136fa",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "{MultiPhishGuard}: An {LLM}-Based Multi-Agent System for Phishing Email Detection"
+    },
+    {
+      "filename": "To_Ensemble_or_Not_Assessing_Majority_Voting_Strategies_for_Phishing_Detection_with_Large_Language_Models_2024.pdf",
+      "identifier": "arxiv:2412.00166",
+      "input": "ensembleornot2024",
+      "key": "ensembleornot2024",
+      "resolved_url": "https://arxiv.org/pdf/2412.00166",
+      "sha256": "0ac5a42fa631e618c79e4172f68e08c4e5d4f145440572c6de9e0a6dceca56ea",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "To Ensemble or Not: Assessing Majority Voting Strategies for Phishing Detection with Large Language Models"
+    },
+    {
+      "filename": "A_Trustworthiness_Calibration_Framework_for_Phishing_Email_Detection_Using_Large_Language_Models_2025.pdf",
+      "identifier": "arxiv:2511.04728",
+      "input": "tci2025",
+      "key": "tci2025",
+      "resolved_url": "https://arxiv.org/pdf/2511.04728",
+      "sha256": "3d7506bce1938e8dd4e1a905bdaa1f45d261dbfc8170e4167a8b745b0e8897eb",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "A Trustworthiness Calibration Framework for Phishing Email Detection Using Large Language Models"
+    },
+    {
+      "doi": "",
+      "identifier": "title:it-doesn-t-look-like-anything-to-me-using-diffusion-model-to-subvert-visual-phishing-detectors",
+      "input": "hao2024logomorph",
+      "key": "hao2024logomorph",
+      "status": "unresolved",
+      "title": "It Doesn't Look Like Anything to Me: Using Diffusion Model to Subvert Visual Phishing Detectors",
+      "url": ""
+    },
+    {
+      "doi": "",
+      "identifier": "title:a-systematic-literature-review-on-phishing-website-detection-techniques",
+      "input": "slr2023phishing",
+      "key": "slr2023phishing",
+      "status": "unresolved",
+      "title": "A Systematic Literature Review on Phishing Website Detection Techniques",
+      "url": ""
+    },
+    {
+      "doi": "",
+      "identifier": "title:phishing-website-detection-on-imbalanced-datasets-based-on-diffusion-model-and-multi-head-self-attention",
+      "input": "diffusion2025phishing",
+      "key": "diffusion2025phishing",
+      "status": "unresolved",
+      "title": "Phishing Website Detection on Imbalanced Datasets Based on Diffusion Model and Multi-Head Self-Attention",
+      "url": ""
+    },
+    {
+      "filename": "Towards_LLM-Centric_Multimodal_Fusion_A_Survey_2025.pdf",
+      "identifier": "arxiv:2506.04788",
+      "input": "fusionsurvey2025",
+      "key": "fusionsurvey2025",
+      "resolved_url": "https://arxiv.org/pdf/2506.04788",
+      "sha256": "8e1cfc381fcbf72c2cca23cd2f81ec7773253423f3019955eb15db31202df1e3",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "Towards {LLM}-Centric Multimodal Fusion: A Survey"
+    },
+    {
+      "filename": "Project_Ariadne_A_Structural_Causal_Framework_for_Auditing_Faithfulness_in_LLM_Agents_2026.pdf",
+      "identifier": "arxiv:2601.02314",
+      "input": "ariadne2026",
+      "key": "ariadne2026",
+      "resolved_url": "https://arxiv.org/pdf/2601.02314",
+      "sha256": "a88e5be2315324bafb034633ecd1e217e21f74e3ffeb66c393c6d145fac8c841",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "Project {Ariadne}: A Structural Causal Framework for Auditing Faithfulness in {LLM} Agents"
+    },
+    {
+      "filename": "Learning_to_Trust_the_Crowd_A_Multi-Model_Consensus_Reasoning_Engine_for_Large_Language_Models_2026.pdf",
+      "identifier": "arxiv:2601.07245",
+      "input": "trustcrowd2026",
+      "key": "trustcrowd2026",
+      "resolved_url": "https://arxiv.org/pdf/2601.07245",
+      "sha256": "632a8b44852ff4621aefc375d526aaf27b1709568f7e7a4dbfdd2901b47e6a13",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "Learning to Trust the Crowd: A Multi-Model Consensus Reasoning Engine for Large Language Models"
+    },
+    {
+      "filename": "Collective_Reasoning_Among_LLMs_A_Framework_for_Answer_Validation_Without_Ground_Truth_2025.pdf",
+      "identifier": "arxiv:2502.20758",
+      "input": "collective2025",
+      "key": "collective2025",
+      "resolved_url": "https://arxiv.org/pdf/2502.20758",
+      "sha256": "b247a805a5fea8702027c9cb06132f247fbe34a8ac8603074757ca4be978928c",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "Collective Reasoning Among {LLMs}: A Framework for Answer Validation Without Ground Truth"
+    },
+    {
+      "filename": "Towards_Faithful_Explainable_Fact-Checking_via_Multi-Agent_Debate_2024.pdf",
+      "identifier": "arxiv:2402.07401",
+      "input": "madr2024",
+      "key": "madr2024",
+      "resolved_url": "https://arxiv.org/pdf/2402.07401",
+      "sha256": "e6f12e07e8d98c2e8f22d8d9f4723a7eaf8a68abe6e773f89a19406e6b4a4a3b",
+      "source": "arxiv",
+      "status": "downloaded",
+      "title": "Towards Faithful Explainable Fact-Checking via Multi-Agent Debate"
+    },
+    {
+      "filename": "Selective_Classification_for_Deep_Neural_Networks_2017.pdf",
+      "identifier": "title:selective-classification-for-deep-neural-networks",
+      "input": "geifman2017selective",
+      "key": "geifman2017selective",
+      "resolved_url": "https://arxiv.org/pdf/1705.08500",
+      "sha256": "91899dfcbc41553f571f7a491839733e4d16f81d82e9274278e8f06ffc42022b",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "Selective Classification for Deep Neural Networks"
+    },
+    {
+      "filename": "On_Calibration_of_Modern_Neural_Networks_2017.pdf",
+      "identifier": "title:on-calibration-of-modern-neural-networks",
+      "input": "guo2017calibration",
+      "key": "guo2017calibration",
+      "resolved_url": "https://arxiv.org/pdf/1706.04599",
+      "sha256": "cb654a65acb785ed4387d6c2db1301d065075dddc2d363676836a2f2a14bc50d",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "doi": "",
+      "identifier": "title:maximum-likelihood-estimation-of-observer-error-rates-using-the-em-algorithm",
+      "input": "dawid1979maximum",
+      "key": "dawid1979maximum",
+      "status": "unresolved",
+      "title": "Maximum Likelihood Estimation of Observer Error-Rates Using the {EM} Algorithm",
+      "url": ""
+    },
+    {
+      "filename": "Self-Consistency_Improves_Chain_of_Thought_Reasoning_in_Language_Models_2023.pdf",
+      "identifier": "title:self-consistency-improves-chain-of-thought-reasoning-in-language-models",
+      "input": "wang2023selfconsistency",
+      "key": "wang2023selfconsistency",
+      "resolved_url": "https://arxiv.org/pdf/2203.11171",
+      "sha256": "1a49ce0373afc89d2d6e97fb1aa8230f6b818c70590d732a3187f753f4df6aba",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
+    },
+    {
+      "filename": "Agreement-on-the-Line_Predicting_the_Performance_of_Neural_Networks_under_Distribution_Shift_2022.pdf",
+      "identifier": "title:agreement-on-the-line-predicting-the-performance-of-neural-networks-under-distribution-shift",
+      "input": "baek2022agreement",
+      "key": "baek2022agreement",
+      "resolved_url": "https://arxiv.org/pdf/2206.13089",
+      "sha256": "643ab77a07a94ed8104aedafa8d3c24e1bfe8d6099c1b77792decd8efc98b176",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "Agreement-on-the-Line: Predicting the Performance of Neural Networks under Distribution Shift"
+    },
+    {
+      "doi": "",
+      "identifier": "title:algorithmic-learning-in-a-random-world",
+      "input": "vovk2005algorithmic",
+      "key": "vovk2005algorithmic",
+      "status": "unresolved",
+      "title": "Algorithmic Learning in a Random World",
+      "url": ""
+    },
+    {
+      "filename": "TESSERACT_Eliminating_Experimental_Bias_in_Malware_Classification_across_Space_and_Time_2019.pdf",
+      "identifier": "title:tesseract-eliminating-experimental-bias-in-malware-classification-across-space-and-time",
+      "input": "pendlebury2019tesseract",
+      "key": "pendlebury2019tesseract",
+      "resolved_url": "https://arxiv.org/pdf/1807.07838",
+      "sha256": "14279b85ebaf638fdece3ec1bf4a2ef5cb9fc8a70ddc6584c2aaa1f9345335ed",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "{TESSERACT}: Eliminating Experimental Bias in Malware Classification across Space and Time"
+    },
+    {
+      "filename": "Tranco_A_Research-Oriented_Top_Sites_Ranking_Hardened_against_Manipulation_2019.pdf",
+      "identifier": "title:tranco-a-research-oriented-top-sites-ranking-hardened-against-manipulation",
+      "input": "lepochat2019tranco",
+      "key": "lepochat2019tranco",
+      "resolved_url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-3_LePochat_paper.pdf",
+      "sha256": "f5fd38255ed78bccd777c7f622eb0220742681ed9a8ba1eb7fa673f9ae7c397c",
+      "source": "openalex-oa-url",
+      "status": "downloaded",
+      "title": "{Tranco}: A Research-Oriented Top Sites Ranking Hardened against Manipulation"
+    },
+    {
+      "doi": "",
+      "identifier": "title:openphish-phishing-intelligence-feed",
+      "input": "openphish",
+      "key": "openphish",
+      "status": "unresolved",
+      "title": "{OpenPhish}: Phishing Intelligence Feed",
+      "url": ""
+    },
+    {
+      "doi": "",
+      "identifier": "title:phishtank-community-based-anti-phishing-feed",
+      "input": "phishtank",
+      "key": "phishtank",
+      "status": "unresolved",
+      "title": "{PhishTank}: Community-Based Anti-Phishing Feed",
+      "url": ""
+    }
+  ],
+  "generated_at": "2026-06-01T06:44:33Z",
+  "mode": "identifiers",
+  "pdf_count": 19
+}

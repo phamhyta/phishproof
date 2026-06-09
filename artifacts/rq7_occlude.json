@@ -1,0 +1,26 @@
+{
+  "attack": "occlude",
+  "n": 420,
+  "tau": 0.7498553395271301,
+  "evasion_rate": 0.09523809523809523,
+  "gea_mean_clean": 0.6229079337565908,
+  "gea_mean_attacked": 0.4955588742135654,
+  "G_mean_clean": 0.9470630075794364,
+  "G_mean_attacked": 0.7491402464396956,
+  "abstain_rate_clean": 0.6928571428571428,
+  "abstain_rate_attacked": 0.8809523809523809,
+  "corr_AG_clean": 0.13022522562102684,
+  "corr_AG_attacked": 0.6513569239833602,
+  "phishproof_trust_clean": 0.9745893359674118,
+  "phishproof_trust_attacked": 0.9281845706406806,
+  "b1_clean": 1.0,
+  "b1_attacked": 1.0,
+  "b6_clean": 0.936190476190476,
+  "b6_attacked": 0.9199603174603175,
+  "on_evaded": {
+    "n": 40,
+    "phishproof_mean_trust": 0.5692826671710167,
+    "phishproof_abstain_rate": 0.975,
+    "b1_mean_confidence": 1.0
+  }
+}

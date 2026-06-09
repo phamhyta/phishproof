@@ -1,0 +1,26 @@
+{
+  "attack": "cloak",
+  "n": 423,
+  "tau": 0.7498553395271301,
+  "evasion_rate": 0.06619385342789598,
+  "gea_mean_clean": 0.6238092959285298,
+  "gea_mean_attacked": 0.6625356064476747,
+  "G_mean_clean": 0.9474384472419936,
+  "G_mean_attacked": 0.9036818796720347,
+  "abstain_rate_clean": 0.6879432624113475,
+  "abstain_rate_attacked": 0.5981087470449172,
+  "corr_AG_clean": 0.13132580794278223,
+  "corr_AG_attacked": 0.6588821355285273,
+  "phishproof_trust_clean": 0.9747050789102606,
+  "phishproof_trust_attacked": 0.9522441425258116,
+  "b1_clean": 1.0,
+  "b1_attacked": 1.0,
+  "b6_clean": 0.93628841607565,
+  "b6_attacked": 0.9275019700551613,
+  "on_evaded": {
+    "n": 28,
+    "phishproof_mean_trust": 0.577851528961099,
+    "phishproof_abstain_rate": 1.0,
+    "b1_mean_confidence": 1.0
+  }
+}

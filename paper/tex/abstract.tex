@@ -1,0 +1,21 @@
+Phishing defenders need a verdict they can trust and a reason they can check. Large
+language models are accurate but score trust at the label, so several models can agree on
+the right answer while citing different or fabricated evidence. We propose \toolname{}, a
+selective detector that reads trust from grounded cross-model evidence agreement (GEA): a
+diverse panel emits typed cues from the page's URL, DOM, screenshot, and logo (certificate
+and redirect cues when available), verification tools confirm them against the page, and a
+held-out split calibrates GEA to a probability of correctness. \toolname{} acts only on
+grounded agreement and otherwise abstains, returning verified cues as an explanation.
+On \textsc{PhishSel} ($998$ test pages of feed-sourced phishing paired with legitimate login
+pages), \toolname{} attains the best-calibrated trust (ECE $0.015$, statistically
+significant) and the highest selective accuracy at $80\%$ coverage ($97.0\%$, significant).
+Its area-under-risk--coverage is lowest in point estimate ($2.3$) though not statistically
+separated from the strongest baseline; it trades top-end deployable coverage (Cov$_{99}$
+$0.25$ vs.\ $0.36$) for sharper calibration in the $50$--$80\%$ deployment band. Under
+evidence-targeted attacks, abstention on evaded pages reaches $97.5$--$100\%$ while
+single-model confidence stays maximally certain; even a white-box, all-cue
+adversary -- cloaking the form action, erasing the brand's textual identity, and
+occluding the logo simultaneously -- flips more verdicts but \toolname{} abstains
+on every one of them ($100\%$, $n{=}50$). Calibrated trust transfers to
+unseen brands, and negative ablations show that learned aggregation, larger text models, and
+cheaper cascades do not beat the parameter-free design.

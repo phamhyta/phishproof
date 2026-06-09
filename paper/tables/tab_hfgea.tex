@@ -1,0 +1,32 @@
+\begin{table}[!h]
+\caption{Does a \emph{learned} aggregator beat the parameter-free $\agr\!\cdot\!\grd$?
+Each combiner is fit on the 332-page calibration split over the same per-cue-type
+$(a_t,g_t)$ signals (four active types) and evaluated on the 998-page test split.
+AURC/SelAcc$_{80}$/FPR$_{80}$ are $\times100$. No learned combiner improves the headline
+ranking metric (AURC): the high-capacity fuzzy/Choquet models overfit the small
+calibration split (AURC $3.9$--$4.4$, Cov$_{99}$ collapses), and the only competitive
+learned model (logistic) merely trades AURC for a small Cov$_{99}$/FPR gain. The crisp
+product remains best on AURC and ECE, justifying the parameter-free design.}
+\label{tab:hfgea}
+\footnotesize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+Aggregator & AURC$\downarrow$ & SelAcc$_{80}\uparrow$ & FPR$_{80}\downarrow$ & Cov$_{99}\uparrow$ & ECE$\downarrow$ \\
+\midrule
+\textbf{crisp $\agr\!\cdot\!\grd$ + iso} & \textbf{2.47} & 96.87 & 1.27 & 0.210 & \textbf{0.015} \\
+weighted geom. $\agr^a\grd^b$            & 2.56 & 97.12 & 1.20 & 0.210 & --- \\
+Choquet 2-additive                       & 4.44 & 94.49 & 1.34 & 0.012 & 0.249 \\
+logistic (per-type)                      & 2.85 & 97.12 & \textbf{0.97} & \textbf{0.228} & 0.020 \\
+TSK fuzzy (heavy $L_2$)                  & 3.89 & 96.24 & 1.30 & 0.012 & 0.115 \\
+\bottomrule
+\end{tabular*}
+
+\footnotesize{All aggregators are compared on identical per-cue-type features fit on the
+calibration split, so the contrast within this table is controlled; the crisp baseline here
+($2.47$) is the same $\agr\!\cdot\!\grd$ product re-scored over the per-type representation and
+differs marginally from the deployed pipeline's headline AURC ($2.3$, \autoref{tab:main}). The
+weighted-geometric mean is reported without the isotonic layer, hence its ECE is omitted.
+Higher-capacity learned aggregators were regularized heavily and cross-validated; the
+overfitting is intrinsic to the 332-page calibration scale.}
+\end{table}

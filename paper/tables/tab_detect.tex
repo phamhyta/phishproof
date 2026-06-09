@@ -1,0 +1,26 @@
+\begin{table}[!h]
+\caption{Full-coverage detection quality on \textsc{PhishSel} (no abstention).
+\toolname{} (the $M{=}3$ panel under a majority vote) and D1--D3 are re-run on the
+full $998$-page test split (mean$_{\pm\text{95\% CI}}$, paired bootstrap).
+D1 Phishpedia uses a containerized \texttt{detectron2} reference matcher ($\sim$15\,s/page on CPU).
+D2 PhishIntention adds a heavier credential-page and interaction stage on the same detector
+core, so we cite its reported results. \toolname{} leads the re-run reference detector D1
+and the LLM checker D3 on accuracy and F1, but it is a three-model panel against a single
+LLM checker, so the margin reflects ensembling as much as the trust layer; the point is that
+detection is not sacrificed for the abstention and explanation the rest of the section
+measures.}
+\label{tab:detect}
+\footnotesize
+\setlength{\tabcolsep}{4.0pt}
+\begin{tabular}{lcccc}
+\toprule
+Detector & Acc$\uparrow$ & Prec.$\uparrow$ & Rec.$\uparrow$ & F1$\uparrow$ \\
+\midrule
+D1 Phishpedia~\cite{lin2021phishpedia}        & 80.3$_{\pm2.6}$ & 94.2$_{\pm2.4}$ & 64.5$_{\pm4.3}$ & 76.6$_{\pm3.3}$ \\
+D2 PhishIntention~\cite{liu2022phishintention} & \multicolumn{4}{c}{cited (heavier CRP/interaction stage); see \cite{liu2022phishintention}} \\
+D3 PhishLLM~\cite{tan2024phishllm}             & 83.7$_{\pm2.4}$ & 93.3$_{\pm2.6}$ & 72.5$_{\pm4.1}$ & 81.6$_{\pm2.8}$ \\
+\midrule
+\textbf{\toolname{}} (full cov., $n{=}998$)   & \textbf{91.9}$_{\pm1.7}$ & \textbf{98.8}$_{\pm1.0}$ & 84.8$_{\pm2.5}$ & \textbf{91.3}$_{\pm1.7}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

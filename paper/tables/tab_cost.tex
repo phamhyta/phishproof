@@ -1,0 +1,23 @@
+\begin{table}[!h]
+\caption{Per-page compute budget. The panel uses two local 3B text agents (free, on the
+$16$\,GB laptop) and one GPT-4o vision call, so API cost is dominated by that single call;
+the two text agents add no API cost. Dollar cost is at GPT-4o list price with detail-low
+images; latency is indicative wall-clock on the CPU-only laptop (providers' API latency is
+not controlled by us). The $M{=}3$ panel is a fixed $3\times$ model-call overhead over a
+single-model detector, amortized by abstaining on the $1-\phi(\thr)$ fraction.}
+\label{tab:cost}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccc}
+\toprule
+Method & Calls/page & API \$/1k & Latency/page \\
+\midrule
+\textbf{\toolname{}} (panel)    & 3 (2 local\,+\,1 API) & $\approx$8 & $\approx$20\,s \\
+\;\,+\,B6 consolidator          & +1 API                & +$\approx$3 & +$\approx$3\,s \\
+D3 PhishLLM                     & 1 API                 & $\approx$5 & $\approx$4\,s \\
+D1 Phishpedia                   & 0 (local CPU)         & 0          & $\approx$15\,s \\
+B1/B2 single-model              & 1                     & $\approx$2 & $\approx$3\,s \\
+B3 Self-consistency ($k{=}5$)   & 5 API (same model)    & $\approx$40 & $\approx$15\,s \\
+\bottomrule
+\end{tabular}
+\end{table}

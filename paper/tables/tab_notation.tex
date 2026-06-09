@@ -1,0 +1,23 @@
+\begin{table}[!h]
+\caption{Summary of important notations.}
+\label{tab:notation}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\columnwidth}{l >{\raggedright\arraybackslash}X}
+\toprule
+Symbol & Meaning \\
+\midrule
+$\page$                 & a webpage under test (URL, DOM, screenshot, cert, redirects) \\
+$\panel=\{m_1,\dots,m_M\}$ & panel of $M$ diverse LLM evidence agents ($M{=}3$) \\
+$\Uschema$              & fixed typed evidence-cue schema (\S\ref{sec:elicit}) \\
+$\evset_i\subseteq\Uschema$ & grounded cues agent $m_i$ cites on $\page$ \\
+$\cons$                 & \emph{consensus} cue set (cues a majority of agents assert) \\
+$\gver(u,\page)\in[0,1]$ & tool that re-derives cue $u$'s type from $\page$ \\
+$\agr(\page)\in[0,1]$   & evidence-level agreement over the shared cue set \\
+$\grd(\page)\in[0,1]$   & groundedness of the consensus cues \\
+$\geascore(\page)=\agr\!\cdot\!\grd$ & Grounded Evidence-Agreement score \\
+$\thr$                  & abstention threshold (acts iff $\geascore\ge\thr$) \\
+$\hat\rho=\kappa(\geascore)$ & calibrated map $\geascore\!\to\!\Prob(\text{correct})$, fit on a labeled split \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,998 @@
+{"page_id": "yahoo-inc-2020-09-13-10-12-22-5ae1303d", "url": "http://iitee.net/includes/y/i1b291.php-1456232508-1-38d05ce26b8e9669fd12c0bd0003031b38d05ce26b8e9669fd12c0bd0003031b38d05ce26b8e9669fd12c0bd0003031b-azadbuil@yahoo.com.com.php", "verdict": "phish", "brand": "Yahoo!", "domains": ["src3.yahoo.com"], "label": "phish"}
+{"page_id": "credit-agricole-s-a-2020-05-16-12-26-13-3a0ff2fa", "url": "https://messagerie-fr-c-credit-agricole.fr/FR/", "verdict": "phish", "brand": "Credit Agricole S.A", "domains": ["credit-agricole.com"], "label": "phish"}
+{"page_id": "facebook-inc-2020-08-14-13-41-17-cdb126e4", "url": "http://profile.facebookldangnhap.com/", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "phish"}
+{"page_id": "mbna-corportation-2019-08-06-15-40-16-72ef1419", "url": "http://invoive10001.com/mbna/verification/CA3NCA424A2MN5785162/billing2.php?websrc=b120cb4616a2bb25a3489a0c7d1d483b&dispatched=57&id=7811380327", "verdict": "phish", "brand": "MBNA Corportation", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "square-2020-06-21-12-31-06-33634a84", "url": "https://remsidesqua.com/index2.php?cmd=login_submit&id=5181b08b11fe782433e6adabacf58d225181b08b11fe782433e6adabacf58d22&session=5181b08b11fe782433e6adabacf58d225181b08b11fe782433e6adabacf58d22", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "ftmo-com-dda5889b", "url": "https://ftmo.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bartonwatchbands-com-89cecff3", "url": "https://bartonwatchbands.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "loopia-com-ed63db3e", "url": "https://loopia.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "orange-2020-09-11-13-33-18-00e60e20", "url": "https://www.orange.be/fr/callmeback-multicards", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "square-2020-06-22-10-30-06-3c8322b7", "url": "https://squareupmessagging.com/index2.php?cmd=login_submit&id=18f1da7785cc79d7d5b942f38a66909518f1da7785cc79d7d5b942f38a669095&session=18f1da7785cc79d7d5b942f38a66909518f1da7785cc79d7d5b942f38a669095", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "cubeglobalfx-com-718d8a32", "url": "https://cubeglobalfx.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "headcovers-com-98ea4708", "url": "https://headcovers.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "skateone-com-3e3e4ee3", "url": "https://skateone.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bankia-2020-08-25-10-57-43-3555fad9", "url": "http://bankia-es.com/a1b2c3/d988700177efde0bf7c86b0f42215b97/login", "verdict": "phish", "brand": "Bankia", "domains": ["caixabank.es"], "label": "phish"}
+{"page_id": "freeshipping-com-cb7abf2d", "url": "https://freeshipping.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-18-10-57-00-6226a196", "url": "https://www.rakuten.co.jp.jprakuten.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "amazon-com-inc-2020-08-10-12-02-18-47a72a05", "url": "http://paoluo.jpamazon.monster/", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "shinesty-com-a250385c", "url": "http://shinesty.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paxful-inc-2020-09-06-10-56-45-c4bf7bbd", "url": "http://laborbridge.com/reverify/pax-ful/Offer/verifying/13rfgsaf7525424411", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "peeratiko-org-4ebdab5b", "url": "https://peeratiko.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-05-24-19-59-03-ebd37698", "url": "https://www.checkerbankitau.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-05-11-14-30-20-72c03b57", "url": "https://americanasatend.com/MeusProdutos/Prefetch.php?skullid=13", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "shikotak-com-f08179bc", "url": "https://shikotak.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "shaw-communications-2020-09-13-11-39-28-7bda642d", "url": "https://myeservices.idleplay.net/runmyupdatebill.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "ovhcloud-2020-08-31-11-24-58-63813f2f", "url": "http://www.mensamagazine.it/images/immagini/c/D-T78C2V4/actualisation/ovh/tk2zmm=/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-08-16-18-09-30-7ba3ce97", "url": "http://www.itaucards.net/parabens.htm", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "ham3d-co-293e5490", "url": "https://ham3d.co", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "gordonelectricsupply-com-75534831", "url": "https://gordonelectricsupply.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-09-14-15-17-44-2d7a9968", "url": "https://www.website-americanas.net/MeusProdutos/Prefetch.php?skullid=34336469", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "hocho-knife-com-b8becbfb", "url": "https://hocho-knife.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "natwest-personal-banking-2020-08-21-11-01-16-762e92d5", "url": "https://natwesttreats.co.uk/choices/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "mytoys-de-c8cbc4f7", "url": "https://mytoys.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sparebank-1-2020-09-08-12-33-17-6b35e4b4", "url": "https://klusbedrijfkanters.nl/wp-content/uploads/2019/03/Spare1/IDLog-on/1a2b9313234fc2f5a5e9b8fbfd4aee5e/engangskode/Nets.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "the5th-co-d20fbfb2", "url": "https://the5th.co", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mfsmfs-com-b75a7143", "url": "http://mfsmfs.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "alyaum-com-5b0a1c21", "url": "https://alyaum.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-05-16-44-59-6bdb64db", "url": "https://login.rakuten.co.jp.rakutenlkfsfsdfsdfaswwe.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "bankia-2019-09-08-17-24-52-15750b14", "url": "http://u0803923.cp.regruhosting.ru/weg.van.ongepaste.websites/maria.firi.rabda.eas7238723/uploudpis8373/bq/", "verdict": "phish", "brand": "Bankia", "domains": ["caixabank.es"], "label": "phish"}
+{"page_id": "nooa-saastopankki-2020-09-04-12-00-00-60a34f1b", "url": "http://daltonbusinesssystems.com.au/sassy123/saastopankki-2018%20(2)/saastopankki-2018%20(4)/saastopankki-2018%20(3)/saastopankki-2018%20(2)/saastopankki-2018/saastopankki-2018/saastopankki/Validation", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "herschel-com-95a0ca7c", "url": "https://herschel.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "credit-agricole-s-a-2020-05-13-15-01-10-e9f4f565", "url": "http://messagerie-fr-fr-credit-agricole.fr/FR/2661ac5fa0c7770/region.php", "verdict": "phish", "brand": "Credit Agricole S.A", "domains": ["credit-agricole.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-27-13-25-29-961360ee", "url": "https://netflix-ukpaymenterror.com/Login.php?sessionID=gcZ3Eu9ew7KYgNRNe0sbUHql1MZ6dxvNiiUqTkqeBOSfCztvyTandF4pTy2Q4ImfNURXLw8OZ4oIypRs9SVeZOHYdpaUEdnXaIT4&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "astrowi-com-6ac16420", "url": "https://astrowi.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "thebetterlife-com-875f5913", "url": "https://thebetterlife.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "kingsdominion-com-546388be", "url": "http://kingsdominion.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "godaddy-2020-09-19-15-30-57-dd52c63e", "url": "https://alova.in/err_log_203sooot_phmyadmin", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "manjam-com-670525b3", "url": "https://manjam.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "match-2020-05-19-05-54-28-40f1e5c5", "url": "http://matchingdatings.com/singles", "verdict": "phish", "brand": "Match", "domains": ["match.com"], "label": "phish"}
+{"page_id": "hm-revenue-customs-2020-08-23-11-29-40-fd5c42b0", "url": "https://www.ikorloff.com/wp-content/themes/skand/fa/details.php?tokenID=22&ServerID=nrWCKbTlhbCPrxiHHLFR%20119.28.56.129", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "originmaine-com-db945f8b", "url": "https://originmaine.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "airbnb-inc-2020-09-02-13-47-29-021d1a1c", "url": "http://abnbroomsa.temp.swtest.ru/?www.airbnb.com/rooms/18851031", "verdict": "phish", "brand": "Airbnb, Inc.", "domains": ["airbnb.com"], "label": "phish"}
+{"page_id": "robbinsbrothers-com-9384ce73", "url": "http://robbinsbrothers.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "octobersveryown-com-7f9a90a9", "url": "https://octobersveryown.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-06-14-08-48-8c1b92c0", "url": "https://id.rakuten.co.jp.rakutenlkfefcbfsdbdcebe.icu/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "killstar-com-19293fba", "url": "http://killstar.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "oliverjanich-de-28c43c32", "url": "https://oliverjanich.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "freepiker-com-b487ddaa", "url": "https://freepiker.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "simplify-hr-73e2d247", "url": "https://simplify.hr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-07-19-14-57-54-2e5aa605", "url": "http://rakuten.co.jp.rakutenasdfmaksdlnwefw.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "mirefaccion-com-mx-f8ad0e01", "url": "http://mirefaccion.com.mx", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "iwesabe-com-2ce50fcd", "url": "https://iwesabe.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "desenio-se-4c267e1e", "url": "https://desenio.se", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "creagames-com-8eb1c11c", "url": "https://creagames.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-09-14-29-10-a196c307", "url": "https://login.rakuten.co.jp.rakutenlkfefcbfsswbdxcd.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "league-of-legends-2020-07-11-16-44-57-b6afd312", "url": "http://5000rpgiveaway.000webhostapp.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-09-10-13-40-02-44060f10", "url": "https://update.rakuten-co-jp.buzz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "runescape-2020-09-12-14-00-27-1471e682", "url": "https://oldschool.runescapesocial.com/m=weblogin/verification.ws821,321,584,42184523,159092.html", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "interactivecorp-2020-08-31-08-57-16-b6231cd4", "url": "http://fastrackparents.com/ourtime/site", "verdict": "phish", "brand": "OurTime Dating", "domains": ["ourtime.com"], "label": "phish"}
+{"page_id": "telecom-italia-2020-09-09-13-12-52-a4eac8bd", "url": "http://u842504ngz.ha004.t.justns.ru/italtim/tim/sms2.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "orange-2020-08-09-14-24-44-bc4bd887", "url": "https://authent-orange.weebly.com/", "verdict": "phish", "brand": "Orange", "domains": ["orange.com"], "label": "phish"}
+{"page_id": "adresowo-pl-96c0f189", "url": "https://adresowo.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-24-12-33-33-df53a1c2", "url": "https://member.rakuten.co.jp.rakutenasdmklwasdlwek.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "westwing-pl-7147ba4d", "url": "https://westwing.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "goonfleet-com-baf148ce", "url": "https://goonfleet.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "otoclubturkiye-com-a7c3f245", "url": "https://otoclubturkiye.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "deutsche-telekom-2019-10-23-11-12-27-aa7810d2", "url": "https://dairesanat.com/cache/tonline", "verdict": "phish", "brand": "Deutsche Telekom", "domains": ["telekom.com"], "label": "phish"}
+{"page_id": "free-isp-2019-08-05-11-01-19-654b8309", "url": "http://ssl-mobile-free.fr/moncompte/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "basedirectory-com-1c838942", "url": "https://basedirectory.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "orange-2019-10-19-13-13-42-b2129b08", "url": "https://e1orange.org/320/", "verdict": "phish", "brand": "Orange", "domains": ["orange.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-29-09-44-41-ccb14e0a", "url": "https://login.rakuten.co.jp.rakutenamsdnwwefklsdfwn.buzz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "hotcoursesabroad-com-fbd65e90", "url": "http://hotcoursesabroad.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "halavarzesh-com-c5dc001e", "url": "http://halavarzesh.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "blockchain-2020-08-25-12-27-02-1fe6fa46", "url": "http://webnst.com/Blockchain", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "fxstreet-cz-65294693", "url": "https://fxstreet.cz", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "anhoch-com-b2478c43", "url": "https://anhoch.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "luckygunner-com-abccf156", "url": "https://luckygunner.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "three-uk-2020-09-06-12-58-13-793e1ca1", "url": "https://three-pay-billing.com/Login.php?sessionID=NyTRI18D0LWZs75b0v77z575OriXnCKJYreSwInbQyHS3Wynul1jEj9Szjl4dDDe6b6UV9RzMfy6Vu9wyOVNEmsjjTa0y9HYDU5N&error=noNumber", "verdict": "phish", "brand": "Three UK", "domains": ["three.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-04-15-05-34-53b329cf", "url": "https://login.rakuten.co.jp.rakutenlkfsfsdfsdfasjeb.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "samsung-fun-ru-9dfc9a89", "url": "https://samsung-fun.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "absa-group-2020-06-18-15-08-00-486d891a", "url": "http://sman44jkt.sch.id/AbsaOnline/AbsaLogin.htm", "verdict": "phish", "brand": "Absa Group", "domains": ["absa.com"], "label": "phish"}
+{"page_id": "ebay-inc-2020-07-15-12-53-38-1b32813c", "url": "https://signin.ebay.de.id67.cf/login/ws/password.php", "verdict": "phish", "brand": "eBay", "domains": ["befr.ebay.be"], "label": "phish"}
+{"page_id": "maersk-2019-08-19-12-58-32-3c1a4429", "url": "http://livecare.vn/wp-content/plugins/cmsboost/sunday/view/index.php", "verdict": "phish", "brand": "Maersk", "domains": ["maersk.com"], "label": "phish"}
+{"page_id": "ee-limited-2020-08-28-14-28-02-130bc649", "url": "https://ee-checkbilling.com/account/index?ac=ee", "verdict": "phish", "brand": "EE Limited", "domains": ["ee.co.uk"], "label": "phish"}
+{"page_id": "rakuten-2020-08-09-03-08-14-d2fc54e2", "url": "https://rakuten.co.jp.rakuten-update.org.cn/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "government-of-canada-2020-08-22-12-14-44-5511ad42", "url": "http://vivipapaliaga.gr/CRA-NEW/world-Tax-RF457801/en/banks/directing/tangerine/pin.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "mywellness-com-15680508", "url": "https://mywellness.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "visa-international-service-association-2020-07-15-13-53-55-3e8997b7", "url": "http://visa.com-vmore-6799407338.imagelinetech.com/", "verdict": "phish", "brand": "Visa International Service Association", "domains": ["visa.com"], "label": "phish"}
+{"page_id": "apple-inc-2019-10-20-10-38-15-1a57dc7b", "url": "https://www.localize-apple.com/fmi/mobile.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amazon-com-inc-2020-08-16-18-44-01-e69859d6", "url": "http://amazon.co.jp.amazonaccountasdmfkwmafegf.top/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "global-sources-hk-2020-07-21-17-41-17-94c6f760", "url": "http://mhwaterproofing.co.za/ktk1/globalsource/error.php?email=", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "office365-2020-09-27-13-58-41-265bf828", "url": "https://login.live.com.office.flagstarbancorp.myshn.net/cookiesDisabled.srf?uaid=a84ecdcfd7584f68a98413bab9bdb372&mkt=EN-US&lc=1033',cM:Your", "verdict": "phish", "brand": "Microsoft", "domains": ["microsoft.com"], "label": "phish"}
+{"page_id": "stripe-2019-07-28-20-06-03-817ba959", "url": "http://srodkidlagastronomii.pl/s/Stripe/verification/47018C854BC50NM4E93B/first.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "hdmoviecodes-com-6197945f", "url": "https://hdmoviecodes.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "coinbase-2020-09-17-13-17-50-13b89a71", "url": "https://cryptocurrencyupdate.wl.r.appspot.com/home/coinbase/index.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amdrewards-com-79a0ebfc", "url": "https://amdrewards.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "deuba24online-de-e70101ec", "url": "https://deuba24online.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "netflix-inc-2020-09-11-11-11-05-bc70feb6", "url": "https://netflixmembership-renewal.com/confirm/Login.php?sessionID=wIfXlBYIzVilIDfIxUamT490frBy1M1DJgbiZZvHsjUaZwvnUT9FxjxFBBNLtu1kkAjAySFCgfUXLqkvbMbtnpIFJkjG3Em8KkjZ&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "elitedate-cz-e445b9f1", "url": "https://elitedate.cz", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "la-poste-2020-08-20-12-15-41-95a8e01d", "url": "https://www.colissimo-livrraison.com/colissimo%20new/colissimo/account/loading.html?id=300000716523000091", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "runescape-2020-06-24-17-16-04-6bc17538", "url": "https://oldschool-membership.com/m=weblogin/verification.ws821,321,584,42184523,159092.html", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "109876543210-com-ef5e5f87", "url": "https://109876543210.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "dropbox-inc-2020-05-24-22-54-19-d949a651", "url": "https://drcorreamejoresimplantes.com/wave/XTnFN7EuLywv4GpXSpckLkQNIxf25Iq3CNIpVnUHVqc07CX01akNuaAcHQfNyFQbtzApWv6SWiS", "verdict": "phish", "brand": "Dropbox", "domains": ["dropbox.com"], "label": "phish"}
+{"page_id": "citrix-sharefile-2019-10-19-10-14-10-ca851dfc", "url": "http://thepaperpillbug.org/health/sharefile/", "verdict": "phish", "brand": "Citrix ShareFile", "domains": ["citrix.com"], "label": "phish"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-07-01-12-11-52-b585013b", "url": "https://a-promocaodejunho.com/MeusProdutos/Prefetch.php?skullid=104175040", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "runescape-2020-09-20-23-44-40-d4661309", "url": "https://runescape-securedbonds.com/m=weblogin/loginform.ws821,321,584,42184523,3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "adobe-inc-2020-05-27-10-50-13-f5db4bdd", "url": "http://adobe-document.cf/adobedoc/login/adobe-online/ad=bf1cb33ddcf84c331b084dda24cc111c", "verdict": "phish", "brand": "Adobe", "domains": ["adobe.com"], "label": "phish"}
+{"page_id": "dropbox-inc-2020-08-14-14-24-52-0ddbd6b6", "url": "https://superponuda.eu/dropbox_login_yahoo.html", "verdict": "phish", "brand": "Dropbox", "domains": ["dropbox.com"], "label": "phish"}
+{"page_id": "rakuten-2020-07-10-11-07-16-25c071b5", "url": "http://rakuten.co.jp.rakutensdfawejfl.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "grossoshop-net-6c782d64", "url": "https://grossoshop.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "deutsche-telekom-2020-07-29-13-22-02-ea193f60", "url": "http://cctruth.org/-/telekom/magyar/", "verdict": "phish", "brand": "Deutsche Telekom", "domains": ["telekom.com"], "label": "phish"}
+{"page_id": "whiteflowerfarm-com-a3aa69b5", "url": "http://whiteflowerfarm.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "grandiviaggiguidati-com-2ce3d879", "url": "https://grandiviaggiguidati.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mclasshome-com-f491bded", "url": "https://mclasshome.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "earthlink-2019-08-18-14-42-15-1860e8cc", "url": "https://bowspritdandelion.co.kr/earthysecure/setcreditcard.jsp.htm", "verdict": "phish", "brand": "EarthLink", "domains": ["earthlink.net"], "label": "phish"}
+{"page_id": "novasol-de-b4bf4901", "url": "https://novasol.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ourtime-dating-2019-10-17-12-41-15-52ac8958", "url": "http://sofercusucces.ro/wp-includes/js/outi/our.html", "verdict": "phish", "brand": "OurTime Dating", "domains": ["ourtime.com"], "label": "phish"}
+{"page_id": "smmkings-com-298c3a87", "url": "http://smmkings.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-06-18-11-30-56-d84b45c1", "url": "http://chaseupdate456.com/chase.Bank/sign-on/secure/T.Goe/index.html?secure-auth/login?execution/cmd=login_submit&id=0dd1edbaafd7fc8012f87a58de2f0aec0dd1edbaafd7fc8012f87a58de2f0aec&session=0dd1edbaafd7fc8012f87a58de2f0aec0dd1edbaafd7fc8012f87a58de2f0aec", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "government-of-canada-2020-08-22-12-11-19-1a51281e", "url": "http://vivipapaliaga.gr/CRA-NEW/world-Tax-RF457801/en/banks/directing/bmo/information.php", "verdict": "phish", "brand": "Bank of Montreal", "domains": ["bmo.com"], "label": "phish"}
+{"page_id": "mweb-2020-07-08-16-50-31-fbb87834", "url": "http://clients.devtux.com/updates/payment/mweb.html", "verdict": "phish", "brand": "MWeb", "domains": ["mweb.co.za"], "label": "phish"}
+{"page_id": "mbna-corportation-2019-08-06-15-40-35-d2bad394", "url": "http://invoive10001.com/mbna/verification/CA3NCA424A2MN5785162/card.php?websrc=b120cb4616a2bb25a3489a0c7d1d483b&dispatched=48&id=7110061752", "verdict": "phish", "brand": "MBNA Corportation", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "paypal-inc-2020-08-22-10-51-50-6b2f27e3", "url": "https://www.paypalstroe.com/", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-11-13-11-22-185ddad4", "url": "https://login.rakuten.co.jp.rakutenlkfefcbfsswedxcq.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "mihanmail-ir-5e1a93f6", "url": "https://mihanmail.ir", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "three-uk-2020-09-03-13-19-58-53695954", "url": "https://3-support-uk.com/Login.php?sessionID=puKujNv7jUh1zYYJbiZGgE89EzXkFZfvdkZ4ALEKmdLxhd4pKKzcGvKgYUYtcBG4AAlTwSanTlqphR9uNFSAVbaUzx8VE9f0fMmH&error=noNumber", "verdict": "phish", "brand": "Three UK", "domains": ["three.com"], "label": "phish"}
+{"page_id": "slevomat-cz-5faf97d4", "url": "https://slevomat.cz", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "grupo-santander-2020-09-25-14-01-20-141bb83f", "url": "https://learning.validate.santander.digital/system/security/view/remember_password.php?h=6816810a8f2b122673faeb0994125f3e92351fd21596636558", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "myopenrouter-com-b94a709c", "url": "https://myopenrouter.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tuifly-be-01c95901", "url": "https://tuifly.be", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-31-11-30-28-c938f90f", "url": "http://grp01.rakuten.co.jp.rakutenlkfawefssdfawead.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "airbnb-inc-2020-07-12-11-17-22-84d20e3b", "url": "http://co-host-listing-95130.casa/login/loginsms.html", "verdict": "phish", "brand": "Airbnb, Inc.", "domains": ["airbnb.com"], "label": "phish"}
+{"page_id": "citycle-com-bb582b3e", "url": "https://citycle.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chronopost-international-2020-05-02-15-30-30-ec138a3e", "url": "http://casace.org/misc/farbtastic/chronopo.../client.id987062019/infoschrono/098c9", "verdict": "phish", "brand": "Chronopost International", "domains": ["chronopost.fr"], "label": "phish"}
+{"page_id": "kenresearch-com-6790ecea", "url": "https://kenresearch.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "revolveclothing-com-au-fe990b82", "url": "https://revolveclothing.com.au", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "meridian-credit-union-2020-09-06-13-56-46-21cee0d8", "url": "http://www.gov-cerb.info/directing/Meridian/?sessionid=3D5e639134cbdf89db4=", "verdict": "phish", "brand": "Meridian Credit Union", "domains": ["cineblog01.gratis"], "label": "phish"}
+{"page_id": "twisto-cz-8b30435d", "url": "https://twisto.cz", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-17-12-50-08-a834d2de", "url": "http://rakuten.co.jp.rakutenxyz.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "q8-online-com-9aabcfef", "url": "https://q8-online.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "callcentric-com-29e5a885", "url": "http://callcentric.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-05-30-10-15-44-a2fb87d4", "url": "https://www.checkeritausms.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "banco-do-brasil-s-a-2020-06-27-21-32-27-eddba409", "url": "http://institutokultur.org.br/includes/site/ativabb/login.php#213819.shtml-%20X0#2mSWZxOwldKzoCqBUbZW$k8!ChagYsq6vR2vk2MZ3Rh24akf9TlHqw6y7qkYt5MFjGdL1WiuR@LdA7DUTjbNWWBmMhnQKYf7Su80tCI9ab@PCN*o6Lj%25#lWsu0@9KXcGhK#bnIJTz5OFjL*5vg#7thf4JlsBlTYDAUZj%25YH-IkbcMmOlnxRP1lC9R8o86IP8t5hRxLRtrFr!*$WRqKosQG5KixB2FgN9FxiRdh*CNrgHL8$f$i#uP1HY$zoey2-!3rEsXdyNgJyliP-cqCwRiAtgdLiVE%254plF-7cb*CQ", "verdict": "phish", "brand": "Banco do Brasil S.A", "domains": ["bb.com.br"], "label": "phish"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-06-18-14-05-55-ce6d0d6a", "url": "https://americanas-loja2.com/MeusProdutos/Prefetch.php?skullid=1494111025", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "chase-personal-banking-2020-09-11-13-18-10-9ccfd2c3", "url": "https://www.chaseinfo.link/web/auth/dataprotection?intended=https://www.chaseinfo.link/web/auth/dashboard/login&uid=$2y$10$pC1yU1jkpPIQC/PWdKSHU.qW/stHNmf9toY53zYjL4ld0DDaLDYK", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "rentinsingapore-com-sg-3b6ad432", "url": "https://rentinsingapore.com.sg", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "plans-ru-d985c98a", "url": "https://plans.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "isolsend-com-4c37c61d", "url": "https://isolsend.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "centraldemarcacao-com-br-a0a70add", "url": "https://centraldemarcacao.com.br", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "cembra-money-bank-ag-2020-09-01-12-07-39-d8066a6c", "url": "http://www.plombierlarocheparis12eme.fr/hn/sms.php?default=ff27e090ff2bb1ccf9d3420c431c198b", "verdict": "phish", "brand": "Cembra Money Bank AG", "domains": ["cembra-bank.ch"], "label": "phish"}
+{"page_id": "earthlink-2019-09-06-23-06-28-f05188d6", "url": "https://sixthearmark.co.kr/earthysecure/index.htm", "verdict": "phish", "brand": "EarthLink", "domains": ["earthlink.net"], "label": "phish"}
+{"page_id": "examine-com-1ebe43ce", "url": "https://examine.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "comcast-corporation-2020-08-14-11-22-32-96add1f7", "url": "http://loginaccount.comcastbiz.net/", "verdict": "phish", "brand": "Comcast Corporation", "domains": ["comcast.com"], "label": "phish"}
+{"page_id": "poezja-org-31fe0885", "url": "https://poezja.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instagram-2020-09-08-13-44-22-0c5a5811", "url": "https://instagram-copyriqht.com/mailform.php", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "megapixel-cz-f40f1076", "url": "https://megapixel.cz", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "audionic-co-b2ad671a", "url": "https://audionic.co", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "openfootage-net-212b2033", "url": "https://openfootage.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "societe-francaise-du-radiotelephone-2020-08-27-14-35-26-2da8b999", "url": "https://sfrmails-id.weebly.com/", "verdict": "phish", "brand": "SOCIETE FRANCAISE DU RADIOTELEPHONE", "domains": ["wmkt1.cirrus.bloomberg.com"], "label": "phish"}
+{"page_id": "yandex-2020-07-29-12-03-43-0c8650fe", "url": "http://ijikc.co.in/sites/ijikc20/rating/KEN7XX7Y0P9/wemail_al.html/error.php?L=", "verdict": "phish", "brand": "Yandex", "domains": ["xn--d1acpjx3f.xn--p1ai"], "label": "phish"}
+{"page_id": "arrowfilms-com-d4911053", "url": "http://arrowfilms.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "vectric-com-a896f1c4", "url": "https://vectric.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "otk-az-c5fcf62e", "url": "https://otk.az", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mytechlogy-com-784721d8", "url": "http://mytechlogy.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-01-12-33-39-26884eb9", "url": "http://rakuten.co.jp.rakutencc.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "pneumaticone-it-813291c1", "url": "https://pneumaticone.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "cymax-com-910b8c3e", "url": "https://cymax.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "motof-cn-9f39a7cc", "url": "https://motof.cn", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "simpli-fi-d6e8812d", "url": "https://simpli.fi", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "xronos-gr-64df1985", "url": "https://xronos.gr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "developpez-com-97486d23", "url": "https://developpez.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "td-bank-group-2019-09-09-10-48-34-59a384f0", "url": "https://sinugen.com/sh/209749n/td/firm/confi.php", "verdict": "phish", "brand": "TD Bank Group", "domains": ["td.com", "tdbank.com"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-01-16-19-02-c92a42b2", "url": "https://ltaucard.tk/confirmacao", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "desjardins-2020-09-11-13-07-11-7d982c1f", "url": "https://www.desjardins.pret-mutuel.com/accweb.mouv.desjardins.com/identifiantunique/identificatione967.php", "verdict": "phish", "brand": "Desjardins", "domains": ["desjardins.com"], "label": "phish"}
+{"page_id": "nedbank-limited-2020-09-24-09-09-48-630920b2", "url": "http://www3.escolacristiana.org/wp_fecc/covidapprove/Attachment%20Name%2020200409_2049.pdf.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "pornhubtoys-com-327dfd64", "url": "https://pornhubtoys.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chronopost-international-2019-10-19-04-48-25-9252ac1f", "url": "https://www.chronotrace.chronopost.com/chronotraceV3/welcomePage.do", "verdict": "phish", "brand": "Chronopost International", "domains": ["chronopost.fr"], "label": "phish"}
+{"page_id": "jumpshare-com-0baa0b37", "url": "https://jumpshare.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "atividadeparaeducacaoespecial-com-fa8902ff", "url": "http://atividadeparaeducacaoespecial.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "magalu-2020-08-31-11-38-03-d41f371c", "url": "https://liquidacaomagalu2020.com/25181aihj521800084/index.php?rtphone-samsung-galaxy-a10s-32gb-vermelho-4g-2gb-ram-62-cam-dupla-selfie-8mp/p/155568600/te/galx/&id=1", "verdict": "phish", "brand": "Magalu", "domains": ["magazineluiza.com.br"], "label": "phish"}
+{"page_id": "safaryar-net-412b14e4", "url": "https://safaryar.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "happii-dk-b8510782", "url": "https://happii.dk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "12voip-com-f8deed5b", "url": "https://12voip.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "persons-info-com-479b7c74", "url": "https://persons-info.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "magalu-2020-08-30-13-37-07-4715c1e7", "url": "https://magalu-agostofeliz.com/Produto_37117/produto.php?&sku=8916441", "verdict": "phish", "brand": "Magalu", "domains": ["magazineluiza.com.br"], "label": "phish"}
+{"page_id": "tradekey-2020-05-09-13-04-03-2c5aab4f", "url": "http://www.rusikona.pro/administrator/includes/", "verdict": "phish", "brand": "TradeKey", "domains": ["tradekey.com"], "label": "phish"}
+{"page_id": "frisbi24-ru-bae82c01", "url": "https://frisbi24.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-05-27-10-00-33-4138a00f", "url": "https://www.contestacaodecompras-itaucard.com/itaucard/dados/", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "paginawebgratis-es-479da45b", "url": "https://paginawebgratis.es", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "stoy-com-d6fd6880", "url": "https://stoy.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ultraupdates-com-5fa50b0e", "url": "https://ultraupdates.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "roboticngo-com-3d23d765", "url": "http://roboticngo.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "spectrum-2020-06-15-15-11-41-e629a66a", "url": "http://engnew.consumer.fe-spectrum.net/", "verdict": "phish", "brand": "Spectrum", "domains": ["spectrum.com"], "label": "phish"}
+{"page_id": "government-of-turkey-2020-08-24-12-08-25-b614951f", "url": "https://eadaitgirisi-turkeygovtri.com/:Fe/Hizmet.basvuru-yap.php#lang=tr", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "allegro-2020-08-09-00-32-23-5dcbdfc9", "url": "http://secure.legalmetric.com/img/last/allegro.htm", "verdict": "phish", "brand": "Allegro", "domains": ["allegro.com"], "label": "phish"}
+{"page_id": "5motkov-ru-19226c64", "url": "https://5motkov.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "whitehousehistory-org-a241154d", "url": "http://whitehousehistory.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "soluspage-com-7921ef4c", "url": "https://soluspage.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "boxberry-2020-09-02-15-46-44-48024c74", "url": "http://boxberry-deliv.ru/index.php/false/false/py1n.html/discovercard.com/dfs", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "matrimoniale-ro-e385f3ea", "url": "https://matrimoniale.ro", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "gamesir-hk-63d02040", "url": "https://gamesir.hk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "credit-agricole-s-a-2020-09-12-14-27-59-da714000", "url": "https://www.credit-agricole-activation-securipass.u852894prh.ha004.t.justns.ru/compte/a6b398d4d0b9145333187ff1c649bd60/", "verdict": "phish", "brand": "Credit Agricole S.A", "domains": ["credit-agricole.com"], "label": "phish"}
+{"page_id": "nuoviso-tv-1bac3a2f", "url": "https://nuoviso.tv", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bbooster-online-fcec622b", "url": "http://bbooster.online", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "alibaba-2019-07-28-20-39-10-a74f3bbd", "url": "http://carfreemom.com/trustpass.html?email=adata@adata.com", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "fedex-corporation-2020-09-09-14-56-53-e06c9b3d", "url": "https://ocrbhd.com/ccp/fedex-trc/steperz.php?841576537224ccb3480e55acce390f77799b09830&redirect=&email=&ConnectW1stRW1haWemail&email=", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "league-of-legends-2020-09-12-13-10-22-6d042160", "url": "http://euw-league0flegends-psyops-orb-2020.000webhostapp.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "verizon-wireless-2019-08-19-13-21-39-bd528833", "url": "https://sftp.hs-furtwangen.de/~stz/verizon/verify.php?cmd=login_submit", "verdict": "phish", "brand": "Verizon Wireless", "domains": ["verizonwireless.com"], "label": "phish"}
+{"page_id": "sinulaw-com-9cfc823f", "url": "https://sinulaw.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "pythonanywhere-com-a9ca12e0", "url": "https://pythonanywhere.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "speed4up-com-a444d3f0", "url": "https://speed4up.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "desjardins-2020-09-06-13-59-55-b5ee55e5", "url": "http://www.gov-cerb.info/directing/desjardins/identifiantunique/index2.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "josephprince-com-2dcd4575", "url": "https://josephprince.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "whatsapp-2020-09-17-11-43-10-fdafee74", "url": "http://mail.grubwa77.sexx-online.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-08-14-14-54-46-61154afd", "url": "https://rakuten.co.jp.rakutenaccounnwtentmweazwe.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "wetransfer-2020-05-09-11-05-38-c06061f8", "url": "http://wetransfer-docushare1.ml/wetransfer", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-08-20-13-22-05-57cbf7bf", "url": "http://itaupersonlineclientefisicodigitaltop.com/", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "incu-com-d3207652", "url": "https://incu.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "australia-and-new-zealand-banking-group-2020-09-24-21-10-13-ea101b4a", "url": "http://ip-160-153-247-216.ip.secureserver.net/maintenance/sv3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "studfiles-net-33c4002e", "url": "https://studfiles.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-23-12-50-02-9d7c5056", "url": "https://member.rakuten.co.jp.rakutenrakutenwklfmaswe.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "ebay-inc-2020-05-11-14-36-21-018dbc5c", "url": "https://www.communityreview.info/ebay.co.uk/Item-not-as-described-m72303/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "instagram-2020-09-01-12-05-30-29dbfd8e", "url": "https://instagramcommunitycenters.com/help/contact/22874108657", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "nidbox-com-34bf99b2", "url": "http://nidbox.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "nightowlsp-com-e0677578", "url": "https://nightowlsp.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "cogeco-2020-07-09-04-02-36-63a43e4e", "url": "http://baseline-eg.com/uploads/webmail-login", "verdict": "phish", "brand": "Cogeco", "domains": ["cogeco.ca"], "label": "phish"}
+{"page_id": "immunitet-org-b6f5d0ba", "url": "https://immunitet.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "magalu-2020-08-26-14-04-29-8e7ee09f", "url": "https://magalu-virtual.com/Produto_03624/produto.php?&sku=3699283", "verdict": "phish", "brand": "Magalu", "domains": ["magazineluiza.com.br"], "label": "phish"}
+{"page_id": "rakuten-2020-08-09-03-24-32-589518d3", "url": "https://rakuten.co.jp.rakuten-update.cn/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "aie-ac-075ad4cd", "url": "http://aie.ac", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "steam-2020-07-20-13-20-09-1480bb5a", "url": "https://steamcommunitu.ru/id/KaRtOnKa", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "oo2-fr-06dc8217", "url": "https://oo2.fr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "suntrust-bank-2019-10-24-08-34-22-9e605f3a", "url": "http://brainish-exhibits.000webhostapp.com/suntrust.com/suntrust.com", "verdict": "phish", "brand": "SunTrust Bank", "domains": ["w3.truist.com"], "label": "phish"}
+{"page_id": "halifax-bank-of-scotland-plc-2020-09-10-16-40-50-f02f843f", "url": "http://halifaxukonline-secure.com/admin", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sumrando-com-9ee5c4a5", "url": "https://sumrando.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tierra-net-6f18ad1a", "url": "https://tierra.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "cicliemercati-it-757dac5d", "url": "https://cicliemercati.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "thespiritsbusiness-com-941d40bb", "url": "https://thespiritsbusiness.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "solutionzinc-com-b24fcbf5", "url": "http://solutionzinc.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mmfcu-org-0e6156ca", "url": "https://mmfcu.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "akpool-de-0ab75559", "url": "https://akpool.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "goglobal-travel-68e94c2a", "url": "https://goglobal.travel", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "webfire-com-c8401210", "url": "https://webfire.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "apple-inc-2020-07-14-10-57-48-df58cf76", "url": "http://secureupdate.appleld.com.duilawyeryork.com/ap/49cc43999ce7225?cmd=_update&dispatch=49cc43999ce72250f&locale=_US", "verdict": "phish", "brand": "Apple", "domains": ["apple.com", "icloud.com"], "label": "phish"}
+{"page_id": "marathimatrimony-com-2907ef79", "url": "https://marathimatrimony.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paxful-inc-2020-09-08-14-02-46-4461a4cc", "url": "https://paxful-protect.com/offer/mVEZE2JoWLB/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "adop-co-4c8ad18e", "url": "https://adop.co", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "netflix-inc-2020-09-25-16-14-15-dc935980", "url": "https://netflix-billingissue.com/Login.php?sessionID=un565WyazquLXNJailerROt9IS4D1hXrJ1yq1YNF1sWaUFw5YzFjmDU4leKn0f2hFsHczcFwvccPjzbCC9jDs33CUu30ZcPZvbuW&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "townsends-us-fa3a4439", "url": "https://townsends.us", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-25-14-24-27-3a668848", "url": "https://rakuten.co.jp.rakutenidajdqidcojp.com/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "scraperapi-com-7d826de2", "url": "http://scraperapi.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "langehair-com-9d428181", "url": "https://langehair.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "worldatwork-org-ec116862", "url": "https://worldatwork.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "frontier-communications-2020-08-11-12-49-17-cc643a7c", "url": "http://www.nortiainteriors.com.au/wp-content/plugins/fresco-master/js/d3cf04d2c1b550cb54be7dd8335c7025/way.php", "verdict": "phish", "brand": "Frontier Communications", "domains": ["economist.com"], "label": "phish"}
+{"page_id": "topps-com-f30878f8", "url": "https://topps.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "soudfa-com-c2c49335", "url": "https://soudfa.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "frontier-communications-2019-08-27-14-19-28-586f5b9b", "url": "http://nortiainteriors.com.au/wp-content/plugins/fresco-master/js/61cdb4adfa677f735fd0e0e40c12abd2/way.php", "verdict": "phish", "brand": "Frontier Communications", "domains": ["economist.com"], "label": "phish"}
+{"page_id": "griffintechnology-com-65a1b154", "url": "https://griffintechnology.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "natwest-personal-banking-2020-05-30-13-19-33-c7ddd068", "url": "http://jdih.sambas.go.id/web/coin/nat4/", "verdict": "phish", "brand": "NatWest Personal Banking", "domains": ["natwest.com"], "label": "phish"}
+{"page_id": "thefarmingforum-co-uk-a59739c1", "url": "https://thefarmingforum.co.uk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "funfile-org-1f483086", "url": "https://funfile.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mycall-no-a0fffb62", "url": "https://mycall.no", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "123elec-com-1ea65957", "url": "https://123elec.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mu-43-com-94e4e87e", "url": "https://mu-43.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "la-poste-2020-08-29-11-52-06-38d4aad8", "url": "http://forgetthebudget.com/vendors/fr/colissimo/account/envoi-colissimo.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "musimundo-com-4d71f430", "url": "http://musimundo.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "natwest-personal-banking-2020-09-16-15-12-27-00ed9e5a", "url": "https://natwest.securityteam-verify.com/", "verdict": "phish", "brand": "NatWest Personal Banking", "domains": ["natwest.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-05-14-13-39-16-5eed635d", "url": "http://membership.authjsh47q4wteaxusthi0fsahrsynetflix.com/b9e4093f970251d5bcf888b76944a4bc/tnFBsV27sc3kIMJg0Z8snqenramMHIXz.php?country=ZA-South%20Africa&lang=en", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "interracialdatingcentral-com-e4b9417f", "url": "https://interracialdatingcentral.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "larare-at-9db369e8", "url": "https://larare.at", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-08-25-14-47-17-a9dcc8c1", "url": "http://online-banking-login0.xyz/Safe&Secure-Online-Bank-Login/Safe&Secure-Online-Bank-Login/", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "lovebabydoll-com-4007eb32", "url": "http://lovebabydoll.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-08-09-01-34-24-69f3ddf8", "url": "https://amazon.co.jp.amazonip.top/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "jamshimi-ir-510fe9c8", "url": "https://jamshimi.ir", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "deeringbanjos-com-cc642dd2", "url": "https://deeringbanjos.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-07-16-10-10-42-998b31b0", "url": "http://itaudesbloqueio.com/", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "rackspace-2020-08-16-15-43-58-c350cd96", "url": "http://tigerleahu.com/Gbrain/rackspaceauto/", "verdict": "phish", "brand": "Rackspace", "domains": ["rackspace.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-10-11-51-17-ea66eea6", "url": "http://rakuten.co.jp.saferakuten.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "hordes-io-bd4ca6e5", "url": "https://hordes.io", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-06-24-13-36-11-ed685af3", "url": "https://p-americanaspromocoes.com/MeusProdutos/Prefetch.php?skullid=134409899", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "zooquizzes-com-3f593bba", "url": "https://zooquizzes.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "twitter-2020-07-09-10-33-24-40441b87", "url": "http://getverified.xn--twtter-4va.com.co/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-09-01-10-58-58-21ac0d2f", "url": "http://rakuten.co.jp.rakutentep.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "webmail-providers-2020-09-02-11-15-26-101492c0", "url": "http://iround-cube.web.app/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dropbox-inc-2020-09-14-14-45-07-599a9c87", "url": "http://pinnerx.com/abc/IZbVQ2jSyABRLK5AYbAw5dCPnzkjbt6TthPkk9dTKOKvzP6x1H36UGWiggBrKHldZbxkkLd4zXA", "verdict": "phish", "brand": "Dropbox", "domains": ["dropbox.com"], "label": "phish"}
+{"page_id": "instagram-2020-08-20-14-18-53-65bbff13", "url": "https://instagram-helpcopyright-center.com/contact/4834596273548/form.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "acumbamail-com-b16a4558", "url": "https://acumbamail.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "godaddy-2020-07-20-15-33-34-b20714fe", "url": "http://soclever.com.sg/wp-admin/sso.godaddy.com/Login.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "naissance-fr-69436cbe", "url": "https://naissance.fr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "gingrapp-com-3ec5e2b6", "url": "https://gingrapp.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "western-union-2020-09-05-11-10-32-499276ee", "url": "http://subsapp.com/.well-known/pki-validation", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "icratek-com-tr-0fdada20", "url": "https://icratek.com.tr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "daum-2020-05-27-13-21-24-d90a8afc", "url": "http://everestwebdevelopment.com/mail/hanmail/login.php?cmd=login_submit&id=021c0a8e0c756a6768781cf858dde433021c0a8e0c756a6768781cf858dde433&session=021c0a8e0c756a6768781cf858dde433021c0a8e0c756a6768781cf858dde433", "verdict": "phish", "brand": "Daum", "domains": ["daum.com"], "label": "phish"}
+{"page_id": "australia-and-new-zealand-banking-group-2020-10-01-10-45-46-c1da73c6", "url": "http://ip-160-153-244-20.ip.secureserver.net/personaldirect/sv2.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "alflahertys-com-b9004896", "url": "https://alflahertys.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "policeetrealites-com-319bb183", "url": "https://policeetrealites.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "alfaloji-net-7bd063cf", "url": "https://alfaloji.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "stripe-2019-07-30-18-47-32-63d024e9", "url": "http://www.xonermeb.com/bfc26a91b51866984132205650f162e1", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "paypal-inc-2020-05-22-22-41-59-bb09222e", "url": "https://paypalverifycentral.com/0da5ddf2f74ebabbf5c48e7cb9732faa/payment.php?dispatch=xmgxunv1qxzmtbvbmuj5qfx10ysuxqblpxrh9j26qinbhau4hf", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "three-uk-2020-08-27-14-14-44-4cae8435", "url": "https://my.threebilling-restrictions.com/Login.php?sessionID=ebS67Q8f7o6XXZESB83HdjOBnfgIV9UCBdnzZTnY9uNEZED7vrCQRHdo8oDUzqdC0lNfGnbsSWHB4CE11lDCeLWHArNIE1TVtjUc&error=noNumber", "verdict": "phish", "brand": "Three UK", "domains": ["three.com"], "label": "phish"}
+{"page_id": "webforpc-com-792e6304", "url": "https://webforpc.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "pmgdisha-in-bf75b52a", "url": "https://pmgdisha.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "peek-cloppenburg-pl-10a08930", "url": "http://peek-cloppenburg.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "cucucovers-com-7199827f", "url": "https://cucucovers.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "steam-2020-06-24-12-26-15-24c6b262", "url": "https://steamcoommuniity.com/profiles/76561198205968337", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-09-02-06-05-957e022b", "url": "http://rakuten.co.jp.scidwiichrmbmkdivtopheaderpitaripcktrflg1.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "goteamup-com-f8ef1ebe", "url": "https://goteamup.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-popular-2020-08-26-13-44-23-271cea06", "url": "https://appopularenlinea.com/popularonline/Banco%20Popular%20-%20Internet%20Banking.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-07-04-13-31-20-6d78d539", "url": "https://itaucard-online.com/ITAU%20TOP/itau", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "alwadifa-club-com-2449bf22", "url": "http://alwadifa-club.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "uber-2020-08-31-10-40-51-da876442", "url": "https://uberassistance.info/wrong_email.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "winnersgroup-sk-f29b7e7d", "url": "https://winnersgroup.sk", "verdict": "phish", "brand": "mbank", "domains": ["mbank.pl"], "label": "benign"}
+{"page_id": "microsoft-onedrive-2019-10-18-05-49-12-e8c17a7e", "url": "http://dudeswithtrucks.com/truck_daily/wp-content/plugins/acf-repeater/gfilepro/SP12/SP/8iNvxRSE1sXQr3K7n4Cbc9GkOJyzMhdtfw6&eF2WVY0Bl5ZHAomTaULD_IP/personal.php", "verdict": "phish", "brand": "Microsoft", "domains": ["microsoft.com"], "label": "phish"}
+{"page_id": "universo-online-2020-05-24-03-10-03-86b8eecd", "url": "https://nrtfilx.3utilities.com/index.desktop/2.php?08,04-15,20,05-20", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sde-dk-b616440a", "url": "https://sde.dk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-06-20-10-41-11-af3c1bb9", "url": "https://www.saldao-americanas-namorados.com/2021/MeusProdutos/prefetch.php?skullid", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bank-of-the-bahamas-limited-2020-05-15-12-11-40-ffd8eb98", "url": "https://theletterlove.icu/Authorization.htm", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dealsyoumaylike-com-68f94691", "url": "https://dealsyoumaylike.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "email-gov-in-742df46d", "url": "https://email.gov.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "steam-2020-06-21-17-08-59-83b55f6f", "url": "https://steamproxy.net/id/FOTF", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "lovebrands-com-a46898c2", "url": "http://lovebrands.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "runescape-2020-05-01-13-45-54-cd7087ad", "url": "https://runescape.rocks/m=weblogin/loginform.ws432,432,556,34456543,1", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "ourtime-dating-2019-07-28-23-06-50-48787314", "url": "http://247autoglass.co.za/www.ourtime.com/", "verdict": "phish", "brand": "OurTime Dating", "domains": ["ourtime.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-02-13-34-17-5f5e9c43", "url": "https://netflix-updateinfo.com/Login.php?sessionID=Z6cN3lxXXnNjYjeqxUKuzM6xYXd99f7O8uqEeGIenJZVccQTHlAsduJPQFhPBaQvKwvnjufbdazCxtNMm87eSD35ZQLdeOUxggKJ&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "apple-inc-2020-08-13-20-13-43-ea43e81b", "url": "https://service2authmanage-supportrecovery-account.dirtoapple.com/verify/?view=classic&appIdKey=9b9cbc99fe7929e&country=US", "verdict": "phish", "brand": "Apple", "domains": ["apple.com", "icloud.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-09-03-59-00-e9fca2c1", "url": "https://rakuten.co.jp.rakutenaccountasdfwefasdx.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "tentree-ca-d80eae6e", "url": "http://tentree.ca", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "positivesingles-com-7f1b2620", "url": "https://positivesingles.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sheffieldforum-co-uk-b72f1e81", "url": "https://sheffieldforum.co.uk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ifixit-com-b660a557", "url": "https://ifixit.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "suedtirol-info-6b37bbe0", "url": "https://suedtirol.info", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-05-21-12-27-11-c1c4b543", "url": "https://www.eu-amazon-creturns.com/prepClassification/new", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "diariocordoba-com-d74a9b15", "url": "http://diariocordoba.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "budapestpark-hu-441420d4", "url": "https://budapestpark.hu", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "eastwoodguitars-com-1e7c6872", "url": "https://eastwoodguitars.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "healthaffairs-org-e0ddbca2", "url": "https://healthaffairs.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tb7-pl-347f81d8", "url": "https://tb7.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sweetcsdesigns-com-a4c7be80", "url": "https://sweetcsdesigns.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "asb-bank-limited-2019-09-06-14-39-34-99ff2b3c", "url": "http://showgearusa.com/test/contentp/Images/pmg/asb", "verdict": "phish", "brand": "ASB Bank Limited", "domains": ["asbtx.com"], "label": "phish"}
+{"page_id": "banglasonglyrics-com-e01d4428", "url": "https://banglasonglyrics.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "gccexchange-com-3d346b0a", "url": "http://gccexchange.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mbna-corportation-2019-08-06-15-40-06-f44a3712", "url": "http://invoive10001.com/mbna/verification/CA3NCA424A2MN5785162/billing.php", "verdict": "phish", "brand": "MBNA Corportation", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "instagram-2020-05-11-17-01-31-9b2c22dd", "url": "http://instagram-mobile.com/help/form/60696731942/", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "bancolombia-2020-09-05-16-27-42-79a7d859", "url": "http://www.sucursalvirtualonliinebancolombia.com/", "verdict": "phish", "brand": "Bancolombia", "domains": ["grupobancolombia.com"], "label": "phish"}
+{"page_id": "knowband-com-bd533f1d", "url": "https://knowband.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "emagister-com-ar-6f22ef4c", "url": "https://emagister.com.ar", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "insider-in-5b25f7dc", "url": "https://insider.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "netease-2020-09-08-11-57-11-ebb82953", "url": "http://susannahlints.com/opentype/variant/heibest/heibest", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "paypal-inc-2020-06-22-14-35-16-345495ec", "url": "http://verify.paypalinverify.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "lensculture-com-0fd0eb10", "url": "https://lensculture.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-del-estado-de-chile-2020-08-26-14-12-33-58d85868", "url": "http://www-bancoestado.cl.vipaelettronica.it/pagina/imagenes/comun2008/banca-en-linea-personas.html", "verdict": "phish", "brand": "Banco del Estado de Chile", "domains": ["avalonnailbarriversideca.com"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-19-12-44-09-e6914d47", "url": "https://www.itaubanksms.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "amazon-com-inc-2020-09-10-13-49-46-7133d93a", "url": "https://amazon-mails.com/pc/", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "wetransfer-2019-10-19-09-33-23-7d800fad", "url": "http://rlproductboss.co.uk/gen/we/error.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "square-inc-2019-08-18-15-20-23-ff20a583", "url": "https://dispufromsquare.net/indexe.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "instagram-2020-09-02-14-39-27-d2d90aa4", "url": "http://theinstagramdatacenters.com/helpservice/contact/p263627366373/", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "masterdynamic-com-66c1ccff", "url": "http://masterdynamic.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-29-14-09-20-de654285", "url": "https://login.rakuten.co.jp.rakutenamsdnwwefklsdfwef.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "chase-personal-banking-2020-05-12-11-04-10-2308e453", "url": "http://chase-signin-v2.com/success.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "ispsystem-ru-e1c49513", "url": "https://ispsystem.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-07-18-11-47-21-6e38ed12", "url": "https://casualtyomar.com/secure.chase.com/953c27e8fac8b345050a0adbb179fc43", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "match-2019-08-20-10-59-14-9c7be6fe", "url": "http://business-org.com/pics/match/a7cea79252e93c9c3e35432c714132e4/", "verdict": "phish", "brand": "Match", "domains": ["match.com"], "label": "phish"}
+{"page_id": "driftworks-com-0e552d1c", "url": "https://driftworks.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "nerdcore-de-73d46a48", "url": "https://nerdcore.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-06-26-13-13-23-9253ac52", "url": "https://a-americanasemjunho.com/MeusProdutos/Prefetch.php?skullid=1265954459", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bank-of-america-2019-08-27-19-21-05-db79387a", "url": "https://fundaciondemilitaresconstitucionalistasde1965.org/policia/b0fa/hmwvjzdu=/index.php", "verdict": "phish", "brand": "Bank of America", "domains": ["bankofamerica.com", "merrilledge.com"], "label": "phish"}
+{"page_id": "tubiba-com-tr-07726379", "url": "https://tubiba.com.tr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "zoya-bg-01b8d4d6", "url": "https://zoya.bg", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-05-01-22-42-10-6b2ac9cc", "url": "http://www.itauchekinsecurity.com/confirmacao", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-26-12-36-05-905814e1", "url": "https://netflix-billingerroruk.com/Login.php?sessionID=V1Chumhd77L0wHj0W8rHFQgeCxepO2xcnRrPlmAAB6bUZWUdrgsDqvqynNILX33Mx6Ak0ddx0IrkIxg3kBHVZu5pOmTib6R452gJ&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "asb-bank-limited-2020-08-22-10-46-01-5f1c0d04", "url": "https://jasandwarn.com/SB/newasb2020/c9494b3d5ae56e29990570b78/", "verdict": "phish", "brand": "ASB Bank Limited", "domains": ["asbtx.com"], "label": "phish"}
+{"page_id": "ukrcrewing-com-ua-b943094a", "url": "https://ukrcrewing.com.ua", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "comcast-corporation-2020-05-02-08-23-30-490414fc", "url": "http://loginaccount.comcastbiz.net/", "verdict": "phish", "brand": "Comcast Corporation", "domains": ["comcast.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-09-14-26-19-1837a37e", "url": "https://netflix-paymentreview.com/confirm/Login.php?sessionID=nseNARcj95RPFuxqQd5yVcVgqVBaOIFDebEbSOJ3ATGOuS4EO80hDPcSHbxGKPqJxydwXbkqoUlO3bFUhiv0c0IACfxMyG4E9qMI", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "fissler-com-80f56201", "url": "http://fissler.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "vodafone-2019-07-31-18-14-45-4f898df5", "url": "http://plateau.co.in/privacywet-voda", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "alibaba-2020-08-21-11-49-32-04dab40a", "url": "http://dev-passport-alibaba-com.pantheonsite.io/alibaba.com/images/login.htm", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dfox-it-cbd2ae79", "url": "https://dfox.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "boxberry-2020-08-24-10-43-07-9340a5c3", "url": "https://boxberry.ru-offers.ru/index.php/false/py1n.html/discovercard.com/dfs/accounthome/summary/-www.schwab.com/secure.accurint.com/unfcu2.org/login1/wachovia.com", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "tokyonightowl-com-95781970", "url": "http://tokyonightowl.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "motchallenge-net-4e15fec5", "url": "https://motchallenge.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "trackon-in-b6b5c6e9", "url": "https://trackon.in", "verdict": "phish", "brand": "Yahoo!", "domains": ["src3.yahoo.com"], "label": "benign"}
+{"page_id": "twitter-2020-07-12-14-23-18-4a90aaab", "url": "http://twowheelcool.com/twitter.com/logincf53.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "emag-bg-ad17f88a", "url": "http://emag.bg", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "national-australia-bank-limited-2019-10-26-02-47-40-10da2109", "url": "https://online-banking-nab.com/cgi/d6d21690b8738a636b01c496700ff6e0/login/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sparebank-1-2020-09-08-12-33-08-57341a61", "url": "https://klusbedrijfkanters.nl/wp-content/uploads/2019/03/Spare1/IDLog-on/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "netflix-inc-2020-08-29-12-24-01-28a75ab2", "url": "http://netflixplan.net/Verify.php?sessionID=oDthIsA6Vgjv0aa3S6HDXVWRqh0v34I7cDMPMLRCxxwl2CcDWEZPeqUx1VyYfjOwhVPe1DbIEMcntNvKKRMCOsIkCGF2G4UF6o1A", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "sextronix-com-368a8f09", "url": "https://sextronix.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "meetcrunch-com-87e17829", "url": "https://meetcrunch.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "myeg-com-my-bbff900f", "url": "https://myeg.com.my", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "national-bank-of-canada-2019-08-12-10-03-17-cfb11103", "url": "https://fldo-ref562736.info/directing/national/index.html", "verdict": "phish", "brand": "National Bank of Canada", "domains": ["nbc.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-07-11-17-47-54-388209df", "url": "http://pstratiinc.com/shellz/a82d922b133be19c1171534e6594f754", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "rtacabinetstore-com-7f74535a", "url": "http://rtacabinetstore.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-28-17-19-05-a4a3a40e", "url": "http://login.rakuten.co.jp.rakutenamsdnwwefklsdfwn.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "staxus-com-96ec94d2", "url": "https://staxus.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "masterfile-com-e5fbe61f", "url": "https://masterfile.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "finews-ch-696f1fd8", "url": "http://finews.ch", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "upenn-edu-09a9486a", "url": "https://upenn.edu", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "makingfun-com-dcebe6c3", "url": "https://makingfun.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "fextralife-com-afc8fd62", "url": "http://fextralife.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "notebookitalia-it-73421464", "url": "https://notebookitalia.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "thinkib-net-79b6efef", "url": "https://thinkib.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rrauction-com-fa779a13", "url": "https://rrauction.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bt-group-plc-2020-09-26-12-19-06-5e1d174f", "url": "https://turj.yolasite.com/", "verdict": "phish", "brand": "BT Group plc", "domains": ["bt.com"], "label": "phish"}
+{"page_id": "audiotool-com-2c6b56dd", "url": "https://audiotool.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "netflix-inc-2020-10-01-12-12-25-52ce956c", "url": "https://netflix-signin-plan.com/confirm/Login.php?sessionID=WEREIPaue61VVVNyu7I9S4eTLXg4WdA3QM01BDrkyFx3I24hC7cD0p7WMPiUp9ngfpu0xVRpBujdZfnuaFGIFygUieSkBmwP7Hti&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-09-15-27-07-3fcaf4a7", "url": "https://rakuten.co.jp.rakutenupdate.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "certificadocursosonline-com-edc1579c", "url": "https://certificadocursosonline.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "match-2019-08-20-12-27-35-3ea8145b", "url": "http://business-org.com/pics/match/7931bc9c881e83d1b44aaaf482472d87/", "verdict": "phish", "brand": "Match", "domains": ["match.com"], "label": "phish"}
+{"page_id": "mercado-livre-2020-08-30-18-28-19-a021066a", "url": "https://sustentabilidadmercadolibre.com/reporte/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "garena-2020-09-15-12-10-34-852894f0", "url": "http://www.freefire.garena-ffnew.ga/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "intuit-2020-08-22-10-44-24-3e8a6318", "url": "https://mlill.net/quick/quickbooks/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-02-15-56-46-11d0769b", "url": "http://www.checkinitausecurity.com/confirmacao", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "shopify-co-za-1f81e07c", "url": "https://shopify.co.za", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-20-14-21-32-af705050", "url": "http://login.rakuten.co.jp.rakutenrakutenldfgwertwe.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "poste-italiane-s-p-a-2020-09-15-12-26-30-878fd9f1", "url": "https://web-aggiornamento.net/dati/codice/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "charles-schwab-2020-08-21-11-00-59-8e57ab6f", "url": "http://normacode.com/yy/bb/b/schwab/home/login.php?cmd=login_submit&id=797181096d46d60daddab5a3ca8ba929797181096d46d60daddab5a3ca8ba929&session=797181096d46d60daddab5a3ca8ba929797181096d46d60daddab5a3ca8ba929", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "government-of-hungary-2020-08-21-10-59-58-3fc4d847", "url": "http://post-check.com/NAV-GOV/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amazon-com-inc-2020-09-17-13-46-03-184a02bd", "url": "http://update.amazons-co-jp.icu/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "bakdar-org-b000fd38", "url": "https://bakdar.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "appinventiv-com-c925dd5c", "url": "https://appinventiv.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "daciaclub-ro-b9ff9d3c", "url": "https://daciaclub.ro", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "roomgo-it-2d374fcc", "url": "https://roomgo.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "asb-bank-limited-2019-09-06-14-34-15-12d933a1", "url": "http://showgearusa.com/Templates/correct/13", "verdict": "phish", "brand": "ASB Bank Limited", "domains": ["asbtx.com"], "label": "phish"}
+{"page_id": "monochrome-heaven-com-7ef31857", "url": "https://monochrome-heaven.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-05-23-12-47-39-55e4383c", "url": "https://www.notice-chase.com/success.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-09-06-11-52-11-cb25c88c", "url": "https://login.rakuten.co.jp.rakutenlkfsfsdfsdfaswwe.buzz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "runescape-2020-07-01-11-12-04-c6af38f6", "url": "https://runescape-game.me/m=weblogin/loginform.ws435,567,345,67879854,1", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "taurususa-com-b024c77b", "url": "https://taurususa.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-de-la-nacion-2020-09-09-13-00-28-2392d48b", "url": "http://www.zonanseguralbn1-vlrtual.multlnet-peru.com/Acceso/BNWeb/login.do/index2.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "milorganite-com-b0a639d1", "url": "https://milorganite.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bank-of-guam-2020-08-18-11-11-35-4ad409d9", "url": "https://newessayhelp.live/Login_step_3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "instagram-2020-08-29-09-42-33-c310d55a", "url": "https://instagramhelpscopyrights.net/mailindex.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "intesa-sanpaolo-2020-09-02-13-30-45-5d01e7df", "url": "https://www.app-normativa-europea.it/info", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "westwingnow-it-a5e8816c", "url": "https://westwingnow.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "heckenpflanzendirekt-de-39674411", "url": "https://heckenpflanzendirekt.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-12-14-20-09-0be4524b", "url": "https://rakuten.co.jp.loginandchecwenfladsfkrakutenlasdsdafsdwe.buzz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "docusign-2020-09-28-11-04-12-73907b48", "url": "http://arrowsurfandsport.com/jcroofinginc/jcroofinginc/u.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sparebank-1-2020-09-10-16-02-18-03d2e01a", "url": "https://klusbedrijfkanters.nl/wp-content/upgrade/Spare1-norge/IDLog-on/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "passport-service-gov-uk-71c9d76b", "url": "https://passport.service.gov.uk", "verdict": "phish", "brand": "Government of the United Kingdom", "domains": ["gov.com"], "label": "benign"}
+{"page_id": "steam-2020-05-24-21-48-06-46e5b4b8", "url": "http://steampoweroeszvd.me/login?agency=2", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "honestlywtf-com-293381a1", "url": "https://honestlywtf.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "universo-online-2020-08-16-16-54-25-c325c544", "url": "https://uolmalli.ddns.net/-/desktop/3.php?10,11-21,13,08-20", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dropbox-inc-2020-05-29-14-46-31-cb004f2c", "url": "https://drcorreamejoresimplantes.com/wave/joMtWjyzgCMDjTfdOc2Ip9gH1NaZ8ZBsnoVkIuTZ6GCqzSDo5G6vPncRbmRjmsLKRH5AcZzjFbK", "verdict": "phish", "brand": "Dropbox", "domains": ["dropbox.com"], "label": "phish"}
+{"page_id": "papersource-com-9d578990", "url": "https://papersource.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "weclapp-com-4a5eeef8", "url": "https://weclapp.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "wetransfer-2020-05-27-17-16-37-3fc20299", "url": "http://mocabonitabresil.com/modules/We-Transfer/2020/login.php?ul=_LkeFUq_VJOXRTIPtoGYDw17dsfsfd18", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rackspace-2020-09-06-10-51-44-8aa57855", "url": "http://meaganthaplug.com/wp-admin/includes/rackspace/RackSpace/RackSpace/r.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "diamondsupplyco-com-22451ccb", "url": "https://diamondsupplyco.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instant-fans-com-3e3821d3", "url": "https://instant-fans.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instar-de-a09077a0", "url": "https://instar.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "randstad-in-50887524", "url": "https://randstad.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sf-express-co-2020-05-21-09-32-24-8ff60594", "url": "http://shitlaassociates.in/php/SFExpress", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dailykos-com-cdf31227", "url": "http://dailykos.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "adobe-inc-2020-05-15-10-31-34-8119b9cd", "url": "http://modimedia.in/Adobe-2/quotation/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "folkeskolen-dk-2a194d63", "url": "http://folkeskolen.dk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "outlook-2020-09-09-13-36-13-ecbaea6a", "url": "http://65b9fd1d535d452b024f727c4e8d37a7-dot-dbenitonline.ey.r.appspot.com/", "verdict": "phish", "brand": "Microsoft", "domains": ["microsoft.com"], "label": "phish"}
+{"page_id": "bulldogjob-pl-f3c1a171", "url": "https://bulldogjob.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "net-a-porter-com-435f5f5b", "url": "http://net-a-porter.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "frankfurt-airport-com-684f70ba", "url": "https://frankfurt-airport.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rowingblazers-com-f180ae80", "url": "https://rowingblazers.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ifaplanet-com-d1ebf307", "url": "https://ifaplanet.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mentedcosmetics-com-70b48b51", "url": "http://mentedcosmetics.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "felgenoutlet-de-ec4d3b90", "url": "https://felgenoutlet.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "adobe-inc-2020-09-05-10-31-09-1819a498", "url": "http://stluciafloral.com/wp-includes/SimplePie/Content/Adobe_page.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bank-of-the-bahamas-limited-2020-05-19-10-46-20-671cd3d4", "url": "https://diabeticgoodbaking.icu/Authorization.htm", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dealgenius-com-e062c837", "url": "https://dealgenius.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "choc-org-0427d244", "url": "http://choc.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bancolombia-2020-09-05-16-46-25-eaa89ced", "url": "http://sucursalvirtualonliinebancolombia.com/mua", "verdict": "phish", "brand": "Bancolombia", "domains": ["grupobancolombia.com"], "label": "phish"}
+{"page_id": "ovhcloud-2020-09-01-11-44-24-e1f3b620", "url": "http://www.mensamagazine.it/images/immagini/c/D-T78C2V4/actualisation/ovh/dg3njq=", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "linkedin-corporation-2020-05-19-10-19-11-58fb8227", "url": "https://www.cosmoia.com/wp-content/plugins/content/14a0f7b3be45e4056a6d9109d4915d80/?user=&_verify?service=mail&data:text/html;charset=utf-8;base64,PGh0bWw+DQo8c3R5bGU+IGJvZHkgeyBtYXJnaW46IDA7IG92ZXJmbG93OiBoaWRkZW47IH0gPC9zdHlsZT4NCiAgPGlmcmFt", "verdict": "phish", "brand": "LinkedIn Corporation", "domains": ["linkedin.com"], "label": "phish"}
+{"page_id": "enel-energia-s-p-a-2020-08-14-14-06-12-8ab2c6b3", "url": "http://paytolink.co/enol/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bakuelectronics-az-cb8c28c4", "url": "https://bakuelectronics.az", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-05-02-03-24-06-77ac74ae", "url": "http://www.manutencaoitauchecks.com/confirmacao", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "rakuten-2020-08-17-13-58-11-704cc949", "url": "http://rakuten.co.jp.rakutenasdnawezsdnflanwlek.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "showcasead-com-2be30ed6", "url": "https://showcasead.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "google-inc-2020-05-30-11-08-27-afc9c56f", "url": "https://securlty.be/tcxya7wqrglzhm86", "verdict": "phish", "brand": "Google", "domains": ["google.com", "appspot.com", "appspot.com"], "label": "phish"}
+{"page_id": "jtnews-jp-90ede5f6", "url": "https://jtnews.jp", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "discover-2020-07-28-21-21-04-568ac25b", "url": "http://35.237.11.177/myca/", "verdict": "phish", "brand": "Discover", "domains": ["discover.com", "discovernetwork.com", "discovernetwork.com"], "label": "phish"}
+{"page_id": "global-sources-hk-2020-07-20-13-02-55-d74c5379", "url": "http://banyaksayang.com/source/sso/GeneralManager.php?", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sparkasse-bank-2020-05-27-17-19-15-040e9f19", "url": "http://vaguebarage.com/sparkasse/1d1c96c821d00952", "verdict": "phish", "brand": "Sparkasse Bank", "domains": ["sparkasse-bank-malta.com"], "label": "phish"}
+{"page_id": "shopify-com-sg-9a1c4ad4", "url": "https://shopify.com.sg", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-07-20-15-44-57-b96a3d98", "url": "https://amazon-login.co/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "amazon-com-inc-2020-07-04-12-49-49-30f1b91a", "url": "https://myamazon.club/p", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "telefonica-2020-09-04-11-25-24-300a2740", "url": "http://verification.slashoffers.de/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "cytu-be-c8cc1f80", "url": "https://cytu.be", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "workupload-com-cda78a50", "url": "https://workupload.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-11-10-52-10-ee375bac", "url": "http://rakuten.co.jp.rakutten.cc/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-18-13-24-16-8845c4db", "url": "http://www.checkinitausemprepresente.com/confirmacao", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "first-investment-bank-2020-08-23-11-29-18-c2e5a816", "url": "https://enarriendo.co/vendor/fibank/EBank/sms2.php", "verdict": "phish", "brand": "First Investment Bank", "domains": ["fibank.bg"], "label": "phish"}
+{"page_id": "tricare-mil-e3e3ad20", "url": "https://tricare.mil", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sherpadesk-com-1b756048", "url": "https://sherpadesk.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "wake-com-7ba95767", "url": "https://wake.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "strato-ag-2020-08-13-17-37-09-c62bffa1", "url": "http://quadfabrik.de/login.stratoserver.net.cpanel/apps/CService", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "phcorner-net-5f0c5564", "url": "https://phcorner.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-05-18-10-14-01-2067cb7f", "url": "http://www.atendimentoitaucheckincare.com/confirmacao", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "sipag-com-br-603dbeba", "url": "http://sipag.com.br", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "popkade-ir-2a603101", "url": "https://popkade.ir", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-bradesco-2020-09-12-11-08-46-bbaba511", "url": "https://sites.leadsflixnet.co/bradesco-mxe95?aff=enviopro&amp;funil_id=e544m4h414w514n294v5x5t4i5b3f5i4747494s4j5w5z5k594n4o4k4q4v2j5k4h4t264p4", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bank-of-the-province-of-buenos-aires-2020-10-01-12-30-48-ad72841a", "url": "http://bancabip.sytes.net/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bank-of-america-2019-08-05-11-28-30-6ebd9951", "url": "https://fspsg.sa/wwp/boa2018/BofA/en/", "verdict": "phish", "brand": "Bank of America", "domains": ["bankofamerica.com", "merrilledge.com"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-08-11-12-26-13-fc0fb7d0", "url": "https://www.itoken-itau.com/fis/passo2.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "bouygues-telecom-2019-07-28-18-40-57-da9d6ab6", "url": "http://www.molinodeltorchio.com/actione/webs-telecom-booyg/Securise-info/Bouygues-telecom/france/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-05-13-14-11-43-46cc114f", "url": "http://oferamericanasweb.com/MeusProdutos/Prefetch.php?skullid=134253960", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "steam-2020-05-27-11-26-34-97db2480", "url": "http://steampoweroesb.me/login", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "instagram-2020-08-18-10-54-23-6c4d2a0c", "url": "https://epiploic-closure.000webhostapp.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "wallpaperdirect-com-71130a4c", "url": "https://wallpaperdirect.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rbc-royal-bank-2019-09-08-21-13-47-7aad9767", "url": "https://mail.royai-slgn-ln.com/", "verdict": "phish", "brand": "RBC Royal Bank", "domains": ["rbc.com", "rbcroyalbank.com"], "label": "phish"}
+{"page_id": "first-investment-bank-2020-08-23-12-19-13-0bee4eda", "url": "https://enarriendo.co/plugins/bootstrap/css/fibank/EBank/sms1.php", "verdict": "phish", "brand": "First Investment Bank", "domains": ["fibank.bg"], "label": "phish"}
+{"page_id": "rakuten-2020-08-14-14-52-33-491e9b00", "url": "https://rakuten.co.jp.rakutenaccounnwtentmweazwe.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "ghalino-com-c3e0ecd0", "url": "https://ghalino.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paypal-community-com-5c60b42a", "url": "https://paypal-community.com", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "benign"}
+{"page_id": "picua-org-09465624", "url": "https://picua.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "emailmonks-com-31c30264", "url": "https://emailmonks.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-08-27-14-16-54-93c7649e", "url": "http://online-banking-login1.xyz/Safe&Secure-Online-Bank-Login/", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "varietyinsight-com-35219745", "url": "http://varietyinsight.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "heli-nation-com-9fd36fa7", "url": "https://heli-nation.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "uber-2020-07-18-13-13-02-eb7fd561", "url": "https://codemixto.com/ozz/uber", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sc2casts-com-cac77e08", "url": "https://sc2casts.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "shaw-communications-2020-09-02-14-53-31-133cbe88", "url": "https://epaymentsbill.atskype.net/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "stocklayouts-com-15547c57", "url": "https://stocklayouts.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rapid-flyer-com-ad0844f3", "url": "http://rapid-flyer.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "acheteralasource-com-c235c265", "url": "https://acheteralasource.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "moby-it-b8f424fd", "url": "https://moby.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "telus-2020-09-14-14-22-26-857324b1", "url": "http://hinsorn.ac.th/obeclms/tel", "verdict": "phish", "brand": "Telus", "domains": ["telus.com"], "label": "phish"}
+{"page_id": "chase-personal-banking-2020-08-24-12-16-49-702eb520", "url": "http://ches0-opinionatomkansas.duckdns.org/6dcc5e376de8a2d44d776a0e7274ef30/verification-email.php?cmd=_account-details&session=3a4981f6753b548699bda19459a3a8d3&dispatch=bc2639a0d2809a5d92ff8ac5956a5fa329433511", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "banco-de-cordoba-2020-07-11-17-59-31-6f48a6ff", "url": "https://digidecorator.ir/.well-known/pki-validation/bancor/164db29f9e05f3125647e274332d68ad/auth.php", "verdict": "phish", "brand": "Banco de Cordoba", "domains": ["bancor.com.ar"], "label": "phish"}
+{"page_id": "nicobar-com-e6969d4b", "url": "http://nicobar.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "westpac-institutional-banking-2019-08-27-14-09-47-65b5115f", "url": "https://ketocbdwater.com/return.user/WestpacMobnew/c223eb6c6519b900063d412e9db7064b/login.php", "verdict": "phish", "brand": "Westpac Institutional Banking", "domains": ["westpac.com.au"], "label": "phish"}
+{"page_id": "regiojet-cz-9a77743e", "url": "https://regiojet.cz", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "jdu-ru-4b008f8d", "url": "https://jdu.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "metalshop-cz-d8af98a9", "url": "https://metalshop.cz", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-09-18-23-46-01-e8bbf030", "url": "https://amazon-mail.ws/pc/", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "3dpirate-net-08fd0ad6", "url": "https://3dpirate.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "natwest-personal-banking-2020-09-14-15-27-15-43903aab", "url": "https://newalert-nwest.cc/natwest", "verdict": "phish", "brand": "NatWest Personal Banking", "domains": ["natwest.com"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-24-23-00-26-06907efa", "url": "https://meuitaucard.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "saatvesaat-com-tr-f6fc2080", "url": "http://saatvesaat.com.tr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "wells-fargo-company-2020-05-24-15-47-30-78ca169d", "url": "http://verify-wells-fargo-account.mobi/mobile/smsinsert.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "caixa-economica-federal-2020-09-17-13-49-55-6bd1c736", "url": "http://liberacao.dispositivocaixa.cf/sinbc/home/03/nick/?key=lnxvT8ox4MHxT7mlO4pVGFl2Kly9rBhGkdX4NZH9oqAF8fs3LE6UFkKnaCU8CJKSy3VAUuh3gjB2akz6dYbvaQXta7NVojIih5ep7Iv8tffJAKdS3Zgsn1u1JgTLH2J5tfQZT9uN4ogG8e08O2lMMC", "verdict": "phish", "brand": "Caixa Economica Federal", "domains": ["caixa.com"], "label": "phish"}
+{"page_id": "turuz-com-086a5b54", "url": "https://turuz.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-05-23-19-41-47-e11f1d2e", "url": "http://mail.xjpmorganchaseverification.com/index.php/chase/app_acc.html", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "soc-rocket-ru-d702f6a9", "url": "https://soc-rocket.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "grepolis-com-52af2edb", "url": "https://grepolis.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "oxbridgeessays-com-5f0863bb", "url": "https://oxbridgeessays.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "1000ps-de-2adf6840", "url": "https://1000ps.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ucan-ir-b495bf52", "url": "http://ucan.ir", "verdict": "phish", "brand": "Google", "domains": ["google.com", "appspot.com", "appspot.com"], "label": "benign"}
+{"page_id": "kdgforum-de-45d52c53", "url": "https://kdgforum.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "halifax-bank-of-scotland-plc-2020-09-17-11-45-58-790ea62d", "url": "https://halifax.device-deregister.com/Login.php", "verdict": "phish", "brand": "Halifax Bank of Scotland Plc", "domains": ["amconline.co.uk"], "label": "phish"}
+{"page_id": "tvprofil-com-7165e0dc", "url": "https://tvprofil.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "suntrust-bank-2019-10-24-15-47-14-995297d1", "url": "http://brainish-exhibits.000webhostapp.com/suntrust.com/suntrust.com/index.html", "verdict": "phish", "brand": "SunTrust Bank", "domains": ["w3.truist.com"], "label": "phish"}
+{"page_id": "sadowniczy-pl-d02eb105", "url": "https://sadowniczy.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ourtime-dating-2019-09-08-21-49-50-518c3cd3", "url": "http://mobisoil.xyz/ourtime/v3/960e19072f566705470352a471f9991d", "verdict": "phish", "brand": "OurTime Dating", "domains": ["ourtime.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-06-14-09-09-0e40c1f2", "url": "https://id.rakuten.co.jp.rakutenlkfefcbfsdbdcebe.cyou/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "earthlink-2020-05-02-09-24-40-72a5eabb", "url": "https://inner-nuance-269123.ue.r.appspot.com/default.php?cmd=login_submit&amp;id=447bbcd18c290f8fcf2a30b4f79730e9447bbcd18c290f8fcf2a30b4f79730e9&amp;session=447bbcd18c290f8fcf2a30b4f79730e9447bbcd18c290f8fcf2a30b4f79730e9", "verdict": "phish", "brand": "EarthLink", "domains": ["earthlink.net"], "label": "phish"}
+{"page_id": "wells-fargo-company-2020-05-30-09-43-28-7ce6b4f9", "url": "https://alfscargo.com/wellsfargo.security2020/wellsfargo-update", "verdict": "phish", "brand": "Wells Fargo & Company", "domains": ["wellsfargo.com"], "label": "phish"}
+{"page_id": "md-fashion-com-ua-c77b589a", "url": "https://md-fashion.com.ua", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "getyourguide-es-4299eedf", "url": "https://getyourguide.es", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-28-17-21-42-0b0eec79", "url": "https://login.rakuten.co.jp.rakutenamsdnwwefklsdfwn.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "anvilindustry-co-uk-511c4846", "url": "https://anvilindustry.co.uk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "cubezz-com-1040b9c3", "url": "https://cubezz.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "halifax-bank-of-scotland-plc-2020-09-24-15-23-35-e0f89834", "url": "https://halifax.newpayee-alerts.com/Login.php", "verdict": "phish", "brand": "Halifax Bank of Scotland Plc", "domains": ["amconline.co.uk"], "label": "phish"}
+{"page_id": "instagram-2020-09-12-14-02-54-906e635a", "url": "https://help-instagramcopyrightcentre.com/mailindex.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "itcareerfinder-com-8850862f", "url": "https://itcareerfinder.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "usedesk-ru-dc282a7a", "url": "https://usedesk.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "spotify-2020-06-13-10-42-50-34de348a", "url": "http://162.241.154.215/~madeintn/.sptfy", "verdict": "phish", "brand": "Spotify", "domains": ["spotify.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-27-14-19-11-b7688bb3", "url": "http://login.rakuten.co.jp.rakutenamsdnwwefklsdf.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "bankia-2020-05-19-02-00-48-ab1543e9", "url": "http://netx.hadamazyan.site.preview.binero.se/ver/manage", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "techsciresearch-com-6450ffc4", "url": "https://techsciresearch.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "supersklep-pl-e0fe74bf", "url": "https://supersklep.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-06-22-14-47-57-dd5ba359", "url": "https://www.free-amazon.monster/", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "ticketreturn-com-85042d38", "url": "https://ticketreturn.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "freeflyapparel-com-f0e0d45b", "url": "http://freeflyapparel.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "salesbacker-com-51d21900", "url": "https://salesbacker.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bank-of-montreal-2020-08-22-12-59-14-a5ec6791", "url": "http://106.109.112.zoom-lab.com/Interac/bmo/indexx.php", "verdict": "phish", "brand": "Bank of Montreal", "domains": ["bmo.com"], "label": "phish"}
+{"page_id": "spotify-2019-08-12-10-09-13-d0c0e058", "url": "http://spotifyacc.com/verify", "verdict": "phish", "brand": "Spotify", "domains": ["spotify.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-21-20-36-51-c1d614c8", "url": "https://netflixsecuraccount.live/Login.php?sessionID=vxq4MeiwJyJPiOVZlzLGFoipNf4KKWLgkGnzB4o2r46KdAZQE8sGQvnJzxSYImGOHdfgiX2Q590ouchrJWBEb2RBujoZgp7y0VL5", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "monzatoday-it-18efa44b", "url": "https://monzatoday.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "halifax-bank-of-scotland-plc-2020-09-09-13-49-39-f92f683f", "url": "https://authpaym-halifax.com/Login.php", "verdict": "phish", "brand": "Halifax Bank of Scotland Plc", "domains": ["amconline.co.uk"], "label": "phish"}
+{"page_id": "the-west-net-ccd2e951", "url": "https://the-west.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sadabramej-com-dfc2a7b6", "url": "https://sadabramej.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "norauto-pt-9db619b2", "url": "https://norauto.pt", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "receipt-bank-com-4662ed28", "url": "https://receipt-bank.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itworld-com-d5d219c1", "url": "http://itworld.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "luno-2020-08-13-19-10-32-5c202bb0", "url": "https://undetectedcheat.com/llno/LUNO_UPDATE_2020", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-08-27-16-33-37-a7c243e5", "url": "http://rakuten.co.jp.rakutennm.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "meranom-com-1c1f7356", "url": "https://meranom.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-10-17-24-47-eeb7a857", "url": "https://login.rakuten.co.jp.rakutenlkfefcbfsswedxcd.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "cityportal-gr-7e70b027", "url": "https://cityportal.gr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "antiwomen-ru-f7d8e828", "url": "https://antiwomen.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "pontosmultiplus-com-df3c59e5", "url": "https://pontosmultiplus.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "meswaqi-com-8bb243d3", "url": "https://meswaqi.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "apolux-de-b78f641d", "url": "http://apolux.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2019-09-02-15-27-44-203e33d6", "url": "https://internetbanking-itau.tk/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "robinsfcu-org-ef8a7eec", "url": "http://robinsfcu.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "matterhackers-com-e21da909", "url": "https://matterhackers.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "simplii-financial-2020-05-23-15-27-51-51b0bbca", "url": "http://jacketflerovium.com/govhejrb/simplii", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "landesbank-berlin-ag-2020-05-01-13-28-40-28824d77", "url": "https://supporta.info/lbb/index3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "ddth-com-c3a757fc", "url": "https://ddth.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "pregnancybirth-net-ed21715f", "url": "https://pregnancybirth.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "aol-inc-2020-05-02-14-32-34-7150c3c4", "url": "https://decibeliosmagazine.com/best/me2/index.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "instagram-2020-09-04-13-44-33-d3dd2f5f", "url": "https://instagramfor-copyright.com/form.php", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "games-kids-com-46117e7a", "url": "https://games-kids.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sunnytoo-com-f67cf283", "url": "http://sunnytoo.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sib7-com-8f879569", "url": "https://sib7.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "telstra-corporation-limited-2020-06-15-21-01-30-a0dd9bdb", "url": "https://www.gurgaonnewproject.com/admin/Telstra/login.php?email=%250%25", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "irs-2020-07-03-01-19-35-d3669405", "url": "http://turkmcse.com/sys-cache/_alert", "verdict": "phish", "brand": "IRS", "domains": ["irs.com"], "label": "phish"}
+{"page_id": "wootric-com-4c8b8854", "url": "http://wootric.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ufs-online-ru-a30d45dd", "url": "https://ufs-online.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "wordsearchbible-com-01bcf4d5", "url": "http://wordsearchbible.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-05-11-16-53-35-4dca9b33", "url": "http://americanascovidshop.com/MeusProdutos/Prefetch.php?skullid=1616011146", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "instagram-2020-09-14-15-22-31-e8967d84", "url": "https://instagramdevicesupport.com/copyright/", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "ua-market-e0c81c95", "url": "https://ua.market", "verdict": "phish", "brand": "Google", "domains": ["google.com", "appspot.com", "appspot.com"], "label": "benign"}
+{"page_id": "modconsoles-fr-f76f1b70", "url": "https://modconsoles.fr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-10-11-48-43-8fd8b89e", "url": "https://rakuten.co.jp.rakutenupdate.com.cn/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "icici-bank-limited-2020-05-26-12-08-34-9feb0be0", "url": "https://jackcapozzi.com/app/cib-infinity.icicibank.co.in/NetbankingUpdateSession/Ret.userBANKAWAY/verify.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "shareasale-com-c00b04a7", "url": "https://shareasale.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "adobe-inc-2020-09-11-13-20-05-71b9c0a2", "url": "http://www.adobereader.cloud/docushare/", "verdict": "phish", "brand": "Adobe", "domains": ["adobe.com"], "label": "phish"}
+{"page_id": "postfinance-2019-10-19-10-20-51-dff0bf92", "url": "http://www.neocenterzs.com/inc/", "verdict": "phish", "brand": "PostFinance", "domains": ["postfinance.ch"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-22-21-54-27-3a4a3a75", "url": "https://netflixbilling-issue.com/Login.php?sessionID=yeDNa3HkiV6IVsp2e9pX6oLf4FkyslMHDaCJwlE0q9Wz852ExHao9tapkoaIiAR6qfEqBwSTs186GhTueJqun5Hf2r07Z0Tec8m0&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-14-17-28-21-3471fb47", "url": "http://rakuten.co.jp.rakutend.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "insidermonkey-com-c461befe", "url": "https://insidermonkey.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "gymforless-com-75667ca9", "url": "http://gymforless.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instagram-2020-08-10-13-08-37-c04d9453", "url": "http://instagramorbusiness.com/form.php", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "gametwist-com-688f296c", "url": "https://gametwist.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "suntrust-bank-2020-05-23-17-02-54-1bc83701", "url": "http://labyrinthtanning.com/suk/", "verdict": "phish", "brand": "SunTrust Bank", "domains": ["w3.truist.com"], "label": "phish"}
+{"page_id": "orange-2020-09-10-14-26-11-e8b38ef1", "url": "http://webmail.s-telecomme-sp-oranges.fr/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-08-10-12-08-44-dde75501", "url": "http://rakuten.co.jp.rakutensafe.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "netzero-2020-09-14-12-53-36-cd6b171a", "url": "https://mosaicdevelopmentgroup.org/hthw/netzero.net/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "instagram-2020-09-06-12-20-38-5bc009fa", "url": "https://praynis.com/login.php", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-09-05-17-15-52-62fa5038", "url": "https://netflix-renewplan.com/confirm/Login.php?sessionID=u15uy97rzKFXfSrNqTIDTlpTiEp7dEYZ8DTJpalJ5QH4BQT6N5dZAMbOB7Rk8uI9tz7gZxeFN9z1FJdvJKgbBml9Iv07jR438AyT&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "skbkontur-ru-e5d454e4", "url": "https://skbkontur.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "windward-islands-bank-2020-09-12-14-14-25-722315d7", "url": "http://www.bestusedmagic.icu/j/s/d/pa.htm", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "protoporia-gr-2c16a139", "url": "https://protoporia.gr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "boxberry-2020-08-28-13-13-35-1cc4ff06", "url": "http://boxberry.ru-offers.ru/index.php/false/false/py1n.html/discovercard.com/dfs/accounthome/summary/-www.schwab.com/secure.accurint.com/unfcu2.org/login1/wachovia.com/myaccounts.aspx/investing.schwab.com/secure/schwab", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "docusign-2020-09-26-12-45-58-e53fe3af", "url": "https://fourthwaveenergy.com/wp-includes/doc/login.php?websrc=59c275dc2e97dd3b896ed4ff2b82a8fd&amp;dispatched=58&amp;id=4306032482", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "netflix-inc-2020-05-17-09-24-51-14daa416", "url": "http://membership.authxkwlr3orasbfol1ypzzq1budnetflix.com/80f2f15983422987ea30d77bb531be86/tnFBsV27sc3kIMJg0Z8snqenramMHIXz.php?country=GB-United%20Kingdom&lang=en", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "swiatksiazki-pl-2c97aa1d", "url": "https://swiatksiazki.pl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "labelleadresse-com-c4d60882", "url": "https://labelleadresse.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "qupeiyin-com-bbe7f09b", "url": "https://qupeiyin.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "veloplus-ch-cfde5cf5", "url": "https://veloplus.ch", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "timelog-com-096d197e", "url": "https://timelog.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "french-health-insurance-2020-07-21-17-12-22-283a19f5", "url": "http://ameli-account-connection.agip.net.pe/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-08-25-15-49-55-0453d070", "url": "https://login.rakuten.co.jp.rakutenasdmklwasdlwwerqw.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "banco-bradesco-2020-07-12-09-58-34-b3219088", "url": "https://pmm.ac.in/css/iniciarH/concluindo/desktop/home.php?www.bradesco.com.br/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "mundoesotericoparanormal-com-98197029", "url": "https://mundoesotericoparanormal.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "dgi-french-tax-authority-2020-07-16-10-50-24-068a99cd", "url": "http://nireuhzuz.net/IMPOTS-GOUV/FR-FR6963IMPOTSGOUV4", "verdict": "phish", "brand": "DGI French Tax Authority", "domains": ["proz.com"], "label": "phish"}
+{"page_id": "made-in-china-2020-05-24-05-43-42-b9a374fb", "url": "https://cretiny.ru/wordpress/wp-content/plugins/plugins/mand/madeinchina.com/logon.do.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "poshpeanut-com-5bdbe0a9", "url": "https://poshpeanut.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "vintagecuties-com-fa38f66e", "url": "https://vintagecuties.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bullmarketbrokers-com-d1e11d67", "url": "https://bullmarketbrokers.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "grupo-santander-2020-09-09-14-14-48-1620b913", "url": "https://learning.validate.santander.digital/system/security/view/remember_password.php?h=6816810a8f2b122673faeb0994125f3e92351fd21596636558", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "dhl-airways-inc-2019-08-01-12-16-55-c4c51360", "url": "http://gameover.cu.ma/~gntcncum/D/H/L/EX-Press/document-/=46d37d3ffe90b3e56482e0726a2ff729cad88d5916aeb3e4a2a1d3c8889afd000dffdd18fe1509450bde3c1eebdef4be/tracking2.php?l=_JeHFUq_VJOXK0QWHtoGYDw_Product-UserID&userid=", "verdict": "phish", "brand": "DHL Airways", "domains": ["logistics.dhl"], "label": "phish"}
+{"page_id": "boxberry-2020-09-02-16-12-38-d68339c0", "url": "http://boxberry-deliv.ru/index.php/false/false/false/false/false/oegw.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "paypal-inc-2019-10-19-05-19-12-7469f0c5", "url": "http://epl.paypal-communication.com/H/2/v40000016d852e810fc430a96e966f4758/7854c6ce-1ab1-4236-b24b-9255b8337574/HTML/", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "banco-bradesco-2020-07-09-19-17-40-4f5b6d60", "url": "https://pmm.ac.in/images/featured-slide/htmls/concluindo/desktop/home.php?www.bradesco.com.br", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "magalu-2020-08-31-09-35-41-2b71c720", "url": "http://e-magalu.com/magazine/produto/1597925554/fritadeira-eletrica-sem-oleo-air-fryer-britania-air-fry-bfr02pi-preta-e-cinza-32l-com-timer/p/218979800/ep/frel/&uid=5715797842", "verdict": "phish", "brand": "Magalu", "domains": ["magazineluiza.com.br"], "label": "phish"}
+{"page_id": "sofarsounds-com-a25be162", "url": "https://sofarsounds.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "silkperfumes-cl-a589040f", "url": "http://silkperfumes.cl", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-24-12-33-14-fddd950d", "url": "https://member.rakuten.co.jp.rakutenasdmklwasdlwek.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "azubiyo-de-2758452e", "url": "https://azubiyo.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rvtripwizard-com-92f650c6", "url": "https://rvtripwizard.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instagram-2020-09-09-14-55-28-7f9623fa", "url": "https://instagramcopyrightforfeedback.com/login.php", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "hsbc-bank-2020-09-28-13-56-54-b66d4805", "url": "https://hsbc.payments-team.net/Login.php", "verdict": "phish", "brand": "HSBC Bank", "domains": ["hsbc.com"], "label": "phish"}
+{"page_id": "bancolombia-2020-08-29-14-10-35-e2746cdf", "url": "https://sucursalvirtualpersonastransaccional.ga/sucursalpersonasusuario.html", "verdict": "phish", "brand": "Bancolombia", "domains": ["grupobancolombia.com"], "label": "phish"}
+{"page_id": "pornstarsyfamosas-es-5921f2df", "url": "https://pornstarsyfamosas.es", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "morrisonexpress-com-f79b33ca", "url": "https://morrisonexpress.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sendmyway-com-29311049", "url": "https://sendmyway.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tirun-com-76c77486", "url": "http://tirun.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "marketingweek-com-eb5421fe", "url": "https://marketingweek.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "degussa-goldhandel-de-4a7a7fd7", "url": "http://degussa-goldhandel.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "apple-inc-2020-07-22-17-22-24-24d47e94", "url": "http://secureupdate.appleld.com.duilawyeryork.com/ap/fc774ce102d8bae?cmd=_update&dispatch=fc774ce102d8bae99&locale=_ru", "verdict": "phish", "brand": "Apple", "domains": ["apple.com", "icloud.com"], "label": "phish"}
+{"page_id": "bankia-2020-09-11-12-15-50-d1dcf40a", "url": "http://bankia-es.net/a1b2c3/84733182cc7790cb4fe12b16c2c714a4/login/", "verdict": "phish", "brand": "Bankia", "domains": ["caixabank.es"], "label": "phish"}
+{"page_id": "legsex-com-d094fa5b", "url": "https://legsex.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "railway-technology-com-31a9436d", "url": "https://railway-technology.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "united-services-automobile-association-2019-08-19-11-01-48-6ff41804", "url": "http://www.cirkelvaneenheid.be/scurity/USAA/USAA/USAA/login.php?cmd=login_submit&id=6951b2208c88b1c6b363f0bca17ff0366951b2208c88b1c6b363f0bca17ff036&session=6951b2208c88b1c6b363f0bca17ff0366951b2208c88b1c6b363f0bca17ff036", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "three-uk-2020-08-27-16-18-18-3f0802e2", "url": "https://billing-renewal.com/Login.php?sessionID=3jZ0nISMkkyGgyeGVcwZ0BfrdrrjupFtqMyMVSVNDcyw3CTiUiVrTt27kkBZGgguQyotwvnINMbV4NQMfevTMNqZVNmel5ybvYnc&error=noNumber", "verdict": "phish", "brand": "Three UK", "domains": ["three.com"], "label": "phish"}
+{"page_id": "definitions-marketing-com-69527c41", "url": "https://definitions-marketing.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "hotmovies-com-8138d908", "url": "https://hotmovies.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "exploretalent-com-1000ccf1", "url": "http://exploretalent.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "vgdl-ir-2aedd7a9", "url": "https://vgdl.ir", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-09-26-12-40-34-37ef5ba7", "url": "https://online-chase.com/chase/index.php?app-token=b+dhc36ea182gf750j4+9i27bLrBFGOSg+k+oP+wfX3NK4paaAI+E5H++wYu6mZg+S9JMCT1D841207162774", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-14-12-40-37-bd3e130a", "url": "http://www.smsitausecurity.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "playerjs-com-6fa70df7", "url": "https://playerjs.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "runescape-2020-09-14-17-03-16-400d1e12", "url": "http://oldschool.jagex-runescape.com/m=weblogin/loginform.ws821,321,584,42184523,3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "guitarraviva-com-40d18422", "url": "https://guitarraviva.com", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "practical-sailor-com-d36a7825", "url": "https://practical-sailor.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "romeing-it-1f92b7e5", "url": "http://romeing.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "pcmoneymaking-com-dbcf3d22", "url": "https://pcmoneymaking.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "newsleopard-com-fe454d31", "url": "https://newsleopard.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "etisalat-2020-05-21-11-08-10-0a955a89", "url": "http://www.taddepol.edu.hk/wp-content/plugins/admin-menu-editor-pro", "verdict": "phish", "brand": "Etisalat", "domains": ["etisalat.ae"], "label": "phish"}
+{"page_id": "facebook-inc-2020-08-30-15-25-38-f4358dc0", "url": "http://freembyeasgc.000webhostapp.com/", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "phish"}
+{"page_id": "american-express-2019-09-02-13-08-32-1595af4b", "url": "https://fulljhuri.com/amamx.us/83897346de0e2b4b43033283552ab059/amex-confirm-your-email.php?cmd=amex-account-service.com/account/profile_update_submit&id?&id=403bf398810f14eedbb96eb6b2bb72a7403bf398810f14eedbb96eb6b2bb72a7&session=email-verification?&email=&403bf398810f14eedbb96eb6b2bb72a7403bf398810f14eedbb96eb6b2bb72a7", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "favro-com-c44531f6", "url": "https://favro.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "boxberry-2020-09-04-12-26-20-af01b6df", "url": "https://www.boxberry-cheking.ru/index.php/false/py1n.html/discovercard.com/dfs", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "chrono24-it-a2b59885", "url": "https://chrono24.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instagram-2020-09-12-14-12-04-920522ff", "url": "http://help-instagramcopyrightcentres.com/mailindex.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "easyspace-com-500a8bbd", "url": "https://easyspace.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mail-ru-group-2020-08-05-10-41-45-5b4b5bfa", "url": "http://email.m-aut.ru/apple", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-08-25-16-01-59-ee584ef5", "url": "https://login.rakuten.co.jp.rakutenasdmklwasdlwwerqw.buzz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "paintyourlife-com-a2bd50f4", "url": "http://paintyourlife.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bt-group-plc-2019-10-17-11-06-03-48d6d5f8", "url": "http://www.europecrewacademy.com/wp-includes/theme-compat/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rackspace-2020-05-01-21-33-31-81ead733", "url": "http://tigerleahu.com/Gbrain/rackspaceauto/", "verdict": "phish", "brand": "Rackspace", "domains": ["rackspace.com"], "label": "phish"}
+{"page_id": "toolek-com-6214242d", "url": "https://toolek.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "finanzaonline-com-09a3d312", "url": "https://finanzaonline.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "a101-ru-816fbcc4", "url": "https://a101.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "3d-sk-03bf7bd0", "url": "https://3d.sk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chrisvicmall-com-af4bc5fb", "url": "https://chrisvicmall.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-06-15-12-13-47-0bfc17ee", "url": "http://promocional-itau-card.com.br/ITAU-CARD-APP/~/login/", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "itvdn-com-855a0d7b", "url": "http://itvdn.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "adriatic-hr-840a1814", "url": "https://adriatic.hr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "scalersandcrawlers-it-e68972ca", "url": "https://scalersandcrawlers.it", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "recordsfinder-com-f599dba5", "url": "https://recordsfinder.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "zulutrade-com-dd4f26d0", "url": "https://zulutrade.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "goodreads-com-daf0692d", "url": "http://goodreads.com", "verdict": "phish", "brand": "Google", "domains": ["google.com", "appspot.com", "appspot.com"], "label": "benign"}
+{"page_id": "yingkee-hk-782ed34f", "url": "http://yingkee.hk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "absa-group-2020-08-22-10-53-41-4b7dc832", "url": "https://www.velasquezhandymenservices.com/Manage-AbsaOnlineBanking-httpsib.absa.co.zaabsa-onlinelogin.jsp-Logon-AbsaExpress/~~Express%20-%20Manage%20Devices%20-%20Absa%20Online.htm", "verdict": "phish", "brand": "Absa Group", "domains": ["absa.com"], "label": "phish"}
+{"page_id": "at-t-inc-2019-08-19-12-06-54-ac17a6e5", "url": "https://platinumremovals.com.au/askuri/att/index.html", "verdict": "phish", "brand": "AT&T", "domains": ["att.com"], "label": "phish"}
+{"page_id": "runescape-2020-09-12-13-45-35-8ba7d9e7", "url": "https://oldschool.runescapebonds-var.com/m=weblogin/loginform.ws821,321,584,42184523,3.html", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "instagram-2020-08-19-14-40-17-b13ce934", "url": "http://instagramlivecommunity.com/username.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "american-express-2020-08-16-17-54-18-cf9bc6c1", "url": "https://amex-controleportaal.web6543.cweb04.gamingweb.de/Secure%20Verification.php?VqBcwbUyjhzJEpTNrKOgXZQmPuLoYxdavtsGkFDARCHflenSMiWIme5aF27qEtxYUP6W9c84vsH1k0ogz3JRiNBL=ehAjSzGolZxJwFLsmQbVIRBUrKEgyPdMnDfHcTNuWCpXkqYitaOvBY0z2xFUP8cRLqs96Ni3WmEHv5Jget1o74ak", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "tpapayments-com-e8906ef2", "url": "https://tpapayments.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "vk-com-4894387e", "url": "https://vk.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "carthrottle-com-1995aebb", "url": "https://carthrottle.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "atelieronweb-com-161709f2", "url": "https://atelieronweb.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "pof-2020-08-09-00-15-31-9c139c8c", "url": "http://swiftholyfck.me/gnm22s", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "orange-2020-09-06-11-22-55-bbf91e8e", "url": "https://boxlog-ing.web.app/", "verdict": "phish", "brand": "Orange", "domains": ["orange.com"], "label": "phish"}
+{"page_id": "bank-of-guam-2020-08-09-01-16-25-4b2cc111", "url": "http://www.poolscalifornia.top/u.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "paypal-inc-2019-10-24-16-04-54-8b10fb93", "url": "https://paypal-id-signin-customer-center-customer-locale-g-en.cf/recovery/customer_center/customer-IDPP00C828/myaccount/signin/?country.x=US&locale.x=en_US", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "naughtymachinima-com-a722022e", "url": "https://naughtymachinima.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "onepoll-com-02955b67", "url": "https://onepoll.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "chase-personal-banking-2020-09-24-20-56-33-9f1c4b31", "url": "http://secure07b-chase-login.xyz/chase.com-web-auth-dashboard-dashboard-overviewAccounts-overview-index/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "celibatairesduweb-com-d8d7ae91", "url": "https://celibatairesduweb.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "redtube-com-br-5a28461d", "url": "https://redtube.com.br", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "telstra-corporation-limited-2020-08-22-11-36-01-703819c4", "url": "https://luacheiabuzios.com.br/site/p/res/login.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "office365-2020-07-02-19-36-20-f6936cdd", "url": "http://ecoopus.com/wp-admin/maint/365/login.microsoftonline.com", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "eventim-ro-37f14a48", "url": "https://eventim.ro", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "delta-air-lines-2020-07-19-14-16-50-0105634b", "url": "http://hindaleryani.com/wp-includes/js/uss/delta.com/delta2018", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "matrubharti-com-e90646e7", "url": "https://matrubharti.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "catalunya-ru-f1e2c030", "url": "https://catalunya.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "myibidder-com-5e7f1870", "url": "https://myibidder.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-02-17-31-44-2e34619d", "url": "https://login.rakuten.co.jp.rakutenlkfsfsdfsdfawewe.icu/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "stforex-org-d16a92bf", "url": "https://stforex.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "interiordesign-net-3fed180a", "url": "https://interiordesign.net", "verdict": "phish", "brand": "Facebook", "domains": ["facebook.com"], "label": "benign"}
+{"page_id": "dnspod-com-7e6565c6", "url": "https://dnspod.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "maersk-2020-05-21-09-23-31-e415f48f", "url": "https://10pmlive.com/zornimg/view/index.php?email=nezar@kalaam-telecom.com", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "grupo-santander-2020-06-24-13-48-44-13d39054", "url": "http://hostalvalledetobalina.com/santa/11fb83/", "verdict": "phish", "brand": "Grupo Santander", "domains": ["santander.com"], "label": "phish"}
+{"page_id": "credit-agricole-s-a-2020-05-02-17-40-33-a28938c3", "url": "http://manligtharavfall.se/agricole/b9d1f", "verdict": "phish", "brand": "Credit Agricole S.A", "domains": ["credit-agricole.com"], "label": "phish"}
+{"page_id": "gsm-egypt-com-913652ea", "url": "https://gsm-egypt.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "truenudists-com-f8851269", "url": "https://truenudists.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "suncorp-group-2020-09-14-17-14-43-d76d526d", "url": "http://iotmagazineiran.com/wp-admin/user/Login.htm", "verdict": "phish", "brand": "Suncorp Group", "domains": ["suncorpgroup.com.au"], "label": "phish"}
+{"page_id": "instagram-2020-08-19-14-39-52-46c62de7", "url": "https://instagramhelpcopyrightcentre.com/index1.php", "verdict": "phish", "brand": "Instagram", "domains": ["instagram.com"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-09-26-11-55-17-7b71c8cd", "url": "https://seguranca.itau30horas.page/", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-05-02-06-53-54-1f1422d3", "url": "http://www.itaucheckersecurity.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "pixelemu-com-f8f178ff", "url": "https://pixelemu.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "runescape-2020-09-12-13-53-29-d63bf6f9", "url": "http://oldschool-runescape-bonds.com/m=weblogin/loginform.ws821,321,584,42184523,3.html", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "vodafone-2020-08-13-17-38-12-c7667a60", "url": "http://support.vodafone-kevelaer.de/hc", "verdict": "phish", "brand": "Vodafone", "domains": ["vodafone.com"], "label": "phish"}
+{"page_id": "audiokeychain-com-51fb2dc7", "url": "https://audiokeychain.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "textrequest-com-3487c083", "url": "http://textrequest.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "graphicsonline-org-903ec413", "url": "https://graphicsonline.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instagram-2020-09-03-12-08-50-a99844f1", "url": "https://instagram-copyrighthelping.com/mailindex.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "td-bank-group-2019-10-22-09-06-25-edd3e04c", "url": "http://tr0nsf01.org/banks/TD/questions.html", "verdict": "phish", "brand": "TD Bank Group", "domains": ["td.com", "tdbank.com"], "label": "phish"}
+{"page_id": "graphiste-com-1004f76b", "url": "https://graphiste.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "capitec-bank-limited-2020-08-09-02-31-18-e2c05855", "url": "http://craigwinstanley.com/wordpress/smde/sdno.html", "verdict": "phish", "brand": "Capitec Bank Limited", "domains": ["capitecbank.com"], "label": "phish"}
+{"page_id": "kount-com-659d37c8", "url": "https://kount.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sticky-gr-2549caab", "url": "http://sticky.gr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "oneteam-build-bad6e437", "url": "https://oneteam.build", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "movistar-2020-09-10-16-52-14-d3befe53", "url": "https://e-portalcsapateon.com/Movistar/bad30/sms.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "audiokinetic-com-f807a6d3", "url": "https://audiokinetic.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tpg-telecom-2019-08-05-10-33-48-36c803e0", "url": "http://tyredc.com/mall/Editor/tpg.your_account/771536298852fbaca01f680d1912eda4", "verdict": "phish", "brand": "TPG Telecom", "domains": ["tpg.com", "tpgmobile.com"], "label": "phish"}
+{"page_id": "cogeco-2020-08-30-14-04-33-dd211c20", "url": "http://baseline-eg.com/uploads/webmail-login/", "verdict": "phish", "brand": "Cogeco", "domains": ["cogeco.ca"], "label": "phish"}
+{"page_id": "sugarbearhair-com-1634dccf", "url": "https://sugarbearhair.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-do-brasil-s-a-2020-07-05-10-43-38-fa501960", "url": "http://www.checkbbsms.com/index1.php", "verdict": "phish", "brand": "Banco do Brasil S.A", "domains": ["bb.com.br"], "label": "phish"}
+{"page_id": "steam-2020-05-22-22-19-23-82ea3896", "url": "http://steampoweroesvgzg.me/login", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "chase-personal-banking-2020-08-24-11-23-38-d79a6b66", "url": "http://online-banking-login2.xyz/Safe&Secure-Online-Bank-Login/", "verdict": "phish", "brand": "Chase Personal Banking", "domains": ["chase.com"], "label": "phish"}
+{"page_id": "capitec-bank-limited-2020-09-01-09-38-58-474db48a", "url": "http://hamitim.com/ncrp/mser.html", "verdict": "phish", "brand": "Capitec Bank Limited", "domains": ["capitecbank.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-17-14-03-19-d1083759", "url": "https://rakuten.co.jp.verifyyourrakutenaccountrightnow.cyou/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "runescape-2020-07-12-11-46-31-e8a379da", "url": "https://secure.runescape-mobile.ru/m=forum/forums.ws474,665,813,75189213,1049", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "daneshgostar-org-fc89e4fb", "url": "https://daneshgostar.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-08-25-11-48-39-73bb0776", "url": "http://stage.amazonchristmassmiles.co.uk/", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "artfinder-com-a292e82b", "url": "http://artfinder.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paypal-inc-2020-09-03-13-17-22-b9133982", "url": "http://paypalbit.tk/pay", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "ultrafootball-com-0ffa2909", "url": "http://ultrafootball.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "caixa-economica-federal-2020-05-27-16-28-22-11b9b058", "url": "http://regularizacaixa.com/", "verdict": "phish", "brand": "Caixa Economica Federal", "domains": ["caixa.com"], "label": "phish"}
+{"page_id": "stripe-2019-10-20-09-13-52-5c695399", "url": "http://www.shadlesuares.com/k/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "nationaltestingnetwork-com-05469735", "url": "https://nationaltestingnetwork.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-de-cordoba-2020-07-24-12-57-19-eb5e5860", "url": "http://www.gradshower.com/wp-content/plugins/Update/bancor/ced0395ad334a7ac5bc3b13e4b293c95", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "first-investment-bank-2019-07-29-05-28-17-cc52f247", "url": "http://smithdiscountbooks.com/administrator/components/com_user/log-in/e1e62d98cbcc5f3212a3744c26b2ab53/account/carte/file/index.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amazon-com-inc-2020-09-09-12-08-25-739137bc", "url": "http://amazon-mail.one/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "bnp-paribas-2020-09-06-11-59-23-3cf0b94f", "url": "http://bnp-bk.000webhostapp.com/", "verdict": "phish", "brand": "BNP Paribas", "domains": ["group.bnpparibas", "botw.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-08-23-12-06-12-c3de5518", "url": "https://netflix-security-help.com/Login.php?sessionID=Fab8QbzPthXXilfOGhnvPVJQ9eu86TMIwLnflKg75d3o2qrv1yZLuzQ6iFmeGaOEWoR3gYidTOOM1uQGrH6RUdjJcL07g9AkBhxz&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "suncorp-group-2020-09-17-11-45-35-499829da", "url": "http://www.it-friedli.ch/xmlrpc/Suncorponline/internetbanking.suncorpbank.htm", "verdict": "phish", "brand": "Suncorp Group", "domains": ["suncorpgroup.com.au"], "label": "phish"}
+{"page_id": "centurylink-2019-10-20-10-38-26-19fecddf", "url": "http://lohyihe.beget.tech/centrurylink/aucgi/en/", "verdict": "phish", "brand": "CenturyLink", "domains": ["centurylink.com"], "label": "phish"}
+{"page_id": "snapchat-2020-08-11-10-04-57-f508e6d5", "url": "http://snapchat.tel/snapchat/login.html", "verdict": "phish", "brand": "snapchat", "domains": ["snap.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-19-16-21-34-00f9e0f4", "url": "https://completetheupdate.anewnoticerakuten.icu/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "millionmilesecrets-com-3fb0ac8b", "url": "https://millionmilesecrets.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "dgi-french-tax-authority-2020-07-02-20-35-21-584050a5", "url": "http://www.justlookapp.com/blog/wp-content/themes/storefront/assets/fonts/ca4d661ef651798a8c8f574111280dfe/", "verdict": "phish", "brand": "DGI French Tax Authority", "domains": ["proz.com"], "label": "phish"}
+{"page_id": "cavack-com-14c12f0d", "url": "https://cavack.com", "verdict": "phish", "brand": "Google", "domains": ["google.com", "appspot.com", "appspot.com"], "label": "benign"}
+{"page_id": "sf-express-co-2020-09-02-10-54-19-10bc3a1a", "url": "http://telesecretariatmedical.com/dss/SFExpress", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "myshops-ae-36ed419e", "url": "https://myshops.ae", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "google-inc-2019-08-05-10-13-17-695ae97a", "url": "https://codetolearn.withgoogle.com/code2learn_2019/course", "verdict": "phish", "brand": "Google", "domains": ["google.com", "appspot.com", "appspot.com"], "label": "phish"}
+{"page_id": "paypal-inc-2019-09-06-22-16-49-5f99f9eb", "url": "http://www.secure-verifypaypal.com/auth/", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "regions-financial-corporation-2020-08-17-13-46-57-734f5955", "url": "https://lavadodesalaseneldf.com/language/es-ES/regions2020/index3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "liveinternet-ru-ac35efd7", "url": "https://liveinternet.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "australia-and-new-zealand-banking-group-2020-09-14-17-27-13-d461452c", "url": "https://ip-160-153-250-139.ip.secureserver.net/anzdirect/sv3.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amazon-com-inc-2020-09-12-14-05-07-4e7173c7", "url": "http://amazonocol.buzz/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "piko-solar-portal-com-7e21167e", "url": "https://piko-solar-portal.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ralphlauren-fr-e5ab0e93", "url": "https://ralphlauren.fr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "earthlink-2019-09-06-23-06-37-210230b3", "url": "https://sixthearmark.co.kr/earthysecure/setcreditcard.jsp.htm", "verdict": "phish", "brand": "EarthLink", "domains": ["earthlink.net"], "label": "phish"}
+{"page_id": "technobyte-org-8be2fa47", "url": "https://technobyte.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "runescape-2020-09-21-23-13-43-29ea064e", "url": "https://jagexgame.com/m=forum/forums.ws619,146,481,517,1", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "brodude-ru-03e4904d", "url": "https://brodude.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "kofflersales-com-922ad623", "url": "http://kofflersales.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "musicinafrica-net-e81902ad", "url": "https://musicinafrica.net", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "suntrust-bank-2020-05-01-23-01-44-1145569a", "url": "http://appropriatelyselfish.com/login.php", "verdict": "phish", "brand": "SunTrust Bank", "domains": ["w3.truist.com"], "label": "phish"}
+{"page_id": "apple-inc-2020-08-16-16-27-20-2e782a1f", "url": "http://iowa.apple-itunes.cf/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "runescape-2020-08-21-11-13-50-05fd70fa", "url": "https://oldschool.bonds-runescape.com/", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "modernmusician-com-c4f99c17", "url": "https://modernmusician.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "emagister-fr-81fc3ee9", "url": "https://emagister.fr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "divi-help-622f24d4", "url": "https://divi.help", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-31-11-31-13-7e87204f", "url": "https://grp01.rakuten.co.jp.rakutenlkfawefssdfawead.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "studio-mcgee-com-471e030b", "url": "https://studio-mcgee.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "three-uk-2020-08-31-11-16-42-e5d43148", "url": "http://three-supportbilling.com/three", "verdict": "phish", "brand": "Three UK", "domains": ["three.com"], "label": "phish"}
+{"page_id": "daum-2020-06-20-10-58-13-07669e95", "url": "http://everestwebdevelopment.com/bag/php/gdikl/daum/", "verdict": "phish", "brand": "Daum", "domains": ["daum.com"], "label": "phish"}
+{"page_id": "strato-ag-2020-08-14-13-18-34-6cf48d51", "url": "https://stratoproject-fc353.web.app/avatar.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "saarbruecker-zeitung-de-b7fe2173", "url": "http://saarbruecker-zeitung.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "raiffeisen-bank-s-a-2020-07-27-14-05-34-53000adf", "url": "http://fayezhang.com/raiffeisen", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "crowleymarine-com-3c023619", "url": "https://crowleymarine.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-05-15-35-07-1865e64d", "url": "https://login.rakuten.co.jp.rakutenlkfsfsdfsdfasjwe.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "americanas-com-s-a-comercio-electrnico-2020-08-13-19-44-45-06d33cee", "url": "https://americanas-shoploja.com/MeusProdutos/Prefetch.php?fbclid=IwAR2qbKxTHd_o8WaGCNleWBCyWaktTrmDiTPz7xvO6DZRS3b_EZ4johUDR58&https://americanas-shoploja.com/MeusProdutos/Prefetch.php?skullid=1613015109&skullid=1613015109", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "mac-forums-com-d98ebdca", "url": "http://mac-forums.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sculpteo-com-d2c6eeaf", "url": "https://sculpteo.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "muziker-bg-86b4df18", "url": "https://muziker.bg", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "fashionsauce-com-ba903543", "url": "https://fashionsauce.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "safarni-com-3d025a3d", "url": "http://safarni.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "hm-revenue-customs-2020-09-02-11-45-01-e1704ffe", "url": "https://kitchencabinetpaintersnearme.com/wp-content/uploads/2020/08/has/details.php?&sessionid=1c1ffd1834b4d8b7bde9de98b2ba1653&securessl=true", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "government-of-the-united-kingdom-2020-09-02-13-02-34-d08d20f8", "url": "https://hmrc.repaymentsuk.com/refund/emailerror", "verdict": "phish", "brand": "Government of the United Kingdom", "domains": ["gov.com"], "label": "phish"}
+{"page_id": "abu-dhabi-commercial-bank-2020-08-25-15-11-26-fd12e5f4", "url": "http://adcbsecureprelgin.000webhostapp.com/secure.php?frmLogin=kdw_ga=YS1dv371D5hRpPhUNKJKFzaMVjayEIEknqZW0oOsklnDJYeOFCJDEKcQoJ1a2P1OVKeWdluxAFRwaBep", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "shetabmarketing-com-ce52acdb", "url": "https://shetabmarketing.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "krutomer-ru-40092674", "url": "https://krutomer.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "huntington-bank-2019-08-27-14-09-57-9ee9fae1", "url": "https://huntingtonwebapp.azurewebsites.net/huntington/6r2gfb6sfh6b14s6w546bh541tsw64b1hsw/1/1.html", "verdict": "phish", "brand": "Huntington Bank", "domains": ["huntington.com"], "label": "phish"}
+{"page_id": "switch-be-c314b060", "url": "https://switch.be", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "ebay-inc-2020-07-01-15-14-19-6865a0ce", "url": "http://store.ebay.de.ineedpto.com/", "verdict": "phish", "brand": "eBay", "domains": ["befr.ebay.be"], "label": "phish"}
+{"page_id": "itau-unibanco-s-a-2020-06-20-14-50-27-00a149da", "url": "https://www.itaucardpro.com/envio1.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "bank-of-the-province-of-buenos-aires-2020-07-09-20-24-46-6d9e3f8c", "url": "http://clt.atomprint.in/demo1/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amazon-com-inc-2020-10-01-13-11-29-7c187305", "url": "https://www.amazonlogistics-ap-northeast-1.amazonlogistics.jp/ap/signin?openid.pape.max_auth_age=28800&openid.return_to=https://www.amazonlogistics-ap-northeast-1.amazonlogistics.jp/&suppressChangeEmailLink=1&openid.identity=http://specs.openid.net/auth/2.0/identifier_select&openid.assoc_handle=amazonlogistics_fe&openid.mode=checkid_setup&openid.claimed_id=http://specs.openid.net/auth/2.0/identifier_select&openid.ns=http://specs.openid.net/auth/2.0&suppressSignInRadioButtons=1", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "beecanvas-com-ab63acce", "url": "http://beecanvas.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "gertens-com-751d0940", "url": "http://gertens.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banque-populaire-2020-08-10-12-40-09-f7581391", "url": "http://velozlubrificantes.com.br/media/icon/login.html?link=https:/www.bred.fr/authentification?s=633", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "askwoody-com-bd0ac2e8", "url": "https://askwoody.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "aeworld-com-2d6ef71c", "url": "https://aeworld.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rocking-gr-16b452ea", "url": "http://rocking.gr", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "visa-international-service-association-2020-07-15-12-54-29-10950de5", "url": "http://visa.com-vmore-8687960070.imagelinetech.com/", "verdict": "phish", "brand": "Visa International Service Association", "domains": ["visa.com"], "label": "phish"}
+{"page_id": "tombstonetactical-com-d5863af1", "url": "https://tombstonetactical.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "instagram-2020-09-05-13-04-16-694c1e56", "url": "https://reportserviceforinstagram.com/username.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "au-mobile-company-2020-09-05-13-21-18-66dd217c", "url": "http://www.connet-auone.jp-auid.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "motoredbikes-com-b3476d91", "url": "https://motoredbikes.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mobilevids-org-204d1b82", "url": "https://mobilevids.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-08-11-45-19-38f4bca4", "url": "http://rakuten.co.jp.rakutenoc.xyz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "rakuten-2020-09-12-14-30-13-2bd08243", "url": "https://rakuten.co.jp.loginandchecwenfladsfkrakutenlasdsdafsdwe.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "hardeck-de-9dec6b7a", "url": "https://hardeck.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "giffgaff-2020-09-23-07-38-43-2ea5a2b6", "url": "http://test.three-network.co.uk/", "verdict": "phish", "brand": "Giffgaff", "domains": ["imperva.com"], "label": "phish"}
+{"page_id": "stubhub-jp-31e84a94", "url": "http://stubhub.jp", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-27-13-40-37-144d9f2d", "url": "https://rakuten.co.jp.rakutencncnaymysfcojp.com/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "linkminer-com-f5af6e53", "url": "https://linkminer.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "playboy-com-394e1c15", "url": "https://playboy.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paypal-inc-2020-07-29-10-52-55-f26a2e76", "url": "https://support.paypalverifyaccounts.net/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "xgame-online-com-e0258bc0", "url": "https://xgame-online.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-30-18-12-13-190b6d2f", "url": "https://login.rakuten.co.jp.rakutenamsdnwwefklsdfwet.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "egyptiantalks-org-0ae7dc64", "url": "https://egyptiantalks.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bdo-unibank-2020-09-16-13-09-15-9c7ea47d", "url": "http://magictransusa.com/online.bdo.com/security/verify/login.php?josso_back_to=https://online.bdo.com.ph/sso/josso_security_check", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "givenchybeauty-com-7429d107", "url": "https://givenchybeauty.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "free-isp-2019-10-17-11-33-05-6c066c81", "url": "http://stephanehamard.com/components/com_joomlastats/FR/506d030fdf852f26882a74c9529d56cb", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "amoozesh-live-5c8217b0", "url": "https://amoozesh.live", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "actiu-com-1aae4418", "url": "https://actiu.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "edisk-cz-25769fd7", "url": "https://edisk.cz", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "theconferencewebsite-com-5a58ac1c", "url": "https://theconferencewebsite.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banque-populaire-2020-09-08-10-58-14-3fdeda71", "url": "http://velozlubrificantes.com.br/media/icon/phone.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "rakuten-2020-09-11-13-04-03-d19281f8", "url": "https://login.rakuten.co.jp.rakutenlkfefcbfsswedxcq.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "novo-banco-2020-09-19-16-18-13-06768fea", "url": "http://s306214.smrtp.ru/BSQyWFohGTZ3x4sszoSTy0toEeM89yUAHlzdrdByxbrkUbTJFn/App4fe97c2/2.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "hughandcrye-com-3fbf0e0f", "url": "https://hughandcrye.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "zoig-com-5cca4596", "url": "https://zoig.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "stark-suomi-fi-16ed0b4c", "url": "https://stark-suomi.fi", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "greenhousemegastore-com-6adfe31a", "url": "http://greenhousemegastore.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "apple-inc-2020-07-28-21-21-08-5fa946f3", "url": "https://www.secureupdate.appleld.com.duilawyeryork.com/ap/fec80a1e89f55a9?cmd=_update&dispatch=fec80a1e89f55a91c&locale=_US", "verdict": "phish", "brand": "Apple", "domains": ["apple.com", "icloud.com"], "label": "phish"}
+{"page_id": "chipmaker-com-ua-7f9b78e3", "url": "https://chipmaker.com.ua", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "databox-com-f68f01cb", "url": "http://databox.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-07-17-15-02-15-b577901b", "url": "http://amowceuamazon.monster/p", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "comcast-corporation-2020-05-01-18-02-50-b70d4d02", "url": "http://receivable.co.kr/skin/member/basic/img/c/comcast.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "banco-bradesco-2020-07-20-12-39-02-4674fde8", "url": "https://pmm.ac.in/css/iniciarH/concluindo/desktop/home.php?www.bradesco.com.br/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "wearesneak-co-uk-5780c03a", "url": "https://wearesneak.co.uk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sartorius-com-9e1dc614", "url": "https://sartorius.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sbahn-berlin-14ebbaad", "url": "https://sbahn.berlin", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "phonicarecords-com-63c9ab80", "url": "https://phonicarecords.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "steam-2020-05-27-14-26-57-14a3b9c2", "url": "http://steamcommynity.com/id/profile/railyyt", "verdict": "phish", "brand": "Steam", "domains": ["steamcommunity.com", "steamcommunity.com"], "label": "phish"}
+{"page_id": "zenefits-com-99bcff98", "url": "http://zenefits.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "caixa-economica-federal-2020-07-10-11-29-44-18f16910", "url": "http://suport-mobile.com/caixa.php", "verdict": "phish", "brand": "Caixa Economica Federal", "domains": ["caixa.com"], "label": "phish"}
+{"page_id": "apexanesthesia-com-5c59ffb8", "url": "https://apexanesthesia.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "facebook-inc-2020-09-06-12-15-31-457c71a9", "url": "http://facebook-supports.com/birthday-confirmation.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "tcsexpress-com-b2d01356", "url": "http://tcsexpress.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paypal-inc-2020-07-13-12-09-51-7951259d", "url": "http://shadetreetechnology.com/V4/validation/0f7cacb10440e5343563ad35a61efbb0", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-08-29-12-23-43-01c40685", "url": "https://netflix-renew-payment.com/Login.php?sessionID=jyGfIUTqUDdij8O8KKplPpacz58XOJplR8qVrEjEaBsvTk4XqbvQZkQIzKJwNPPXeHvwAqlppBoTfRKWAIFsH4pG0PeGsqFxgt2v&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "ieltsspeaking-co-uk-a9d527f9", "url": "https://ieltsspeaking.co.uk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "curto-win-29a6e332", "url": "https://curto.win", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paynearby-in-e0ee10c1", "url": "https://paynearby.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "universoabierto-org-c5eb50de", "url": "https://universoabierto.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "bank-of-america-2020-05-19-11-18-55-e12bbfea", "url": "https://americanfederation2020.org/wp-includes/js/jcrop/1x/v2/4a0c6bb54d819f1/questions.php?cmd=_update&dispatch=", "verdict": "phish", "brand": "Bank of America", "domains": ["bankofamerica.com", "merrilledge.com"], "label": "phish"}
+{"page_id": "omnidesk-ru-350cc6ac", "url": "https://omnidesk.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "diego-hu-63d28a14", "url": "http://diego.hu", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "halifax-bank-of-scotland-plc-2020-09-24-15-24-57-df9e7781", "url": "https://halifax.unregister-newdevice.com/Login.php", "verdict": "phish", "brand": "Halifax Bank of Scotland Plc", "domains": ["amconline.co.uk"], "label": "phish"}
+{"page_id": "runescape-2020-09-12-13-58-26-31dba10a", "url": "https://oldschool-runescape.us/m=weblogin/verification.ws821,321,584,42184523,159092.html", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "healcode-com-c9c793ad", "url": "https://healcode.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mweb-2020-08-13-18-50-34-6ed96e73", "url": "https://champagnedreams.ca/csi/public/index.html", "verdict": "phish", "brand": "MWeb", "domains": ["mweb.co.za"], "label": "phish"}
+{"page_id": "rajexcise-gov-in-2c974a00", "url": "https://rajexcise.gov.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "south-african-government-2020-08-18-11-40-06-519772c5", "url": "https://lansdowneinvestments.com/emtr/emd.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "three-uk-2020-09-05-16-54-51-cb6d7d25", "url": "https://information-three.com/Login.php?sessionID=PrdNN6dglSTXTGo5St4Gcx37OUvkR9sekQd7mT38kukyURpjhB5DvTEhmQFTaCTQy7iCBGovZ42exZf2hPR9RnVQGYyKR6sY1rZS&error=noNumber", "verdict": "phish", "brand": "Three UK", "domains": ["three.com"], "label": "phish"}
+{"page_id": "fiawec-com-5b4b446e", "url": "https://fiawec.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "krunkerio-org-f4d9fb86", "url": "https://krunkerio.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "phpfrance-com-5af46ef9", "url": "https://phpfrance.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "thehouseofdrew-com-bb768c2d", "url": "https://thehouseofdrew.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "badoo-com-a99260a0", "url": "https://badoo.com", "verdict": "phish", "brand": "Zoopla", "domains": ["zoopla.com"], "label": "benign"}
+{"page_id": "spectrum-2019-09-02-15-58-29-031164e3", "url": "http://centroveterinarioalfragide.pt/www/selfcare/us-en/en", "verdict": "phish", "brand": "Spectrum", "domains": ["spectrum.com"], "label": "phish"}
+{"page_id": "verywellfamily-com-ad128635", "url": "https://verywellfamily.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "libro-at-a7246432", "url": "http://libro.at", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "files-wordpress-com-f43f5cc7", "url": "https://files.wordpress.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "apple-inc-2020-08-22-10-01-52-56153b01", "url": "http://appleuw.com/indexx.asp", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "paypal-inc-2020-09-02-12-53-56-39b9cd57", "url": "http://paypal-login285.com/egg.php?secret_key=3puck1s0n2jfxbt4wqe97mldyrvho8", "verdict": "phish", "brand": "PayPal", "domains": ["paypal.com"], "label": "phish"}
+{"page_id": "godaddy-2020-08-10-12-39-49-414acb58", "url": "http://baseline-eg.com/htacess_3k7dgjadl42lk8gss/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "qmee-com-badeca9b", "url": "https://qmee.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "sendgrid-2020-09-14-16-47-00-7d79a66c", "url": "http://app.sendgrid.com.login.95215.unionbayern.de/en/5/bb22bbe8e35b275658501898e02e2021/a6c3ba11bd7233b4867b3dfcd71bc372/2443dfe777966751c9477ec97dd8a6de", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "vkontakte-2020-08-11-12-23-40-903ad573", "url": "http://kydeliver.pp.ua/auth", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "tombihn-com-1b39eed9", "url": "https://tombihn.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-09-17-13-46-16-40f67bc5", "url": "http://amazonaaw.buzz/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "foromacrosmuymacros-com-75197418", "url": "https://foromacrosmuymacros.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "alaska-usa-federal-credit-union-2020-06-22-12-03-38-dd49872c", "url": "https://labiaplastypalmsprings.com/wp-includes/SimplePie/Decode/HTML/login/index.htm", "verdict": "phish", "brand": "Alaska USA Federal Credit Union", "domains": ["globalcu.org"], "label": "phish"}
+{"page_id": "makeappicon-com-ac4a15e1", "url": "https://makeappicon.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tpg-telecom-2019-09-09-10-50-14-35bd7498", "url": "http://www.courgeon-immobilier.fr/wp-content/uploads/2019/07/tpg/e3093d7a4b50de504986fdc17e47f573/Verification.php", "verdict": "phish", "brand": "TPG Telecom", "domains": ["tpg.com", "tpgmobile.com"], "label": "phish"}
+{"page_id": "skiessentials-com-d4c7b8ea", "url": "https://skiessentials.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "paxful-inc-2020-09-04-13-58-34-21c9472b", "url": "https://https-paxful.com/offer/ZLBmVEE2JoW/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "studiosity-com-c82e0541", "url": "http://studiosity.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "mcachicago-org-8733ed1d", "url": "https://mcachicago.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "netflix-inc-2020-08-14-14-14-02-c00fd638", "url": "https://my.netflix-activation.com/Login.php?sessionID=CCYn2qhq9hhXQxV0GIkXAgzaitbxdEncg3TdfcXpLQLPxuwO7jS8hKXk1EbzbkdkGrHHKKMDAFz6D1rZ7cVrOJOKw9pLLfr5ZnaK&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "chase-personal-banking-2020-05-24-13-40-56-27534887", "url": "https://chasebank.ru/verify/verification-email.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "la-banque-postale-2020-09-05-16-24-22-27ab5618", "url": "https://www.capitalschool.edu.pk/wp-content/upgrade/LOGIN/LOGIN/postale/17734/index2.html", "verdict": "phish", "brand": "La Banque postale", "domains": ["labanquepostale.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-28-17-15-03-94818486", "url": "https://login.rakuten.co.jp.rakutenamsdnwwefklsdfwn.icu/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "sisoog-com-93987201", "url": "https://sisoog.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "handtec-co-uk-c264a65c", "url": "https://handtec.co.uk", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "made-in-china-2020-05-24-01-37-07-16416c05", "url": "https://militaryiptvsolutions.com/madeinchine/logon.htm", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "h2wtech-com-847fcddf", "url": "https://h2wtech.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "itau-unibanco-s-a-2020-08-05-10-54-56-29378276", "url": "https://www.desbloqueiocarditau20.com/home.php", "verdict": "phish", "brand": "Itau Unibanco S.A", "domains": ["wikipedia.org"], "label": "phish"}
+{"page_id": "mail-ru-group-2020-09-13-10-11-30-d594e628", "url": "https://innoaura.com/Guf1/mail.ru/index.html", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "bbcicecream-com-e6760ad5", "url": "https://bbcicecream.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-09-17-14-03-38-0b1168ff", "url": "https://rakuten.co.jp.verifyyourrakutenaccountrightnow.buzz/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "amazon-com-inc-2020-09-10-13-55-01-ba9c433b", "url": "https://www.amazons-co-jpuserverify-center.top/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "strathberry-com-6b355b12", "url": "https://strathberry.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "amazon-com-inc-2020-05-08-00-05-23-ce2e23f1", "url": "http://www.amazonlogistics.eu/ap/signin?openid.assoc_handle=amazonlogistics_eu&openid.claimed_id=http://specs.openid.net/auth/2.0/identifier_select&openid.identity=http://specs.openid.net/auth/2.0/identifier_select&openid.mode=checkid_setup&openid.ns=http://specs.openid.net/auth/2.0&openid.pape.max_auth_age=28800&openid.return_to=https://www.amazonlogistics.eu/?openid.pape.max_auth_age=28800&suppresschangeemaillink=1&suppresssigninradiobuttons=1", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "openloadmovie-info-26227ce4", "url": "https://openloadmovie.info", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "netflix-inc-2020-09-28-11-49-36-e041b43a", "url": "https://netflix-paymenterroruk.xyz/Login.php?sessionID=ve6kvLmgg9wfzibQQICqmH2mGWqiAE99EZW8u0mYQl2aGmHCYnD1b3kJECSbM5nTS8V00bAVScdVjILxvNVU1RFG5Onvdxd6ZqZD&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-10-01-12-12-02-d6877734", "url": "https://netflix-mymembership-renew.com/confirm/Login.php?sessionID=nloZaPgJwMAySnyvgtO74ii1fiCtdrJYBx9lEUfyp1MRpv6WAEm4k3xscXCJRhoH4e4cYukhRWA2eWD0o0ZtJgSphFmxdWPGM45e&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "amazon-com-inc-2020-09-14-16-54-27-1f1b5c92", "url": "http://amazonesc.buzz/pc", "verdict": "phish", "brand": "Amazon", "domains": ["amazon.com", "amazon.se", "amazon.fr"], "label": "phish"}
+{"page_id": "pescarpermenys-com-0e9d12d7", "url": "https://pescarpermenys.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "kevaind-org-2e57cd1b", "url": "https://kevaind.org", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "tpg-telecom-2019-09-02-12-01-28-a5f2be63", "url": "http://courgeon-immobilier.fr/dev/tpgcyberstore/91a99aec99b565002669f2cc6329c5b9/Verification.php", "verdict": "phish", "brand": "TPG Telecom", "domains": ["tpg.com", "tpgmobile.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-09-03-22-28-a711ff91", "url": "https://rakuten.co.jp.rakuten-update.net.cn/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-23-12-50-43-a61b1bc0", "url": "https://id.rakuten.co.jp.rakutenrakutenwklfmaswe.top/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "td32-ru-b12ea3fa", "url": "https://td32.ru", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "runescape-2020-09-12-13-56-31-a02a95b7", "url": "https://runescape.social/m=weblogin/verification.ws821,321,584,42184523,159092.html", "verdict": "phish", "brand": "RuneScape", "domains": ["runescape.com"], "label": "phish"}
+{"page_id": "capitec-bank-limited-2020-07-09-07-52-35-ef64fd66", "url": "http://capitec-za.webnode.com/", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "sparkasse-bank-2020-06-02-12-08-28-4ed7c28f", "url": "http://geoenergia.net/Ym9la29uQGhvdG1haWwuZGU", "verdict": "phish", "brand": "Sparkasse Bank", "domains": ["sparkasse-bank-malta.com"], "label": "phish"}
+{"page_id": "embedsocial-com-f5223169", "url": "https://embedsocial.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "yourtutor-info-b60a2d60", "url": "https://yourtutor.info", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "hersfelder-zeitung-de-1bb5e6d2", "url": "http://hersfelder-zeitung.de", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "lanoticia1-com-311d44f8", "url": "https://lanoticia1.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "acity-ir-4728c585", "url": "https://acity.ir", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "rakuten-2020-08-28-12-58-03-23c36096", "url": "https://login.rakuten.co.jp.rakutenamsdnwwefklsdfwd.monster/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "netflix-inc-2020-08-31-10-30-24-d231b3e7", "url": "http://uknetflixplan.com/Login.php?sessionID=p5gUTb1bisfuP7schDCn7EpVykM7yYI36gSu60UaTyUWbRtv8LIBov4Hjo4baS4xdbBDllQ5ko0QBrpHoauitKn7oPIugNXFO635&error=Login", "verdict": "phish", "brand": "Netflix", "domains": ["netflix.com"], "label": "phish"}
+{"page_id": "rakuten-2020-08-31-10-58-18-9787eba6", "url": "http://rakuten.co.jp.rakutennn.cc/", "verdict": "phish", "brand": "Rakuten", "domains": ["rakuten.com"], "label": "phish"}
+{"page_id": "marketup-com-92015f0b", "url": "https://marketup.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "brokerbin-com-91fcb601", "url": "https://brokerbin.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "livelaw-in-3677a4e2", "url": "https://livelaw.in", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "agriconomie-com-06ffc71a", "url": "http://agriconomie.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "payment24-ir-5bebb9e3", "url": "http://payment24.ir", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "orange-2020-08-19-11-50-58-8e6bc064", "url": "https://orangepartners.be/multicards/index-fr.php", "verdict": "benign", "brand": null, "domains": null, "label": "phish"}
+{"page_id": "capesindia-com-93705a2b", "url": "https://capesindia.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "theartnewspaper-com-bc39418e", "url": "https://theartnewspaper.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "whooshkaa-com-7d25af7a", "url": "http://whooshkaa.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "banco-del-estado-de-chile-2020-05-12-13-55-28-e38c9c7e", "url": "http://estado-movile.com/imagenes/comun2008/banca-en-linea-personas.html", "verdict": "phish", "brand": "Banco del Estado de Chile", "domains": ["avalonnailbarriversideca.com"], "label": "phish"}
+{"page_id": "wiggle-cn-61d830bf", "url": "https://wiggle.cn", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "brickset-com-93114e3d", "url": "https://brickset.com", "verdict": "benign", "brand": null, "domains": null, "label": "benign"}
+{"page_id": "td-bank-group-2019-08-06-16-02-34-ca662dc1", "url": "http://165.227.198.11/banks/TD/question.html", "verdict": "phish", "brand": "TD Bank Group", "domains": ["td.com", "tdbank.com"], "label": "phish"}

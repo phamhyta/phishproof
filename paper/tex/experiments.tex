@@ -1,0 +1,516 @@
+\section{Experiments}
+\label{sec:experiments}
+
+We evaluate \toolname{} as a \emph{selective} detector: it may act only on pages
+whose evidence is trustworthy enough, and should abstain otherwise. The selective
+behavior is the contribution, so the seven questions below probe \emph{when} the
+detector should be trusted, how robust that behavior is to its hyperparameters, and
+\emph{what} it returns when it acts, rather than raw labelling accuracy:
+\begin{compactitem}
+\item[(\textbf{RQ1})] Selective detection (\autoref{sec:exp_rq1}): does grounded
+evidence-agreement give a better risk--coverage trade-off than label-level
+reliability, without sacrificing full-coverage detection accuracy?
+\item[(\textbf{RQ2})] Right-label, wrong-reason (\autoref{sec:exp_rq2}): does
+\toolname{} flag the pages a panel labels correctly but for the wrong reason --
+the pages the reliability baselines act on confidently?
+\item[(\textbf{RQ3})] Component attribution (\autoref{sec:exp_rq3}): how much do
+evidence-level agreement, groundedness, and panel diversity each contribute?
+\item[(\textbf{RQ4})] Calibration (\autoref{sec:exp_rq4}): is the trust score
+calibrated, so its reported probability of correctness can be acted on directly?
+\item[(\textbf{RQ5})] Sensitivity (\autoref{sec:exp_rq5}): how does the selective
+trade-off respond to the two hyperparameters -- panel size and consensus threshold --
+and is the default robust?
+\item[(\textbf{RQ6})] Explanation (\autoref{sec:exp_rq6}): what does a returned
+explanation look like, and does it make the act/abstain decision auditable to an
+operator?
+\item[(\textbf{RQ7})] Adversarial robustness (\autoref{sec:exp_adv}): when an
+attacker corrupts a cited cue -- cloaking the form action or removing the brand logo --
+does grounded evidence-agreement \emph{fail safe} (groundedness drops and the detector
+abstains) where label-confidence baselines stay overconfident?
+\end{compactitem}
+
+\subsection{Setup}
+\label{sec:exp_setup}
+
+\sstitle{Benchmark and labels}
+We evaluate on \textsc{PhishSel}, a $1{,}330$-page benchmark ($998$ held-out test) built
+from the Phishpedia corpus~\cite{lin2021phishpedia}, whose phishing pages were originally
+collected from public feeds~\cite{openphish,phishtank}. To make the task
+\emph{legitimacy} rather than \emph{page type}, we pair the phishing pages with legitimate
+\emph{credential-collection} (login) pages rather than benign homepages -- the latter are
+several times larger than the minimal phishing pages and let a model separate the classes
+by size alone (see \autoref{sec:limitations}). The phishing half is brand-balanced and
+split evenly into easy (unrelated-domain) and hard (brand-in-domain lookalike) pages, the
+latter forming the RQ2 subset. Each page carries its URL, DOM, and rendered screenshot;
+the corpus does not include TLS certificates or redirect chains, so those two cue types are
+inactive and the active schema is \{brand, form-action-domain, credential-intent,
+logo-brand\} plus a derived brand--domain consistency check. Labels are available at
+collection. We use a class-balanced calibration split ($332$) and a disjoint, balanced test
+split ($998$), fit all thresholds and the calibrator on the former, and report every number
+on the latter (\autoref{tab:dataset}).
+\input{../tables/tab_dataset}
+
+\sstitle{Agents, tools, and baselines}
+The default panel is $M{=}3$ deliberately diverse \emph{evidence agents}: GPT-4o reading
+the screenshot as the vision-language agent, and two different-family text LLMs run
+locally -- Llama-3.2-3B (Meta) and Qwen2.5-3B (Alibaba) -- each able to call the
+verification tools of \autoref{sec:ground}. The two text agents are deliberately from
+different families: RQ3 shows this cross-family diversity, not the agent count, is what
+carries the result (\autoref{tab:panel_models} lists the exact models and decoding
+settings). All methods receive the same captured page snapshot and no
+label at inference time, so any difference reflects how each method scores trust
+rather than what information it sees. \toolname{} emits constrained evidence cues
+in the schema of \autoref{sec:elicit}, normalizes values as in \autoref{sec:agree},
+and verifies only the consensus cues before calibration. We compare against six
+reliability baselines, each of which shares this panel or a member of it so that the
+comparison isolates \emph{where} agreement is measured:
+\begin{compactitem}
+\item \emph{(B1) Single-model confidence}~\cite{guo2017calibration}: the strongest
+single model with temperature-scaled softmax confidence.
+\item \emph{(B2) Verbalized confidence}: the same model asked to state its
+confidence.
+\item \emph{(B3) Self-consistency}~\cite{wang2023selfconsistency}: the same strongest single
+model (GPT-4o), sampled $k{=}5$ times at temperature $0.7$, with the majority-verdict
+agreement as the score; run on the full $998$-page test split ($k\times$ API cost).
+\item \emph{(B4) Majority vote}~\cite{ensembleornot2024}: panel label agreement.
+\item \emph{(B5) Label-agreement}~\cite{dawid1979maximum}: reliability-weighted
+label agreement over the panel.
+\item \emph{(B6) MultiPhishGuard}~\cite{multiphishguard2025}: a separate GPT-4o
+consolidator reads the panel's per-agent verdicts and cited evidence and outputs a
+deliberated verdict and confidence, used as the score.
+\end{compactitem}
+To position \toolname{} against the dedicated phishing literature we also report the
+LLM brand-and-domain checker \emph{(D3) PhishLLM}~\cite{tan2024phishllm}, re-run as a
+standalone detector on \textsc{PhishSel}. The reference-based matcher \emph{(D1)
+Phishpedia}~\cite{lin2021phishpedia} is re-run in a containerized \texttt{detectron2} on the
+full test split (\autoref{tab:detect}); \emph{(D2) PhishIntention}~\cite{liu2022phishintention} layers a
+heavier credential-page and interaction stage on the same detector core, so we cite its
+reported numbers rather than re-running it. In our main runs the brand cue
+is grounded by a page-content brand check; we additionally show (\autoref{sec:exp_rq1}) that
+a reference detector (D1) can be substituted as this verifier with no loss of ranking, so
+the panel \emph{subsumes} its signal directly. Methods that require
+\emph{live} counterfactual interaction with the target -- notably DynaPhish's online
+reference expansion~\cite{dynaphish2023} -- are out of scope, because that interaction
+cannot be replayed on archived snapshots.
+\input{../tables/tab_panel_models}
+
+\sstitle{Tasks and metrics}
+Every method produces a per-page trust score, and we evaluate that score as a
+selective detector via \eqref{eq:objective}. The selective metrics are the area
+under the risk--coverage curve (\emph{AURC}, selective risk integrated over
+coverage); selective accuracy and false-positive rate at $80\%$ coverage
+(\emph{SelAcc$_{80}$}, \emph{FPR$_{80}$}); the coverage attainable at $99\%$
+selective accuracy (\emph{Cov$_{99}$}), the operating point an operator cares about
+most; and the expected calibration error of the trust score (\emph{ECE}). For RQ2 we
+add the \emph{flip rate}: the fraction of pages whose panel label changes under a
+small evidence-targeted perturbation (a logo morph~\cite{hao2024logomorph} or a
+form-action cloak), which measures reason fragility. Because the specialized
+detectors carry no abstention mechanism, we also report standard full-coverage
+detection quality -- accuracy, precision, recall, and F1 with every page acted on --
+so they can be compared at all. We define each abbreviation here and use it
+unchanged in every table and figure below.
+
+\sstitle{Protocol}
+Operating points are set without touching the test pages: the thresholds for
+SelAcc$_{80}$ and Cov$_{99}$ and the isotonic calibrator are all fit on the
+calibration split and then applied unchanged to the held-out test split. For RQ2,
+each perturbation targets the cited evidence cue while preserving the page's true
+label, so a flip measures reason fragility, not a changed ground truth.
+
+\sstitle{Statistical reporting}
+Numeric cells report mean$_{\pm\text{95\% CI}}$ from a paired bootstrap over pages
+(all methods share the same page draws). At $998$ test pages the intervals are wide, so
+we describe a difference as significant only when the intervals do not overlap and as
+suggestive otherwise; we are explicit about which is which in the text. The proposed
+method is \textbf{bold} and the best baseline is \underline{underlined} in every table.
+As the panel runs at temperature $0$ (deterministic given a page), the only stochastic
+choice is the calibration/test partition; to confirm the headline is not an artifact of one
+draw, we re-partition the $1{,}330$ pages five ways (stratified $75/25$) and refit the
+calibrator each time. The metrics are stable across splits -- AURC $1.8\pm0.2$,
+SelAcc$_{80}$ $97.5\pm0.3$, ECE $0.018\pm0.006$, Cov$_{99}$ $0.29\pm0.04$ -- and on AURC,
+selective accuracy, and coverage the split reported in \autoref{tab:main} sits among the more
+conservative draws (its ECE, $0.015$, is marginally better than the cross-split mean).
+
+\sstitle{Run environment and cost}
+The two text agents run locally on a 16\,GB commodity laptop via Ollama (no GPU) at
+temperature $0$; the vision agent and the consolidator are GPT-4o through its API; the
+DOM, redirect, logo (CLIP), and calibration code are CPU-only. Every model call is cached,
+so the comparison is reproducible and re-scoring variants (the ablations) needs no
+re-running. We log prompts, raw agent outputs, value-normalized cues, tool results,
+thresholds, and per-page trust scores, and release the schemas, prompts, tool wrappers,
+calibration code, and figure-generation scripts. \toolname{} has no training phase: per
+page it runs the $M{=}3$ agents plus the cheap tool checks. \autoref{tab:cost} gives the
+per-page budget: the panel's API cost is dominated by a single GPT-4o vision call
+($\approx\$8$ per $1{,}000$ pages), since the two text agents run locally for free, so
+\toolname{} fits a commodity $16$\,GB laptop with no GPU. The $M{=}3$ panel is a fixed
+$3\times$ model-call overhead over a single-model detector (\autoref{fig:pareto}), amortized
+because only the abstaining fraction $1-\phi(\thr)$ is escalated. At that budget \toolname{} stays
+level with the panel baselines while reaching markedly higher deployable coverage,
+and it dominates the five-sample self-consistency baseline (B3, \autoref{tab:main}: AURC
+$5.1$ vs.\ $2.3$, and Cov$_{99}{=}0$ -- it never reaches the $99\%$-accuracy operating point)
+at one-fifth its API cost, since B3 issues five GPT-4o vision calls per page where \toolname{}
+issues one. Resampling one strong model improves selective accuracy over single-call B1/B2 but
+does not cure its overconfidence: on the visually convincing brand replicas that dominate the
+corpus, the model is confidently wrong and the five samples agree on the wrong \textsf{benign}
+verdict, which is precisely the label-level trust that grounded agreement is designed to
+replace.
+\input{../tables/tab_cost}
+\input{../figures/fig_pareto}
+
+\sstitle{Reproducibility}
+The pipeline is deterministic given the page snapshots and the dataset partition. We pin the
+exact artifacts so the headline numbers can be regenerated: the panel is
+\autoref{tab:panel_models} (Llama-3.2-3B and Qwen2.5-3B via Ollama, GPT-4o via API, all at
+temperature $0$); the calibration and test splits are released with SHA-256 checksums
+(\texttt{calibration.jsonl} \texttt{9f2c9bb8\dots}, \texttt{test.jsonl} \texttt{391fc594\dots});
+the code runs on CPython $3.14$ with CPU-only DOM, CLIP, and calibration code. Every model
+call is content-hash cached, so all ablations and the design-justification probes
+(\autoref{sec:exp_negatives}) re-score from cache without re-running any agent. We release
+the cue schema and prompts, the tool wrappers, the calibrator and threshold-fitting code,
+and the figure- and table-generation scripts. Artifacts (page snapshots, splits, cached
+agent outputs, and regeneration scripts) will be released at an anonymized repository for
+review and at a permanent archive upon acceptance.
+
+\sstitle{Tool soundness}
+\autoref{prop:hall} assumes the tools are sound (\autoref{ass:sound}); we check this for
+\emph{every} active verifier, not only the brand check, by scoring each tool as a detector of
+an independently-derivable target property (\autoref{tab:verifier_soundness}). The two
+deterministic structural verifiers are reliable: the form-action verifier reproduces the
+DOM-parsed action domains exactly (recall and specificity $1.00$), and the credential
+verifier never misses a real password field (recall $1.00$). The two reference/perceptual
+verifiers are accurate but soft: the brand-grounding tool recovers the impersonated gold
+brand on $87.6\%$ of pages and spuriously grounds an absent brand on only $5\%$ ($95\%$
+specificity), while the CLIP logo tool matches the gold brand at $89.0\%$ but grounds a
+\emph{wrong} brand $34\%$ of the time (specificity $0.66$). Two soundness gaps are thus
+explicit: the credential verifier over-fires on hint-only fields (precision $0.62$), and the
+CLIP logo verifier is a soft matcher. Both are consistent with \autoref{prop:hall}
+\emph{bounding} rather than eliminating gauge error, and the residual recall/precision gaps
+are one reason groundedness is conservative on this corpus.
+\input{../tables/tab_verifier_soundness}
+
+\subsection{Selective Detection}
+\label{sec:exp_rq1}
+
+\sstitle{Full-coverage detection accuracy}
+To answer \textbf{RQ1} we first establish the floor: at full coverage \toolname{} is a
+solid detector, so its trust layer sits on top of -- not in place of -- accurate
+labelling. \autoref{tab:detect} reports full-coverage quality with every page acted on.
+\toolname{} reaches $91.9\%$ accuracy and $91.3$ F1 at very high precision ($98.8\%$),
+ahead of the re-run LLM checker D3 ($83.7\%$ / $81.6$); but \toolname{} is an $M{=}3$
+panel under a majority vote while D3 is a single model, so this margin reflects
+ensembling as much as the trust layer, and we make no detector-leaderboard claim. The
+re-run reference matcher D1 (Phishpedia, $n{=}998$) trails on F1 ($76.6$)
+at high precision ($94.2$): it fires only on confident logo matches against its
+reference list and abstains on the rest, so its recall ($64.5$) is bounded by brand
+coverage; D2 adds a heavier stage on the same core and is cited. Beyond a competitor, D1
+also serves as a \emph{grounding tool}: substituting it for the page-content brand check
+leaves the selective ranking essentially unchanged (AURC $2.33$ vs.\ $2.29$ on the full
+$998$ pages), so the panel can invoke a specialized detector to ground its brand cue
+rather than re-derive it -- the ``subsumes the detector'' property of \autoref{sec:method},
+measured here for D1 only (D3 substitution as a grounding tool is left to future work).
+The intended reading is
+only that detection is not sacrificed for the abstention and explanation the rest of the
+section measures.
+\input{../tables/tab_detect}
+
+\sstitle{Risk--coverage and deployment coverage}
+Scoring agreement on grounded evidence, rather than on labels, gives the best selective
+trade-off on the headline metrics. \autoref{tab:main} reports the comparison and
+\autoref{fig:riskcoverage} the curves: \toolname{} has the lowest AURC ($2.3$, a
+$38\%$ reduction over the label-agreement baseline B5), the highest selective accuracy
+at $80\%$ coverage ($97.0\%$), and by a clear margin the best-calibrated trust score
+(ECE $0.015$ versus $\ge0.026$ for every baseline). With $998$ test pages the bootstrap
+intervals are wide, so the AURC lead over the strongest baseline (B6 MultiPhishGuard,
+$3.0$) is suggestive rather than statistically separated (paired $\Delta$AURC $-0.4$, $95\%$
+CI $[-1.5,+0.8]$, $p=0.44$). The direction, however, is robust to how the test set is
+partitioned: \toolname's AURC is the lower of the two on $21/21$ $70\%$ subsamples and on
+$4/5$ stratified folds, so the lead is consistent in sign even where it is underpowered to
+separate. The calibration and selective-accuracy gaps are
+unambiguous (paired $\Delta$ECE $-0.066$, CI $[-0.088,-0.043]$; $\Delta$SelAcc$_{80}$
+$+2.4$, CI $[+1.0,+3.9]$). The deployment number Cov$_{99}$ is the one metric a baseline wins:
+B6 reaches $0.36$ against \toolname's $0.25$, because grounded evidence is sparse on the
+many correctly-labelled-but-weakly-grounded benign pages, which \toolname{} ranks low
+and therefore abstains on. All panel-based methods meet at the shared full-coverage
+panel error -- \toolname{} does not change the majority label, only the order in which
+pages are trusted. The decisive comparison is against the label-aggregation baselines
+(B4, B5): they carry a high ECE ($0.25$) because a label-vote share is not a calibrated
+trust signal, whereas \toolname{} reads agreement on \emph{grounded evidence}, which is
+where the calibration and AURC gains come from -- not merely from polling several models.
+\input{../tables/tab_main}
+\input{../figures/fig_riskcoverage}
+
+\sstitle{Failure modes}
+At full coverage \toolname{} errs on $81$ of $998$ pages, almost all in one direction:
+$76$ are missed phishing pages and only $5$ are false alarms, matching the high-precision,
+lower-recall profile of \autoref{tab:detect}. The misses are evidence-poor by construction:
+$96\%$ carry no agreed brand cue and $66\%$ reach no consensus at all -- minimal or
+hard-to-read pages on which the panel never converges. Crucially, the trust score
+\emph{knows} this: errors carry a mean $\geascore$ of $0.20$ against $0.62$ on correct pages,
+so the selective layer abstains on most of them and only $15$ of the $81$ errors are
+\emph{confident} ($\geascore>0.5$). The dominant failure is thus a safe one -- abstention on
+a page whose evidence does not cohere -- rather than a confident wrong verdict, which is the
+behaviour the selective design is meant to produce. \autoref{tab:failure_modes} breaks the
+errors down: the only genuinely dangerous mode -- a confident missed-phish that carries an
+agreed brand cue -- accounts for just $3$ of $998$ pages.
+\input{../tables/tab_failure_modes}
+
+\subsection{Right-Label, Wrong-Reason Pages}
+\label{sec:exp_rq2}
+\textbf{RQ2} asks whether low GEA flags pages the panel labels correctly but for a
+fragile reason -- the right-label, wrong-reason (RLWR) case. We test this with a small
+evidence-targeted perturbation (a form-action cloak that rewrites the cited form to an
+on-brand domain) that preserves the page's true label, and measure how often the panel
+verdict flips. The effect is present but \emph{modest and benchmark-dependent}, and we
+report it as such. On the unrestricted test split, where every phishing page sits on an
+obviously off-brand host, verdicts are stable regardless of GEA and the gradient is
+essentially flat. The RLWR effect only appears on the harder \emph{lookalike} subset
+(brand-in-domain hosts such as \textsf{steamcoommuniity.com}; $233$ hard pages in test,
+$n{=}200$ correctly labelled by the panel), and even there it is small:
+\autoref{tab:rlwr} bins these correctly-labelled pages into GEA quintiles, and
+fragility concentrates in the lowest quintile ($12\%$ flip) against $\le5\%$ above it.
+Split coarsely by GEA level instead, the low-GEA group ($\geascore{<}0.5$, $n{=}98$) flips
+$7.1\%$ against $6.0\%$ for the high-GEA group ($\geascore{>}0.72$, $n{=}67$) -- an overall
+gap of only $1.2\times$, modest precisely because the effect is concentrated in the lowest
+bin rather than spread across the range. So GEA
+does rank the most fragile lookalike verdicts lowest -- which is the direction RQ2
+predicts and the behaviour an operator wants from the abstention -- but the sharp
+partition the illustrative design assumed does not materialise on this benchmark, whose
+phishing pages carry few shared hallucinations for grounding to catch. We treat this as
+a limitation of the benchmark rather than evidence against the mechanism
+(\autoref{sec:limitations}).
+\input{../tables/tab_rlwr}
+
+\subsection{Component Ablation}
+\label{sec:exp_rq3}
+\emph{Panel diversity} is the load-bearing component: \autoref{tab:ablation} removes one
+piece at a time. By far the largest effect is removing cross-family diversity -- swapping
+the two distinct-family text agents for two same-family ones while holding the count at
+$M{=}3$: on the matched subset this raises AURC from $1.3$ to $27.5$ and drops even
+full-coverage accuracy from $0.90$ to $0.68$, because two same-family agents make
+correlated errors that outvote the lone vision agent. This is why \emph{diversity}, not
+panel size, is the design variable. Replacing evidence-level agreement with the label-vote
+share costs the next most ($2.3\to3.5$ AURC, approaching the label-agreement baseline B5
+($3.7$) of \autoref{tab:main}), confirming that the selective gain comes from scoring agreement on
+evidence rather than on labels. Removing the calibrator leaves the \emph{ranking} intact
+(AURC unchanged) but inflates the trust score's ECE from $0.015$ to $0.331$: calibration
+governs the reported probability, not the order -- exactly the split of duties RQ4
+examines. Dropping groundedness, by contrast, barely moves AURC ($2.3\to2.1$): on this
+benchmark the agreed cues almost always survive their tool check, so there are few shared
+hallucinations for $\grd$ to discard and grounding contributes little to the
+\emph{ranking}. Its role is the guarantee of \autoref{prop:hall} and the verifiability of
+the returned explanation rather than a measurable AURC gain here -- a point we return to
+in \autoref{sec:limitations} and demonstrate directly under adversarial cue corruption in
+\autoref{sec:exp_adv}, where groundedness is what drives the detector to abstain.
+\input{../tables/tab_ablation}
+
+\subsection{Why a Parameter-Free, Small-Model Design? Negative Results for Plausible Extensions}
+\label{sec:exp_negatives}
+The ablation shows which components are load-bearing; a natural follow-up is whether several
+``obvious'' extensions improve on the deliberately simple design. We probe each -- four by
+re-scoring the cached agent outputs at no extra cost, and one by re-running the panel with
+larger models -- and find that the parameter-free product $\agr\!\cdot\!\grd$ over a fixed,
+diverse, small-model panel is hard to beat.
+
+\sstitle{A learned aggregator does not beat the crisp product}
+The fusion $\geascore{=}\agr\!\cdot\!\grd$ has no learned parameters. We ask whether learning
+a combiner over the per-cue-type signals $(a_t,g_t)$ -- which expose more structure than the
+two scalars $\agr,\grd$ -- lowers AURC. \autoref{tab:hfgea} fits four combiners of increasing
+capacity on the same $332$-page calibration split: a weighted geometric mean, a $2$-additive
+Choquet integral, a per-type logistic model, and a Takagi--Sugeno--Kang fuzzy system. None
+improves the headline ranking metric. The high-capacity fuzzy and Choquet models
+\emph{overfit} the small calibration split (AURC $3.9$--$4.4$, Cov$_{99}$ collapsing to
+$0.01$); the only competitive learned model, logistic regression, merely trades a small
+AURC loss ($2.5\to2.9$) for a marginal Cov$_{99}$/FPR$_{80}$ gain. The crisp product remains
+best on AURC ($2.5$) and ECE ($0.015$), so we keep it and read this as evidence that the
+calibration-scale data does not support a learned fusion.
+\input{../tables/tab_hfgea}
+
+\sstitle{Per-class recalibration trades coverage for ranking}
+The one metric a baseline wins is Cov$_{99}$ (\autoref{sec:exp_rq1}). We test the natural
+fix -- calibrating predicted-phish and predicted-benign pages with separate isotonic curves.
+It improves AURC ($2.5\to2.2$) and SelAcc$_{80}$ but \emph{lowers} Cov$_{99}$ ($0.21\to0.11$),
+because the per-class curves introduce more tied probabilities at the high end, and Cov$_{99}$
+rewards a dense cluster of distinct top-confidence pages. The Cov$_{99}$ gap to B6 is therefore
+not a calibration-asymmetry artifact -- after calibration $99\%$ of correctly-detected
+phishing pages already exceed trust $0.8$ -- but a property of how isotonic regression
+discretizes the high-confidence tail. We keep the single calibrator, which is the better
+operating-coverage choice.
+
+\sstitle{The panel cannot be made cheaper by a cascade}
+Because the vision call is the only paid one, a tempting deployment optimization is a cascade
+that decides easy pages with the two free local text agents and escalates to GPT-4o only when
+they are uncertain. This fails: the two small text agents agree on the verdict for only
+$1$ of $998$ pages, and a text-only trust score is no better than random (AURC $\approx50$).
+The cross-modal vision agent is load-bearing, which corroborates the diversity ablation
+(\autoref{sec:exp_rq3}) -- the panel's power comes from agreement on \emph{grounded evidence}
+across diverse modalities, not from label consensus among similar models, so the panel cannot
+be thinned without losing the signal.
+
+\sstitle{Memory-augmented brand recovery has headroom but low precision}
+The dominant failure mode is missed phishing pages on which the panel never names the
+impersonated brand ($73$ of $76$, \autoref{sec:exp_rq1}). We test an episodic prior that
+retrieves the most DOM-similar calibration pages and borrows their brand, gated by grounding.
+The headroom is real -- $32$ of the $76$ misses have a groundable retrieved brand -- but
+converting the prior into a verdict is precision-sensitive: only at a strict similarity gate
+does it become net-positive, recovering $4$ missed phishing pages with \emph{zero} new false
+positives, while looser gates create more false alarms than they fix. High-precision brand
+recovery is thus a promising but open direction rather than a free win (\autoref{sec:limitations}).
+
+\sstitle{A stronger text panel does not help -- cue elicitation, not model scale, is the bottleneck}
+Because the panel is $3$B-class to fit a $16$\,GB laptop, a natural objection is that larger
+models would change the result. We swap both text agents for their $2$--$3\times$ larger
+siblings (Llama-3.1-8B and Qwen2.5-7B, same prompts, same GPT-4o vision) and re-run on a
+$120$-page stratified subset. The stronger panel does \emph{not} improve detection: AURC rises
+$4.2\to9.5$ and accuracy falls $90.0\to76.7$. The cause is not malformed output (JSON validity
+is $100\%$ for both) but \emph{cue elicitation}: the larger models return a verdict with an
+\emph{empty} cue set far more often ($30$--$51\%$ of pages vs.\ $\approx0\%$ for the $3$B
+Qwen), and a verdict with no typed cues grounds nothing, so $\geascore$ loses its signal. This
+is consistent with the rest of this section: the method's power comes from agents emitting
+\emph{groundable evidence}, which the compact instruction-tuned models do reliably, not from
+raw model scale. The $3$B panel is therefore a principled choice, not only a hardware
+concession.
+
+\subsection{Trust-Score Calibration}
+\label{sec:exp_rq4}
+The calibrated trust score is faithful: \toolname{} attains the lowest expected
+calibration error of any method, ECE $0.015$ (\autoref{tab:main}), against $0.081$ for
+single-model confidence (B1) and $0.24$ for the label-aggregation baselines (B4, B5),
+whose label-vote share is not a calibrated probability at all. So when \toolname{}
+reports a trust near $0.9$, close to $90\%$ of those verdicts are in fact correct. This
+faithfulness is what makes the operating point usable: because the calibrator is fit on
+the held-out labeled split rather than guessed, the reported probability can be turned
+directly into an act/abstain threshold at a target error budget, which is the premise the
+selective results of RQ1 rely on. It is also the clearest separation between \toolname{}
+and every baseline (\autoref{tab:main}), and the component the ablation confirms is
+essential to it (\autoref{tab:ablation}, $-$calibration).
+
+\subsection{Sensitivity Analysis}
+\label{sec:exp_rq5}
+Two hyperparameters govern the selective trade-off: the panel size $M$ and the consensus
+threshold $k$. \autoref{tab:sensitivity} sweeps both by re-scoring the cached agent outputs,
+so no agent is re-run. Panel size matters sharply. A single agent has no cross-agent
+agreement signal -- $\agr$ is trivially $1$, so $\geascore$ collapses to bare groundedness --
+and a two-agent panel turns the majority rule into a brittle unanimity; only at $M{=}3$,
+where ``two of three'' is an achievable majority, does grounded evidence agreement become
+well-defined (AURC $2.3$ versus $\ge35$ for $M{\le}2$), consistent with the diversity
+ablation of \autoref{sec:exp_rq3}. The consensus threshold is likewise non-trivial: requiring
+any single agent ($k{=}1$) admits uncorroborated cues, while a unanimous rule ($k{=}3$)
+discards genuine evidence, so the strict-majority rule ($k{=}2$) is the sweet spot
+(AURC $2.3$ versus $10.4$ and $6.0$). The reported configuration is therefore not incidental:
+$M{=}3$ with majority consensus is the minimum at which the method is well-defined and at
+which AURC is lowest.
+\input{../tables/tab_sensitivity}
+
+\subsection{Qualitative Study}
+\label{sec:exp_rq6}
+\textbf{RQ6} asks what \toolname{} hands an operator when it acts, and whether that
+artifact makes the act/abstain decision auditable; \autoref{tab:qual} answers by walking
+two real pages through the pipeline. On the impersonation page~(A), a page on
+\texttt{turkmcse.com} posing as the IRS, the vision agent and one text agent converge on the
+same brand claim, both read the off-brand credential form from the DOM, and every agreed cue
+survives its tool check -- the CLIP logo check confirms the IRS mark and a rule flags that
+the claimed brand does not match the host. \toolname{} acts and returns the agreed, verified
+cues as the explanation, every line naming a tool the operator can re-run. Page~(B), a real
+NatWest phishing page on the look-alike host \texttt{natwesttreats.co.uk}, shows the
+abstention path: the panel \emph{splits} (one agent flags the form, one reads NatWest
+branding, one sees nothing), so no cue reaches a majority and the single perceptual cue that
+is relaxed in -- a claimed NatWest logo -- \emph{fails} its CLIP check ($0.03$). Groundedness
+collapses ($\grd{=}0.03$) and with it $\geascore{=}0.01$, so \toolname{} abstains and
+escalates rather than emit the panel's bare majority label -- which here would have been the
+\emph{wrong} \textsf{benign} verdict, turning a silent false negative into a human review.
+The two cases are the method in one table: the explanation is exactly the evidence the panel
+agreed on and the page confirmed, and where no such evidence survives its check the detector
+declines to explain and defers.
+\input{../tables/tab_qual}
+
+\subsection{Adversarial Robustness}
+\label{sec:exp_adv}
+\textbf{RQ7} asks what happens when an attacker corrupts the very cue a verdict cites --
+the regime the clean corpus does not contain (\autoref{sec:exp_rq3}) and the one in which
+grounding is meant to matter. On $423$ correctly-detected phishing pages ($420$ for the
+logo attack, where three carried no detectable logo region) we apply two
+evidence-targeted perturbations that \emph{preserve} the true phishing label -- a
+\emph{form-action cloak} that rewrites the credential form to an on-brand-looking domain,
+and a \emph{logo occlusion} that overwrites the brand logo region, synthesizing the
+logo-free/minimal-cue phishing the corpus lacks -- and re-run the panel.
+\autoref{tab:adversarial} reports the result. Two findings stand out.
+
+\emph{The panel is hard to evade, but \toolname{} fails safe when it is.} Single-cue
+attacks flip only $6.6$--$9.7\%$ of verdicts: the diverse, multi-signal panel rarely
+collapses because no one corrupted cue carries the decision. More importantly, on the
+pages an attack does flip to the wrong \textsf{benign} verdict, \toolname{} abstains at
+the deployed operating point on $39$ of $40$ under occlusion and on \emph{all} of them
+under the form cloak ($28/28$) and the combined attack ($41/41$) -- $\ge97.5\%$ overall,
+mean trust $\approx0.58$, below $\thr$ -- turning a silent false negative into an
+escalation. The single-model confidence baseline B1, by contrast, reports mean confidence
+$1.00$ on those same evaded pages -- wholly blind to the corruption, because it reads
+trust at the label, which the attack leaves untouched. The MultiPhishGuard consolidator
+B6, which inspects the agents' rationales, is more responsive (mean $\approx0.68$ on the
+evaded pages) but still above \toolname's $\approx0.58$ there and, lacking a calibrated
+abstention rule, does not decline them.
+
+\emph{Grounding is the component that activates under attack.} The visual attack (logo
+occlusion) drives groundedness down ($\grd$ $0.95\to0.75$) and abstention up ($69\to88\%$):
+the occluded logo fails its CLIP re-derivation, so the cue the panel cites no longer
+grounds and $\geascore$ falls. This is precisely the behaviour that is invisible on clean
+data -- where $\grd$ barely moves the ranking (\autoref{sec:exp_rq3}) -- confirming that
+tool-grounding earns its place as a fail-safe against corrupted evidence rather than as a
+clean-corpus ranking gain. The form-action cloak alone moves $\grd$ little ($0.95\to0.90$),
+because the cloaked form re-derives as on-brand and simply grounds a different cue; its
+effect surfaces only on the evaded subset.
+
+\emph{The fail-safe holds under a white-box, all-cue adversary.} The strongest test is an
+adaptive attacker that knows every verifier and corrupts all of them at once -- cloaking the
+form action, erasing the brand's textual identity from the DOM, and occluding the logo
+(\autoref{tab:adversarial}, last row, $400$ pages). This is harder to ground than any single
+attack ($\grd$ $0.95\to0.77$) and flips more verdicts ($12.5\%$), as expected when no cited cue
+survives. Yet on \emph{every} one of the $50$ evaded pages \toolname{} abstains
+($100\%$, mean trust $0.55<\thr$), while B1 again reports confidence $1.00$: the adaptive
+adversary can suppress the evidence and force a wrong \textsf{benign} label, but cannot
+manufacture \emph{grounded agreement}, so it cannot make \toolname{} act on that label. We do
+not claim robustness to an adversary who controls the panel or the tools themselves
+(\autoref{sec:related}); within cue-level corruption -- including this white-box, all-cue case
+-- the detector declines to act rather than acting wrongly.
+\input{../tables/tab_adversarial}
+
+\subsection{Generalization to Unseen Brands}
+\label{sec:exp_brands}
+A single-corpus evaluation invites the question of whether the calibrated trust merely
+memorizes the brands it was fit on. We test this with a \emph{leave-brands-out} protocol that
+needs no new data: we split the brand vocabulary into two disjoint halves, fit the calibrator
+and Cov$_{99}$ threshold on pages whose brand is in the \emph{seen} half, and evaluate on pages
+whose brand is \emph{unseen} (the date-/brand-less benign pages are split at random). Averaged
+over five brand partitions, each leaving $\approx700$ unseen-brand pages,
+\autoref{tab:brands_out} shows the selective metrics on unseen brands match the
+in-distribution split and on AURC slightly exceed it ($1.9\pm0.3$ vs.\ $2.3$), with calibration
+holding (ECE $0.03$). Because the trust score reads agreement on \emph{grounded evidence} --
+a brand impersonated on an off-brand domain grounds as inconsistent regardless of which brand
+it is -- the operating point transfers to brands never seen during calibration. This is a
+distribution-shift test \emph{across brands}, complementary to the time-ordered drift test
+below; live cross-feed validation on freshly-collected pages remains future work
+(\autoref{sec:limitations}).
+\input{../tables/tab_brands_out}
+
+\subsection{Robustness to Temporal Drift}
+\label{sec:exp_drift}
+A deployed detector is calibrated once and then meets pages from later, evolving campaigns,
+so a trust score is only useful if it survives that gap. The \textsc{PhishSel} phishing pages
+span roughly a year (2019-07 to 2020-10), which lets us test this directly: we fit the
+calibrator and thresholds on a \emph{past} window ($\le$\,2020-07) and evaluate on the
+disjoint \emph{future} window ($\ge$\,2020-08), with the date-less benign pages split at
+random (\autoref{tab:drift}). Trained only on the past, \toolname{} holds its ranking and
+selective accuracy on the future window (AURC $3.1$ vs.\ the in-distribution $2.8\pm0.6$;
+SelAcc$_{80}$ $96.2$ vs.\ $96.9$), both within the in-distribution spread. Calibration is the
+one quantity that drifts, and only slightly -- ECE rises from $0.021$ to $0.030$ -- yet it
+stays an order of magnitude below the label-vote baselines' full-data ECE ($\ge0.24$,
+\autoref{tab:main}). Because trust is read from \emph{grounded evidence} rather than a fitted
+decision boundary, the operating point set on past data transfers to future pages without
+re-tuning. This time-ordered protocol follows the temporal-bias discipline of
+TESSERACT~\cite{pendlebury2019tesseract} -- calibration strictly precedes test in time --
+and the stability we observe is consistent with \emph{agreement-on-the-line}: cross-model
+agreement tracks accuracy under distribution shift~\cite{baek2022agreement}, which is why
+a score read from agreement transfers where a fitted boundary need not. We note the gap is
+modest: the corpus spans only mid-2019 to late-2020, so this probes resilience to short-horizon
+drift, not to the multi-year evolution a deployed detector eventually meets
+(\autoref{sec:limitations}).
+\input{../tables/tab_drift}

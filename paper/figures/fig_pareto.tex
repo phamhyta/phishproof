@@ -1,0 +1,16 @@
+% Generated PNG. Source: figures/gen_experiment_figs.py
+% Regenerate: uv run --with matplotlib --with numpy python figures/gen_experiment_figs.py
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\linewidth]{fig_pareto}
+\caption{Cost--quality trade-off: per-page model calls (analytical) versus AURC
+($\downarrow$). At the $M{=}3$ panel's call budget \toolname{} has the lowest AURC in point
+estimate (on par with B6 within CI),
+below the other three-call panel methods (B4/B5/B6) and far below the single-call
+confidence read-outs.}
+\Description{A scatter plot of AURC against per-page model calls. PhishProof sits at
+the bottom of the cost-quality frontier: at three model calls it has lower AURC than
+the label-agreement, majority-vote, and MultiPhishGuard baselines at the same cost,
+and far lower than the single-call confidence baselines.}
+\label{fig:pareto}
+\end{figure}

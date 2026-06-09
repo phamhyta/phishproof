@@ -1,0 +1,122 @@
+\begin{figure*}[!h]
+\centering
+\definecolor{PPBlue}{HTML}{DCEFF7}
+\definecolor{PPMint}{HTML}{DFF0C8}
+\definecolor{PPCream}{HTML}{FFF3C4}
+\definecolor{PPPeach}{HTML}{FAD9C5}
+\definecolor{PPLav}{HTML}{E7E4FF}
+\definecolor{PPInk}{HTML}{253746}
+\definecolor{PPRed}{HTML}{B24A4A}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  >=Latex,
+  stage/.style={font=\sffamily\tiny\bfseries, text=PPInk, align=center},
+  card/.style={draw=PPInk!45, line width=0.35pt, rounded corners=2pt,
+    fill=white, align=center, inner sep=3pt},
+  input/.style={card, fill=PPBlue!42, text width=15mm, minimum height=17mm},
+  agent/.style={card, fill=white, text width=12mm, minimum height=5.2mm},
+  tool/.style={card, fill=PPCream!75, align=left, text width=27mm},
+  graphbox/.style={card, fill=PPMint!35, minimum width=36mm, minimum height=29mm},
+  scorebox/.style={card, fill=PPLav!35, align=left, text width=33mm},
+  decision/.style={card, text width=30mm, align=left},
+  unit/.style={circle, draw=PPInk!55, line width=0.35pt, fill=white,
+    minimum size=7.5mm, inner sep=0pt, font=\sffamily\tiny, align=center},
+  tag/.style={circle, draw=white, line width=0.25pt, minimum size=1.7mm,
+    inner sep=0pt},
+  flow/.style={-{Latex[length=1.4mm]}, line width=0.45pt, draw=PPInk!70},
+  aux/.style={-{Latex[length=1.2mm]}, line width=0.35pt, draw=PPInk!55, dashed},
+  good/.style={line width=0.45pt, draw=green!45!black},
+  bad/.style={line width=0.45pt, draw=PPRed, dashed}
+]
+
+\node[stage] at (0.00,1.77) {page\\observables};
+\node[stage] at (1.95,1.77) {diverse evidence\\agents};
+\node[stage] at (5.05,1.77) {shared evidence\\graph};
+\node[stage] at (8.85,1.77) {grounded agreement\\score};
+\node[stage] at (12.25,1.77) {selective\\decision};
+
+\node[input] (page) at (0,0.35)
+  {\textbf{page $\page$}\\[-1pt]
+   \tiny URL, DOM\\[-1pt]
+   \tiny screenshot\\[-1pt]
+   \tiny TLS, redirects};
+
+\node[agent] (a1) at (1.95,1.05) {$m_1$\\[-1pt]\tiny text LLM};
+\node[agent] (a2) at (1.95,0.35) {$m_2$\\[-1pt]\tiny VLM};
+\node[agent] (a3) at (1.95,-0.35) {$m_3$\\[-1pt]\tiny security LLM};
+\draw[flow] (page.east) -- (a1.west);
+\draw[flow] (page.east) -- (a2.west);
+\draw[flow] (page.east) -- (a3.west);
+
+\node[tool] (tools) at (1.95,-1.18)
+  {\textbf{tools $\gver(u,\page)$}\\[-1pt]
+   \tiny DOM form-action, TLS cert\\[-1pt]
+   \tiny redirect tracer, logo matcher};
+\draw[aux] (a1.south) .. controls +(0,-0.45) and +(0,0.35) .. (tools.north);
+\draw[aux] (a2.south) -- (tools.north);
+\draw[aux] (a3.south) .. controls +(0,-0.30) and +(0,0.15) .. (tools.north);
+
+\node[graphbox] (graph) at (5.05,0.20) {};
+\node[font=\sffamily\tiny\bfseries, text=PPInk] at ($(graph.north)+(0,-0.15)$)
+  {$H(\page)=\bigcup_i \evset_i(\page)$};
+\node[unit, fill=PPBlue!45] (brand) at ($(graph.center)+(-0.82,0.38)$) {brand};
+\node[unit, fill=PPPeach!50] (form) at ($(graph.center)+(0.70,0.55)$) {form\\domain};
+\node[unit, fill=PPCream!70] (cert) at ($(graph.center)+(0.82,-0.12)$) {cert\\org};
+\node[unit, fill=PPMint!65] (logo) at ($(graph.center)+(-0.68,-0.46)$) {logo\\brand};
+\node[unit, fill=white] (redir) at ($(graph.center)+(0.10,-0.67)$) {redir};
+\draw[good] (brand) -- node[above, font=\sffamily\tiny, sloped] {supports} (logo);
+\draw[bad] (brand) -- node[above, font=\sffamily\tiny, sloped] {off-brand} (form);
+\draw[bad] (brand) -- (cert);
+\draw[good] (form) -- (redir);
+\node[tag, fill=blue!55] at ($(form.north east)+(-0.6mm,-0.5mm)$) {};
+\node[tag, fill=green!55!black] at ($(form.north east)+(-2.4mm,-0.5mm)$) {};
+\node[tag, fill=blue!55] at ($(logo.north east)+(-0.6mm,-0.5mm)$) {};
+\node[tag, fill=orange!75!black] at ($(logo.north east)+(-2.4mm,-0.5mm)$) {};
+\node[font=\sffamily\tiny, text=PPInk!75, align=center] at ($(graph.south)+(0,0.18)$)
+  {nodes $u=(t,v)\in\Uschema$; dots mark asserting agents};
+
+\draw[flow] (a1.east) -- (graph.west);
+\draw[flow] (a2.east) -- (graph.west);
+\draw[flow] (a3.east) -- (graph.west);
+\draw[aux] (tools.east) -- (graph.south west);
+
+\node[scorebox] (score) at (8.85,0.20)
+  {\textbf{consensus and score}\\[-1pt]
+   \tiny $\cons=\{u:\#\mathrm{agents}(u)>M/2\}$\\[-1pt]
+   \tiny $\agr=\lvert\cons\rvert/\lvert\bigcup_i\evset_i\rvert$\\[-1pt]
+   \tiny $\grd=\frac{1}{\lvert\cons\rvert}\sum_{u\in\cons}\gver(u,\page)$\\[-1pt]
+   \tiny $\geascore=\agr\cdot\grd$,\quad $\hat\rho=\kappa(\geascore)$};
+\draw[flow] (graph.east) -- (score.west);
+
+\node[decision, fill=PPMint!40] (act) at (12.25,0.83)
+  {\textbf{act}\\[-1pt]
+   \tiny if $\geascore\ge\thr$\\[-1pt]
+   \tiny return $(\hat y,\hat\rho,\cons)$\\[-1pt]
+   \tiny explanation = verified subgraph};
+\node[decision, fill=PPPeach!42] (abstain) at (12.25,-0.76)
+  {\textbf{abstain}\\[-1pt]
+   \tiny label majority but\\[-1pt]
+   \tiny low $\agr$ or low $\grd$\\[-1pt]
+   \tiny RLWR $\Rightarrow \bot$};
+\draw[flow] (score.east) -- (act.west);
+\draw[flow] (score.east) -- (abstain.west);
+
+\node[font=\sffamily\tiny, text=PPInk!70, align=center] at (6.45,-1.62)
+  {label vote $\hat y=\mathrm{maj}_i y_i$ is retained, but trust is gated by the evidence channel};
+\end{tikzpicture}}
+\caption{\toolname{} in one picture, expanded. Each evidence agent $m_i$ reads
+the page $\page$, calls verification tools, and emits a label--evidence pair
+$(y_i,\evset_i)$ over the shared schema $\Uschema$. Typed units
+$u=(t,v)$ are assembled into the evidence graph $H(\page)$; majority-agreed nodes
+form the consensus subgraph $\cons(\page)$, scored by evidence agreement $\agr$,
+tool-groundedness $\grd$, and $\geascore=\agr\cdot\grd$. A delayed-oracle
+calibrator $\kappa$ maps $\geascore$ to trust: high grounded agreement returns
+$(\hat y,\hat\rho,\cons)$, while right-label, wrong-reason cases with label
+agreement but weak or unverified evidence abstain.}
+\Description{A left-to-right pipeline showing page observables sent to three
+diverse evidence agents, tool-grounded typed evidence units assembled into a
+shared evidence graph, consensus and grounded-agreement scoring, and the final
+act or abstain decision.}
+\label{fig:teaser}
+\end{figure*}

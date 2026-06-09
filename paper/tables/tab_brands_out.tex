@@ -1,0 +1,19 @@
+\begin{table}[!h]
+\caption{Leave-brands-out generalization. The brand vocabulary is split into two disjoint
+halves; the calibrator and threshold are fit on pages whose brand is in the \emph{seen} half
+and evaluated on pages whose brand is \emph{unseen} (benign pages split at random). Mean$\pm$std
+over five brand partitions ($\approx$700 unseen-brand test pages each). The selective metrics
+on entirely unseen brands match -- and on AURC slightly exceed -- the in-distribution split,
+so the calibrated trust transfers across the brand distribution rather than memorizing brands.}
+\label{tab:brands_out}
+\footnotesize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+Split & AURC$\downarrow$ & SelAcc$_{80}\uparrow$ & FPR$_{80}\downarrow$ & Cov$_{99}\uparrow$ & ECE$\downarrow$ \\
+\midrule
+In-distribution (\autoref{tab:main}) & 2.3 & 97.0 & 1.3 & 0.25 & 0.015 \\
+Unseen brands & $1.9_{\pm0.3}$ & $97.7_{\pm0.7}$ & $1.1_{\pm0.4}$ & $0.30_{\pm0.05}$ & $0.03_{\pm0.02}$ \\
+\bottomrule
+\end{tabular*}
+\end{table}

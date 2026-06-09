@@ -1,0 +1,22 @@
+\begin{table}[!h]
+\caption{The $M{=}3$ evidence-agent panel. The two text agents are deliberately from
+different model families and run locally via Ollama on a $16$\,GB laptop (no GPU); the
+vision agent is GPT-4o through its API. All agents decode deterministically (temperature
+$0$), so the only stochastic choice in the pipeline is the calibration/test partition.}
+\label{tab:panel_models}
+\footnotesize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llllc@{}}
+\toprule
+Agent & Model & Family & Modality & Host \\
+\midrule
+$A_1$ & Llama-3.2-3B & Meta    & text   & Ollama (local) \\
+$A_2$ & Qwen2.5-3B   & Alibaba & text   & Ollama (local) \\
+$A_3$ & GPT-4o       & OpenAI  & vision & API \\
+\bottomrule
+\end{tabular*}
+
+\footnotesize{Text agents: $8{,}192$-token context, temperature $0$. Vision agent:
+\texttt{detail=low}, temperature $0$. The MultiPhishGuard consolidator (B6) and the
+verbalized/single-model baselines (B1, B2) reuse GPT-4o.}
+\end{table}

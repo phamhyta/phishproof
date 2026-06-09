@@ -1,0 +1,27 @@
+\begin{table}[!h]
+\caption{RQ2. Correctly labeled \emph{lookalike} phishing pages (brand-in-domain hard
+subset: $n{=}200$ correctly labeled pages of $233$ hard pages in the test split) binned into
+GEA quintiles. ``Flip'' is the label-flip rate under a
+small evidence-targeted perturbation (form-action cloak) that preserves the true label.
+Fragility is concentrated in the lowest-GEA bin ($12\%$ vs $\le5\%$ above it); a coarser
+split by GEA \emph{level} -- the low group ($\geascore{<}0.5$, $n{=}98$) vs the high group
+($\geascore{>}0.72$, $n{=}67$) -- gives a modest $7.1\%$ vs $6.0\%$ ($1.2\times$), small
+because the effect is concentrated in the lowest bin rather than spread. On the
+unrestricted test split, where the off-brand signal is unambiguous, the gradient is
+flat. The strong right-label-wrong-reason effect is thus benchmark-dependent (see
+Limitations), not the dramatic split the illustrative design assumed.}
+\label{tab:rlwr}
+\footnotesize
+\setlength{\tabcolsep}{4.0pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+GEA quintile (low $\to$ high) & mean GEA & Flip$\downarrow$ \\
+\midrule
+Q1 (lowest)  & 0.29 & 12\% \\
+Q2           & 0.50 & 2.5\% \\
+Q3           & 0.55 & \phantom{0}5\% \\
+Q4           & 0.72 & \phantom{0}5\% \\
+Q5 (highest) & 0.92 & \phantom{0}5\% \\
+\bottomrule
+\end{tabular*}
+\end{table}
