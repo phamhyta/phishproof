@@ -1,0 +1,38 @@
+# RQ3 −diversity ablation: same M=3 but all from ONE family (Qwen), so cross-family
+# diversity is removed while panel size is held fixed. Compare against the diverse default
+# panel (Llama + Qwen + GPT-4o). All-local (no API).
+#   ollama pull qwen2.5:3b qwen2.5:7b qwen2.5vl:3b   (already pulled this session)
+
+panel:
+  - id: agent_a_text
+    provider: ollama
+    model: qwen2.5:3b
+    modality: text
+    base_url: http://localhost:11434/v1
+    temperature: 0.0
+    num_ctx: 8192
+
+  - id: agent_b_text
+    provider: ollama
+    model: qwen2.5:7b
+    modality: text
+    base_url: http://localhost:11434/v1
+    temperature: 0.0
+    num_ctx: 8192
+
+  # Vision held IDENTICAL to the main panel (GPT-4o) so the ablation isolates the removal
+  # of cross-family TEXT diversity (Llama+Qwen -> Qwen+Qwen), not vision quality. Also
+  # avoids loading a local VLM, which the 16 GB machine cannot fit beside the 7B text model.
+  - id: agent_c_vision
+    provider: openai
+    model: gpt-4o
+    modality: vision
+    base_url: null
+    detail: low
+    temperature: 0.0
+
+spot_check:
+  enabled: false
+  provider: openai
+  model: gpt-4o
+  n_pages: 0
