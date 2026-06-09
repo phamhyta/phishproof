@@ -29,7 +29,22 @@ rationales are merged into a single explanation~\cite{phishdebate2025,
 multiphishguard2025}. Together these families cover much of the space of accuracy
 and aggregation.
 
-\input{../figures/fig_teaser_qualitative}
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig_teaser_qualitative.png}
+\caption{\toolname{} as a qualitative evidence story. Three agents inspect the
+same page from complementary views, then place their cited cues on a shared
+evidence board. Colored pins show provenance, while tool badges mark cues that
+are confirmed or rejected by the page itself. \toolname{} acts when the shared
+reasons survive these checks and returns them as an evidence packet; when agents
+agree on the label but their reasons split or fail verification, it abstains.}
+\Description{A qualitative left-to-right illustration of PhishProof. A suspicious
+login page is inspected by three agents, their observations become evidence rows
+with agent pins and tool checks, a grounded-agreement meter separates verified
+shared reasons from label-only agreement, and the system either acts with an
+evidence packet or abstains for review.}
+\label{fig:teaser}
+\end{figure*}
 
 They share a blind spot, visible in a routine case (\autoref{fig:teaser}). A page
 impersonating a bank is shown to a panel of three diverse models; all three return

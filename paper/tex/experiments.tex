@@ -167,9 +167,9 @@ the code runs on CPython $3.14$ with CPU-only DOM, CLIP, and calibration code. E
 call is content-hash cached, so all ablations and the design-justification probes
 (\autoref{sec:exp_negatives}) re-score from cache without re-running any agent. We release
 the cue schema and prompts, the tool wrappers, the calibrator and threshold-fitting code,
-and the figure- and table-generation scripts. Artifacts (page snapshots, splits, cached
-agent outputs, and regeneration scripts) will be released at an anonymized repository for
-review and at a permanent archive upon acceptance.
+and the figure- and table-generation scripts. Code, manifests, and headline result files are
+available at \url{https://github.com/phamhyta/phishproof}; page snapshots and the full agent
+cache are archived separately (Zenodo DOI upon acceptance).
 
 \sstitle{Tool soundness}
 \autoref{prop:hall} assumes the tools are sound (\autoref{ass:sound}); we check this for
@@ -277,7 +277,15 @@ predicts and the behaviour an operator wants from the abstention -- but the shar
 partition the illustrative design assumed does not materialise on this benchmark, whose
 phishing pages carry few shared hallucinations for grounding to catch. We treat this as
 a limitation of the benchmark rather than evidence against the mechanism
-(\autoref{sec:limitations}).
+(\autoref{sec:limitations}). A natural \emph{evasive} subset isolates the effect more
+clearly: filtering the $423$ correctly-labelled phish for pages with a minimal DOM
+($<\!5$\,KB) or no detectable logo region yields $72$ pages, the closest the corpus
+comes to logo-free/minimal-cue phishing. On this evasive subset the form-action cloak
+flips $12.5\%$ of verdicts against $5.4\%$ on the rest ($2.3\times$), logo occlusion
+$15.9\%$ vs.\ $8.3\%$ ($1.9\times$), and the white-box all-cue attack $19.4\%$ vs.\
+$7.7\%$ ($2.5\times$) -- in every case the GEA-fragile pages are the ones a small
+evidence-corruption flips. The mechanism is real; on a corpus richer in such pages the
+flat-on-clean gradient would resolve into the sharp partition the design predicts.
 \input{../tables/tab_rlwr}
 
 \subsection{Component Ablation}

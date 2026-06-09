@@ -22,10 +22,7 @@ without re-running models.
 Regenerate tables:
 
 ```bash
-# copy or symlink artifacts into results/ for scripts that read results/
-mkdir -p results
-cp artifacts/* results/
-python scripts/make_all_tables.py
+python scripts/make_all_tables.py   # reads artifacts/ automatically if results/ absent
 ```
 
 ## Zenodo (planned) — Tier B/C

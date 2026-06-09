@@ -140,7 +140,25 @@ assumed.
 
 \subsection{Framework Overview}
 \label{sec:form-overview}
-\input{../figures/fig_overview_visual}
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig_overview_visual.png}
+\caption{\toolname{} qualitative pipeline. Agents inspect the same page from
+complementary views and cite typed evidence cues into a shared set. The system
+trusts a verdict only when the agents converge on the same cues and the tool bank
+can re-check those cues against the live page. The calibrated selector returns the
+label with the verified cues when the evidence is shared and grounded; otherwise it
+abstains, including cases where the label vote is plausible but the reasons are thin
+or unverified. The threshold and calibrator are set on a held-out labeled split.}
+\Description{A four-stage qualitative pipeline. The first panel shows a suspicious
+login page and three agents emitting typed evidence cues. The second panel shows a
+shared set of typed cues with provenance pins and a highlighted consensus
+(agreement A). The third panel shows DOM, brand, consistency, and logo tools re-checking
+each consensus cue into a groundedness score G. The final panel forms GEA = A times
+G, calibrates it to a probability of correctness on a held-out labeled split, and
+acts above a threshold by returning the verified cues or abstains otherwise.}
+\label{fig:overview}
+\end{figure*}
 End-to-end, \toolname{} turns a page into a trusted-and-explained verdict in four
 steps, drawn in \autoref{fig:overview} and developed one per subsection in
 \autoref{sec:method}; the four components $C_1$--$C_4$ map one-to-one onto these steps.

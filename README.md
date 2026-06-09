@@ -1,5 +1,7 @@
 # PhishProof
 
+**Repository:** [github.com/phamhyta/phishproof](https://github.com/phamhyta/phishproof)
+
 Selective phishing detection via **Grounded Evidence-Agreement (GEA)**:
 `GEA = A · G`, where **A** is cross-agent consensus over typed cues and **G** is mean
 tool-verification on those cues.
@@ -27,7 +29,7 @@ pip install -e ".[logo,dev]"
 # verify manifests + tools (no API)
 python scripts/preflight.py --data data/phishsel_final
 
-# reproduce headline tables from cached artifacts (no API)
+# reproduce headline tables from artifacts/ (no API, no copy step)
 python scripts/make_all_tables.py
 
 # import D1 Phishpedia outputs (if you have external/pp_res*.txt)
