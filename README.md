@@ -1,10 +1,9 @@
 # PhishProof
 
-PhishProof is the public code scaffold for the paper under review in
-`papers/phishing-detection`.
+PhishProof is the public code scaffold for our paper under review.
 
-This repository intentionally does not include manuscript TeX, paper figures,
-benchmark data, experiment outputs, model responses, or reproduction artifacts.
+This repository intentionally does not include benchmark data, experiment outputs, model responses, or reproduction artifacts.
+
 The full research code and artifacts will be released after the paper is
 accepted.
 
