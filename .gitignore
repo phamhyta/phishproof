@@ -14,17 +14,31 @@ venv/
 # OS
 .DS_Store
 
-# Large / not shipped in this repo (see Zenodo)
-data/raw/
-data/benign_raw/
-data/cache/
+# Paper and review material
+paper/
+papers/
+*.aux
+*.bbl
+*.bib
+*.blg
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.tex
+
+# Data and experiment outputs
+artifacts/
+data/
+docs/figures/
 external/
 results/
-pp_input/
-pp_input_mini/
+results.*/
+*.csv
+*.jsonl
+*.parquet
+*.tsv
 
-# Dev mirror metadata (private monorepo only)
-public-release/
-
-# Materialize leaves a real `public` symlink target outside this repo — ignore if present
-public
+# Keep the toy public files visible.
+!configs/*.json
+!examples/*.jsonl

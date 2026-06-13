@@ -1,69 +1,77 @@
 # PhishProof
 
-**Repository:** [github.com/phamhyta/phishproof](https://github.com/phamhyta/phishproof)
+PhishProof is the public code scaffold for the paper under review in
+`papers/phishing-detection`.
 
-Selective phishing detection via **Grounded Evidence-Agreement (GEA)**:
-`GEA = A · G`, where **A** is cross-agent consensus over typed cues and **G** is mean
-tool-verification on those cues.
+This repository intentionally does not include manuscript TeX, paper figures,
+benchmark data, experiment outputs, model responses, or reproduction artifacts.
+The full research code and artifacts will be released after the paper is
+accepted.
 
-Paper target: *Computers & Electrical Engineering*. LaTeX sources in `paper/`.
+## What is included
 
-## PhishSel benchmark
+- A small installable Python package.
+- A stable JSONL input/output shape for page-level phishing checks.
+- A toy URL-signal detector used only for smoke tests.
+- A minimal CLI showing how the final pipeline will be invoked.
 
-| Split | Pages | Phishing | Benign |
-|---|---:|---:|---:|
-| Calibration | 332 | 166 | 166 |
-| Test | 998 | 499 | 499 |
+The detector shipped here is not the paper implementation and should not be used
+as a benchmark result.
 
-Manifests: `data/phishsel_final/` (SHA-256 in `CHECKSUMS.sha256`).
-
-Page snapshots (HTML + screenshots, ~700 MB) are distributed separately on Zenodo —
-see `ARTIFACTS.md`.
-
-## Quick start
+## Install
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -e ".[logo,dev]"
-
-# verify manifests + tools (no API)
-python scripts/preflight.py --data data/phishsel_final
-
-# reproduce headline tables from artifacts/ (no API, no copy step)
-python scripts/make_all_tables.py
-
-# import D1 Phishpedia outputs (if you have external/pp_res*.txt)
-python scripts/import_phishpedia_d1.py
-python scripts/run_subsumes_d1.py
+uv sync
 ```
 
-Full panel run requires Ollama (Llama-3.2-3B, Qwen2.5-3B) + OpenAI API (GPT-4o vision).
-Agent calls are content-hash cached under `data/cache/` (not shipped — see `ARTIFACTS.md`).
+## Run the demo
 
-## Repository layout
-
-| Path | Contents |
-|---|---|
-| `phishproof/` | Core pipeline |
-| `scripts/` | Experiments + table generation |
-| `configs/` | Panel / experiment YAML |
-| `data/phishsel_final/` | Calibration + test manifests |
-| `artifacts/` | Headline result files (bundles, detectors, RQ JSON) |
-| `paper/` | LaTeX paper (tables, figures, `tex/main_phishproof.tex`) |
-
-## Citation
-
-```bibtex
-@article{phishproof2026,
-  title   = {PhishProof: Trustworthy Phishing Detection with Grounded Cross-Model Evidence Agreement},
-  author  = {TODO},
-  journal = {Computers and Electrical Engineering},
-  year    = {2026},
-  note    = {Under review}
-}
+```bash
+uv run phishproof \
+  --input examples/pages.jsonl \
+  --config configs/demo.json \
+  --output /tmp/phishproof-demo.jsonl
 ```
+
+Print the output:
+
+```bash
+cat /tmp/phishproof-demo.jsonl
+```
+
+## Input format
+
+Each line is one JSON object:
+
+```json
+{"id": "sample-1", "url": "https://login.example.test/account", "title": "Account sign-in"}
+```
+
+Supported fields:
+
+- `id`: stable page identifier.
+- `url`: page URL.
+- `title`: optional page title.
+- `html_path`: optional path to a saved HTML file.
+- `screenshot_path`: optional path to a screenshot.
+- `metadata`: optional object with caller-side notes.
+
+The CLI writes one JSON object per input page with `id`, `label`,
+`confidence`, and `reasons`.
+
+## Development
+
+```bash
+uv run ruff check phishproof
+uv run python -m phishproof --input examples/pages.jsonl
+```
+
+## Release status
+
+This is a pre-acceptance public scaffold. The private research repository keeps
+the manuscript, experiment scripts, result bundles, and data manifests until the
+review process is complete.
 
 ## License
 
-MIT — see `LICENSE`. PhishSel page snapshots derive from the
-[Phishpedia](https://github.com/lindsey98/Phishpedia) corpus; cite accordingly.
+MIT. See `LICENSE`.
