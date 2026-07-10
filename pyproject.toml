@@ -1,0 +1,32 @@
+[project]
+name = "phishproof"
+version = "1.1.0"
+description = "Public interface skeleton for the PhishProof phishing detector (full implementation released upon paper acceptance)"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+# The released implementation uses this stack; pinned versions ship with the paper.
+full = [
+  "numpy",
+  "scikit-learn",
+  "pillow",
+  "beautifulsoup4",
+  "requests",
+  "openai",
+]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+phishproof = "phishproof.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["phishproof*"]

@@ -1,0 +1,20 @@
+{
+  "panel": {
+    "vision_model": "<vision-model>",
+    "text_models": ["<text-model-a>", "<text-model-b>"],
+    "max_tool_calls": 8
+  },
+  "score": {
+    "epsilon": 0.001,
+    "tau": 0.5,
+    "active_cue_types": ["brand", "form_action", "credential_intent", "logo"]
+  },
+  "tools": {
+    "brand": true,
+    "dom": true,
+    "logo": true,
+    "certificate": false,
+    "redirect": false
+  },
+  "cache_dir": ".cache"
+}

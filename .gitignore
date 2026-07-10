@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+*.key
+
+# OS
+.DS_Store
+
+# Paper and review material
+paper/
+papers/
+*.aux
+*.bbl
+*.bib
+*.blg
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.tex
+
+# Data and experiment outputs
+artifacts/
+data/
+docs/figures/
+external/
+results/
+results.*/
+*.csv
+*.jsonl
+*.parquet
+*.tsv
+
+# Keep the illustrative public data files visible.
+!configs/*.json
+!examples/*.jsonl
