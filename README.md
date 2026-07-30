@@ -6,24 +6,7 @@ per evidence type (the Grounded Evidence-Agreement score), verifies each agreed
 cue against the page, and abstains when the evidence is not trustworthy enough
 to act on.
 
-## Status: public interface skeleton
-
-This repository is the **public interface** for the paper, which is currently
-under review. It ships the full package structure -- every module, class, and
-function signature, with documentation -- so the pipeline can be read and
-reviewed end to end. **It is not runnable:** the body of each component prints a
-release notice and raises `NotImplementedError`. The executable implementation,
-the benchmark data, and the reproduction artifacts are released here once the
-paper is accepted.
-
-Importing the package and inspecting the API works; calling a withheld component
-surfaces:
-
-```
-PhishProof reference implementation is not public yet. The full source of this
-component will be released in this repository once the paper is accepted; the
-public release currently ships the interface and documentation only.
-```
+This repository is the implementation of our paper, which is currently under review. The full executable source code, data, and artifacts will released here once the paper is accepted.
 
 ## Pipeline
 
