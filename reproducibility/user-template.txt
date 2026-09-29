@@ -1,0 +1,5 @@
+Decide if this page is phishing or legitimate, weighing whether its brand is consistent with its domain. Return the JSON only.
+
+{context}
+
+Return JSON: {{"verdict": "phish"|"benign", "confidence": 0..1, "cues": [{{"type": <cue type>, "value": <string>}}]}}

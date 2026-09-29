@@ -1,24 +1,24 @@
 [project]
 name = "phishproof"
-version = "1.1.0"
-description = "Public interface skeleton for the PhishProof phishing detector (full implementation released upon paper acceptance)"
+version = "0.1.0"
+description = "PhishProof — Grounded Evidence-Agreement selective phishing detector"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "tldextract>=5.0",
+    "openai>=1.0",          # OpenAI-compatible client (used for both Ollama local + GPT-4o spot-check)
+    "beautifulsoup4>=4.12",  # DOM parsing (Phase 2)
+    "lxml>=5.0",
+    "pillow>=10.0",          # screenshots
+    "numpy>=1.26",
+    "scikit-learn>=1.4",     # isotonic calibration (Phase 4)
+]
 
 [project.optional-dependencies]
-# The released implementation uses this stack; pinned versions ship with the paper.
-full = [
-  "numpy",
-  "scikit-learn",
-  "pillow",
-  "beautifulsoup4",
-  "requests",
-  "openai",
-]
+# Heavier, phase-specific deps; install when you reach the phase.
+logo = ["open-clip-torch", "torch"]   # logo-brand perceptual tool (Phase 2), runs CPU on Mac
 dev = ["pytest>=8.0", "ruff>=0.5"]
-
-[project.scripts]
-phishproof = "phishproof.cli:main"
 
 [tool.ruff]
 line-length = 100

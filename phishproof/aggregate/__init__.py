@@ -1,15 +1,15 @@
-"""Aggregation: per-type agreement and the GEA trust signal."""
+"""Aggregation: normalize -> consensus -> agreement (A) -> grounding (G) -> GEA (C2, C3)."""
 
-from .consensus import per_type_agreement, verdict_concurrence
-from .gea import gea_score, score_page, trust_signal
+from .consensus import agreement, consensus_cues, shared_cue_set
+from .gea import groundedness, score_page
 from .normalize import normalize_cue, normalize_value
 
 __all__ = [
-    "gea_score",
     "normalize_cue",
     "normalize_value",
-    "per_type_agreement",
+    "shared_cue_set",
+    "consensus_cues",
+    "agreement",
+    "groundedness",
     "score_page",
-    "trust_signal",
-    "verdict_concurrence",
 ]

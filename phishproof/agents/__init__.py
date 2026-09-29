@@ -1,15 +1,7 @@
-"""The cross-modal, tool-using agent panel."""
+"""Evidence agents + panel (C1)."""
 
-from .base import Agent, ToolUsingAgent
-from .client import LLMClient
-from .page_context import PageContext, build_context
-from .panel import AgentPanel
+from .base import Agent, EvidenceAgent
+from .mock import MockAgent
+from .panel import Panel
 
-__all__ = [
-    "Agent",
-    "AgentPanel",
-    "LLMClient",
-    "PageContext",
-    "ToolUsingAgent",
-    "build_context",
-]
+__all__ = ["Agent", "EvidenceAgent", "MockAgent", "Panel"]

@@ -1,0 +1,37 @@
+# PhishProof panel — STRONGER text agents (W2.3 panel-strength spot-check).
+# Same cross-family design as panel.yaml but with 7B/8B text models instead of 3B, to test
+# the reviewer question "would a stronger panel change the story?". Heavier on 16 GB (one
+# model resident at a time via the batch-by-agent runner); intended for a SUBSET, not the
+# full split.
+#   ollama pull llama3.1:8b qwen2.5:7b
+panel:
+  - id: agent_a_text          # Meta family, 8B
+    provider: ollama
+    model: llama3.1:8b
+    modality: text
+    base_url: http://localhost:11434/v1
+    temperature: 0.0
+    num_ctx: 8192
+
+  - id: agent_b_text          # Alibaba family, 7B (cross-family diversity)
+    provider: ollama
+    model: qwen2.5:7b
+    modality: text
+    base_url: http://localhost:11434/v1
+    temperature: 0.0
+    num_ctx: 8192
+
+  - id: agent_c_vision        # vision agent held fixed (isolate text-strength effect)
+    provider: openai
+    model: gpt-4o
+    modality: vision
+    base_url: null
+    detail: low
+    temperature: 0.0
+
+spot_check:
+  enabled: false
+  provider: openai
+  model: gpt-4o
+  n_pages: 100
+  agreement_threshold: 0.80

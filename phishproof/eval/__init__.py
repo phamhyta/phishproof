@@ -1,28 +1,29 @@
-"""Evaluation: selective-prediction metrics and the adversarial study."""
+"""Selective + detection metrics, bootstrap CIs, reporting (Phase 5)."""
 
-from .bootstrap import bootstrap_ci, paired_test
-from .evaluate import compare, evaluate_bundle
+from .bootstrap import bootstrap_ci, paired_bootstrap_indices, significant
+from .evaluate import SELECTIVE_KEYS, evaluate_detection, evaluate_method
 from .metrics import (
     aurc,
-    coverage_at_risk,
-    expected_calibration_error,
+    coverage_at_selective_accuracy,
+    detection_metrics,
+    ece,
     fpr_at_coverage,
-    selective_accuracy,
+    risk_coverage_curve,
+    selective_accuracy_at_coverage,
 )
-from .perturb import adaptive, both, cloak, occlude
 
 __all__ = [
-    "adaptive",
     "aurc",
-    "bootstrap_ci",
-    "both",
-    "cloak",
-    "compare",
-    "coverage_at_risk",
-    "evaluate_bundle",
-    "expected_calibration_error",
+    "risk_coverage_curve",
+    "selective_accuracy_at_coverage",
     "fpr_at_coverage",
-    "occlude",
-    "paired_test",
-    "selective_accuracy",
+    "coverage_at_selective_accuracy",
+    "ece",
+    "detection_metrics",
+    "evaluate_method",
+    "evaluate_detection",
+    "SELECTIVE_KEYS",
+    "bootstrap_ci",
+    "paired_bootstrap_indices",
+    "significant",
 ]

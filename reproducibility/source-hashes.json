@@ -1,0 +1,13 @@
+{
+  "uv.lock": "a6dd96739da023266bd99050e993d6908fc931076090374d55a036c1359f1292",
+  "pyproject.toml": "8db475be7bafa8c9145454d26dc88ea6c58fbd51f96586e1ba998879347187f2",
+  "configs/panel_or.yaml": "0b2e22a861317faaf760bba4aae4607279a02eccf984ea15f303a766929a67c3",
+  "phishproof/agents/prompts.py": "b8005a5e3c0cb3d15327ab6e43cd522cdce9b5d6d6531d0a801da745f9f33b54",
+  "phishproof/agents/client.py": "b58971834a990e968352c73f69c57309f42426842c8f36c087e30ca6dddab4ce",
+  "phishproof/agents/base.py": "ad62054e095cc4c5a49e9a9074d3a0a0164c99e31a2fae95fdfb479ab5ad88a4",
+  "phishproof/agents/page_context.py": "ee4c0e5836095103c06c6df48cade542368a4e8d901305c09cadecece28de8eb",
+  "phishproof/aggregate/gea.py": "20a7e07cfcd72fbe1e12f48213bbd0b70078fab6bf96d7bc4ac5c9e5fc96e498",
+  "phishproof/aggregate/normalize.py": "63571fe73b1a9d9b3c1b6bebdc61f4e3421f742ffbf8ee312d1b3b7bc594e669",
+  "phishproof/tools/brands.py": "39cea23a89e5712f85bd6a1d95f73ad19a8dd29b564a807b2df688426b233c0b",
+  "phishproof/tools/logo_brand.py": "2b0b16988eb11cd083fc4ba4371de0ee52dc144c6e1f72af3dd66ef2c3188a48"
+}

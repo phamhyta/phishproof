@@ -1,0 +1,72 @@
+{
+  "$defs": {
+    "CueType": {
+      "enum": [
+        "brand_claim",
+        "form_action_domain",
+        "certificate_org",
+        "redirect_target",
+        "credential_intent",
+        "logo_brand",
+        "brand_domain_consistency"
+      ],
+      "title": "CueType",
+      "type": "string"
+    },
+    "Label": {
+      "enum": [
+        "phish",
+        "benign"
+      ],
+      "title": "Label",
+      "type": "string"
+    },
+    "RawCue": {
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/CueType"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "value"
+      ],
+      "title": "RawCue",
+      "type": "object"
+    }
+  },
+  "description": "What the model must return; validated, then converted to AgentOutput.",
+  "properties": {
+    "verdict": {
+      "$ref": "#/$defs/Label"
+    },
+    "cues": {
+      "items": {
+        "$ref": "#/$defs/RawCue"
+      },
+      "title": "Cues",
+      "type": "array"
+    },
+    "confidence": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence"
+    }
+  },
+  "required": [
+    "verdict"
+  ],
+  "title": "RawAgentResponse",
+  "type": "object"
+}

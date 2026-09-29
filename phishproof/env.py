@@ -1,33 +1,40 @@
-"""Environment and credential resolution.
+"""Tiny .env loader (no extra dependency).
 
-Resolves the API keys the panel clients need. Reading the environment is public;
-the clients that consume the keys are released with the paper.
+Reads KEY=VALUE lines from a .env file in the project root and populates os.environ
+without overriding already-set variables. Lets you keep OPENAI_API_KEY in a gitignored
+.env file instead of exporting it in the shell.
+
+Thread-safe + idempotent: the whole load runs under a lock and `_loaded` flips to True
+only AFTER the .env is applied, so a concurrent caller can never observe `_loaded=True`
+while os.environ is still unpopulated (that race made parallel runs build an OpenAI client
+with an empty key -> api_key falls back to "ollama" -> 401 against api.openai.com).
 """
 
 from __future__ import annotations
 
 import os
+import threading
+from pathlib import Path
 
-OPENAI_KEY_VAR = "OPENAI_API_KEY"
-OPENROUTER_KEY_VAR = "OPENROUTER_API_KEY"
-
-
-def resolve_key(base_url: str | None) -> str | None:
-    """Pick the API key that matches a client's base URL.
-
-    OpenRouter endpoints use ``OPENROUTER_API_KEY``; everything else falls back
-    to ``OPENAI_API_KEY``. Returns ``None`` when the variable is unset so the
-    caller can raise a helpful error.
-    """
-    if base_url and "openrouter" in base_url:
-        return os.environ.get(OPENROUTER_KEY_VAR)
-    return os.environ.get(OPENAI_KEY_VAR)
+_loaded = False
+_lock = threading.Lock()
 
 
-def require_key(base_url: str | None) -> str:
-    """Like :func:`resolve_key` but raise when the key is missing."""
-    key = resolve_key(base_url)
-    if not key:
-        var = OPENROUTER_KEY_VAR if (base_url and "openrouter" in base_url) else OPENAI_KEY_VAR
-        raise RuntimeError(f"missing API key: set {var} in the environment")
-    return key
+def load_env(start: Path | None = None) -> None:
+    global _loaded
+    with _lock:
+        if _loaded:
+            return
+        here = (start or Path(__file__)).resolve()
+        for base in [Path.cwd(), *here.parents]:
+            env = base / ".env"
+            if env.exists():
+                for line in env.read_text().splitlines():
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    key, _, val = line.partition("=")
+                    key, val = key.strip(), val.strip().strip('"').strip("'")
+                    os.environ.setdefault(key, val)
+                break
+        _loaded = True  # only after .env is fully applied (race-safe)

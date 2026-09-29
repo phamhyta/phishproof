@@ -1,89 +1,58 @@
-"""Runtime configuration for the PhishProof pipeline.
+"""Config loaders for the panel and the experiment.
 
-The configuration schema is public (it documents the moving parts of the
-system); the components it configures are released with the paper. Values here
-are illustrative defaults, not the deployed operating point.
+The panel is defined in configs/panel.yaml so the model lineup (local Ollama models
++ optional GPT-4o spot-check) can change without touching code. All agents are
+reached through an OpenAI-compatible endpoint (Ollama exposes one at /v1), so the
+same client works for local and API models.
 """
 
 from __future__ import annotations
 
-import json
-from dataclasses import dataclass, field, asdict
 from pathlib import Path
-from typing import Any
+
+import yaml
+from pydantic import BaseModel, Field
 
 
-@dataclass
-class PanelConfig:
-    """Which models make up the cross-modal panel.
-
-    One vision agent reads the screenshot; the text agents read the page
-    structure. The panel is deliberately small -- diversity, not count, drives
-    the agreement signal.
-    """
-
-    vision_model: str = "<vision-model>"
-    text_models: tuple[str, ...] = ("<text-model-a>", "<text-model-b>")
-    max_tool_calls: int = 8
+class AgentConfig(BaseModel):
+    id: str
+    provider: str                 # "ollama" | "openai"
+    model: str
+    modality: str                 # "text" | "vision"
+    base_url: str | None = None   # ollama: http://localhost:11434/v1 ; openai: None
+    detail: str | None = None     # vision detail: "low" | "high" (OpenAI image cost lever)
+    temperature: float = 0.0
+    num_ctx: int = 8192           # Ollama context window (DOM + image can exceed 4096)
+    timeout_s: float = 120.0      # per-call timeout so a hung request can't freeze the run
 
 
-@dataclass
-class ScoreConfig:
-    """Aggregation and decision hyper-parameters.
-
-    Attributes
-    ----------
-    epsilon:
-        Weight of the text-agreement tie-breaker in the trust signal.
-    tau:
-        Calibrated act/abstain operating threshold on the trust score.
-    active_cue_types:
-        Evidence types the per-type agreement is averaged over.
-    """
-
-    epsilon: float = 1e-3
-    tau: float = 0.5
-    active_cue_types: tuple[str, ...] = (
-        "brand",
-        "form_action",
-        "credential_intent",
-        "logo",
-    )
+class SpotCheckConfig(BaseModel):
+    enabled: bool = True
+    provider: str = "openai"
+    model: str = "gpt-4o"
+    n_pages: int = 150
+    agreement_threshold: float = 0.80   # below this -> consider GPT-4o vision fallback
 
 
-@dataclass
-class ToolConfig:
-    """Which grounding verifiers are enabled."""
-
-    brand: bool = True
-    dom: bool = True
-    logo: bool = True
-    certificate: bool = False
-    redirect: bool = False
+class PanelConfig(BaseModel):
+    panel: list[AgentConfig]
+    spot_check: SpotCheckConfig = Field(default_factory=SpotCheckConfig)
 
 
-@dataclass
-class PhishProofConfig:
-    """Top-level configuration object."""
+class ExperimentConfig(BaseModel):
+    n_pages: int = 4000
+    calibration_frac: float = 0.15
+    seeds: list[int] = Field(default_factory=lambda: [0, 1])
+    target_selective_risk: float = 0.01   # Cov99 operating point
+    coverage_points: list[float] = Field(default_factory=lambda: [0.80])
+    data_dir: str = "data/phishsel"
+    cache_dir: str = "data/cache"
+    results_dir: str = "results"
 
-    panel: PanelConfig = field(default_factory=PanelConfig)
-    score: ScoreConfig = field(default_factory=ScoreConfig)
-    tools: ToolConfig = field(default_factory=ToolConfig)
-    cache_dir: str = ".cache"
 
-    @classmethod
-    def from_json(cls, path: str | Path | None) -> "PhishProofConfig":
-        """Load a configuration from a JSON file (or return defaults)."""
-        if path is None:
-            return cls()
-        with Path(path).open("r", encoding="utf-8") as handle:
-            raw = json.load(handle)
-        return cls(
-            panel=PanelConfig(**raw.get("panel", {})),
-            score=ScoreConfig(**raw.get("score", {})),
-            tools=ToolConfig(**raw.get("tools", {})),
-            cache_dir=raw.get("cache_dir", ".cache"),
-        )
+def load_panel(path: str | Path = "configs/panel.yaml") -> PanelConfig:
+    return PanelConfig(**yaml.safe_load(Path(path).read_text()))
 
-    def to_json(self) -> dict[str, Any]:
-        return asdict(self)
+
+def load_experiment(path: str | Path = "configs/experiment.yaml") -> ExperimentConfig:
+    return ExperimentConfig(**yaml.safe_load(Path(path).read_text()))

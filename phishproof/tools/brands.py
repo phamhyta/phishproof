@@ -1,16 +1,23 @@
-"""HTML brand verifier: does the page belong to the brand it claims?"""
+"""Brand value normalization -> canonical lexicon entry (used by C2 and grounding)."""
 
 from __future__ import annotations
 
-from .._release import pending
-from ..schema import Cue, GroundingResult
-from ..types import PageRecord
+import re
+
+# Corporate suffixes / noise to strip so 'PayPal Inc.' and 'PayPal' canonicalize equal.
+_SUFFIXES = (
+    "incorporated", "inc", "corporation", "corp", "company", "co", "ltd",
+    "limited", "llc", "plc", "group", "sa", "ag", "nv", "gmbh", "holdings",
+)
+_SUFFIX_RE = re.compile(r"\b(" + "|".join(_SUFFIXES) + r")\b", re.IGNORECASE)
 
 
-class HtmlBrandDetector:
-    """Re-derive the impersonated brand from page content and compare to host."""
-
-    name = "brand"
-
-    def verify(self, cue: Cue, page: PageRecord) -> GroundingResult:
-        pending("tools.brands.HtmlBrandDetector.verify")
+def canonical_brand(brand: str | None) -> str | None:
+    """'Facebook, Inc.' -> 'facebook'; 'Microsoft OneDrive' -> 'microsoft onedrive'."""
+    if not brand:
+        return None
+    s = brand.lower()
+    s = _SUFFIX_RE.sub(" ", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s)  # drop punctuation
+    s = re.sub(r"\s+", " ", s).strip()
+    return s or None

@@ -1,0 +1,31 @@
+# PhishProof panel — STRONG cross-modal via OpenRouter (panel-upgrade pilot).
+# The two text agents are upgraded from 3B (inert / verdict-biased; inter-agent kappa ~ 0)
+# to capable 70B-class models of the SAME families (Meta, Alibaba), reached through
+# OpenRouter's OpenAI-compatible endpoint, so genuine cross-modal agreement can form with
+# the GPT-4o vision agent. The vision agent is unchanged (cache reused).
+
+panel:
+  - id: agent_a_text          # Meta family
+    provider: openai
+    model: meta-llama/llama-3.3-70b-instruct
+    modality: text
+    base_url: https://openrouter.ai/api/v1
+    temperature: 0.0
+
+  - id: agent_b_text          # Alibaba family (cross-family diversity)
+    provider: openai
+    model: qwen/qwen-2.5-72b-instruct
+    modality: text
+    base_url: https://openrouter.ai/api/v1
+    temperature: 0.0
+
+  - id: agent_c_vision        # VLM reads the screenshot — GPT-4o (unchanged, cache reused)
+    provider: openai
+    model: gpt-4o
+    modality: vision
+    base_url: null
+    detail: low
+    temperature: 0.0
+
+spot_check:
+  enabled: false

@@ -1,82 +1,81 @@
 # PhishProof
 
-PhishProof is a trustworthy, explainable phishing detector: a cross-modal
-multi-agent LLM panel cites typed evidence, scores how strongly the agents agree
-per evidence type (the Grounded Evidence-Agreement score), verifies each agreed
-cue against the page, and abstains when the evidence is not trustworthy enough
-to act on.
+Code and input data for the paper *Selective Phishing Detection with Grounded Evidence Agreement
+across Language and Vision Models*. A panel of three models (two text LLMs and one vision LLM) cites typed
+evidence cues for a web page. PhishProof measures how far the agents agree on each cue type,
+checks the agreed cues against the page with deterministic tools, calibrates the resulting
+trust score, and abstains when the score is below the operating threshold.
 
-## Status: public interface skeleton
+## Repository layout
 
-This repository is the **public interface** for the paper, which is currently
-under review. It ships the full package structure -- every module, class, and
-function signature, with documentation -- so the pipeline can be read and
-reviewed end to end. **It is not runnable:** the body of each component prints a
-release notice and raises `NotImplementedError`. The executable implementation,
-the benchmark data, and the reproduction artifacts are released here once the
-paper is accepted.
+| Path | Contents |
+|------|----------|
+| `phishproof/` | Implementation: agents and prompts, evidence schema, per-type agreement, grounding tools, calibration, selective rule, baselines, metrics |
+| `scripts/` | Corpus ingestion, panel runs, baselines, experiments, and revision analyses |
+| `configs/` | Panel and experiment configuration (`panel.yaml` = deployed panel) |
+| `reproducibility/` | System prompt, user template, response schema, configured panel, source hashes |
+| `data/` | Split manifests (calibration/test) for the three corpora, with SHA-256 checksums |
+| `artifacts/` | Per-page score bundles and the fitted operating calibrator |
+| `tests/` | Tests for the verification policy |
 
-Importing the package and inspecting the API works; calling a withheld component
-surfaces:
-
-```
-PhishProof reference implementation is not public yet. The full source of this
-component will be released in this repository once the paper is accepted; the
-public release currently ships the interface and documentation only.
-```
-
-## Pipeline
-
-A page flows through five stages (`phishproof/pipeline.py`):
-
-1. **Context** (`agents/page_context.py`) -- assemble the screenshot, DOM, URL.
-2. **Panel** (`agents/`) -- a vision agent and text agents cite typed cues.
-3. **Aggregate + ground** (`aggregate/`, `tools/`) -- per-type agreement (GEA)
-   and re-derive each agreed cue from the page.
-4. **Calibrate** (`calibration/`) -- map the trust signal to P(correct).
-5. **Decide** (`calibration/selective.py`) -- act above the operating threshold,
-   else abstain; return the grounded cues as the explanation.
-
-## Package map
-
-| Module | Role |
-|--------|------|
-| `phishproof.schema` | Typed evidence cue schema and data models |
-| `phishproof.agents` | Cross-modal, tool-using agent panel |
-| `phishproof.aggregate` | Per-type agreement and the GEA trust signal |
-| `phishproof.tools` | Grounding verifiers (brand, DOM, logo, cert, redirect) |
-| `phishproof.calibration` | Isotonic calibration and the selective rule |
-| `phishproof.baselines` | Reliability baselines compared in the paper |
-| `phishproof.eval` | Selective-prediction metrics and the adversarial study |
-| `scripts/` | Corpus ingestion, panel run, and evaluation entry points |
-
-## Input / output contract
-
-Each input line is one JSON object:
-
-```json
-{"id": "sample-1", "url": "https://login.example.test/account", "title": "Account sign-in"}
-```
-
-Fields: `id`, `url`, `title?`, `html_path?`, `screenshot_path?`, `metadata?`.
-Each output line is one JSON object with `id`, `label`, `confidence`,
-`decision` (`act` / `abstain`), and `reasons` (the grounded evidence cues).
-
-## Install
+## Setup
 
 ```bash
-uv sync
+pip install -e .            # add ".[logo]" for the CLIP logo check
+cp .env.example .env        # then fill in OPENAI_API_KEY and OPENROUTER_API_KEY
 ```
 
-The package imports with no third-party dependencies; the released
-implementation adds the stack listed under the `full` extra in `pyproject.toml`.
+The deployed panel (`configs/panel.yaml`) uses `meta-llama/llama-3.3-70b-instruct` and
+`qwen/qwen-2.5-72b-instruct` through OpenRouter and `gpt-4o` (image detail `low`) through
+OpenAI, all at temperature 0. Hosted models can change over time, so new runs may not match
+the stored responses exactly.
 
-## Release status
+## Data
 
-This is a pre-acceptance public skeleton. The private research repository keeps
-the implementation, manuscript, experiment scripts, result bundles, and data
-manifests until the review process is complete.
+Each manifest line is one page: `page_id`, `url`, `label`, `brand`, `split`, `source`, and
+paths to `html.txt` and `shot.png`.
+
+| Corpus | Manifests | Phishing pages from |
+|--------|-----------|---------------------|
+| Phishpedia | `data/phishsel_final/` (710 calib / 4,020 test) | Phishpedia `phish_sample_30k` ([lindsey98/Phishpedia](https://github.com/lindsey98/Phishpedia)) |
+| APWG | `data/apwg_final/` (212 / 1,200) | APWG `phishing4190` ([Zenodo 14668190](https://zenodo.org/records/14668190)) |
+| TR-OP | `data/trop_final/` (710 / 1,200) | KnowPhish TR-OP, `openphish_5000` |
+
+The benign side of every corpus is a pool of credential-login pages we collected.
+Page captures of the source corpora are not redistributed here: obtain them from the links
+above under their own terms, then rebuild the manifests with `scripts/ingest_phishpedia.py`,
+`scripts/ingest_apwg.py`, and `scripts/ingest_trop.py`.
+
+## Large files
+
+| File | Location |
+|------|----------|
+| Per-page score bundles (`bundle_or.jsonl`, `bundle_apwg_or.jsonl`, `bundle_trop_or.jsonl`, `bundle_calib_or.jsonl`) | [`artifacts/`](artifacts/) |
+| Operating calibrator (`calibrator_or.json`) | [`artifacts/`](artifacts/) |
+| Cached model responses (`phishproof_cache.tar.gz`, 18 MB, extracts to `data/cache/`) | [Google Drive](https://drive.google.com/drive/folders/1HeombUfo5jFxrOk1mTC9nZFJY4U2dI23?usp=sharing) |
+| Benign login-page captures used in the splits (`phishproof_benign_captures.tar.gz`, 2.4 GB, 3,261 pages, extracts to `data/benign_raw/`) | [Google Drive](https://drive.google.com/drive/folders/1HeombUfo5jFxrOk1mTC9nZFJY4U2dI23?usp=sharing) |
+
+The score bundles hold panel predictions, confidences, consensus cues, agreement and
+grounding diagnostics, and baseline scores. With them, the score analyses can be rerun
+without new model calls. Extract both archives in the repository root; the cached
+responses let the panel replay from the cache instead of calling the models again.
+SHA-256 checksums:
+
+```
+604379bc5c72a575499f4af148a9963645628c32b63485fdbe5176e78062e243  phishproof_cache.tar.gz
+1e0711040f859e59b7c765285954cbbf085cf6f02f6edc8742d8b66d7f0d7cde  phishproof_benign_captures.tar.gz
+```
+
+## Running
+
+```bash
+# Panel run on a manifest (uses data/cache/ when available)
+python scripts/run_panel.py --manifest data/phishsel_final/test.jsonl --out results/panel.jsonl
+
+# Selective-prediction metrics with bootstrap intervals from a score bundle
+python scripts/run_experiments.py --bundle artifacts/bundle_or.jsonl --out results/
+```
 
 ## License
 
-MIT. See `LICENSE`.
+MIT (see `LICENSE`). Page captures remain under the terms of their source corpora.
