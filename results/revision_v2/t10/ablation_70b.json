@@ -1,0 +1,20 @@
+{
+  "full_gea_pertype_uniform": {
+    "AURC": 2.15,
+    "ECE_raw": 0.096,
+    "ECE_cal": 0.002
+  },
+  "consensus_fraction": {
+    "AURC": 2.49,
+    "ECE_raw": 0.109,
+    "ECE_cal": 0.001
+  },
+  "diversity_text_only": {
+    "AURC": 2.39,
+    "ECE_raw": 0.074,
+    "ECE_cal": 0.001
+  },
+  "learned_pertype_weights": {
+    "AURC": 2.19
+  }
+}

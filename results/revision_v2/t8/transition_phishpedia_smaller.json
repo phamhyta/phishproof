@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "policy_version": "t8-complete-v1",
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "git_dirty": true,
+    "command": "scripts/revision_t8_policy.py --corpus phishpedia_smaller",
+    "timestamp_utc": "2026-09-29T00:22:54.554442+00:00",
+    "provider": "cache-only (no network; a miss is a recorded failure)",
+    "panel_config": "configs/panel.yaml",
+    "panel_config_sha256": "340467751502c6721a2342721ffaca89a8f5c3e374d257ee6467253c91bf1082",
+    "models": {
+      "agent_a_text": "llama3.2:3b",
+      "agent_b_text": "qwen2.5:3b",
+      "agent_c_vision": "gpt-4o"
+    },
+    "prompt_schema": "phishproof.agents.prompts.RawAgentResponse (SYSTEM_PROMPT sha256 2cdf00582b3f1391)",
+    "clip_model": "ViT-B-32-quickgelu/openai (open_clip)",
+    "seed": "deterministic (temperature 0 at capture time; replay is exact)",
+    "retries": "n/a on replay; original-run failures appear as cache misses"
+  },
+  "corpus": "phishpedia_smaller",
+  "manifest": "data/phishsel_final/test.jsonl",
+  "manifest_sha256": "ddda9af56b33919a135df0d2baa9fe93bbb0c94b20526cc1da36ec780678603e",
+  "n_rows": 4020,
+  "policy_frozen": "results/revision_v2/t8/policy_frozen.json",
+  "t_logo": 0.9596,
+  "tau": 0.9651,
+  "validation": {
+    "validated_against": "results/bundle_D.jsonl",
+    "compared": 4020,
+    "skipped_replay_failed": 0,
+    "deployed_verdict_mismatch": 0,
+    "deployed_gea_mismatch": 0,
+    "lenient_corrections_verdict": 2169,
+    "lenient_corrections_gea": 556,
+    "corrections_that_fix_label": 302
+  },
+  "transition_old_surrogate_vs_complete": {
+    "abstain->act": 691,
+    "act->act": 913,
+    "abstain->abstain": 2398,
+    "act->abstain": 18
+  },
+  "complete_primary_reason_counts": {
+    "act": 1604,
+    "score_below_tau": 1553,
+    "invalid:invalid_json": 430,
+    "check_failed": 148,
+    "empty_consensus": 283,
+    "verifier_unavailable": 2
+  },
+  "old_surrogate_acts": 931,
+  "complete_acts": 1604,
+  "missing_artifacts": {
+    "cache_misses_by_agent": {},
+    "pages_missing_screenshot": 0,
+    "pages_missing_html": 0,
+    "note": "these are the artifacts a re-run would need; nothing was fetched"
+  }
+}

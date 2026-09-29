@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t9_baselines.py dawid-skene",
+    "timestamp_utc": "2026-09-28T14:26:28.579441+00:00",
+    "consolidator_model": "gpt-4o",
+    "consolidator_prompt_sha256": "c5b3126f8812fc16228c5ef127ed6020b685f624d5441016a244b07ba1ecc1d2",
+    "schema": "{\"verdict\": \"phish\"|\"benign\", \"confidence\": 0..1} (strict JSON)"
+  },
+  "results": {
+    "phishpedia": {
+      "bundle": "results/revision/bundle_or_full.jsonl",
+      "fitting_population_transductive": "the 4020 scored test rows of phishpedia (published variant)",
+      "n_rows": 4020,
+      "em": {
+        "n_iter": 50,
+        "convergence_last_delta_transductive": 0.0,
+        "init": "vote-share posteriors",
+        "smoothing": "1e-9 additive",
+        "note": "fixed 50 iterations, no early-stopping criterion; this EM is FITTED, not closed-form or parameter-free"
+      },
+      "frozen_variant": {
+        "fit_on": "results/bundle_calib_or.jsonl (710 calibration rows, larger panel)",
+        "convergence_last_delta": 2.7067237340361316e-13,
+        "applied": "posterior inference only on test rows (no refit)"
+      },
+      "score_correlation_trans_vs_frozen": 0.9929,
+      "acc_of_argmax_transductive": 0.9308,
+      "mean_correct": 0.9308
+    },
+    "apwg": {
+      "bundle": "results/revision/bundle_apwg_or_full.jsonl",
+      "fitting_population_transductive": "the 1176 scored test rows of apwg (published variant)",
+      "n_rows": 1176,
+      "em": {
+        "n_iter": 50,
+        "convergence_last_delta_transductive": 1.475472470385819e-05,
+        "init": "vote-share posteriors",
+        "smoothing": "1e-9 additive",
+        "note": "fixed 50 iterations, no early-stopping criterion; this EM is FITTED, not closed-form or parameter-free"
+      },
+      "frozen_variant": {
+        "fit_on": "results/bundle_calib_or.jsonl (710 calibration rows, larger panel)",
+        "convergence_last_delta": 2.7067237340361316e-13,
+        "applied": "posterior inference only on test rows (no refit)"
+      },
+      "score_correlation_trans_vs_frozen": 0.9827,
+      "acc_of_argmax_transductive": 0.8733,
+      "mean_correct": 0.8478
+    },
+    "trop": {
+      "bundle": "results/revision/bundle_trop_or_full.jsonl",
+      "fitting_population_transductive": "the 1182 scored test rows of trop (published variant)",
+      "n_rows": 1182,
+      "em": {
+        "n_iter": 50,
+        "convergence_last_delta_transductive": 6.156766207965347e-10,
+        "init": "vote-share posteriors",
+        "smoothing": "1e-9 additive",
+        "note": "fixed 50 iterations, no early-stopping criterion; this EM is FITTED, not closed-form or parameter-free"
+      },
+      "frozen_variant": {
+        "fit_on": "results/bundle_calib_or.jsonl (710 calibration rows, larger panel)",
+        "convergence_last_delta": 2.7067237340361316e-13,
+        "applied": "posterior inference only on test rows (no refit)"
+      },
+      "score_correlation_trans_vs_frozen": 0.9721,
+      "acc_of_argmax_transductive": 0.912,
+      "mean_correct": 0.912
+    }
+  }
+}

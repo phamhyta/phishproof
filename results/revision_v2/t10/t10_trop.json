@@ -1,0 +1,1084 @@
+{
+  "meta": {
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "command": "scripts/revision_t10_metrics.py --corpus trop",
+    "timestamp_utc": "2026-09-29T00:38:20.890028+00:00",
+    "corpus": "trop",
+    "manifest": "data/trop_final/test.jsonl",
+    "manifest_sha256": "adba1f64f74091c40b37ee9756c419f71fc862bdf3e245a9621cae718ac9e8a1",
+    "eligibility": "results/revision_v2/t8/eligibility_trop.jsonl",
+    "bundle": "results/revision/bundle_trop_or_full.jsonl",
+    "group_folds": "no duplicate-group map for this corpus; unit = page (stated)",
+    "fold_seed": 0,
+    "n_folds": 5,
+    "n_boot": 2000,
+    "bootstrap_units": "pages",
+    "bootstrap_maps": "FROZEN cross-fitted maps (intervals condition on the fitted maps; maps are not refitted per resample)",
+    "crossfit_caveat": "pooled cross-fitted values can reorder observations across folds",
+    "tie_rule": "deterministic by page_id; tie-robust = mean over 50 random tie orders",
+    "combined_ranker": {
+      "coef": [
+        0.7840222895164555,
+        3.9712367950815244
+      ],
+      "intercept": -0.9102016454889907,
+      "fit_on": "results/bundle_calib_or.jsonl (710 calibration rows; combination rule chosen on calibration data only)"
+    }
+  },
+  "accuracy_pct": 94.33,
+  "reason_table": {
+    "primary_mutually_exclusive": {
+      "score_below_tau": 252,
+      "verifier_unavailable": 456,
+      "check_failed": 279,
+      "act": 81,
+      "invalid:invalid_json": 114,
+      "invalid:model_call_missing": 18
+    },
+    "overlapping_flags": {
+      "score_below_tau": 768,
+      "verifier_unavailable": 484,
+      "check_failed": 310,
+      "invalid:invalid_json": 114,
+      "empty_consensus": 5,
+      "invalid:model_call_missing": 18
+    },
+    "per_agent_failure_states": {
+      "invalid_json:agent_c_vision": 114,
+      "model_call_missing:agent_b_text": 18
+    },
+    "missing_vision_confidence_rows": 114,
+    "invalid_inference_rows": 132
+  },
+  "ladder": {
+    "conf_VLM": {
+      "note": "vision confidence alone",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 2.06,
+        "AURC_attainable_tie_robust": 1.78,
+        "AURC_attainable_tie_sd": 0.158,
+        "aurc_fallback_convention": 2.38,
+        "SelAcc80": 95.7,
+        "Cov99": 0.378,
+        "ECE10": 0.0245,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 2.25,
+        "AURC_attainable_tie_robust": 2.23,
+        "AURC_attainable_tie_sd": 0.094,
+        "aurc_fallback_convention": 2.55,
+        "SelAcc80": 95.5,
+        "Cov99": 0.379,
+        "ECE10": 0.0018,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "concurrence": {
+      "note": "text agreement with vision verdict",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.8,
+        "AURC_attainable_tie_robust": 1.28,
+        "AURC_attainable_tie_sd": 0.341,
+        "aurc_fallback_convention": 1.26,
+        "SelAcc80": 98.8,
+        "Cov99": 0.769,
+        "ECE10": 0.036,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.47,
+        "AURC_attainable_tie_robust": 1.78,
+        "AURC_attainable_tie_sd": 0.207,
+        "aurc_fallback_convention": 1.85,
+        "SelAcc80": 98.8,
+        "Cov99": 0.13,
+        "ECE10": 0.0123,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "GEA": {
+      "note": "mean per-type agreement",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 2.75,
+        "AURC_attainable_tie_robust": 2.72,
+        "AURC_attainable_tie_sd": 0.249,
+        "aurc_fallback_convention": 3.0,
+        "SelAcc80": 96.7,
+        "Cov99": 0.014,
+        "ECE10": 0.1039,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 3.37,
+        "AURC_attainable_tie_robust": 3.36,
+        "AURC_attainable_tie_sd": 0.172,
+        "aurc_fallback_convention": 3.55,
+        "SelAcc80": 96.6,
+        "Cov99": 0.008,
+        "ECE10": 0.0002,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "s_eq7": {
+      "note": "deployed s = conf + 1e-3*a_text",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.53,
+        "AURC_attainable_tie_robust": 0.66,
+        "AURC_attainable_tie_sd": 0.069,
+        "aurc_fallback_convention": 1.02,
+        "SelAcc80": 98.8,
+        "Cov99": 0.782,
+        "ECE10": 0.0238,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.82,
+        "AURC_attainable_tie_robust": 0.88,
+        "AURC_attainable_tie_sd": 0.093,
+        "aurc_fallback_convention": 1.28,
+        "SelAcc80": 98.8,
+        "Cov99": 0.521,
+        "ECE10": 0.009,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "s_gate_surrogate": {
+      "note": "s among pages passing the OLD surrogate gate (relaxed consensus + mean G >= 0.999); others forced abstention",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 604,
+        "max_attainable_coverage": 0.5033,
+        "AURC_attainable": 0.62,
+        "AURC_attainable_tie_robust": 0.68,
+        "AURC_attainable_tie_sd": 0.08,
+        "aurc_fallback_convention": 2.92,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.372,
+        "ECE10": 0.0241,
+        "ECE10_population": "604 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 604,
+        "max_attainable_coverage": 0.5033,
+        "AURC_attainable": 0.9,
+        "AURC_attainable_tie_robust": 0.96,
+        "AURC_attainable_tie_sd": 0.155,
+        "aurc_fallback_convention": 3.06,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.282,
+        "ECE10": 0.0117,
+        "ECE10_population": "604 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "s_gate_complete": {
+      "note": "s among pages passing the COMPLETE verification gate (T8); others forced abstention",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 333,
+        "max_attainable_coverage": 0.2775,
+        "AURC_attainable": 0.8,
+        "AURC_attainable_tie_robust": 0.9,
+        "AURC_attainable_tie_sd": 0.17,
+        "aurc_fallback_convention": 3.87,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.257,
+        "ECE10": 0.0354,
+        "ECE10_population": "333 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 333,
+        "max_attainable_coverage": 0.2775,
+        "AURC_attainable": 1.41,
+        "AURC_attainable_tie_robust": 1.52,
+        "AURC_attainable_tie_sd": 0.313,
+        "aurc_fallback_convention": 4.04,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.257,
+        "ECE10": 0.019,
+        "ECE10_population": "333 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "GEAxG_diagnostic": {
+      "note": "diagnostic only; distinct from the combined ranker",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 3.03,
+        "AURC_attainable_tie_robust": 2.95,
+        "AURC_attainable_tie_sd": 0.162,
+        "aurc_fallback_convention": 3.25,
+        "SelAcc80": 96.5,
+        "Cov99": 0.008,
+        "ECE10": 0.156,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 3.4,
+        "AURC_attainable_tie_robust": 3.38,
+        "AURC_attainable_tie_sd": 0.154,
+        "aurc_fallback_convention": 3.58,
+        "SelAcc80": 96.5,
+        "Cov99": 0.007,
+        "ECE10": 0.0038,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "conf_plus_GEA_frozen": {
+      "note": "logistic(conf, GEA), coefficients frozen on calibration split",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 2.09,
+        "AURC_attainable_tie_robust": 2.06,
+        "AURC_attainable_tie_sd": 0.037,
+        "aurc_fallback_convention": 2.41,
+        "SelAcc80": 96.7,
+        "Cov99": 0.252,
+        "ECE10": 0.0051,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 2.18,
+        "AURC_attainable_tie_robust": 2.17,
+        "AURC_attainable_tie_sd": 0.026,
+        "aurc_fallback_convention": 2.49,
+        "SelAcc80": 96.4,
+        "Cov99": 0.229,
+        "ECE10": 0.0019,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B1_single_conf": {
+      "note": "single-model confidence",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.78,
+        "AURC_attainable_tie_robust": 1.76,
+        "AURC_attainable_tie_sd": 0.175,
+        "aurc_fallback_convention": 2.14,
+        "SelAcc80": 95.8,
+        "Cov99": 0.527,
+        "ECE10": 0.089,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 2.29,
+        "AURC_attainable_tie_robust": 2.37,
+        "AURC_attainable_tie_sd": 0.113,
+        "aurc_fallback_convention": 2.58,
+        "SelAcc80": 95.9,
+        "Cov99": 0.519,
+        "ECE10": 0.0043,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B2_mean_conf": {
+      "note": "mean panel confidence",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.06,
+        "AURC_attainable_tie_robust": 1.1,
+        "AURC_attainable_tie_sd": 0.052,
+        "aurc_fallback_convention": 1.49,
+        "SelAcc80": 97.8,
+        "Cov99": 0.525,
+        "ECE10": 0.0411,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.51,
+        "AURC_attainable_tie_robust": 1.59,
+        "AURC_attainable_tie_sd": 0.079,
+        "aurc_fallback_convention": 1.89,
+        "SelAcc80": 97.7,
+        "Cov99": 0.506,
+        "ECE10": 0.0123,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B3_majority_vote": {
+      "note": "majority-vote share (recomputed from lenient-parse verdicts)",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.87,
+        "AURC_attainable_tie_robust": 1.36,
+        "AURC_attainable_tie_sd": 0.295,
+        "aurc_fallback_convention": 1.33,
+        "SelAcc80": 98.8,
+        "Cov99": 0.769,
+        "ECE10": 0.0159,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.55,
+        "AURC_attainable_tie_robust": 1.86,
+        "AURC_attainable_tie_sd": 0.188,
+        "aurc_fallback_convention": 1.93,
+        "SelAcc80": 98.8,
+        "Cov99": 0.13,
+        "ECE10": 0.0141,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B4_dawid_skene_transductive": {
+      "note": "DS EM fitted on the scored test rows (transductive; disclosed)",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.47,
+        "AURC_attainable_tie_robust": 0.6,
+        "AURC_attainable_tie_sd": 0.064,
+        "aurc_fallback_convention": 0.97,
+        "SelAcc80": 98.8,
+        "Cov99": 0.792,
+        "ECE10": 0.0397,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.8,
+        "AURC_attainable_tie_robust": 0.84,
+        "AURC_attainable_tie_sd": 0.015,
+        "aurc_fallback_convention": 1.27,
+        "SelAcc80": 98.5,
+        "Cov99": 0.454,
+        "ECE10": 0.0153,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B4_dawid_skene_frozen": {
+      "note": "DS EM fitted on calibration rows, frozen (T9 disclosure; calibration panel outputs use the deployed parse, so treat as a secondary variant)",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.86,
+        "AURC_attainable_tie_robust": 1.01,
+        "AURC_attainable_tie_sd": 0.113,
+        "aurc_fallback_convention": 1.32,
+        "SelAcc80": 98.3,
+        "Cov99": 0.632,
+        "ECE10": 0.0373,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.15,
+        "AURC_attainable_tie_robust": 1.2,
+        "AURC_attainable_tie_sd": 0.031,
+        "aurc_fallback_convention": 1.58,
+        "SelAcc80": 98.3,
+        "Cov99": 0.356,
+        "ECE10": 0.007,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B5P_majority_conf_proxy": {
+      "note": "majority-confidence proxy (the mechanism previously mislabelled B5)",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.92,
+        "AURC_attainable_tie_robust": 0.98,
+        "AURC_attainable_tie_sd": 0.047,
+        "aurc_fallback_convention": 1.37,
+        "SelAcc80": 98.4,
+        "Cov99": 0.532,
+        "ECE10": 0.0411,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 1.15,
+        "AURC_attainable_tie_robust": 1.26,
+        "AURC_attainable_tie_sd": 0.108,
+        "aurc_fallback_convention": 1.58,
+        "SelAcc80": 98.4,
+        "Cov99": 0.541,
+        "ECE10": 0.0127,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B5_consolidator_reliability": {
+      "note": "ACTUAL consolidator confidence read as reliability of the fixed panel verdict (parse failures = forced abstention)",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.68,
+        "AURC_attainable_tie_robust": 0.79,
+        "AURC_attainable_tie_sd": 0.096,
+        "aurc_fallback_convention": 1.15,
+        "SelAcc80": 98.3,
+        "Cov99": 0.759,
+        "ECE10": 0.0486,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.9,
+        "AURC_attainable_tie_robust": 0.94,
+        "AURC_attainable_tie_sd": 0.021,
+        "aurc_fallback_convention": 1.35,
+        "SelAcc80": 97.8,
+        "Cov99": 0.759,
+        "ECE10": 0.0037,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B5_consolidator_end_to_end": {
+      "note": "consolidator's OWN verdict + confidence (changes predictions; reported separately from the reliability reading)",
+      "raw": {
+        "n": 1200,
+        "n_eligible": 1068,
+        "max_attainable_coverage": 0.89,
+        "AURC_attainable": 0.66,
+        "AURC_attainable_tie_robust": 0.79,
+        "AURC_attainable_tie_sd": 0.1,
+        "aurc_fallback_convention": 1.32,
+        "SelAcc80": 98.4,
+        "Cov99": 0.759,
+        "ECE10": 0.0457,
+        "ECE10_population": "1068 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "prediction_agreement_with_panel": 0.9747
+    }
+  },
+  "paired_bootstrap": {
+    "vs_s_eq7_raw": {
+      "conf_VLM": {
+        "delta_mean": 1.15,
+        "ci95": [
+          0.73,
+          1.66
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus s_eq7 (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": 0.68,
+        "ci95": [
+          0.11,
+          1.47
+        ],
+        "p_one_sided_le0": 0.005,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus s_eq7 (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": 0.02,
+        "ci95": [
+          -0.27,
+          0.31
+        ],
+        "p_one_sided_le0": 0.434,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus s_eq7 (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": 0.26,
+        "ci95": [
+          -0.48,
+          1.22
+        ],
+        "p_one_sided_le0": 0.2995,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus s_eq7 (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": 2.37,
+        "ci95": [
+          1.13,
+          3.76
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus s_eq7 (negative favours GEAxG_diagnostic)"
+      },
+      "conf_plus_GEA_frozen": {
+        "delta_mean": 1.43,
+        "ci95": [
+          0.74,
+          2.17
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_plus_GEA_frozen minus s_eq7 (negative favours conf_plus_GEA_frozen)"
+      },
+      "B1_single_conf": {
+        "delta_mean": 1.15,
+        "ci95": [
+          0.52,
+          2.0
+        ],
+        "p_one_sided_le0": 0.0005,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus s_eq7 (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": 0.45,
+        "ci95": [
+          0.05,
+          0.94
+        ],
+        "p_one_sided_le0": 0.009,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus s_eq7 (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": 0.74,
+        "ci95": [
+          0.16,
+          1.52
+        ],
+        "p_one_sided_le0": 0.0035,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus s_eq7 (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -0.05,
+        "ci95": [
+          -0.26,
+          0.12
+        ],
+        "p_one_sided_le0": 0.6815,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus s_eq7 (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": 0.35,
+        "ci95": [
+          0.07,
+          0.65
+        ],
+        "p_one_sided_le0": 0.004,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_frozen minus s_eq7 (negative favours B4_dawid_skene_frozen)"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": 0.33,
+        "ci95": [
+          -0.08,
+          0.81
+        ],
+        "p_one_sided_le0": 0.062,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus s_eq7 (negative favours B5P_majority_conf_proxy)"
+      },
+      "B5_consolidator_reliability": {
+        "delta_mean": 0.16,
+        "ci95": [
+          -0.08,
+          0.38
+        ],
+        "p_one_sided_le0": 0.0855,
+        "n_valid_resamples": 2000,
+        "sign": "B5_consolidator_reliability minus s_eq7 (negative favours B5_consolidator_reliability)"
+      }
+    },
+    "vs_s_eq7_calibrated": {
+      "conf_VLM": {
+        "delta_mean": 1.34,
+        "ci95": [
+          0.82,
+          1.88
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus s_eq7 (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": 0.91,
+        "ci95": [
+          0.15,
+          1.87
+        ],
+        "p_one_sided_le0": 0.0125,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus s_eq7 (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": 0.09,
+        "ci95": [
+          -0.32,
+          0.57
+        ],
+        "p_one_sided_le0": 0.359,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus s_eq7 (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": 0.59,
+        "ci95": [
+          -0.51,
+          2.27
+        ],
+        "p_one_sided_le0": 0.2035,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus s_eq7 (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": 2.5,
+        "ci95": [
+          1.16,
+          4.1
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus s_eq7 (negative favours GEAxG_diagnostic)"
+      },
+      "conf_plus_GEA_frozen": {
+        "delta_mean": 1.29,
+        "ci95": [
+          0.48,
+          2.12
+        ],
+        "p_one_sided_le0": 0.001,
+        "n_valid_resamples": 2000,
+        "sign": "conf_plus_GEA_frozen minus s_eq7 (negative favours conf_plus_GEA_frozen)"
+      },
+      "B1_single_conf": {
+        "delta_mean": 1.49,
+        "ci95": [
+          0.44,
+          2.76
+        ],
+        "p_one_sided_le0": 0.0015,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus s_eq7 (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": 0.71,
+        "ci95": [
+          0.05,
+          1.52
+        ],
+        "p_one_sided_le0": 0.018,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus s_eq7 (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": 0.99,
+        "ci95": [
+          0.21,
+          1.95
+        ],
+        "p_one_sided_le0": 0.0085,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus s_eq7 (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -0.04,
+        "ci95": [
+          -0.57,
+          0.32
+        ],
+        "p_one_sided_le0": 0.521,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus s_eq7 (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": 0.32,
+        "ci95": [
+          -0.25,
+          0.77
+        ],
+        "p_one_sided_le0": 0.0985,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_frozen minus s_eq7 (negative favours B4_dawid_skene_frozen)"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": 0.36,
+        "ci95": [
+          -0.34,
+          1.17
+        ],
+        "p_one_sided_le0": 0.1685,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus s_eq7 (negative favours B5P_majority_conf_proxy)"
+      },
+      "B5_consolidator_reliability": {
+        "delta_mean": 0.06,
+        "ci95": [
+          -0.48,
+          0.41
+        ],
+        "p_one_sided_le0": 0.3395,
+        "n_valid_resamples": 2000,
+        "sign": "B5_consolidator_reliability minus s_eq7 (negative favours B5_consolidator_reliability)"
+      }
+    },
+    "vs_GEA_raw": {
+      "conf_VLM": {
+        "delta_mean": -0.96,
+        "ci95": [
+          -2.09,
+          -0.01
+        ],
+        "p_one_sided_le0": 0.976,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus GEA (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": -1.43,
+        "ci95": [
+          -2.79,
+          -0.03
+        ],
+        "p_one_sided_le0": 0.9785,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus GEA (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": -2.09,
+        "ci95": [
+          -3.37,
+          -0.96
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus GEA (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": -1.86,
+        "ci95": [
+          -3.45,
+          -0.35
+        ],
+        "p_one_sided_le0": 0.992,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus GEA (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": 0.25,
+        "ci95": [
+          -0.36,
+          0.79
+        ],
+        "p_one_sided_le0": 0.1735,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus GEA (negative favours GEAxG_diagnostic)"
+      },
+      "conf_plus_GEA_frozen": {
+        "delta_mean": -0.69,
+        "ci95": [
+          -1.43,
+          -0.2
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_plus_GEA_frozen minus GEA (negative favours conf_plus_GEA_frozen)"
+      },
+      "B1_single_conf": {
+        "delta_mean": -0.97,
+        "ci95": [
+          -2.21,
+          0.31
+        ],
+        "p_one_sided_le0": 0.938,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus GEA (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": -1.66,
+        "ci95": [
+          -2.87,
+          -0.58
+        ],
+        "p_one_sided_le0": 0.9985,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus GEA (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": -1.37,
+        "ci95": [
+          -2.72,
+          0.02
+        ],
+        "p_one_sided_le0": 0.9725,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus GEA (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -2.16,
+        "ci95": [
+          -3.46,
+          -1.06
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus GEA (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": -1.76,
+        "ci95": [
+          -3.06,
+          -0.66
+        ],
+        "p_one_sided_le0": 0.9995,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_frozen minus GEA (negative favours B4_dawid_skene_frozen)"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": -1.79,
+        "ci95": [
+          -3.02,
+          -0.69
+        ],
+        "p_one_sided_le0": 0.999,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus GEA (negative favours B5P_majority_conf_proxy)"
+      },
+      "B5_consolidator_reliability": {
+        "delta_mean": -1.95,
+        "ci95": [
+          -3.21,
+          -0.88
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B5_consolidator_reliability minus GEA (negative favours B5_consolidator_reliability)"
+      }
+    },
+    "vs_GEA_calibrated": {
+      "conf_VLM": {
+        "delta_mean": -1.17,
+        "ci95": [
+          -2.55,
+          0.02
+        ],
+        "p_one_sided_le0": 0.972,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus GEA (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": -1.6,
+        "ci95": [
+          -3.34,
+          0.11
+        ],
+        "p_one_sided_le0": 0.968,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus GEA (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": -2.42,
+        "ci95": [
+          -4.08,
+          -0.9
+        ],
+        "p_one_sided_le0": 0.998,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus GEA (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": -1.92,
+        "ci95": [
+          -4.04,
+          0.35
+        ],
+        "p_one_sided_le0": 0.952,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus GEA (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": -0.01,
+        "ci95": [
+          -0.77,
+          0.63
+        ],
+        "p_one_sided_le0": 0.4795,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus GEA (negative favours GEAxG_diagnostic)"
+      },
+      "conf_plus_GEA_frozen": {
+        "delta_mean": -1.21,
+        "ci95": [
+          -2.27,
+          -0.41
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_plus_GEA_frozen minus GEA (negative favours conf_plus_GEA_frozen)"
+      },
+      "B1_single_conf": {
+        "delta_mean": -1.02,
+        "ci95": [
+          -2.7,
+          0.65
+        ],
+        "p_one_sided_le0": 0.884,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus GEA (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": -1.8,
+        "ci95": [
+          -3.37,
+          -0.32
+        ],
+        "p_one_sided_le0": 0.9925,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus GEA (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": -1.52,
+        "ci95": [
+          -3.27,
+          0.18
+        ],
+        "p_one_sided_le0": 0.9615,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus GEA (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -2.55,
+        "ci95": [
+          -4.17,
+          -1.2
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus GEA (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": -2.19,
+        "ci95": [
+          -3.75,
+          -0.83
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_frozen minus GEA (negative favours B4_dawid_skene_frozen)"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": -2.15,
+        "ci95": [
+          -3.75,
+          -0.63
+        ],
+        "p_one_sided_le0": 0.9975,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus GEA (negative favours B5P_majority_conf_proxy)"
+      },
+      "B5_consolidator_reliability": {
+        "delta_mean": -2.45,
+        "ci95": [
+          -4.03,
+          -1.06
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B5_consolidator_reliability minus GEA (negative favours B5_consolidator_reliability)"
+      }
+    }
+  },
+  "complete_policy": {
+    "acts": 81,
+    "coverage_pct": 6.75,
+    "risk_on_acted_pct": 1.235,
+    "confusion_on_acted": {
+      "tp": 19,
+      "fp": 1,
+      "fn": 0,
+      "tn": 61
+    },
+    "false_block_rate_benign": {
+      "k": 1,
+      "n": 600,
+      "wilson_hi_pct": 0.938
+    },
+    "false_allow_rate_phish": {
+      "k": 0,
+      "n": 600,
+      "wilson_95_pct": [
+        0.0,
+        0.636
+      ]
+    },
+    "bounds_note": "all interval bounds are MARGINAL (per quantity), not joint",
+    "prevalence_adjusted": {
+      "0.1": {
+        "ppv_lower_bound_pct": 27.28,
+        "npv_lower_bound_pct": 99.929,
+        "escalation_pct": 90.38,
+        "zero_event_note": "fp=0 cells use the Wilson upper bound, never an observed 0 rate"
+      },
+      "0.01": {
+        "ppv_lower_bound_pct": 3.3,
+        "npv_lower_bound_pct": 99.994,
+        "escalation_pct": 89.74,
+        "zero_event_note": "fp=0 cells use the Wilson upper bound, never an observed 0 rate"
+      },
+      "0.001": {
+        "ppv_lower_bound_pct": 0.34,
+        "npv_lower_bound_pct": 99.999,
+        "escalation_pct": 89.67,
+        "zero_event_note": "fp=0 cells use the Wilson upper bound, never an observed 0 rate"
+      }
+    }
+  },
+  "ablations": {},
+  "temporal": null
+}

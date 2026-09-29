@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "command": "scripts/revision_t11_evidence.py attack-policy",
+    "timestamp_utc": "2026-09-29T00:39:47.469875+00:00",
+    "policy_frozen": "results/revision_v2/t8/policy_frozen.json",
+    "t_logo": 0.9596,
+    "tau": 0.9651,
+    "sample": "the recorded adversarial sample (results/_or/bundle_adversarial_or.jsonl); expansion is a separate budgeted run"
+  },
+  "attacks": {
+    "adaptive": {
+      "n_attacked": 150,
+      "n_missing_agent_on_replay": 0,
+      "evaded_n": 3,
+      "evade_pct": 2.0,
+      "partition": {
+        "invalid_inference": 1,
+        "score_abstain": 2,
+        "veto_only": 0,
+        "wrong_act": 0,
+        "sums_to_evaded": true,
+        "invalid_inference_wilson": [
+          0.061,
+          0.792
+        ],
+        "score_abstain_wilson": [
+          0.208,
+          0.939
+        ],
+        "veto_only_wilson": [
+          0.0,
+          0.562
+        ],
+        "wrong_act_wilson": [
+          0.0,
+          0.562
+        ],
+        "note": "invalid_inference = evaded page that also fails validity (cannot act at any threshold); score_abstain = valid but kappa(s) < tau; veto_only = score accepted, verification gate rejected; wrong_act = passed both gates and acted."
+      },
+      "non_evaded_stratum": {
+        "n": 147,
+        "abstain": 124,
+        "act": 23
+      },
+      "matched_clean_control": {
+        "n": 150,
+        "abstain": 82,
+        "abstain_pct": 54.7,
+        "note": "same pages, clean capture, SAME complete policy and tau (full-policy control, not a score-only rate)"
+      }
+    },
+    "both": {
+      "n_attacked": 150,
+      "n_missing_agent_on_replay": 0,
+      "evaded_n": 0,
+      "evade_pct": 0.0,
+      "partition": {
+        "invalid_inference": 0,
+        "score_abstain": 0,
+        "veto_only": 0,
+        "wrong_act": 0,
+        "sums_to_evaded": true,
+        "invalid_inference_wilson": null,
+        "score_abstain_wilson": null,
+        "veto_only_wilson": null,
+        "wrong_act_wilson": null,
+        "note": "invalid_inference = evaded page that also fails validity (cannot act at any threshold); score_abstain = valid but kappa(s) < tau; veto_only = score accepted, verification gate rejected; wrong_act = passed both gates and acted."
+      },
+      "non_evaded_stratum": {
+        "n": 150,
+        "abstain": 126,
+        "act": 24
+      },
+      "matched_clean_control": {
+        "n": 150,
+        "abstain": 82,
+        "abstain_pct": 54.7,
+        "note": "same pages, clean capture, SAME complete policy and tau (full-policy control, not a score-only rate)"
+      }
+    },
+    "cloak": {
+      "n_attacked": 150,
+      "n_missing_agent_on_replay": 0,
+      "evaded_n": 1,
+      "evade_pct": 0.7,
+      "partition": {
+        "invalid_inference": 1,
+        "score_abstain": 0,
+        "veto_only": 0,
+        "wrong_act": 0,
+        "sums_to_evaded": true,
+        "invalid_inference_wilson": [
+          0.207,
+          1.0
+        ],
+        "score_abstain_wilson": [
+          0.0,
+          0.793
+        ],
+        "veto_only_wilson": [
+          0.0,
+          0.793
+        ],
+        "wrong_act_wilson": [
+          0.0,
+          0.793
+        ],
+        "note": "invalid_inference = evaded page that also fails validity (cannot act at any threshold); score_abstain = valid but kappa(s) < tau; veto_only = score accepted, verification gate rejected; wrong_act = passed both gates and acted."
+      },
+      "non_evaded_stratum": {
+        "n": 149,
+        "abstain": 93,
+        "act": 56
+      },
+      "matched_clean_control": {
+        "n": 150,
+        "abstain": 82,
+        "abstain_pct": 54.7,
+        "note": "same pages, clean capture, SAME complete policy and tau (full-policy control, not a score-only rate)"
+      }
+    },
+    "occlude": {
+      "n_attacked": 145,
+      "n_missing_agent_on_replay": 0,
+      "evaded_n": 1,
+      "evade_pct": 0.7,
+      "partition": {
+        "invalid_inference": 1,
+        "score_abstain": 0,
+        "veto_only": 0,
+        "wrong_act": 0,
+        "sums_to_evaded": true,
+        "invalid_inference_wilson": [
+          0.207,
+          1.0
+        ],
+        "score_abstain_wilson": [
+          0.0,
+          0.793
+        ],
+        "veto_only_wilson": [
+          0.0,
+          0.793
+        ],
+        "wrong_act_wilson": [
+          0.0,
+          0.793
+        ],
+        "note": "invalid_inference = evaded page that also fails validity (cannot act at any threshold); score_abstain = valid but kappa(s) < tau; veto_only = score accepted, verification gate rejected; wrong_act = passed both gates and acted."
+      },
+      "non_evaded_stratum": {
+        "n": 144,
+        "abstain": 125,
+        "act": 19
+      },
+      "matched_clean_control": {
+        "n": 145,
+        "abstain": 77,
+        "abstain_pct": 53.1,
+        "note": "same pages, clean capture, SAME complete policy and tau (full-policy control, not a score-only rate)"
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "convention": "frozen Phishpedia calibrator; attainable-coverage AURC (deterministic page-id ties); ECE on calibrated trust; 2000 random-tie page resamples",
+  "corpora": {
+    "phishpedia": {
+      "n_eligible": 3590,
+      "cmax": 0.893,
+      "AURC": 0.88,
+      "AURC_ci": [
+        0.58,
+        1.05
+      ],
+      "SelAcc80": 98.3,
+      "SelAcc80_ci": [
+        97.8,
+        98.7
+      ],
+      "ECE": 0.02,
+      "ECE_ci": [
+        0.014,
+        0.025
+      ]
+    },
+    "trop": {
+      "n_eligible": 1068,
+      "cmax": 0.89,
+      "AURC": 0.53,
+      "AURC_ci": [
+        0.32,
+        1.02
+      ],
+      "SelAcc80": 98.8,
+      "SelAcc80_ci": [
+        98.0,
+        99.5
+      ],
+      "ECE": 0.03,
+      "ECE_ci": [
+        0.019,
+        0.042
+      ]
+    },
+    "apwg": {
+      "n_eligible": 950,
+      "cmax": 0.792,
+      "AURC": 5.6,
+      "AURC_ci": [
+        2.58,
+        5.3
+      ],
+      "SelAcc80": null,
+      "SelAcc80_ci": null,
+      "ECE": 0.05,
+      "ECE_ci": [
+        0.033,
+        0.067
+      ]
+    }
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "generated_utc": "2026-09-29T00:39:48.991766+00:00",
+  "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+  "git_dirty": true,
+  "frozen": {
+    "t_logo": 0.9596,
+    "tau": 0.9651,
+    "calibrator": "results/calibrator_or.json",
+    "calibrator_sha256": "63621e6edfe9aef2289fd3aca75f42c8bc784563b3dc347679b2a7183bb03b60",
+    "policy_file": "results/revision_v2/t8/policy_frozen.json"
+  },
+  "inputs": [
+    {
+      "path": "results/revision/bundle_or_full.jsonl",
+      "present": true,
+      "bytes": 5300385,
+      "sha256": "8f75de8a9bf6ba3184afe05ffe1a928ec60d62e1534cdc4b6f6cd27c6270b85c"
+    },
+    {
+      "path": "results/revision/bundle_apwg_or_full.jsonl",
+      "present": true,
+      "bytes": 1471149,
+      "sha256": "684846fa1d3b621f6ffb19376f11a56fcaf7b745587ee4489a5ccebdbb5ffe38"
+    },
+    {
+      "path": "results/revision/bundle_trop_or_full.jsonl",
+      "present": true,
+      "bytes": 1522302,
+      "sha256": "9b9fde7a20f7cb204132a13c993e64b45ecd0c8721456c23ebd7b5e5cfaf36aa"
+    },
+    {
+      "path": "results/bundle_D.jsonl",
+      "present": true,
+      "bytes": 2750868,
+      "sha256": "d5182c10e9b6bd3cb6149fa386eaa93c93e3bee4a4f587bba32517fa002084be"
+    },
+    {
+      "path": "results/bundle_calib_or.jsonl",
+      "present": true,
+      "bytes": 222422,
+      "sha256": "6a9db4460e4f42fa424fbac313e7b3708f07349356615e6868c68b57dd0701df"
+    },
+    {
+      "path": "results/calibrator_or.json",
+      "present": true,
+      "bytes": 227,
+      "sha256": "63621e6edfe9aef2289fd3aca75f42c8bc784563b3dc347679b2a7183bb03b60"
+    },
+    {
+      "path": "results/_or/bundle_adversarial_or.jsonl",
+      "present": true,
+      "bytes": 191616,
+      "sha256": "3e72503989c2370f162c400ced6d68583d384ac68659e9bdc61d55f8411425fe"
+    },
+    {
+      "path": "data/phishsel_final/test.jsonl",
+      "present": true,
+      "bytes": 1699812,
+      "sha256": "ddda9af56b33919a135df0d2baa9fe93bbb0c94b20526cc1da36ec780678603e"
+    },
+    {
+      "path": "data/phishsel_final/calibration.jsonl",
+      "present": true,
+      "bytes": 305910,
+      "sha256": "86acbc9b26633b7f9488979c429eaa9d10a03927b7b50132efec8c830b4ffdb0"
+    },
+    {
+      "path": "data/apwg_final/test.jsonl",
+      "present": true,
+      "bytes": 622335,
+      "sha256": "699d64aa713156e8c3a2e8470e42bc2f13f9b7fe0169b89498eb1f3ec0c160aa"
+    },
+    {
+      "path": "data/trop_final/test.jsonl",
+      "present": true,
+      "bytes": 558929,
+      "sha256": "adba1f64f74091c40b37ee9756c419f71fc862bdf3e245a9621cae718ac9e8a1"
+    },
+    {
+      "path": "results/revision/t5_grouped_split.json",
+      "present": true,
+      "bytes": 580314,
+      "sha256": "b24815251853917b39b45fe54a3e5972d2d287afcc78ff8a743fdb35ddbacc70"
+    },
+    {
+      "path": "artifacts/verifier_soundness.json",
+      "present": true,
+      "bytes": 655,
+      "sha256": "6296a442b5ee3574d2e1f55f9d471e332485e767fd0e646a38bb687250eb36fb"
+    },
+    {
+      "path": "configs/panel_or.yaml",
+      "present": true,
+      "bytes": 1075,
+      "sha256": "0b2e22a861317faaf760bba4aae4607279a02eccf984ea15f303a766929a67c3"
+    },
+    {
+      "path": "configs/panel.yaml",
+      "present": true,
+      "bytes": 1741,
+      "sha256": "340467751502c6721a2342721ffaca89a8f5c3e374d257ee6467253c91bf1082"
+    }
+  ],
+  "outputs": {
+    "T8": [
+      {
+        "path": "results/revision_v2/t8/policy_frozen.json",
+        "present": true,
+        "bytes": 16841,
+        "sha256": "efe1578a73a4cc679f42967b269516cdfe6c4a95445a9901ef9795544fd25df6"
+      },
+      {
+        "path": "results/revision_v2/t8/logo_calibration_records.jsonl",
+        "present": true,
+        "bytes": 56940,
+        "sha256": "fb3cea0abd4b59514b4f4cb152aa5b1cbf3738617deddb099c11457a2e213bb6"
+      },
+      {
+        "path": "results/revision_v2/t8/eligibility_phishpedia.jsonl",
+        "present": true,
+        "bytes": 14493038,
+        "sha256": "f1101fbaffef33c427d0283434dd6bc78eaf1dd5126e49926b72e4df17c9f48f"
+      },
+      {
+        "path": "results/revision_v2/t8/eligibility_apwg.jsonl",
+        "present": true,
+        "bytes": 4287257,
+        "sha256": "818f933bf52a39700212a1b3d6f07076bc9594e0e75e22f599250debc42ff733"
+      },
+      {
+        "path": "results/revision_v2/t8/eligibility_trop.jsonl",
+        "present": true,
+        "bytes": 4352125,
+        "sha256": "60bbce05e7480c37a98feb967c1bf67b5daea2be640a3a2e2360dbb5ec45169b"
+      },
+      {
+        "path": "results/revision_v2/t8/eligibility_phishpedia_smaller.jsonl",
+        "present": true,
+        "bytes": 11670755,
+        "sha256": "d819c28e251e7ce9d6dbf4a6b2850534dc81d44938bebb0e3681f984ef0489fa"
+      },
+      {
+        "path": "results/revision_v2/t8/transition_phishpedia.json",
+        "present": true,
+        "bytes": 2185,
+        "sha256": "18a635621e6910fff0db56f22e8c065c53399885ae7e02b63b28579e72dc9454"
+      },
+      {
+        "path": "results/revision_v2/t8/transition_apwg.json",
+        "present": true,
+        "bytes": 2237,
+        "sha256": "7895be29c6780efb718e3c647a1f60f40e885befec5390e60281995879b3bea9"
+      },
+      {
+        "path": "results/revision_v2/t8/transition_trop.json",
+        "present": true,
+        "bytes": 2210,
+        "sha256": "11a201b048b3c4f80d056ab35027bc469776bc9f68f4ca2c0df0b7cf813311c0"
+      },
+      {
+        "path": "results/revision_v2/t8/transition_phishpedia_smaller.json",
+        "present": true,
+        "bytes": 2148,
+        "sha256": "959978f2654781e452ad45bb6f1916caaa9e36cd6fb6b1b06269d3dcfd06c91d"
+      }
+    ],
+    "T9": [
+      {
+        "path": "results/revision_v2/t9/consolidator_phishpedia.jsonl",
+        "present": true,
+        "bytes": 1625867,
+        "sha256": "15d8382770dfbd5e4de15cfb6a934510906fe3f9058ad03b4624fe9e89842b8c"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_apwg.jsonl",
+        "present": true,
+        "bytes": 492124,
+        "sha256": "6bb2875dbefab399dae180e2dc952908d0b59c937693fc6c2328ccdba78bcb4c"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_trop.jsonl",
+        "present": true,
+        "bytes": 492357,
+        "sha256": "f8da53388dca0a5fc895229290c736f29bc3d2291dae8ff5f60afea39b5facf1"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_usage_phishpedia.jsonl",
+        "present": true,
+        "bytes": 1369460,
+        "sha256": "e679b3914cbc16648d7e2bf309df02fdb771f36292c3e128ca3a733a33b8a39c"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_usage_apwg.jsonl",
+        "present": true,
+        "bytes": 343716,
+        "sha256": "0bacc58af5a2cb50c135ae0768d0a2fa7ce004c5a1bb98603d944a798d9dd1da"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_usage_trop.jsonl",
+        "present": true,
+        "bytes": 359050,
+        "sha256": "c4280d33b845a580bf8d67671d3e33a40df11537807daa4965c1590e9ea70330"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_provenance_smaller.jsonl",
+        "present": true,
+        "bytes": 1635246,
+        "sha256": "eb01703170430949e97260d6df1d8aaee81eaa3aac5f5bcc0e44d8d71edce6ab"
+      },
+      {
+        "path": "results/revision_v2/t9/consolidator_provenance_smaller_summary.json",
+        "present": true,
+        "bytes": 915,
+        "sha256": "e44ebb76178115e466eb0930bfaa3c5a2749136f70e2739b5a3b22ad806b7d2b"
+      },
+      {
+        "path": "results/revision_v2/t9/dawid_skene_disclosure.json",
+        "present": true,
+        "bytes": 3109,
+        "sha256": "b2975965ffb6b8b0ddca8a31bb71c1f2e05a598c4a8869f89df2c9849617ee81"
+      }
+    ],
+    "T10": [
+      {
+        "path": "results/revision_v2/t10/t10_phishpedia.json",
+        "present": true,
+        "bytes": 45756,
+        "sha256": "81a000cbdf891210c9930094817342f03cdbef46f78ace9ead6ecdf41f0fedfd"
+      },
+      {
+        "path": "results/revision_v2/t10/t10_apwg.json",
+        "present": true,
+        "bytes": 34189,
+        "sha256": "abb25632d85c82c0d670e4e8f9d8ebbeea7733b1ad11c1e623ff9a20a4abf05b"
+      },
+      {
+        "path": "results/revision_v2/t10/t10_trop.json",
+        "present": true,
+        "bytes": 33860,
+        "sha256": "1fc480789553b37a3f3409aa29db03e164d3bf69822533968f2c7ad9d7a73b7b"
+      },
+      {
+        "path": "results/revision_v2/t10/t10_phishpedia_smaller.json",
+        "present": true,
+        "bytes": 39243,
+        "sha256": "aa83999cff6a3229829fae6ce6e4f13372dab4d65ae2d9ee255dad913b8e5f2c"
+      },
+      {
+        "path": "results/revision_v2/t10/old_vs_corrected.json",
+        "present": true,
+        "bytes": 20486,
+        "sha256": "d669b053661f981bbf6d7a52fc8a1fea352cd9a9024c621696a765f21fe4a363"
+      }
+    ],
+    "T11": [
+      {
+        "path": "results/revision_v2/t11/cue_dependence.json",
+        "present": true,
+        "bytes": 14214,
+        "sha256": "02581e79ae9a1fa4d82382683e360d7e931e96931eaf493990e3f8a7ff409b73"
+      },
+      {
+        "path": "results/revision_v2/t11/cue_dependence_records.jsonl",
+        "present": true,
+        "bytes": 10259,
+        "sha256": "14e38cc80b362c2dc0b511c857bc01bb4bdc453cdc1483d8a19acf81a5e8afe0"
+      },
+      {
+        "path": "results/revision_v2/t11/verifier_soundness_v2.json",
+        "present": true,
+        "bytes": 2964,
+        "sha256": "8f958c8dc5d540a64ba42e79b1cd8de69331f788559f28294b38734c70730d78"
+      },
+      {
+        "path": "results/revision_v2/t11/verifier_unit_records.jsonl",
+        "present": true,
+        "bytes": 5929633,
+        "sha256": "f8ee02ae261983ae53deeefcef5aacd8b71f7945957d2708bee671805cca8916"
+      },
+      {
+        "path": "results/revision_v2/t11/false_acceptance.json",
+        "present": true,
+        "bytes": 4741,
+        "sha256": "27b23f34ddb620df028bd6bc6a7ff85da964289554252d0763e59e218efae9ee"
+      },
+      {
+        "path": "results/revision_v2/t11/attack_policy_records.jsonl",
+        "present": true,
+        "bytes": 713402,
+        "sha256": "dfcf857cf635c5ca02acc96e52449441860d84fee0a5816ef3e0676f168e8765"
+      },
+      {
+        "path": "results/revision_v2/t11/attack_policy_summary.json",
+        "present": true,
+        "bytes": 5005,
+        "sha256": "bc798435be70c1a1117f12dc88ecebf0c121c48c8406d7b1172615e774c3b6f0"
+      }
+    ],
+    "T12": [
+      {
+        "path": "results/revision_v2/t12/summary.json",
+        "present": true,
+        "bytes": 5174,
+        "sha256": "d2c45b894b6a373d19a1c322a35af211cd0ac82b60332d71fb9f4d141917aeeb"
+      },
+      {
+        "path": "results/revision_v2/t12/timing_records.jsonl",
+        "present": true,
+        "bytes": 55454,
+        "sha256": "de2b48fe4e90b68fcd534856d529ff834f0066b15b1ae4df40086e2b0e291df8"
+      },
+      {
+        "path": "results/revision_v2/t12/usage_records.jsonl",
+        "present": true,
+        "bytes": 150616,
+        "sha256": "a345b5f4fc37af934193e56fb53957866d4d6b57a8fea416e7f04c99bac36168"
+      }
+    ]
+  },
+  "regeneration_commands": {
+    "T8": [
+      "uv run scripts/revision_t8_policy.py --fit-logo-threshold",
+      "uv run scripts/revision_t8_policy.py --corpus <corpus>"
+    ],
+    "T9": [
+      "uv run scripts/revision_t9_baselines.py dawid-skene",
+      "uv run scripts/revision_t9_baselines.py run --corpus <corpus>   # OpenRouter openai/gpt-4o; OpenAI credits exhausted 2026-09-28",
+      "uv run scripts/revision_t9_baselines.py recover-smaller"
+    ],
+    "T10": [
+      "uv run scripts/revision_t10_metrics.py --corpus <corpus>",
+      "uv run scripts/revision_t10_metrics.py --diffs"
+    ],
+    "T11": [
+      "uv run scripts/revision_t11_evidence.py <subcommand>"
+    ],
+    "T12": [
+      "uv run scripts/revision_t12_cost.py --n 100 --with-d1"
+    ],
+    "checks": [
+      "uv run scripts/check_revision_v2.py",
+      "uv run --with pytest pytest tests/test_t8_policy.py"
+    ]
+  },
+  "restricted_captures": {
+    "note": "APWG (Zenodo 14668190 phishing4190), OpenPhish/Tranco (KnowPhish TR-OP), and Phishpedia captures are licensed/restricted and are NOT redistributed. Acquisition: APWG phishing4190.zip from Zenodo record 14668190; TR-OP.zip from the KnowPhish authors (imethanlee/KnowPhish); Phishpedia from lindsey98/Phishpedia. Manifests store per-row paths + gold; the input hashes above let a holder verify an identical local copy."
+  },
+  "provenance_rule": "every output records git SHA, command, config + manifest hashes, model snapshot, prompt/schema hash, timestamps, provider, and unavailable states in its own meta block."
+}

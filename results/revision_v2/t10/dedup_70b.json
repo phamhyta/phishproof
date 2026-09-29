@@ -1,0 +1,10 @@
+{
+  "panel": "70B",
+  "corpus": "phishpedia",
+  "note": "cross-fitted calibrated AURC (attainable coverage, page-id ties). The reported default uses duplicate-group-disjoint folds.",
+  "group_disjoint_calibrated_aurc": 0.95,
+  "random_fold_calibrated_aurc": 0.84,
+  "dedup_n_groups": 2623,
+  "dedup_raw_aurc": 4.29,
+  "dedup_accuracy_pct": 96.65
+}

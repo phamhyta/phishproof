@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t11_evidence.py verifiers",
+    "timestamp_utc": "2026-09-28T14:50:00.213256+00:00",
+    "seed": 0,
+    "t_logo_frozen": 0.9596,
+    "legacy_logo_threshold": 0.5
+  },
+  "phishpedia_4020": {
+    "manifest": "data/phishsel_final/test.jsonl",
+    "manifest_sha256": "ddda9af56b33919a135df0d2baa9fe93bbb0c94b20526cc1da36ec780678603e",
+    "n_pages": 4020,
+    "brand_claim": {
+      "recall": 0.8208955223880597,
+      "specificity": 0.9427860696517413,
+      "n_pos": 2010,
+      "n_neg": 2010
+    },
+    "form_action_domain": {
+      "recall_parser_derived": 1.0,
+      "specificity": 1.0,
+      "n_pos": 4274,
+      "n_neg": 3829,
+      "caveat": "positives are parser-derived; recall=1 is circular by construction and cannot validate the parser"
+    },
+    "credential_intent": {
+      "confusion": {
+        "tp": 2283,
+        "fp": 1287,
+        "fn": 0,
+        "tn": 450
+      },
+      "n": 4020,
+      "precision": 0.6394957983193277,
+      "recall": 1.0,
+      "specificity": 0.25906735751295334
+    },
+    "logo_brand": {
+      "n": 250,
+      "recall_legacy_0.5": 0.852,
+      "specificity_legacy_0.5": 0.636,
+      "recall_frozen": 0.64,
+      "specificity_frozen": 0.948,
+      "t_logo_frozen": 0.9596
+    }
+  },
+  "historical_998": {
+    "manifest": "data/phishsel_final.998.bak/test.jsonl",
+    "manifest_sha256": "391fc594fa9aa26474e7f4ded57f94c1a8acaba8b0c41b2b158ca35b3bed1173",
+    "n_pages": 998,
+    "brand_claim": {
+      "recall": 0.875751503006012,
+      "specificity": 0.9639278557114228,
+      "n_pos": 499,
+      "n_neg": 499
+    },
+    "form_action_domain": {
+      "recall_parser_derived": 1.0,
+      "specificity": 1.0,
+      "n_pos": 1067,
+      "n_neg": 956,
+      "caveat": "positives are parser-derived; recall=1 is circular by construction and cannot validate the parser"
+    },
+    "credential_intent": {
+      "confusion": {
+        "tp": 540,
+        "fp": 325,
+        "fn": 0,
+        "tn": 133
+      },
+      "n": 998,
+      "precision": 0.6242774566473989,
+      "recall": 1.0,
+      "specificity": 0.2903930131004367
+    },
+    "logo_brand": {
+      "n": 250,
+      "recall_legacy_0.5": 0.896,
+      "specificity_legacy_0.5": 0.704,
+      "recall_frozen": 0.656,
+      "specificity_frozen": 0.972,
+      "t_logo_frozen": 0.9596
+    }
+  },
+  "reconciliation": {
+    "committed_file": "artifacts/verifier_soundness.json",
+    "committed_credential_note": "vs strict <input type=password> gold (tp=540 fp=325 fn=0 tn=133)",
+    "recomputed_998_confusion": {
+      "tp": 540,
+      "fp": 325,
+      "fn": 0,
+      "tn": 133
+    },
+    "match": true,
+    "explanation": "the committed artifact was produced on the historical 998-page test split (499 phish + 499 benign); its credential n=998 is that split's page count, not a subsample of the 4,020 split. The current-split records above are the authoritative ones."
+  }
+}

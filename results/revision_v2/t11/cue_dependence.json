@@ -1,0 +1,441 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t11_evidence.py dependence",
+    "timestamp_utc": "2026-09-28T14:44:53.104920+00:00",
+    "seed": 0,
+    "n_perm": 1000
+  },
+  "corpora": {
+    "phishpedia": {
+      "bundle": "results/revision/bundle_or_full.jsonl",
+      "n_rows": 4020,
+      "agents": [
+        "agent_a_text",
+        "agent_b_text",
+        "agent_c_vision"
+      ],
+      "pairs": {
+        "agent_a_text|agent_b_text|brand_claim": {
+          "n_common": 3283,
+          "same_value": 3011,
+          "null_mean": 5.92,
+          "null_sd": 2.36,
+          "ratio_obs_over_null": 508.27,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 1559,
+            "both_assert_false": 812,
+            "same_false_value": 715,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_b_text|credential_intent": {
+          "n_common": 3662,
+          "same_value": 3566,
+          "null_mean": 3249.55,
+          "null_sd": 6.77,
+          "ratio_obs_over_null": 1.1,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_b_text|form_action_domain": {
+          "n_common": 3694,
+          "same_value": 3667,
+          "null_mean": 2.69,
+          "null_sd": 1.68,
+          "ratio_obs_over_null": 1363.7,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_b_text|logo_brand": {
+          "n_common": 2713,
+          "same_value": 2512,
+          "null_mean": 5.34,
+          "null_sd": 2.28,
+          "ratio_obs_over_null": 470.59,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 1200,
+            "both_assert_false": 580,
+            "same_false_value": 522,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_c_vision|brand_claim": {
+          "n_common": 2374,
+          "same_value": 2200,
+          "null_mean": 6.98,
+          "null_sd": 2.67,
+          "ratio_obs_over_null": 315.23,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 1426,
+            "both_assert_false": 718,
+            "same_false_value": 641,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_c_vision|credential_intent": {
+          "n_common": 3041,
+          "same_value": 2992,
+          "null_mean": 2964.67,
+          "null_sd": 1.15,
+          "ratio_obs_over_null": 1.01,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_c_vision|form_action_domain": {
+          "n_common": 3165,
+          "same_value": 3141,
+          "null_mean": 2.31,
+          "null_sd": 1.5,
+          "ratio_obs_over_null": 1362.1,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_c_vision|logo_brand": {
+          "n_common": 1991,
+          "same_value": 1795,
+          "null_mean": 5.65,
+          "null_sd": 2.21,
+          "ratio_obs_over_null": 317.7,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 1020,
+            "both_assert_false": 468,
+            "same_false_value": 387,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_b_text|agent_c_vision|brand_claim": {
+          "n_common": 2529,
+          "same_value": 2331,
+          "null_mean": 7.34,
+          "null_sd": 2.68,
+          "ratio_obs_over_null": 317.57,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 1544,
+            "both_assert_false": 809,
+            "same_false_value": 729,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_b_text|agent_c_vision|credential_intent": {
+          "n_common": 3166,
+          "same_value": 3160,
+          "null_mean": 3128.17,
+          "null_sd": 0.58,
+          "ratio_obs_over_null": 1.01,
+          "p_perm_ge": 0.0
+        },
+        "agent_b_text|agent_c_vision|form_action_domain": {
+          "n_common": 3270,
+          "same_value": 3254,
+          "null_mean": 2.52,
+          "null_sd": 1.58,
+          "ratio_obs_over_null": 1290.76,
+          "p_perm_ge": 0.0
+        },
+        "agent_b_text|agent_c_vision|logo_brand": {
+          "n_common": 2358,
+          "same_value": 2118,
+          "null_mean": 6.9,
+          "null_sd": 2.63,
+          "ratio_obs_over_null": 306.78,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 1362,
+            "both_assert_false": 656,
+            "same_false_value": 576,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        }
+      }
+    },
+    "apwg": {
+      "bundle": "results/revision/bundle_apwg_or_full.jsonl",
+      "n_rows": 1176,
+      "agents": [
+        "agent_a_text",
+        "agent_b_text",
+        "agent_c_vision"
+      ],
+      "pairs": {
+        "agent_a_text|agent_b_text|brand_claim": {
+          "n_common": 917,
+          "same_value": 827,
+          "null_mean": 2.87,
+          "null_sd": 1.65,
+          "ratio_obs_over_null": 288.45,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 413,
+            "both_assert_false": 203,
+            "same_false_value": 170,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_b_text|credential_intent": {
+          "n_common": 1000,
+          "same_value": 985,
+          "null_mean": 806.87,
+          "null_sd": 6.34,
+          "ratio_obs_over_null": 1.22,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_b_text|form_action_domain": {
+          "n_common": 1007,
+          "same_value": 999,
+          "null_mean": 1.83,
+          "null_sd": 1.34,
+          "ratio_obs_over_null": 545.01,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_b_text|logo_brand": {
+          "n_common": 720,
+          "same_value": 658,
+          "null_mean": 2.48,
+          "null_sd": 1.58,
+          "ratio_obs_over_null": 264.79,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 282,
+            "both_assert_false": 118,
+            "same_false_value": 108,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_c_vision|brand_claim": {
+          "n_common": 550,
+          "same_value": 491,
+          "null_mean": 2.69,
+          "null_sd": 1.66,
+          "ratio_obs_over_null": 182.39,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 278,
+            "both_assert_false": 108,
+            "same_false_value": 92,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_c_vision|credential_intent": {
+          "n_common": 728,
+          "same_value": 720,
+          "null_mean": 692.87,
+          "null_sd": 1.3,
+          "ratio_obs_over_null": 1.04,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_c_vision|form_action_domain": {
+          "n_common": 735,
+          "same_value": 729,
+          "null_mean": 1.16,
+          "null_sd": 1.08,
+          "ratio_obs_over_null": 630.62,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_c_vision|logo_brand": {
+          "n_common": 473,
+          "same_value": 410,
+          "null_mean": 2.16,
+          "null_sd": 1.42,
+          "ratio_obs_over_null": 189.9,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 206,
+            "both_assert_false": 73,
+            "same_false_value": 60,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_b_text|agent_c_vision|brand_claim": {
+          "n_common": 633,
+          "same_value": 572,
+          "null_mean": 2.93,
+          "null_sd": 1.64,
+          "ratio_obs_over_null": 195.29,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 348,
+            "both_assert_false": 136,
+            "same_false_value": 118,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_b_text|agent_c_vision|credential_intent": {
+          "n_common": 774,
+          "same_value": 774,
+          "null_mean": 742.68,
+          "null_sd": 1.15,
+          "ratio_obs_over_null": 1.04,
+          "p_perm_ge": 0.0
+        },
+        "agent_b_text|agent_c_vision|form_action_domain": {
+          "n_common": 765,
+          "same_value": 763,
+          "null_mean": 1.23,
+          "null_sd": 1.09,
+          "ratio_obs_over_null": 619.32,
+          "p_perm_ge": 0.0
+        },
+        "agent_b_text|agent_c_vision|logo_brand": {
+          "n_common": 592,
+          "same_value": 509,
+          "null_mean": 2.79,
+          "null_sd": 1.65,
+          "ratio_obs_over_null": 182.63,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 317,
+            "both_assert_false": 116,
+            "same_false_value": 94,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        }
+      }
+    },
+    "trop": {
+      "bundle": "results/revision/bundle_trop_or_full.jsonl",
+      "n_rows": 1182,
+      "agents": [
+        "agent_a_text",
+        "agent_b_text",
+        "agent_c_vision"
+      ],
+      "pairs": {
+        "agent_a_text|agent_b_text|brand_claim": {
+          "n_common": 893,
+          "same_value": 821,
+          "null_mean": 2.24,
+          "null_sd": 1.46,
+          "ratio_obs_over_null": 366.52,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 402,
+            "both_assert_false": 150,
+            "same_false_value": 136,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_b_text|credential_intent": {
+          "n_common": 967,
+          "same_value": 948,
+          "null_mean": 816.06,
+          "null_sd": 4.81,
+          "ratio_obs_over_null": 1.16,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_b_text|form_action_domain": {
+          "n_common": 987,
+          "same_value": 976,
+          "null_mean": 1.55,
+          "null_sd": 1.24,
+          "ratio_obs_over_null": 630.49,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_b_text|logo_brand": {
+          "n_common": 745,
+          "same_value": 699,
+          "null_mean": 2.27,
+          "null_sd": 1.46,
+          "ratio_obs_over_null": 308.07,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 314,
+            "both_assert_false": 96,
+            "same_false_value": 91,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_c_vision|brand_claim": {
+          "n_common": 644,
+          "same_value": 591,
+          "null_mean": 2.43,
+          "null_sd": 1.52,
+          "ratio_obs_over_null": 243.11,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 376,
+            "both_assert_false": 122,
+            "same_false_value": 109,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_a_text|agent_c_vision|credential_intent": {
+          "n_common": 787,
+          "same_value": 774,
+          "null_mean": 770.09,
+          "null_sd": 0.42,
+          "ratio_obs_over_null": 1.01,
+          "p_perm_ge": 0.001
+        },
+        "agent_a_text|agent_c_vision|form_action_domain": {
+          "n_common": 810,
+          "same_value": 803,
+          "null_mean": 1.36,
+          "null_sd": 1.16,
+          "ratio_obs_over_null": 589.14,
+          "p_perm_ge": 0.0
+        },
+        "agent_a_text|agent_c_vision|logo_brand": {
+          "n_common": 539,
+          "same_value": 486,
+          "null_mean": 2.46,
+          "null_sd": 1.53,
+          "ratio_obs_over_null": 197.88,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 280,
+            "both_assert_false": 71,
+            "same_false_value": 61,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_b_text|agent_c_vision|brand_claim": {
+          "n_common": 766,
+          "same_value": 697,
+          "null_mean": 2.93,
+          "null_sd": 1.66,
+          "ratio_obs_over_null": 237.56,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 485,
+            "both_assert_false": 146,
+            "same_false_value": 132,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        },
+        "agent_b_text|agent_c_vision|credential_intent": {
+          "n_common": 876,
+          "same_value": 875,
+          "null_mean": 865.05,
+          "null_sd": 0.31,
+          "ratio_obs_over_null": 1.01,
+          "p_perm_ge": 0.0
+        },
+        "agent_b_text|agent_c_vision|form_action_domain": {
+          "n_common": 864,
+          "same_value": 861,
+          "null_mean": 1.41,
+          "null_sd": 1.19,
+          "ratio_obs_over_null": 610.64,
+          "p_perm_ge": 0.0
+        },
+        "agent_b_text|agent_c_vision|logo_brand": {
+          "n_common": 705,
+          "same_value": 617,
+          "null_mean": 2.96,
+          "null_sd": 1.73,
+          "ratio_obs_over_null": 208.16,
+          "p_perm_ge": 0.0,
+          "gold_annotated": {
+            "n_with_gold": 437,
+            "both_assert_false": 106,
+            "same_false_value": 85,
+            "provenance": "dataset brand annotation (independent of tools)"
+          }
+        }
+      }
+    }
+  },
+  "family_note": "The larger panel is all-cross-family (Meta Llama-3.3-70B, Alibaba Qwen-2.5-72B, OpenAI GPT-4o) and all pairs are cross-family; a same-family effect is NOT identifiable from it. A matched same-family comparison needs the panel_samefamily configuration (3B panel) and is reported separately if run."
+}

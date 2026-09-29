@@ -15,7 +15,7 @@ trust score, and abstains when the score is below the operating threshold.
 | `configs/` | Panel and experiment configuration (`panel.yaml` = deployed panel) |
 | `reproducibility/` | System prompt, user template, response schema, configured panel, source hashes |
 | `data/` | Split manifests (calibration/test) for the three corpora, with SHA-256 checksums |
-| `artifacts/` | Per-page score bundles and the fitted operating calibrator |
+| `results/` | Per-page panel bundles, the operating calibrator, the frozen policy, and the revision results (`results/revision_v2/`) |
 | `tests/` | Tests for the verification policy |
 
 ## Setup
@@ -46,20 +46,25 @@ Page captures of the source corpora are not redistributed here: obtain them from
 above under their own terms, then rebuild the manifests with `scripts/ingest_phishpedia.py`,
 `scripts/ingest_apwg.py`, and `scripts/ingest_trop.py`.
 
-## Large files
+## Results and large files
 
 | File | Location |
 |------|----------|
-| Per-page score bundles (`bundle_or.jsonl`, `bundle_apwg_or.jsonl`, `bundle_trop_or.jsonl`, `bundle_calib_or.jsonl`) | [`artifacts/`](artifacts/) |
-| Operating calibrator (`calibrator_or.json`) | [`artifacts/`](artifacts/) |
+| Per-page panel bundles with verdicts, confidences, cited cues, agreement and grounding diagnostics (`bundle_or_full.jsonl`, `bundle_apwg_or_full.jsonl`, `bundle_trop_or_full.jsonl`) | [`results/revision/`](results/revision/) |
+| Operating calibrator (`calibrator_or.json`) | [`results/`](results/) |
+| Frozen verification policy: operating threshold and calibrated logo threshold (`policy_frozen.json`) | [`results/revision_v2/t8/`](results/revision_v2/t8/) |
+| Metric, baseline, verifier, attack and cost summaries (`t8`--`t12` JSON) | [`results/revision_v2/`](results/revision_v2/) |
+| Per-page records: eligibility, consolidator outputs, verifier units, attack policy, timing (`per_page_records.tar.gz`, 2.8 MB) | [`results/revision_v2/`](results/revision_v2/) |
 | Cached model responses (`phishproof_cache.tar.gz`, 18 MB, extracts to `data/cache/`) | [Google Drive](https://drive.google.com/drive/folders/1HeombUfo5jFxrOk1mTC9nZFJY4U2dI23?usp=sharing) |
 | Benign login-page captures used in the splits (`phishproof_benign_captures.tar.gz`, 2.4 GB, 3,261 pages, extracts to `data/benign_raw/`) | [Google Drive](https://drive.google.com/drive/folders/1HeombUfo5jFxrOk1mTC9nZFJY4U2dI23?usp=sharing) |
 
-The score bundles hold panel predictions, confidences, consensus cues, agreement and
-grounding diagnostics, and baseline scores. With them, the score analyses can be rerun
-without new model calls. Extract both archives in the repository root; the cached
-responses let the panel replay from the cache instead of calling the models again.
-SHA-256 checksums:
+Extract the per-page records in the repository root
+(`tar -xzf results/revision_v2/per_page_records.tar.gz`). With the bundles, the frozen
+policy and these records, the score analyses and the complete-policy decisions can be rerun
+without new model calls, and `scripts/check_revision_v2.py` re-derives the reported policy
+and validity counts. Extract the two Drive archives in the
+repository root as well; the cached responses let the panel replay from the cache instead of
+calling the models again. SHA-256 checksums of the Drive archives:
 
 ```
 604379bc5c72a575499f4af148a9963645628c32b63485fdbe5176e78062e243  phishproof_cache.tar.gz
@@ -73,7 +78,7 @@ SHA-256 checksums:
 python scripts/run_panel.py --manifest data/phishsel_final/test.jsonl --out results/panel.jsonl
 
 # Selective-prediction metrics with bootstrap intervals from a score bundle
-python scripts/run_experiments.py --bundle artifacts/bundle_or.jsonl --out results/
+python scripts/run_experiments.py --bundle results/revision/bundle_or_full.jsonl --out results/
 ```
 
 ## License

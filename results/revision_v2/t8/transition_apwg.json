@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "policy_version": "t8-complete-v1",
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "git_dirty": true,
+    "command": "scripts/revision_t8_policy.py --corpus apwg",
+    "timestamp_utc": "2026-09-29T00:19:13.320687+00:00",
+    "provider": "cache-only (no network; a miss is a recorded failure)",
+    "panel_config": "configs/panel_or.yaml",
+    "panel_config_sha256": "0b2e22a861317faaf760bba4aae4607279a02eccf984ea15f303a766929a67c3",
+    "models": {
+      "agent_a_text": "meta-llama/llama-3.3-70b-instruct",
+      "agent_b_text": "qwen/qwen-2.5-72b-instruct",
+      "agent_c_vision": "gpt-4o"
+    },
+    "prompt_schema": "phishproof.agents.prompts.RawAgentResponse (SYSTEM_PROMPT sha256 2cdf00582b3f1391)",
+    "clip_model": "ViT-B-32-quickgelu/openai (open_clip)",
+    "seed": "deterministic (temperature 0 at capture time; replay is exact)",
+    "retries": "n/a on replay; original-run failures appear as cache misses"
+  },
+  "corpus": "apwg",
+  "manifest": "data/apwg_final/test.jsonl",
+  "manifest_sha256": "699d64aa713156e8c3a2e8470e42bc2f13f9b7fe0169b89498eb1f3ec0c160aa",
+  "n_rows": 1200,
+  "policy_frozen": "results/revision_v2/t8/policy_frozen.json",
+  "t_logo": 0.9596,
+  "tau": 0.9651,
+  "validation": {
+    "validated_against": "results/revision/bundle_apwg_or_full.jsonl",
+    "compared": 1176,
+    "skipped_replay_failed": 24,
+    "deployed_verdict_mismatch": 0,
+    "deployed_gea_mismatch": 0,
+    "lenient_corrections_verdict": 36,
+    "lenient_corrections_gea": 133,
+    "corrections_that_fix_label": 35
+  },
+  "transition_old_surrogate_vs_complete": {
+    "act->abstain": 171,
+    "abstain->abstain": 952,
+    "abstain->act": 18,
+    "act->act": 59
+  },
+  "complete_primary_reason_counts": {
+    "verifier_unavailable": 329,
+    "check_failed": 302,
+    "invalid:invalid_json": 226,
+    "score_below_tau": 229,
+    "act": 77,
+    "empty_consensus": 13,
+    "invalid:model_call_missing": 24
+  },
+  "old_surrogate_acts": 230,
+  "complete_acts": 77,
+  "missing_artifacts": {
+    "cache_misses_by_agent": {
+      "agent_b_text": 24
+    },
+    "pages_missing_screenshot": 0,
+    "pages_missing_html": 0,
+    "note": "these are the artifacts a re-run would need; nothing was fetched"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "policy_version": "t8-complete-v1",
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "git_dirty": true,
+    "command": "scripts/revision_t8_policy.py --corpus trop",
+    "timestamp_utc": "2026-09-29T00:21:07.545985+00:00",
+    "provider": "cache-only (no network; a miss is a recorded failure)",
+    "panel_config": "configs/panel_or.yaml",
+    "panel_config_sha256": "0b2e22a861317faaf760bba4aae4607279a02eccf984ea15f303a766929a67c3",
+    "models": {
+      "agent_a_text": "meta-llama/llama-3.3-70b-instruct",
+      "agent_b_text": "qwen/qwen-2.5-72b-instruct",
+      "agent_c_vision": "gpt-4o"
+    },
+    "prompt_schema": "phishproof.agents.prompts.RawAgentResponse (SYSTEM_PROMPT sha256 2cdf00582b3f1391)",
+    "clip_model": "ViT-B-32-quickgelu/openai (open_clip)",
+    "seed": "deterministic (temperature 0 at capture time; replay is exact)",
+    "retries": "n/a on replay; original-run failures appear as cache misses"
+  },
+  "corpus": "trop",
+  "manifest": "data/trop_final/test.jsonl",
+  "manifest_sha256": "adba1f64f74091c40b37ee9756c419f71fc862bdf3e245a9621cae718ac9e8a1",
+  "n_rows": 1200,
+  "policy_frozen": "results/revision_v2/t8/policy_frozen.json",
+  "t_logo": 0.9596,
+  "tau": 0.9651,
+  "validation": {
+    "validated_against": "results/revision/bundle_trop_or_full.jsonl",
+    "compared": 1182,
+    "skipped_replay_failed": 18,
+    "deployed_verdict_mismatch": 0,
+    "deployed_gea_mismatch": 0,
+    "lenient_corrections_verdict": 43,
+    "lenient_corrections_gea": 186,
+    "corrections_that_fix_label": 41
+  },
+  "transition_old_surrogate_vs_complete": {
+    "abstain->abstain": 908,
+    "act->abstain": 211,
+    "abstain->act": 25,
+    "act->act": 56
+  },
+  "complete_primary_reason_counts": {
+    "score_below_tau": 252,
+    "verifier_unavailable": 456,
+    "check_failed": 279,
+    "act": 81,
+    "invalid:invalid_json": 114,
+    "invalid:model_call_missing": 18
+  },
+  "old_surrogate_acts": 267,
+  "complete_acts": 81,
+  "missing_artifacts": {
+    "cache_misses_by_agent": {
+      "agent_b_text": 18
+    },
+    "pages_missing_screenshot": 0,
+    "pages_missing_html": 0,
+    "note": "these are the artifacts a re-run would need; nothing was fetched"
+  }
+}

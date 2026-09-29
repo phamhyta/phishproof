@@ -1,0 +1,73 @@
+{
+  "panel": "70B",
+  "corpus": "phishpedia",
+  "n": 4020,
+  "convention": "raw attainable-coverage AURC, deterministic page-id ties; paired delta vs s over duplicate-group resamples, scores held fixed (same as revision_t10_metrics.py)",
+  "rows": {
+    "conf_VLM": {
+      "AURC": 1.39,
+      "SelAcc80": 97.2,
+      "n_eligible": 3590,
+      "delta_vs_s": 0.52,
+      "delta_vs_s_ci95": [
+        0.3,
+        0.87
+      ]
+    },
+    "concurrence": {
+      "AURC": 2.36,
+      "SelAcc80": 98.4,
+      "n_eligible": 3590,
+      "delta_vs_s": 0.9,
+      "delta_vs_s_ci95": [
+        0.32,
+        1.75
+      ]
+    },
+    "GEA": {
+      "AURC": 2.16,
+      "SelAcc80": 97.3,
+      "n_eligible": 3590,
+      "delta_vs_s": 1.28,
+      "delta_vs_s_ci95": [
+        0.49,
+        2.36
+      ]
+    },
+    "consensus_fraction": {
+      "AURC": 2.49,
+      "SelAcc80": 96.9,
+      "n_eligible": 3590,
+      "delta_vs_s": 1.58,
+      "delta_vs_s_ci95": [
+        0.64,
+        3.21
+      ]
+    },
+    "GEAxG": {
+      "AURC": 3.11,
+      "SelAcc80": 97.1,
+      "n_eligible": 3590,
+      "delta_vs_s": 2.14,
+      "delta_vs_s_ci95": [
+        0.57,
+        4.63
+      ]
+    },
+    "groundedness": {
+      "AURC": 4.71,
+      "SelAcc80": 96.7,
+      "n_eligible": 3590,
+      "delta_vs_s": 3.62,
+      "delta_vs_s_ci95": [
+        1.98,
+        5.69
+      ]
+    },
+    "s": {
+      "AURC": 0.88,
+      "SelAcc80": 98.3,
+      "n_eligible": 3590
+    }
+  }
+}

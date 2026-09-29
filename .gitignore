@@ -8,4 +8,4 @@ data/raw/
 data/benign_raw/
 data/_dl/
 data/cache/
-results/
+results/revision_v2/**/*.jsonl

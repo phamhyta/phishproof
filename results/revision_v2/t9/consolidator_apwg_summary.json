@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t9_baselines.py run --corpus apwg",
+    "timestamp_utc": "2026-09-28T14:42:07.008435+00:00",
+    "consolidator_model": "gpt-4o",
+    "consolidator_prompt_sha256": "c5b3126f8812fc16228c5ef127ed6020b685f624d5441016a244b07ba1ecc1d2",
+    "schema": "{\"verdict\": \"phish\"|\"benign\", \"confidence\": 0..1} (strict JSON)",
+    "bundle": "results/revision/bundle_apwg_or_full.jsonl",
+    "bundle_sha256": "684846fa1d3b621f6ffb19376f11a56fcaf7b745587ee4489a5ccebdbb5ffe38",
+    "settings": {
+      "temperature": 0.0,
+      "timeout_s": 90,
+      "max_retries": 2,
+      "provider": "openrouter",
+      "model_requested": "openai/gpt-4o"
+    }
+  },
+  "corpus": "apwg",
+  "counts": {
+    "skipped_done": 0,
+    "api_calls": 982,
+    "parse_fail": 0,
+    "done": 1176,
+    "cache_hits": 194,
+    "panel_missing": 24
+  }
+}

@@ -1,0 +1,14 @@
+{
+ "source": "timed docker run, phishpedia:cpu-np1, 6-page class-balanced farm",
+ "cold_wall_s_6pages": 17.58,
+ "per_page_recog_match_s": [
+  1.49,
+  1.84,
+  2.13,
+  2.66,
+  2.68,
+  3.51
+ ],
+ "median_s": 2.66,
+ "note": "warm logo recog+match; +~3s one-time model load; 0 LLM cost"
+}

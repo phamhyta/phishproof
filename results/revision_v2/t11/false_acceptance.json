@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "command": "scripts/revision_t11_evidence.py false-acceptance",
+    "timestamp_utc": "2026-09-29T00:39:48.216421+00:00"
+  },
+  "corpora": {
+    "phishpedia": {
+      "brand_claim": {
+        "consensus_cues": 3430,
+        "no_label": 1698,
+        "false_cues": 932,
+        "false_accepted": 878,
+        "true_cues": 800,
+        "false_acceptance_rate": 0.9421,
+        "wilson_95": [
+          0.9252,
+          0.9553
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "form_action_domain": {
+        "consensus_cues": 3985,
+        "true_cues": 3883,
+        "false_cues": 102,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0363
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "logo_brand": {
+        "consensus_cues": 3060,
+        "no_label": 1547,
+        "false_cues": 761,
+        "false_accepted": 474,
+        "true_cues": 752,
+        "false_acceptance_rate": 0.6229,
+        "wilson_95": [
+          0.5879,
+          0.6566
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "credential_intent": {
+        "consensus_cues": 3863,
+        "true_cues": 3817,
+        "false_cues": 46,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0771
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      }
+    },
+    "apwg": {
+      "brand_claim": {
+        "consensus_cues": 1007,
+        "true_cues": 270,
+        "no_label": 504,
+        "false_cues": 233,
+        "false_accepted": 218,
+        "false_acceptance_rate": 0.9356,
+        "wilson_95": [
+          0.8965,
+          0.9606
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "form_action_domain": {
+        "consensus_cues": 1110,
+        "true_cues": 1052,
+        "false_cues": 58,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0621
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "credential_intent": {
+        "consensus_cues": 1110,
+        "true_cues": 1104,
+        "false_cues": 6,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.3903
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "logo_brand": {
+        "consensus_cues": 851,
+        "true_cues": 236,
+        "no_label": 454,
+        "false_cues": 161,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0233
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      }
+    },
+    "trop": {
+      "brand_claim": {
+        "consensus_cues": 1041,
+        "no_label": 494,
+        "false_cues": 184,
+        "false_accepted": 171,
+        "true_cues": 363,
+        "false_acceptance_rate": 0.9293,
+        "wilson_95": [
+          0.8829,
+          0.9582
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "form_action_domain": {
+        "consensus_cues": 1122,
+        "true_cues": 1064,
+        "false_cues": 58,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0621
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "credential_intent": {
+        "consensus_cues": 1120,
+        "true_cues": 1105,
+        "false_cues": 15,
+        "false_accepted": 0,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.2039
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      },
+      "logo_brand": {
+        "consensus_cues": 923,
+        "no_label": 444,
+        "false_cues": 133,
+        "false_accepted": 0,
+        "true_cues": 346,
+        "false_acceptance_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0281
+        ],
+        "stratum": "natural panel errors on clean pages (NOT adaptive; see attack-policy for attacks)"
+      }
+    }
+  }
+}

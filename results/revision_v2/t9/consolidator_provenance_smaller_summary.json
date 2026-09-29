@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t9_baselines.py recover-smaller",
+    "timestamp_utc": "2026-09-28T14:48:16.657601+00:00",
+    "consolidator_model": "gpt-4o",
+    "consolidator_prompt_sha256": "c5b3126f8812fc16228c5ef127ed6020b685f624d5441016a244b07ba1ecc1d2",
+    "schema": "{\"verdict\": \"phish\"|\"benign\", \"confidence\": 0..1} (strict JSON)",
+    "panel_config": "configs/panel.yaml (3B smaller panel)",
+    "bundle": "results/bundle_D.jsonl",
+    "bundle_sha256": "d5182c10e9b6bd3cb6149fa386eaa93c93e3bee4a4f587bba32517fa002084be"
+  },
+  "n_bundle_rows": 4020,
+  "counts": {
+    "recovered": 4020,
+    "parse_fallback": 0,
+    "stored_matches_parsed_conf": 4020,
+    "stored_matches_proxy": 467
+  },
+  "note": "provenance is the stored raw response + strict re-parse; the stored B6 score field alone is never treated as provenance"
+}

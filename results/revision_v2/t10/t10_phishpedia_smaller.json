@@ -1,0 +1,1226 @@
+{
+  "meta": {
+    "git_sha": "db9d3f82cd5f7aacdff050e140b271200bc46244",
+    "command": "scripts/revision_t10_metrics.py --corpus phishpedia_smaller",
+    "timestamp_utc": "2026-09-29T00:38:39.426934+00:00",
+    "corpus": "phishpedia_smaller",
+    "manifest": "data/phishsel_final/test.jsonl",
+    "manifest_sha256": "ddda9af56b33919a135df0d2baa9fe93bbb0c94b20526cc1da36ec780678603e",
+    "eligibility": "results/revision_v2/t8/eligibility_phishpedia_smaller.jsonl",
+    "bundle": "results/bundle_D.jsonl",
+    "group_folds": "duplicate groups from t5_grouped_split.json (dhash near-dup + url/domain)",
+    "fold_seed": 0,
+    "n_folds": 5,
+    "n_boot": 2000,
+    "bootstrap_units": "duplicate groups",
+    "bootstrap_maps": "FROZEN cross-fitted maps (intervals condition on the fitted maps; maps are not refitted per resample)",
+    "crossfit_caveat": "pooled cross-fitted values can reorder observations across folds",
+    "tie_rule": "deterministic by page_id; tie-robust = mean over 50 random tie orders",
+    "combined_ranker": null
+  },
+  "accuracy_pct": 53.08,
+  "reason_table": {
+    "primary_mutually_exclusive": {
+      "act": 1604,
+      "score_below_tau": 1553,
+      "invalid:invalid_json": 430,
+      "check_failed": 148,
+      "empty_consensus": 283,
+      "verifier_unavailable": 2
+    },
+    "overlapping_flags": {
+      "score_below_tau": 2290,
+      "invalid:invalid_json": 430,
+      "empty_consensus": 682,
+      "check_failed": 149,
+      "verifier_unavailable": 2
+    },
+    "per_agent_failure_states": {
+      "invalid_json:agent_c_vision": 430
+    },
+    "missing_vision_confidence_rows": 430,
+    "invalid_inference_rows": 430
+  },
+  "ladder": {
+    "conf_VLM": {
+      "note": "vision confidence alone",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 38.38,
+        "AURC_attainable_tie_robust": 39.33,
+        "AURC_attainable_tie_sd": 0.418,
+        "aurc_fallback_convention": 39.27,
+        "SelAcc80": 55.1,
+        "Cov99": 0.001,
+        "ECE10": 0.4116,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 37.47,
+        "AURC_attainable_tie_robust": 38.35,
+        "AURC_attainable_tie_sd": 0.192,
+        "aurc_fallback_convention": 38.47,
+        "SelAcc80": 54.3,
+        "Cov99": 0.0,
+        "ECE10": 0.0618,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "concurrence": {
+      "note": "text agreement with vision verdict",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 14.26,
+        "AURC_attainable_tie_robust": 14.56,
+        "AURC_attainable_tie_sd": 0.103,
+        "aurc_fallback_convention": 17.74,
+        "SelAcc80": 58.6,
+        "Cov99": 0.459,
+        "ECE10": 0.0426,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 14.82,
+        "AURC_attainable_tie_robust": 14.88,
+        "AURC_attainable_tie_sd": 0.061,
+        "aurc_fallback_convention": 18.24,
+        "SelAcc80": 58.5,
+        "Cov99": 0.458,
+        "ECE10": 0.0005,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "GEA": {
+      "note": "mean per-type agreement",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 38.08,
+        "AURC_attainable_tie_robust": 39.19,
+        "AURC_attainable_tie_sd": 0.246,
+        "aurc_fallback_convention": 39.01,
+        "SelAcc80": 52.3,
+        "Cov99": 0.003,
+        "ECE10": 0.0976,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 42.26,
+        "AURC_attainable_tie_robust": 42.47,
+        "AURC_attainable_tie_sd": 0.053,
+        "aurc_fallback_convention": 42.74,
+        "SelAcc80": 51.7,
+        "Cov99": 0.0,
+        "ECE10": 0.1241,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "s_eq7": {
+      "note": "deployed s = conf + 1e-3*a_text",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 24.89,
+        "AURC_attainable_tie_robust": 24.95,
+        "AURC_attainable_tie_sd": 0.03,
+        "aurc_fallback_convention": 27.23,
+        "SelAcc80": 58.0,
+        "Cov99": 0.183,
+        "ECE10": 0.4119,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 20.42,
+        "AURC_attainable_tie_robust": 20.58,
+        "AURC_attainable_tie_sd": 0.04,
+        "aurc_fallback_convention": 23.24,
+        "SelAcc80": 58.3,
+        "Cov99": 0.187,
+        "ECE10": 0.0345,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "s_gate_surrogate": {
+      "note": "s among pages passing the OLD surrogate gate (relaxed consensus + mean G >= 0.999); others forced abstention",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 1899,
+        "max_attainable_coverage": 0.4724,
+        "AURC_attainable": 18.47,
+        "AURC_attainable_tie_robust": 18.54,
+        "AURC_attainable_tie_sd": 0.047,
+        "aurc_fallback_convention": 31.69,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.114,
+        "ECE10": 0.3596,
+        "ECE10_population": "1899 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 1899,
+        "max_attainable_coverage": 0.4724,
+        "AURC_attainable": 15.24,
+        "AURC_attainable_tie_robust": 15.37,
+        "AURC_attainable_tie_sd": 0.047,
+        "aurc_fallback_convention": 30.16,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.117,
+        "ECE10": 0.0024,
+        "ECE10_population": "1899 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "s_gate_complete": {
+      "note": "s among pages passing the COMPLETE verification gate (T8); others forced abstention",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3157,
+        "max_attainable_coverage": 0.7853,
+        "AURC_attainable": 24.7,
+        "AURC_attainable_tie_robust": 24.75,
+        "AURC_attainable_tie_sd": 0.029,
+        "aurc_fallback_convention": 29.46,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.173,
+        "ECE10": 0.4211,
+        "ECE10_population": "3157 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3157,
+        "max_attainable_coverage": 0.7853,
+        "AURC_attainable": 20.51,
+        "AURC_attainable_tie_robust": 20.69,
+        "AURC_attainable_tie_sd": 0.045,
+        "aurc_fallback_convention": 26.16,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.177,
+        "ECE10": 0.0033,
+        "ECE10_population": "3157 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "GEAxG_diagnostic": {
+      "note": "diagnostic only; distinct from the combined ranker",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 35.4,
+        "AURC_attainable_tie_robust": 35.38,
+        "AURC_attainable_tie_sd": 0.022,
+        "aurc_fallback_convention": 36.61,
+        "SelAcc80": 53.3,
+        "Cov99": 0.003,
+        "ECE10": 0.1323,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 36.55,
+        "AURC_attainable_tie_robust": 36.71,
+        "AURC_attainable_tie_sd": 0.054,
+        "aurc_fallback_convention": 37.64,
+        "SelAcc80": 52.5,
+        "Cov99": 0.002,
+        "ECE10": 0.1019,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B1_single_conf": {
+      "note": "single-model confidence",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 40.64,
+        "AURC_attainable_tie_robust": 44.45,
+        "AURC_attainable_tie_sd": 0.726,
+        "aurc_fallback_convention": 41.29,
+        "SelAcc80": 54.1,
+        "Cov99": 0.002,
+        "ECE10": 0.3616,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 49.21,
+        "AURC_attainable_tie_robust": 50.45,
+        "AURC_attainable_tie_sd": 0.256,
+        "aurc_fallback_convention": 48.95,
+        "SelAcc80": 53.5,
+        "Cov99": 0.001,
+        "ECE10": 0.1147,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B2_mean_conf": {
+      "note": "mean panel confidence",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 32.77,
+        "AURC_attainable_tie_robust": 33.32,
+        "AURC_attainable_tie_sd": 0.349,
+        "aurc_fallback_convention": 34.27,
+        "SelAcc80": 56.9,
+        "Cov99": 0.005,
+        "ECE10": 0.3878,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 32.59,
+        "AURC_attainable_tie_robust": 33.08,
+        "AURC_attainable_tie_sd": 0.12,
+        "aurc_fallback_convention": 34.11,
+        "SelAcc80": 56.2,
+        "Cov99": 0.004,
+        "ECE10": 0.0498,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B3_majority_vote": {
+      "note": "majority-vote share (recomputed from lenient-parse verdicts)",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 15.51,
+        "AURC_attainable_tie_robust": 15.74,
+        "AURC_attainable_tie_sd": 0.132,
+        "aurc_fallback_convention": 18.85,
+        "SelAcc80": 57.8,
+        "Cov99": 0.429,
+        "ECE10": 0.2958,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 16.12,
+        "AURC_attainable_tie_robust": 16.17,
+        "AURC_attainable_tie_sd": 0.061,
+        "aurc_fallback_convention": 19.4,
+        "SelAcc80": 57.7,
+        "Cov99": 0.429,
+        "ECE10": 0.0005,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B4_dawid_skene_transductive": {
+      "note": "DS EM fitted on the scored test rows (transductive; disclosed)",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 14.26,
+        "AURC_attainable_tie_robust": 14.57,
+        "AURC_attainable_tie_sd": 0.137,
+        "aurc_fallback_convention": 17.74,
+        "SelAcc80": 58.6,
+        "Cov99": 0.459,
+        "ECE10": 0.3165,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 14.86,
+        "AURC_attainable_tie_robust": 14.92,
+        "AURC_attainable_tie_sd": 0.057,
+        "aurc_fallback_convention": 18.27,
+        "SelAcc80": 58.5,
+        "Cov99": 0.458,
+        "ECE10": 0.0005,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    },
+    "B4_dawid_skene_frozen": {
+      "note": "DS EM fitted on calibration rows, frozen (T9 disclosure; calibration panel outputs use the deployed parse, so treat as a secondary variant)",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 0,
+        "max_attainable_coverage": 0.0,
+        "AURC_attainable": null,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.0,
+        "ECE10": null
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 0,
+        "max_attainable_coverage": 0.0,
+        "AURC_attainable": null,
+        "SelAcc80": "not attainable",
+        "Cov99": 0.0,
+        "ECE10": null
+      }
+    },
+    "B5P_majority_conf_proxy": {
+      "note": "majority-confidence proxy (the mechanism previously mislabelled B5)",
+      "raw": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 22.9,
+        "AURC_attainable_tie_robust": 23.01,
+        "AURC_attainable_tie_sd": 0.044,
+        "aurc_fallback_convention": 25.46,
+        "SelAcc80": 58.3,
+        "Cov99": 0.286,
+        "ECE10": 0.3833,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "calibrated": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 19.49,
+        "AURC_attainable_tie_robust": 19.62,
+        "AURC_attainable_tie_sd": 0.03,
+        "aurc_fallback_convention": 22.41,
+        "SelAcc80": 58.5,
+        "Cov99": 0.288,
+        "ECE10": 0.0454,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      }
+    }
+  },
+  "paired_bootstrap": {
+    "vs_s_eq7_raw": {
+      "conf_VLM": {
+        "delta_mean": 14.49,
+        "ci95": [
+          11.0,
+          17.18
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus s_eq7 (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": -10.51,
+        "ci95": [
+          -13.06,
+          -7.82
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus s_eq7 (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": -6.15,
+        "ci95": [
+          -8.14,
+          -3.65
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus s_eq7 (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": -0.18,
+        "ci95": [
+          -0.83,
+          0.59
+        ],
+        "p_one_sided_le0": 0.706,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus s_eq7 (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": 10.31,
+        "ci95": [
+          6.26,
+          16.01
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus s_eq7 (negative favours GEAxG_diagnostic)"
+      },
+      "B1_single_conf": {
+        "delta_mean": 19.53,
+        "ci95": [
+          13.94,
+          24.5
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus s_eq7 (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": 8.38,
+        "ci95": [
+          5.97,
+          10.56
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus s_eq7 (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": -9.29,
+        "ci95": [
+          -11.71,
+          -6.84
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus s_eq7 (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -10.52,
+        "ci95": [
+          -13.06,
+          -7.83
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus s_eq7 (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": null,
+        "ci95": null,
+        "p_one_sided_le0": null,
+        "n_valid_resamples": 0,
+        "sign": "B4_dawid_skene_frozen minus s_eq7 (negative favours B4_dawid_skene_frozen)",
+        "note": "insufficient overlapping eligible rows on this panel"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": -2.0,
+        "ci95": [
+          -3.56,
+          -0.61
+        ],
+        "p_one_sided_le0": 0.9985,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus s_eq7 (negative favours B5P_majority_conf_proxy)"
+      }
+    },
+    "vs_s_eq7_calibrated": {
+      "conf_VLM": {
+        "delta_mean": 17.76,
+        "ci95": [
+          15.89,
+          19.57
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus s_eq7 (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": -5.74,
+        "ci95": [
+          -7.15,
+          -4.17
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus s_eq7 (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": -5.04,
+        "ci95": [
+          -6.74,
+          -3.05
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus s_eq7 (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": 0.12,
+        "ci95": [
+          -0.52,
+          0.86
+        ],
+        "p_one_sided_le0": 0.383,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus s_eq7 (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": 15.98,
+        "ci95": [
+          12.49,
+          20.92
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus s_eq7 (negative favours GEAxG_diagnostic)"
+      },
+      "B1_single_conf": {
+        "delta_mean": 29.64,
+        "ci95": [
+          25.94,
+          33.34
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus s_eq7 (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": 12.45,
+        "ci95": [
+          10.89,
+          14.09
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus s_eq7 (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": -4.41,
+        "ci95": [
+          -5.83,
+          -2.84
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus s_eq7 (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -5.71,
+        "ci95": [
+          -7.12,
+          -4.13
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus s_eq7 (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": null,
+        "ci95": null,
+        "p_one_sided_le0": null,
+        "n_valid_resamples": 0,
+        "sign": "B4_dawid_skene_frozen minus s_eq7 (negative favours B4_dawid_skene_frozen)",
+        "note": "insufficient overlapping eligible rows on this panel"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": -0.98,
+        "ci95": [
+          -2.01,
+          -0.01
+        ],
+        "p_one_sided_le0": 0.976,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus s_eq7 (negative favours B5P_majority_conf_proxy)"
+      }
+    },
+    "vs_GEA_raw": {
+      "conf_VLM": {
+        "delta_mean": 0.41,
+        "ci95": [
+          -6.13,
+          4.9
+        ],
+        "p_one_sided_le0": 0.399,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus GEA (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": -24.59,
+        "ci95": [
+          -28.71,
+          -20.92
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus GEA (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": -20.23,
+        "ci95": [
+          -27.41,
+          -14.23
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus GEA (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": -14.26,
+        "ci95": [
+          -20.45,
+          -9.36
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus GEA (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": -3.77,
+        "ci95": [
+          -5.5,
+          -1.9
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus GEA (negative favours GEAxG_diagnostic)"
+      },
+      "B1_single_conf": {
+        "delta_mean": 5.45,
+        "ci95": [
+          -0.36,
+          10.08
+        ],
+        "p_one_sided_le0": 0.033,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus GEA (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": -5.7,
+        "ci95": [
+          -11.64,
+          -1.47
+        ],
+        "p_one_sided_le0": 0.999,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus GEA (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": -23.37,
+        "ci95": [
+          -27.42,
+          -19.75
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus GEA (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -24.59,
+        "ci95": [
+          -28.73,
+          -20.92
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus GEA (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": null,
+        "ci95": null,
+        "p_one_sided_le0": null,
+        "n_valid_resamples": 0,
+        "sign": "B4_dawid_skene_frozen minus GEA (negative favours B4_dawid_skene_frozen)",
+        "note": "insufficient overlapping eligible rows on this panel"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": -16.08,
+        "ci95": [
+          -21.07,
+          -12.08
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus GEA (negative favours B5P_majority_conf_proxy)"
+      }
+    },
+    "vs_GEA_calibrated": {
+      "conf_VLM": {
+        "delta_mean": -3.99,
+        "ci95": [
+          -8.16,
+          -0.64
+        ],
+        "p_one_sided_le0": 0.988,
+        "n_valid_resamples": 2000,
+        "sign": "conf_VLM minus GEA (negative favours conf_VLM)"
+      },
+      "concurrence": {
+        "delta_mean": -27.49,
+        "ci95": [
+          -31.23,
+          -24.15
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "concurrence minus GEA (negative favours concurrence)"
+      },
+      "s_gate_surrogate": {
+        "delta_mean": -26.79,
+        "ci95": [
+          -32.85,
+          -21.69
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_surrogate minus GEA (negative favours s_gate_surrogate)"
+      },
+      "s_gate_complete": {
+        "delta_mean": -21.63,
+        "ci95": [
+          -26.61,
+          -17.43
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "s_gate_complete minus GEA (negative favours s_gate_complete)"
+      },
+      "GEAxG_diagnostic": {
+        "delta_mean": -5.77,
+        "ci95": [
+          -7.71,
+          -3.73
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "GEAxG_diagnostic minus GEA (negative favours GEAxG_diagnostic)"
+      },
+      "B1_single_conf": {
+        "delta_mean": 7.89,
+        "ci95": [
+          4.05,
+          11.75
+        ],
+        "p_one_sided_le0": 0.0,
+        "n_valid_resamples": 2000,
+        "sign": "B1_single_conf minus GEA (negative favours B1_single_conf)"
+      },
+      "B2_mean_conf": {
+        "delta_mean": -9.3,
+        "ci95": [
+          -13.38,
+          -5.83
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B2_mean_conf minus GEA (negative favours B2_mean_conf)"
+      },
+      "B3_majority_vote": {
+        "delta_mean": -26.16,
+        "ci95": [
+          -30.02,
+          -22.76
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B3_majority_vote minus GEA (negative favours B3_majority_vote)"
+      },
+      "B4_dawid_skene_transductive": {
+        "delta_mean": -27.46,
+        "ci95": [
+          -31.2,
+          -24.14
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B4_dawid_skene_transductive minus GEA (negative favours B4_dawid_skene_transductive)"
+      },
+      "B4_dawid_skene_frozen": {
+        "delta_mean": null,
+        "ci95": null,
+        "p_one_sided_le0": null,
+        "n_valid_resamples": 0,
+        "sign": "B4_dawid_skene_frozen minus GEA (negative favours B4_dawid_skene_frozen)",
+        "note": "insufficient overlapping eligible rows on this panel"
+      },
+      "B5P_majority_conf_proxy": {
+        "delta_mean": -22.73,
+        "ci95": [
+          -27.06,
+          -19.24
+        ],
+        "p_one_sided_le0": 1.0,
+        "n_valid_resamples": 2000,
+        "sign": "B5P_majority_conf_proxy minus GEA (negative favours B5P_majority_conf_proxy)"
+      }
+    }
+  },
+  "complete_policy": {
+    "acts": 1604,
+    "coverage_pct": 39.9,
+    "risk_on_acted_pct": 28.304,
+    "confusion_on_acted": {
+      "tp": 1062,
+      "fp": 453,
+      "fn": 1,
+      "tn": 88
+    },
+    "false_block_rate_benign": {
+      "k": 453,
+      "n": 2010,
+      "wilson_hi_pct": 24.415
+    },
+    "false_allow_rate_phish": {
+      "k": 1,
+      "n": 2010,
+      "wilson_95_pct": [
+        0.009,
+        0.281
+      ]
+    },
+    "bounds_note": "all interval bounds are MARGINAL (per quantity), not joint",
+    "prevalence_adjusted": {
+      "0.1": {
+        "ppv_lower_bound_pct": 19.38,
+        "npv_lower_bound_pct": 99.959,
+        "escalation_pct": 70.49,
+        "zero_event_note": "fp=0 cells use the Wilson upper bound, never an observed 0 rate"
+      },
+      "0.01": {
+        "ppv_lower_bound_pct": 2.14,
+        "npv_lower_bound_pct": 99.996,
+        "escalation_pct": 72.82,
+        "zero_event_note": "fp=0 cells use the Wilson upper bound, never an observed 0 rate"
+      },
+      "0.001": {
+        "ppv_lower_bound_pct": 0.22,
+        "npv_lower_bound_pct": 100.0,
+        "escalation_pct": 73.06,
+        "zero_event_note": "fp=0 cells use the Wilson upper bound, never an observed 0 rate"
+      }
+    }
+  },
+  "ablations": {
+    "M1_vision_only": {
+      "subset": [
+        "agent_c_vision"
+      ],
+      "ranking_score": "s_subset",
+      "n_valid_subset": 3590,
+      "accuracy_e2e_pct": 92.04,
+      "end_to_end": {
+        "raw": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 0.78,
+          "AURC_attainable_tie_robust": 0.76,
+          "AURC_attainable_tie_sd": 0.051,
+          "aurc_fallback_convention": 1.29,
+          "SelAcc80": 98.3,
+          "Cov99": 0.493,
+          "ECE10": 0.0405,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "calibrated": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 0.9,
+          "AURC_attainable_tie_robust": 0.9,
+          "AURC_attainable_tie_sd": 0.023,
+          "aurc_fallback_convention": 1.4,
+          "SelAcc80": 97.8,
+          "Cov99": 0.504,
+          "ECE10": 0.0015,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "complete_gate": {
+          "n": 4020,
+          "n_eligible": 2322,
+          "max_attainable_coverage": 0.5776,
+          "AURC_attainable": 0.83,
+          "AURC_attainable_tie_robust": 0.79,
+          "AURC_attainable_tie_sd": 0.066,
+          "aurc_fallback_convention": 3.0,
+          "SelAcc80": "not attainable",
+          "Cov99": 0.317,
+          "ECE10": 0.0375,
+          "ECE10_population": "2322 eligible rows (ineligible excluded, counted in the reason table)"
+        }
+      },
+      "fixed_prediction": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 38.38,
+        "AURC_attainable_tie_robust": 39.34,
+        "AURC_attainable_tie_sd": 0.412,
+        "aurc_fallback_convention": 39.27,
+        "SelAcc80": 55.1,
+        "Cov99": 0.001,
+        "ECE10": 0.4116,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "call_count_per_page": 1
+    },
+    "M2_text_only(vision_removed)": {
+      "subset": [
+        "agent_a_text",
+        "agent_b_text"
+      ],
+      "ranking_score": "gea_subset",
+      "n_valid_subset": 4020,
+      "accuracy_e2e_pct": 50.02,
+      "end_to_end": {
+        "raw": {
+          "n": 4020,
+          "n_eligible": 4020,
+          "max_attainable_coverage": 1.0,
+          "AURC_attainable": 47.78,
+          "AURC_attainable_tie_robust": 49.67,
+          "AURC_attainable_tie_sd": 0.33,
+          "aurc_fallback_convention": 47.78,
+          "SelAcc80": 47.0,
+          "Cov99": 0.004,
+          "ECE10": 0.24,
+          "ECE10_population": "4020 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "calibrated": {
+          "n": 4020,
+          "n_eligible": 4020,
+          "max_attainable_coverage": 1.0,
+          "AURC_attainable": 49.92,
+          "AURC_attainable_tie_robust": 50.96,
+          "AURC_attainable_tie_sd": 0.171,
+          "aurc_fallback_convention": 49.92,
+          "SelAcc80": 47.1,
+          "Cov99": 0.0,
+          "ECE10": 0.075,
+          "ECE10_population": "4020 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "complete_gate": {
+          "n": 4020,
+          "n_eligible": 366,
+          "max_attainable_coverage": 0.091,
+          "AURC_attainable": 30.7,
+          "AURC_attainable_tie_robust": 31.36,
+          "AURC_attainable_tie_sd": 0.946,
+          "aurc_fallback_convention": 45.58,
+          "SelAcc80": "not attainable",
+          "Cov99": 0.004,
+          "ECE10": 0.2001,
+          "ECE10_population": "366 eligible rows (ineligible excluded, counted in the reason table)"
+        }
+      },
+      "fixed_prediction": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 45.12,
+        "AURC_attainable_tie_robust": 46.67,
+        "AURC_attainable_tie_sd": 0.341,
+        "aurc_fallback_convention": 45.3,
+        "SelAcc80": 51.3,
+        "Cov99": 0.004,
+        "ECE10": 0.2692,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "call_count_per_page": 2
+    },
+    "M3_full": {
+      "subset": [
+        "agent_a_text",
+        "agent_b_text",
+        "agent_c_vision"
+      ],
+      "ranking_score": "s_subset",
+      "n_valid_subset": 3590,
+      "accuracy_e2e_pct": 53.08,
+      "end_to_end": {
+        "raw": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 24.89,
+          "AURC_attainable_tie_robust": 24.96,
+          "AURC_attainable_tie_sd": 0.025,
+          "aurc_fallback_convention": 27.23,
+          "SelAcc80": 58.0,
+          "Cov99": 0.183,
+          "ECE10": 0.4119,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "calibrated": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 20.42,
+          "AURC_attainable_tie_robust": 20.59,
+          "AURC_attainable_tie_sd": 0.047,
+          "aurc_fallback_convention": 23.24,
+          "SelAcc80": 58.3,
+          "Cov99": 0.187,
+          "ECE10": 0.0345,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "complete_gate": {
+          "n": 4020,
+          "n_eligible": 3157,
+          "max_attainable_coverage": 0.7853,
+          "AURC_attainable": 24.7,
+          "AURC_attainable_tie_robust": 24.75,
+          "AURC_attainable_tie_sd": 0.025,
+          "aurc_fallback_convention": 29.46,
+          "SelAcc80": "not attainable",
+          "Cov99": 0.173,
+          "ECE10": 0.4211,
+          "ECE10_population": "3157 eligible rows (ineligible excluded, counted in the reason table)"
+        }
+      },
+      "fixed_prediction": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 24.89,
+        "AURC_attainable_tie_robust": 24.95,
+        "AURC_attainable_tie_sd": 0.026,
+        "aurc_fallback_convention": 27.23,
+        "SelAcc80": 58.0,
+        "Cov99": 0.183,
+        "ECE10": 0.4119,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "call_count_per_page": 3
+    },
+    "M2_agent_a_text+vision": {
+      "subset": [
+        "agent_a_text",
+        "agent_c_vision"
+      ],
+      "ranking_score": "s_subset",
+      "n_valid_subset": 3590,
+      "accuracy_e2e_pct": 53.08,
+      "end_to_end": {
+        "raw": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 24.91,
+          "AURC_attainable_tie_robust": 24.99,
+          "AURC_attainable_tie_sd": 0.039,
+          "aurc_fallback_convention": 27.25,
+          "SelAcc80": 57.9,
+          "Cov99": 0.183,
+          "ECE10": 0.4119,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "calibrated": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 20.46,
+          "AURC_attainable_tie_robust": 20.64,
+          "AURC_attainable_tie_sd": 0.044,
+          "aurc_fallback_convention": 23.28,
+          "SelAcc80": 58.3,
+          "Cov99": 0.187,
+          "ECE10": 0.0348,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "complete_gate": {
+          "n": 4020,
+          "n_eligible": 360,
+          "max_attainable_coverage": 0.0896,
+          "AURC_attainable": 28.35,
+          "AURC_attainable_tie_robust": 28.26,
+          "AURC_attainable_tie_sd": 0.081,
+          "aurc_fallback_convention": 43.21,
+          "SelAcc80": "not attainable",
+          "Cov99": 0.015,
+          "ECE10": 0.4438,
+          "ECE10_population": "360 eligible rows (ineligible excluded, counted in the reason table)"
+        }
+      },
+      "fixed_prediction": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 24.91,
+        "AURC_attainable_tie_robust": 24.98,
+        "AURC_attainable_tie_sd": 0.04,
+        "aurc_fallback_convention": 27.25,
+        "SelAcc80": 57.9,
+        "Cov99": 0.183,
+        "ECE10": 0.4119,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "call_count_per_page": 2
+    },
+    "M2_agent_b_text+vision": {
+      "subset": [
+        "agent_b_text",
+        "agent_c_vision"
+      ],
+      "ranking_score": "s_subset",
+      "n_valid_subset": 3590,
+      "accuracy_e2e_pct": 50.02,
+      "end_to_end": {
+        "raw": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 29.36,
+          "AURC_attainable_tie_robust": 29.41,
+          "AURC_attainable_tie_sd": 0.03,
+          "aurc_fallback_convention": 31.55,
+          "SelAcc80": 54.3,
+          "Cov99": 0.16,
+          "ECE10": 0.4442,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "calibrated": {
+          "n": 4020,
+          "n_eligible": 3590,
+          "max_attainable_coverage": 0.893,
+          "AURC_attainable": 23.95,
+          "AURC_attainable_tie_robust": 24.17,
+          "AURC_attainable_tie_sd": 0.038,
+          "aurc_fallback_convention": 26.73,
+          "SelAcc80": 54.7,
+          "Cov99": 0.164,
+          "ECE10": 0.0551,
+          "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+        },
+        "complete_gate": {
+          "n": 4020,
+          "n_eligible": 3196,
+          "max_attainable_coverage": 0.795,
+          "AURC_attainable": 28.96,
+          "AURC_attainable_tie_robust": 29.0,
+          "AURC_attainable_tie_sd": 0.031,
+          "aurc_fallback_convention": 33.28,
+          "SelAcc80": "not attainable",
+          "Cov99": 0.156,
+          "ECE10": 0.4539,
+          "ECE10_population": "3196 eligible rows (ineligible excluded, counted in the reason table)"
+        }
+      },
+      "fixed_prediction": {
+        "n": 4020,
+        "n_eligible": 3590,
+        "max_attainable_coverage": 0.893,
+        "AURC_attainable": 25.84,
+        "AURC_attainable_tie_robust": 25.85,
+        "AURC_attainable_tie_sd": 0.048,
+        "aurc_fallback_convention": 28.07,
+        "SelAcc80": 57.7,
+        "Cov99": 0.16,
+        "ECE10": 0.4119,
+        "ECE10_population": "3590 eligible rows (ineligible excluded, counted in the reason table)"
+      },
+      "call_count_per_page": 2
+    },
+    "M4_M5": "not run; no artifacts exist and none are claimed"
+  },
+  "temporal": null
+}

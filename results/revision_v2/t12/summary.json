@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t12_cost.py --n 100 --with-d1",
+    "timestamp_utc": "2026-09-28T15:22:14.587908+00:00",
+    "manifest": "data/phishsel_final/test.jsonl",
+    "manifest_sha256": "ddda9af56b33919a135df0d2baa9fe93bbb0c94b20526cc1da36ec780678603e",
+    "seed": 12,
+    "openai_direct_unavailable": "OpenAI API credit balance exhausted on 2026-09-28; vision + consolidator routed via OpenRouter openai/gpt-4o (snapshots logged per request)"
+  },
+  "subset": {
+    "n": 100,
+    "phish": 50,
+    "benign": 50,
+    "page_ids_sha256": "f1ab757c459620896922cce16db3e0f68a137c2ab40a5c77c569ea1b97edfb31"
+  },
+  "hardware": {
+    "machine": "Apple M4",
+    "arch": "arm64",
+    "cores_physical": "10",
+    "cores_logical": "10",
+    "mem_bytes": "17179869184",
+    "os": "macOS 15.6.1",
+    "python": "3.12.13",
+    "openai_sdk": "2.41.0",
+    "torch": "2.14.0",
+    "open_clip": "3.3.0",
+    "network": "residential broadband; latencies include real network time",
+    "concurrency": "requests issued SEQUENTIALLY per page (uncontaminated per-request latency); parallel-panel wall reported as max(agent latencies) per page, an estimate under 3-way concurrency",
+    "retry_policy": "openai sdk max_retries=2, timeout 90 s",
+    "cache_policy": "timing cache root data/cache_timing (isolated; every request in this pass is a live network call)",
+    "image_settings": "vision input downscaled to 768 px long side, JPEG q85, detail=low (phishproof.agents.client conventions)"
+  },
+  "cold_starts": {
+    "clip_model_load_s": 4.15,
+    "first_request_per_model_flagged": true
+  },
+  "per_request": {
+    "panel_vision(gpt-4o; also B1)": {
+      "latency_warm": {
+        "n": 99,
+        "mean": 3.996,
+        "median": 3.809,
+        "p90": 5.201,
+        "p95": 5.431,
+        "min": 2.282,
+        "max": 11.405
+      },
+      "prompt_tokens_total": 91172,
+      "completion_tokens_total": 10329,
+      "usd_at_list_price": 0.3312
+    },
+    "panel_text_llama70b": {
+      "latency_warm": {
+        "n": 99,
+        "mean": 3.649,
+        "median": 2.985,
+        "p90": 5.678,
+        "p95": 8.267,
+        "min": 1.362,
+        "max": 13.883
+      },
+      "prompt_tokens_total": 82756,
+      "completion_tokens_total": 8349,
+      "usd_at_list_price": 0.0141
+    },
+    "panel_text_qwen72b": {
+      "latency_warm": {
+        "n": 99,
+        "mean": 9.159,
+        "median": 6.406,
+        "p90": 20.32,
+        "p95": 24.276,
+        "min": 3.154,
+        "max": 45.757
+      },
+      "prompt_tokens_total": 83261,
+      "completion_tokens_total": 11567,
+      "usd_at_list_price": 0.0179
+    },
+    "consolidator(gpt-4o)": {
+      "latency_warm": {
+        "n": 100,
+        "mean": 1.663,
+        "median": 1.352,
+        "p90": 2.578,
+        "p95": 2.89,
+        "min": 0.999,
+        "max": 5.512
+      },
+      "prompt_tokens_total": 33127,
+      "completion_tokens_total": 2297,
+      "usd_at_list_price": 0.1058
+    }
+  },
+  "per_page_wall": {
+    "sequential_s": {
+      "n": 100,
+      "mean": 16.915,
+      "median": 13.922,
+      "p90": 28.612,
+      "p95": 32.697,
+      "min": 8.569,
+      "max": 54.47
+    },
+    "parallel_estimate_s": {
+      "n": 100,
+      "mean": 9.432,
+      "median": 6.821,
+      "p90": 20.252,
+      "p95": 24.383,
+      "min": 3.582,
+      "max": 46.006
+    }
+  },
+  "local_stages_s": {
+    "context_render": {
+      "n": 100,
+      "mean": 0.026,
+      "median": 0.016,
+      "p90": 0.052,
+      "p95": 0.078,
+      "min": 0.001,
+      "max": 0.182
+    },
+    "parse_total": {
+      "n": 100,
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.001
+    },
+    "aggregation": {
+      "n": 100,
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.001,
+      "p95": 0.001,
+      "min": 0.0,
+      "max": 0.001
+    },
+    "verifier_clip_per_cue": {
+      "n": 82,
+      "mean": 0.105,
+      "median": 0.088,
+      "p90": 0.169,
+      "p95": 0.194,
+      "min": 0.0,
+      "max": 0.252
+    },
+    "verifier_structural_per_cue": {
+      "n": 279,
+      "mean": 0.006,
+      "median": 0.0,
+      "p90": 0.015,
+      "p95": 0.025,
+      "min": 0.0,
+      "max": 0.174
+    }
+  },
+  "call_accounting": {
+    "panel": "3 requests/page",
+    "b1": "0 extra (vision request shared)",
+    "b5p_proxy": "0 requests (aggregation only)",
+    "consolidator": "1 extra request/page",
+    "abstention": "happens after inference; saves no model call, adds potential human review"
+  },
+  "d1_detector": {
+    "measured": false,
+    "reason": "docker daemon not running on the measurement host at run time; D1 latency not re-measured in this pass"
+  },
+  "price_table": {
+    "usd_per_m_tokens": {
+      "openai/gpt-4o": {
+        "input": 2.5,
+        "output": 10.0
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "input": 0.13,
+        "output": 0.4
+      },
+      "qwen/qwen-2.5-72b-instruct": {
+        "input": 0.16,
+        "output": 0.4
+      }
+    },
+    "source": "openrouter.ai model pages, retrieved 2026-09-28; billed cost follows the provider invoice, these are list prices"
+  }
+}

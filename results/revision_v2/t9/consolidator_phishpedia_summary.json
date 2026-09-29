@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "git_sha": "046971c92e2590dce8efeae576b63120a51cc379",
+    "command": "scripts/revision_t9_baselines.py run --corpus phishpedia",
+    "timestamp_utc": "2026-09-28T14:39:20.888691+00:00",
+    "consolidator_model": "gpt-4o",
+    "consolidator_prompt_sha256": "c5b3126f8812fc16228c5ef127ed6020b685f624d5441016a244b07ba1ecc1d2",
+    "schema": "{\"verdict\": \"phish\"|\"benign\", \"confidence\": 0..1} (strict JSON)",
+    "bundle": "results/revision/bundle_or_full.jsonl",
+    "bundle_sha256": "8f75de8a9bf6ba3184afe05ffe1a928ec60d62e1534cdc4b6f6cd27c6270b85c",
+    "settings": {
+      "temperature": 0.0,
+      "timeout_s": 90,
+      "max_retries": 2,
+      "provider": "openrouter",
+      "model_requested": "openai/gpt-4o"
+    }
+  },
+  "corpus": "phishpedia",
+  "counts": {
+    "skipped_done": 25,
+    "api_calls": 3738,
+    "parse_fail": 0,
+    "done": 3995,
+    "cache_hits": 257
+  }
+}
