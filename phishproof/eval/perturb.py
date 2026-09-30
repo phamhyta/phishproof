@@ -95,8 +95,9 @@ def strip_brand_text(page: PageRecord, out_dir: Path) -> PageRecord:
     visible text), so the page-content brand grounder can no longer re-derive the brand.
 
     Combined with a form-action cloak and a logo occlusion, this attacks every active
-    verifier at once -- the adaptive adversary that knows the grounding tools and tries to
-    leave no cue that grounds, while the page still collects credentials.
+    verifier at once -- a scripted all-cue attack that knows the grounding tools and tries to
+    leave no cue that grounds, while the page still collects credentials. The recipe is
+    fixed, so the attack is verifier-aware but not adaptive.
     """
     if not page.dom_html_path or not Path(page.dom_html_path).exists():
         return page

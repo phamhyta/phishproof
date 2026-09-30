@@ -3,13 +3,14 @@
 Adapts run_adversarial.py for the 70B panel:
   - Formula trust s = conf_VLM + eps*agree_text (not GEA) for act/abstain
   - Calibrator trained on formula scores (calibrator_or.json)
-  - Attacks: cloak, occlude, both, adaptive (same perturbations as 3B run)
+  - Attacks: cloak, occlude, both, all_cue (same perturbations as 3B run, where all_cue
+    was recorded under the legacy name 'adaptive')
 
 Usage:
     .venv/bin/python scripts/run_adversarial_or.py --attack cloak
     .venv/bin/python scripts/run_adversarial_or.py --attack occlude
     .venv/bin/python scripts/run_adversarial_or.py --attack both
-    .venv/bin/python scripts/run_adversarial_or.py --attack adaptive
+    .venv/bin/python scripts/run_adversarial_or.py --attack all_cue
     # combine all into table_values.json:
     .venv/bin/python scripts/run_adversarial_or.py --attack all
 """
@@ -43,7 +44,7 @@ ATTACKS = {
     "cloak":    [cloak_form_action],
     "occlude":  [occlude_logo],
     "both":     [cloak_form_action, occlude_logo],
-    "adaptive": [cloak_form_action, strip_brand_text, occlude_logo],
+    "all_cue": [cloak_form_action, strip_brand_text, occlude_logo],
 }
 EPS = 1e-3
 

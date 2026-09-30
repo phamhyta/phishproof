@@ -56,10 +56,12 @@ ATTACKS = {
     "morph": [morph_logo],                 # blur the logo (weak perceptual perturbation)
     "occlude": [occlude_logo],             # remove the logo entirely (strong; logo-free regime)
     "both": [cloak_form_action, occlude_logo],  # corrupt both the DOM and the visual cue
-    # white-box adaptive adversary: attack EVERY active verifier at once -- cloak the
+    # scripted all-cue attack: corrupt EVERY active verifier's cue at once -- cloak the
     # form-action to an on-brand domain, erase the brand text from the DOM, and occlude the
-    # logo -- so no cited cue grounds while the page still collects credentials.
-    "adaptive": [cloak_form_action, strip_brand_text, occlude_logo],
+    # logo -- so no cited cue grounds while the page still collects credentials. The recipe
+    # is fixed and applied identically to every page; it is verifier-aware but not adaptive
+    # (no search, no feedback, no optimisation against the calibrated-score gate).
+    "all_cue": [cloak_form_action, strip_brand_text, occlude_logo],
 }
 
 

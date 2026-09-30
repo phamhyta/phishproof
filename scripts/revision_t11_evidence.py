@@ -491,8 +491,10 @@ def attack_policy(args) -> int:
         "cloak": [cloak_form_action],
         "occlude": [occlude_logo],
         "both": [cloak_form_action, occlude_logo],
-        "adaptive": [cloak_form_action, strip_brand_text, occlude_logo],
+        "all_cue": [cloak_form_action, strip_brand_text, occlude_logo],
     }
+    # recorded bundles predating the rename call the scripted all-cue recipe 'adaptive'
+    LEGACY = {"adaptive": "all_cue"}
 
     policy = json.loads((T8_DIR / "policy_frozen.json").read_text())
     t_logo, tau = policy["t_logo"], policy["tau"]
@@ -506,7 +508,7 @@ def attack_policy(args) -> int:
     hist = load_rows("results/_or/bundle_adversarial_or.jsonl")
     sample = defaultdict(list)
     for r in hist:
-        sample[r["attack"]].append(r["page_id"])
+        sample[LEGACY.get(r["attack"], r["attack"])].append(r["page_id"])
 
     pages = {p.page_id: p for p in read_manifest(Path("data/phishsel_final/test.jsonl"))}
     clean_elig = {r["page_id"]: r

@@ -9,7 +9,7 @@
     "sample": "the recorded adversarial sample (results/_or/bundle_adversarial_or.jsonl); expansion is a separate budgeted run"
   },
   "attacks": {
-    "adaptive": {
+    "all_cue": {
       "n_attacked": 150,
       "n_missing_agent_on_replay": 0,
       "evaded_n": 3,

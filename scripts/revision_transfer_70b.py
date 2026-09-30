@@ -6,8 +6,10 @@
 """Fixed-calibrator transfer for tab_brands_out, emitted to a committed artifact so the
 table's cells are traceable. Applies the frozen Phishpedia calibrator (already baked into
 each eligibility row's trust_calibrated) and computes, over attainable coverage, the
-deployed score's AURC (deterministic page-id ties), SelAcc80 where attainable, and ECE on
-the calibrated trust, with 2000-resample random-tie intervals. Writes
+deployed score's AURC and SelAcc80 (where attainable) and ECE on the calibrated trust, with
+2000-resample intervals. Point estimates and intervals break score ties the same way, by page
+identifier, as every other table does; the exact expectation of AURC over random tie orders
+is reported alongside as a tie-sensitivity figure. Writes
 results/revision_v2/t10/transfer_70b.json.
 
 Usage: uv run scripts/revision_transfer_70b.py
@@ -26,11 +28,28 @@ T8 = Path("results/revision_v2/t8")
 OUT = Path("results/revision_v2/t10/transfer_70b.json")
 
 
+def expected_aurc(score, correct):
+    """Exact E[AURC] when score ties are broken uniformly at random.
+
+    Within a tie group of size g holding e errors, the expected error count after taking j of
+    its pages is e*j/g; AURC is linear in those counts, so the expectation needs no sampling.
+    """
+    order = np.argsort(-score, kind="stable")
+    sc, err = score[order], 1.0 - correct[order]
+    cum_err = np.empty(len(sc)); done, before = 0, 0.0
+    for v in np.unique(-sc):
+        grp = np.where(sc == -v)[0]; g = len(grp); e = err[grp].sum()
+        cum_err[done:done + g] = before + e * np.arange(1, g + 1) / g
+        done += g; before += e
+    return 100 * float(np.mean(cum_err / np.arange(1, len(sc) + 1)))
+
+
 def main():
     rng = np.random.RandomState(0)
     out = {"convention": "frozen Phishpedia calibrator; attainable-coverage AURC "
-                         "(deterministic page-id ties); ECE on calibrated trust; "
-                         "2000 random-tie page resamples", "corpora": {}}
+                         "(page-id ties, point and interval alike); ECE on calibrated trust; "
+                         "2000 page resamples; AURC_random_tie_expectation = exact E[AURC] "
+                         "over random tie orders", "corpora": {}}
     for c, f in CORPORA.items():
         rows = [json.loads(l) for l in (T8 / f).read_text().splitlines() if l.strip()]
         n = len(rows)
@@ -59,8 +78,8 @@ def main():
             bi = rng.randint(0, n, n); m = elig[bi] & ~np.isnan(s[bi]); sub = bi[m]
             if len(sub) < 5:
                 continue
-            jit = rng.permutation(len(sub)).astype(float)
-            oo = np.lexsort((jit, -s[sub]))
+            rng.permutation(len(sub))   # drawn only to keep the resample stream unchanged
+            oo = np.lexsort((pr[sub], -s[sub]))   # page-id ties, as in the point estimate
             Ab.append(100 * float(np.mean(np.cumsum(1 - cor[sub][oo]) / np.arange(1, len(oo) + 1))))
             if cmax >= 0.8:
                 kk = max(1, int(round(0.8 * len(bi))))
@@ -77,6 +96,7 @@ def main():
         ci = lambda b, d: [round(float(np.percentile(b, 2.5)), d), round(float(np.percentile(b, 97.5)), d)]
         out["corpora"][c] = {"n_eligible": k, "cmax": round(cmax, 3),
                              "AURC": round(A, 2), "AURC_ci": ci(Ab, 2),
+                             "AURC_random_tie_expectation": round(expected_aurc(s[ei], cor[ei]), 2),
                              "SelAcc80": None if S is None else round(S, 1),
                              "SelAcc80_ci": ci(Sb, 1) if Sb else None,
                              "ECE": round(E, 3), "ECE_ci": ci(Eb, 3)}

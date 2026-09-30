@@ -1,5 +1,4 @@
 {
-  "uv.lock": "a6dd96739da023266bd99050e993d6908fc931076090374d55a036c1359f1292",
   "pyproject.toml": "8db475be7bafa8c9145454d26dc88ea6c58fbd51f96586e1ba998879347187f2",
   "configs/panel_or.yaml": "0b2e22a861317faaf760bba4aae4607279a02eccf984ea15f303a766929a67c3",
   "phishproof/agents/prompts.py": "b8005a5e3c0cb3d15327ab6e43cd522cdce9b5d6d6531d0a801da745f9f33b54",
