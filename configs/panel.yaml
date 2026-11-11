@@ -1,0 +1,17 @@
+# The deployed panel. Text models are reached through OpenRouter and the vision model through OpenAI.
+panel:
+  - id: agent_a_text
+    model: meta-llama/llama-3.3-70b-instruct
+    modality: text
+    base_url: https://openrouter.ai/api/v1
+
+  - id: agent_b_text
+    model: qwen/qwen-2.5-72b-instruct
+    modality: text
+    base_url: https://openrouter.ai/api/v1
+
+  - id: agent_c_vision
+    model: gpt-4o
+    modality: vision
+    detail: low
+    strict_schema: true

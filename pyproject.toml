@@ -1,0 +1,38 @@
+[project]
+name = "phishproof"
+version = "0.2.0"
+description = "Selective phishing detection with verified evidence across language and vision models"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "numpy>=1.26",
+    "openai>=1.0",
+    "pillow>=10.0",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "scikit-learn>=1.4",
+    "scipy>=1.11",
+    "tldextract>=5.0",
+]
+
+[project.optional-dependencies]
+logo = ["open-clip-torch", "torch"]
+detectors = ["playwright>=1.44", "python-whois>=0.9", "requests>=2.31"]
+retriever = ["open-clip-torch", "torch", "torchvision"]
+
+[project.scripts]
+phishproof = "phishproof.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["phishproof*"]

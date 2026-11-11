@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "verdict",
+    "confidence",
+    "cues"
+  ],
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "phish",
+        "benign"
+      ]
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "cues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "value"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "brand_claim",
+              "form_action_domain",
+              "credential_intent",
+              "logo_brand"
+            ]
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
